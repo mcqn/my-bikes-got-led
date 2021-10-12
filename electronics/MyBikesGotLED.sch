@@ -507,8 +507,8 @@ F 0 "C4" H 5592 2946 50  0000 L CNN
 F 1 "22uF X5R" H 5592 2855 50  0000 L CNN
 F 2 "Capacitor_SMD:C_1812_4532Metric_Pad1.57x3.40mm_HandSolder" H 5500 2900 50  0001 C CNN
 F 3 "~" H 5500 2900 50  0001 C CNN
-F 4 "C28504" H 5500 2900 50  0001 C CNN "LCSC"
-F 5 "https://www.lcsc.com/product-detail/Multilayer-Ceramic-Capacitors-MLCC-SMD-SMT_FH_1812X226K250NT_22uF-226-10-25V_C28504.html" H 5500 2900 50  0001 C CNN "LCSC Price/Stock"
+F 4 "C342632" H 5500 2900 50  0001 C CNN "LCSC"
+F 5 "https://www.lcsc.com/product-detail/Multilayer-Ceramic-Capacitors-MLCC-SMD-SMT_TDK-C4532X7R1C226MT000N_C342632.html" H 5500 2900 50  0001 C CNN "LCSC Price/Stock"
 	1    5500 2900
 	1    0    0    -1  
 $EndComp
