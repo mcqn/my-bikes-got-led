@@ -1,3 +1,2 @@
 (sym_lib_table
-  (lib (name ATX-power)(type Legacy)(uri ${KIPRJMOD}/ATX-power.lib)(options "")(descr ""))
 )

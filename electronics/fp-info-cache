@@ -1,4 +1,4 @@
-18789915604651625
+18789918714220625
 Battery
 BatteryHolder_Bulgin_BX0036_1xC
 Bulgin Battery Holder, BX0036, Battery Type C (https://www.bulgin.com/products/pub/media/bulgin/data/Battery_holders.pdf)
@@ -56069,13 +56069,6 @@ ESP8266 WiFi microcontroller
 0
 16
 16
-MolexATXConnector
-Molex_44206-0007_socket_(ATX_power)
-
-
-0
-24
-24
 MountingHole
 MountingHole_2.1mm
 Mounting Hole 2.1mm, no annular
@@ -81031,6 +81024,13 @@ SPST Button Switch
 0
 0
 0
+mcqn-kicad-lib
+LED_SMD_WL-SMSW_side-emitting
+LED SMD 0805 (2012 Metric), square (rectangular) end terminal, IPC_7351 nominal, (Body size source: https://docs.google.com/spreadsheets/d/1BsfQQcO9C6DZCsRaXUlFlo91Tg2WpOkGARC1WS5S8t0/edit?usp=sharing), generated with kicad-footprint-generator
+LED handsolder
+0
+3
+3
 mcqn-kicad-lib
 LEDx3_LIGHT_PIPE
 C&K Components SPST SMD PTS645 Series 6mm Tact Switch

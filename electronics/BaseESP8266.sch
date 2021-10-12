@@ -14,8 +14,6 @@ Comment3 ""
 Comment4 ""
 $EndDescr
 Wire Wire Line
-	8900 3750 8900 3850
-Wire Wire Line
 	9350 3750 9350 3850
 Wire Wire Line
 	9800 3750 9800 3850
@@ -132,22 +130,6 @@ F 5 "https://uk.farnell.com/walsin/wr06x5600ftl/res-560r-1-75v-0603-thick-film/d
 	-1   0    0    1   
 $EndComp
 $Comp
-L Device:R R?
-U 1 1 5F9FDA48
-P 8900 4000
-AR Path="/5F9FDA48" Ref="R?"  Part="1" 
-AR Path="/5F935E83/5F9FDA48" Ref="R6"  Part="1" 
-AR Path="/5F8DAD46/5F9FDA48" Ref="R6"  Part="1" 
-F 0 "R6" V 8980 4000 50  0000 C CNN
-F 1 "R560" V 9050 4000 50  0000 C CNN
-F 2 "Resistor_SMD:R_0603_1608Metric_Pad1.05x0.95mm_HandSolder" V 8830 4000 50  0001 C CNN
-F 3 "" H 8900 4000 50  0000 C CNN
-F 4 "2502470" V 8900 4000 50  0001 C CNN "Farnell"
-F 5 "https://uk.farnell.com/walsin/wr06x5600ftl/res-560r-1-75v-0603-thick-film/dp/2502470" V 8900 4000 50  0001 C CNN "Farnell Price/Stock"
-	1    8900 4000
-	-1   0    0    1   
-$EndComp
-$Comp
 L Device:LED D?
 U 1 1 5F9FDA4E
 P 9800 3600
@@ -156,10 +138,10 @@ AR Path="/5F935E83/5F9FDA4E" Ref="D6"  Part="1"
 AR Path="/5F8DAD46/5F9FDA4E" Ref="D6"  Part="1" 
 F 0 "D6" H 9800 3700 50  0000 C CNN
 F 1 "LED" H 9800 3500 50  0000 C CNN
-F 2 "LED_SMD:LED_0805_2012Metric_Pad1.15x1.40mm_HandSolder" H 9800 3600 50  0001 C CNN
+F 2 "mcqn-kicad-lib:LED_SMD_WL-SMSW_side-emitting" H 9800 3600 50  0001 C CNN
 F 3 "" H 9800 3600 50  0000 C CNN
-F 4 "2290332" H 9800 3600 50  0001 C CNN "Farnell"
-F 5 "https://uk.farnell.com/kingbright/kp-2012seck/led-0805-250mcd-orange/dp/2290332" H 9800 3600 50  0001 C CNN "Farnell Price/Stock"
+F 4 "2322102" H 9800 3600 50  0001 C CNN "Farnell"
+F 5 "https://uk.farnell.com/wurth-elektronik/155124vs73200/led-1204-b-green-50mcd-573nm/dp/2322102" H 9800 3600 50  0001 C CNN "Farnell Price/Stock"
 	1    9800 3600
 	0    -1   -1   0   
 $EndComp
@@ -172,27 +154,11 @@ AR Path="/5F935E83/5F9FDA54" Ref="D5"  Part="1"
 AR Path="/5F8DAD46/5F9FDA54" Ref="D5"  Part="1" 
 F 0 "D5" H 9350 3700 50  0000 C CNN
 F 1 "LED" H 9350 3500 50  0000 C CNN
-F 2 "LED_SMD:LED_0805_2012Metric_Pad1.15x1.40mm_HandSolder" H 9350 3600 50  0001 C CNN
+F 2 "mcqn-kicad-lib:LED_SMD_WL-SMSW_side-emitting" H 9350 3600 50  0001 C CNN
 F 3 "" H 9350 3600 50  0000 C CNN
-F 4 "2290332" H 9350 3600 50  0001 C CNN "Farnell"
-F 5 "https://uk.farnell.com/kingbright/kp-2012seck/led-0805-250mcd-orange/dp/2290332" H 9350 3600 50  0001 C CNN "Farnell Price/Stock"
+F 4 "2322102" H 9350 3600 50  0001 C CNN "Farnell"
+F 5 "https://uk.farnell.com/wurth-elektronik/155124vs73200/led-1204-b-green-50mcd-573nm/dp/2322102" H 9350 3600 50  0001 C CNN "Farnell Price/Stock"
 	1    9350 3600
-	0    -1   -1   0   
-$EndComp
-$Comp
-L Device:LED D?
-U 1 1 5F9FDA5A
-P 8900 3600
-AR Path="/5F9FDA5A" Ref="D?"  Part="1" 
-AR Path="/5F935E83/5F9FDA5A" Ref="D4"  Part="1" 
-AR Path="/5F8DAD46/5F9FDA5A" Ref="D4"  Part="1" 
-F 0 "D4" H 8900 3700 50  0000 C CNN
-F 1 "LED" H 8900 3500 50  0000 C CNN
-F 2 "LED_SMD:LED_0805_2012Metric_Pad1.15x1.40mm_HandSolder" H 8900 3600 50  0001 C CNN
-F 3 "" H 8900 3600 50  0000 C CNN
-F 4 "2290332" H 8900 3600 50  0001 C CNN "Farnell"
-F 5 "https://uk.farnell.com/kingbright/kp-2012seck/led-0805-250mcd-orange/dp/2290332" H 8900 3600 50  0001 C CNN "Farnell Price/Stock"
-	1    8900 3600
 	0    -1   -1   0   
 $EndComp
 $Comp
@@ -343,23 +309,14 @@ F 4 "ESP-WROOM-02" H 6750 3200 60  0001 C CNN "Manuf#"
 	1    0    0    -1  
 $EndComp
 Wire Wire Line
-	8900 3200 8900 3450
-Wire Wire Line
 	9350 3300 9350 3450
 Wire Wire Line
 	9800 3400 9800 3450
 Wire Wire Line
 	6750 3800 6750 4250
-Wire Wire Line
-	8900 4150 8900 4250
-Wire Wire Line
-	8900 4250 8500 4250
 Connection ~ 6750 4250
 Wire Wire Line
 	9350 4150 9350 4250
-Wire Wire Line
-	9350 4250 8900 4250
-Connection ~ 8900 4250
 Wire Wire Line
 	9800 4150 9800 4250
 Wire Wire Line
@@ -567,14 +524,8 @@ Wire Wire Line
 	7650 3100 7250 3100
 Wire Wire Line
 	7750 3900 7750 3200
-Connection ~ 7750 3200
-Wire Wire Line
-	7750 3200 8900 3200
 Wire Wire Line
 	7850 3900 7850 3300
-Connection ~ 7850 3300
-Wire Wire Line
-	7850 3300 9350 3300
 Wire Wire Line
 	7950 3900 7950 3400
 Connection ~ 7950 3400
@@ -589,4 +540,9 @@ Wire Wire Line
 	8150 3900 8150 3600
 Wire Wire Line
 	8150 3600 7250 3600
+Wire Wire Line
+	8500 4250 9350 4250
+Connection ~ 7850 3300
+Wire Wire Line
+	7850 3300 9350 3300
 $EndSCHEMATC

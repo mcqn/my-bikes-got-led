@@ -68,19 +68,6 @@ F 3 "" H 8350 6650 50  0001 C CNN
 	1    8350 6650
 	1    0    0    -1  
 $EndComp
-$Comp
-L Connector_Generic:Conn_01x03 J2
-U 1 1 5F8EED32
-P 4750 5700
-F 0 "J2" H 4668 6017 50  0000 C CNN
-F 1 "WS2812" H 4668 5926 50  0000 C CNN
-F 2 "Connector_PinHeader_2.54mm:PinHeader_1x03_P2.54mm_Vertical" H 4750 5700 50  0001 C CNN
-F 3 "~" H 4750 5700 50  0001 C CNN
-F 4 "1593412" H 4750 5700 50  0001 C CNN "Farnell"
-F 5 "https://uk.farnell.com/multicomp/2211s-03g/header-1-row-vert-3way/dp/1593412" H 4750 5700 50  0001 C CNN "Farnell Price/Stock"
-	1    4750 5700
-	-1   0    0    -1  
-$EndComp
 Wire Wire Line
 	4300 4800 4300 5300
 $Comp
@@ -277,8 +264,6 @@ Wire Wire Line
 Wire Wire Line
 	4550 5000 4550 4800
 Connection ~ 4550 4800
-Wire Wire Line
-	4550 5300 4550 6100
 Connection ~ 4550 6100
 Wire Wire Line
 	4200 5950 5200 5950
@@ -415,7 +400,7 @@ L Device:R_Small R12
 U 1 1 6136C2FB
 P 3850 3450
 F 0 "R12" H 3791 3496 50  0000 R CNN
-F 1 "10K" H 3791 3405 50  0000 R CNN
+F 1 "R10K" H 3791 3405 50  0000 R CNN
 F 2 "Resistor_SMD:R_0603_1608Metric_Pad0.98x0.95mm_HandSolder" H 3850 3450 50  0001 C CNN
 F 3 "~" H 3850 3450 50  0001 C CNN
 F 4 "2331740" H 3850 3450 50  0001 C CNN "Farnell"
@@ -553,12 +538,12 @@ Connection ~ 3850 3100
 $Comp
 L power:+BATT #PWR0102
 U 1 1 61412F93
-P 2450 2450
-F 0 "#PWR0102" H 2450 2300 50  0001 C CNN
-F 1 "+BATT" H 2465 2623 50  0000 C CNN
-F 2 "" H 2450 2450 50  0001 C CNN
-F 3 "" H 2450 2450 50  0001 C CNN
-	1    2450 2450
+P 2200 2200
+F 0 "#PWR0102" H 2200 2050 50  0001 C CNN
+F 1 "+BATT" H 2215 2373 50  0000 C CNN
+F 2 "" H 2200 2200 50  0001 C CNN
+F 3 "" H 2200 2200 50  0001 C CNN
+	1    2200 2200
 	1    0    0    -1  
 $EndComp
 Connection ~ 3150 3100
@@ -630,33 +615,33 @@ $EndComp
 $Comp
 L MCQN-Schematic-Components:FS312F-G U3
 U 1 1 6137B8F1
-P 1950 3200
-F 0 "U3" H 1950 3565 50  0000 C CNN
-F 1 "FS312F-G" H 1950 3474 50  0000 C CNN
-F 2 "Package_TO_SOT_SMD:SOT-23-6_Handsoldering" H 1950 3000 50  0001 C CNN
-F 3 "" H 1950 3000 50  0001 C CNN
-F 4 "C82736" H 1950 3200 50  0001 C CNN "LCSC"
-F 5 "https://www.lcsc.com/product-detail/Battery-Protection-ICs_FORTUNE_FS312F-G_FS312F-G_C82736.html" H 1950 3200 50  0001 C CNN "LCSC Price/Stock"
-	1    1950 3200
+P 1700 2950
+F 0 "U3" H 1700 3315 50  0000 C CNN
+F 1 "FS312F-G" H 1700 3224 50  0000 C CNN
+F 2 "Package_TO_SOT_SMD:SOT-23-6_Handsoldering" H 1700 2750 50  0001 C CNN
+F 3 "" H 1700 2750 50  0001 C CNN
+F 4 "C82736" H 1700 2950 50  0001 C CNN "LCSC"
+F 5 "https://www.lcsc.com/product-detail/Battery-Protection-ICs_FORTUNE_FS312F-G_FS312F-G_C82736.html" H 1700 2950 50  0001 C CNN "LCSC Price/Stock"
+	1    1700 2950
 	1    0    0    -1  
 $EndComp
 $Comp
 L Device:R_Small R5
 U 1 1 613851D8
-P 1200 3350
-F 0 "R5" H 1259 3396 50  0000 L CNN
-F 1 "1K" H 1259 3305 50  0000 L CNN
-F 2 "Resistor_SMD:R_0603_1608Metric_Pad0.98x0.95mm_HandSolder" H 1200 3350 50  0001 C CNN
-F 3 "~" H 1200 3350 50  0001 C CNN
-F 4 "2694685" H 1200 3350 50  0001 C CNN "Farnell"
-F 5 "https://uk.farnell.com/multicomp/mcwr06x102-jtl/res-1k-5-0-1w-0603-thick-film/dp/2694685" H 1200 3350 50  0001 C CNN "Farnell Price/Stock"
-	1    1200 3350
+P 950 3100
+F 0 "R5" H 1009 3146 50  0000 L CNN
+F 1 "1K" H 1009 3055 50  0000 L CNN
+F 2 "Resistor_SMD:R_0603_1608Metric_Pad0.98x0.95mm_HandSolder" H 950 3100 50  0001 C CNN
+F 3 "~" H 950 3100 50  0001 C CNN
+F 4 "2694685" H 950 3100 50  0001 C CNN "Farnell"
+F 5 "https://uk.farnell.com/multicomp/mcwr06x102-jtl/res-1k-5-0-1w-0603-thick-film/dp/2694685" H 950 3100 50  0001 C CNN "Farnell Price/Stock"
+	1    950  3100
 	1    0    0    -1  
 $EndComp
 Wire Wire Line
-	1650 3200 1200 3200
+	1400 2950 950  2950
 Wire Wire Line
-	1200 3200 1200 3250
+	950  2950 950  3000
 Wire Wire Line
 	8700 1750 9450 1750
 Wire Wire Line
@@ -664,82 +649,64 @@ Wire Wire Line
 $Comp
 L power:-BATT #PWR0107
 U 1 1 6141B98F
-P 2550 3950
-F 0 "#PWR0107" H 2550 3800 50  0001 C CNN
-F 1 "-BATT" H 2565 4123 50  0000 C CNN
-F 2 "" H 2550 3950 50  0001 C CNN
-F 3 "" H 2550 3950 50  0001 C CNN
-	1    2550 3950
+P 2300 4400
+F 0 "#PWR0107" H 2300 4250 50  0001 C CNN
+F 1 "-BATT" H 2315 4573 50  0000 C CNN
+F 2 "" H 2300 4400 50  0001 C CNN
+F 3 "" H 2300 4400 50  0001 C CNN
+	1    2300 4400
 	-1   0    0    1   
 $EndComp
-NoConn ~ 2250 3300
+NoConn ~ 2000 3050
 $Comp
 L Device:R_Small R11
 U 1 1 6142E810
-P 2350 2750
-F 0 "R11" H 2409 2796 50  0000 L CNN
-F 1 "100R" H 2409 2705 50  0000 L CNN
-F 2 "Resistor_SMD:R_0603_1608Metric_Pad0.98x0.95mm_HandSolder" H 2350 2750 50  0001 C CNN
-F 3 "~" H 2350 2750 50  0001 C CNN
-F 4 "2694684" H 2350 2750 50  0001 C CNN "Farnell"
-F 5 "https://uk.farnell.com/multicomp/mcwr06x101-jtl/res-100r-5-0-1w-0603-thick-film/dp/2694684" H 2350 2750 50  0001 C CNN "Farnell Price/Stock"
-	1    2350 2750
+P 2100 2500
+F 0 "R11" H 2159 2546 50  0000 L CNN
+F 1 "100R" H 2159 2455 50  0000 L CNN
+F 2 "Resistor_SMD:R_0603_1608Metric_Pad0.98x0.95mm_HandSolder" H 2100 2500 50  0001 C CNN
+F 3 "~" H 2100 2500 50  0001 C CNN
+F 4 "2694684" H 2100 2500 50  0001 C CNN "Farnell"
+F 5 "https://uk.farnell.com/multicomp/mcwr06x101-jtl/res-100r-5-0-1w-0603-thick-film/dp/2694684" H 2100 2500 50  0001 C CNN "Farnell Price/Stock"
+	1    2100 2500
 	1    0    0    -1  
 $EndComp
 Wire Wire Line
-	2350 2650 2350 2550
+	2100 2400 2100 2300
 Wire Wire Line
-	2350 2550 2450 2550
+	2100 2300 2200 2300
 Wire Wire Line
-	2450 2550 2450 2450
+	2200 2300 2200 2200
 Wire Wire Line
-	2350 2850 2350 3200
+	2100 2600 2100 2950
 Wire Wire Line
-	2350 3200 2250 3200
+	2100 2950 2000 2950
 $Comp
 L Device:Jumper_NO_Small JP1
 U 1 1 61438BDA
-P 2850 2650
-F 0 "JP1" H 2850 2835 50  0000 C CNN
-F 1 "Jumper_on" H 2850 2744 50  0000 C CNN
-F 2 "Jumper:SolderJumper-2_P1.3mm_Open_RoundedPad1.0x1.5mm" H 2850 2650 50  0001 C CNN
-F 3 "~" H 2850 2650 50  0001 C CNN
-	1    2850 2650
-	1    0    0    -1  
+P 1800 4050
+F 0 "JP1" H 1800 4235 50  0000 C CNN
+F 1 "Jumper_on" H 1800 4144 50  0000 C CNN
+F 2 "Jumper:SolderJumper-2_P1.3mm_Open_RoundedPad1.0x1.5mm" H 1800 4050 50  0001 C CNN
+F 3 "~" H 1800 4050 50  0001 C CNN
+	1    1800 4050
+	0    -1   -1   0   
 $EndComp
 $Comp
 L Switch:SW_SPDT SW2
 U 1 1 6143A645
-P 2900 2200
-F 0 "SW2" H 2900 1875 50  0000 C CNN
-F 1 "ON/OFF" H 2900 1966 50  0000 C CNN
-F 2 "" H 2900 2200 50  0001 C CNN
-F 3 "~" H 2900 2200 50  0001 C CNN
-	1    2900 2200
-	-1   0    0    1   
+P 2800 3600
+F 0 "SW2" H 2800 3300 50  0000 C CNN
+F 1 "ON/OFF" H 2800 3400 50  0000 C CNN
+F 2 "Button_Switch_THT:SW_CuK_OS102011MA1QN1_SPDT_Angled" H 2800 3600 50  0001 C CNN
+F 3 "~" H 2800 3600 50  0001 C CNN
+F 4 "1201431" H 2800 3600 50  0001 C CNN "Farnell"
+F 5 "https://uk.farnell.com/c-k-components/os102011ma1qn1/switch-spdt-0-1a-12v-pcb-r-a/dp/1201431" H 2800 3600 50  0001 C CNN "Farnell Price/Stock"
+	1    2800 3600
+	0    1    1    0   
 $EndComp
-Wire Wire Line
-	2450 2550 2600 2550
-Wire Wire Line
-	2600 2550 2600 2650
-Wire Wire Line
-	2600 2650 2750 2650
-Connection ~ 2450 2550
-Wire Wire Line
-	2600 2550 2600 2300
-Connection ~ 2600 2550
-Wire Wire Line
-	2950 2650 3150 2650
-Wire Wire Line
-	3150 2650 3150 3100
-Wire Wire Line
-	2600 2300 2700 2300
-Wire Wire Line
-	3100 2200 3150 2200
-Wire Wire Line
-	3150 2200 3150 2650
-Connection ~ 3150 2650
-NoConn ~ 2700 2100
+Connection ~ 2200 2300
+NoConn ~ 2900 3800
 $Comp
 L Connector_Generic:Conn_01x02 J1
 U 1 1 61470906
@@ -778,77 +745,75 @@ $EndComp
 $Comp
 L Device:C_Small C1
 U 1 1 6147446E
-P 2350 3550
-F 0 "C1" V 2550 3550 50  0000 C CNN
-F 1 "0.1uF" V 2450 3550 50  0000 C CNN
-F 2 "Capacitor_SMD:C_0603_1608Metric_Pad1.08x0.95mm_HandSolder" H 2350 3550 50  0001 C CNN
-F 3 "~" H 2350 3550 50  0001 C CNN
-F 4 "1759038RL" V 2350 3550 50  0001 C CNN "Farnell"
-F 5 "https://uk.farnell.com/multicomp/mc0603f104z250ct/cap-0-1-f-25v-y5v-0603/dp/1759038RL" V 2350 3550 50  0001 C CNN "Farnell Price/Stock"
-	1    2350 3550
+P 2100 3300
+F 0 "C1" V 2300 3300 50  0000 C CNN
+F 1 "0.1uF" V 2200 3300 50  0000 C CNN
+F 2 "Capacitor_SMD:C_0603_1608Metric_Pad1.08x0.95mm_HandSolder" H 2100 3300 50  0001 C CNN
+F 3 "~" H 2100 3300 50  0001 C CNN
+F 4 "1759038RL" V 2100 3300 50  0001 C CNN "Farnell"
+F 5 "https://uk.farnell.com/multicomp/mc0603f104z250ct/cap-0-1-f-25v-y5v-0603/dp/1759038RL" V 2100 3300 50  0001 C CNN "Farnell Price/Stock"
+	1    2100 3300
 	-1   0    0    -1  
 $EndComp
-Connection ~ 2350 3200
+Connection ~ 2100 2950
 $Comp
 L MCQN-Schematic-Components:FS8205 Q1
 U 1 1 614D2CDA
-P 1650 3900
-F 0 "Q1" V 1504 4344 50  0000 L CNN
-F 1 "FS8205" V 1595 4344 50  0000 L CNN
-F 2 "Package_TO_SOT_SMD:SOT-23-6" H 1750 4175 50  0001 L CIN
-F 3 "" H 1550 4100 50  0001 L CNN
-F 4 "C32254" V 1650 3900 50  0001 C CNN "LCSC"
-F 5 "https://www.lcsc.com/product-detail/MOSFET_FORTUNE_FS8205_FS8205_C32254.html" V 1650 3900 50  0001 C CNN "LCSC Price/Stock"
-	1    1650 3900
+P 1400 3650
+F 0 "Q1" V 1254 4094 50  0000 L CNN
+F 1 "FS8205" V 1345 4094 50  0000 L CNN
+F 2 "Package_TO_SOT_SMD:SOT-23-6" H 1500 3925 50  0001 L CIN
+F 3 "" H 1300 3850 50  0001 L CNN
+F 4 "C32254" V 1400 3650 50  0001 C CNN "LCSC"
+F 5 "https://www.lcsc.com/product-detail/MOSFET_FORTUNE_FS8205_FS8205_C32254.html" V 1400 3650 50  0001 C CNN "LCSC Price/Stock"
+	1    1400 3650
 	0    1    1    0   
 $EndComp
 Wire Wire Line
-	1650 3100 1600 3100
+	1400 2850 1350 2850
 Wire Wire Line
-	1600 3100 1600 3500
+	1350 2850 1350 3250
 Wire Wire Line
-	1600 3500 1850 3500
+	1350 3250 1600 3250
 Wire Wire Line
-	1850 3500 1850 3600
+	1600 3250 1600 3350
 Wire Wire Line
-	1450 3600 1450 3300
+	1200 3350 1200 3050
 Wire Wire Line
-	1450 3300 1650 3300
+	1200 3050 1400 3050
 Wire Wire Line
-	2350 3450 2350 3200
+	2100 3200 2100 2950
 Wire Wire Line
-	2350 3650 2350 3900
+	2100 3400 2100 3650
 Wire Wire Line
-	2350 3900 2050 3900
+	2100 3650 1800 3650
 Wire Wire Line
-	2250 3100 2550 3100
+	2000 2850 2300 2850
 Wire Wire Line
-	2350 3900 2550 3900
-Connection ~ 2350 3900
-Connection ~ 2550 3900
+	2100 3650 2300 3650
+Connection ~ 2100 3650
+Connection ~ 2300 3650
 Wire Wire Line
-	2550 3900 2550 3950
+	2300 2850 2300 3650
 Wire Wire Line
-	2550 3100 2550 3900
+	950  3200 950  3650
 Wire Wire Line
-	1200 3450 1200 3900
-Wire Wire Line
-	1200 3900 1250 3900
+	950  3650 1000 3650
 $Comp
 L power:GND #PWR0110
 U 1 1 61526F71
-P 1200 3950
-F 0 "#PWR0110" H 1200 3700 50  0001 C CNN
-F 1 "GND" H 1205 3777 50  0000 C CNN
-F 2 "" H 1200 3950 50  0001 C CNN
-F 3 "" H 1200 3950 50  0001 C CNN
-	1    1200 3950
+P 950 3700
+F 0 "#PWR0110" H 950 3450 50  0001 C CNN
+F 1 "GND" H 955 3527 50  0000 C CNN
+F 2 "" H 950 3700 50  0001 C CNN
+F 3 "" H 950 3700 50  0001 C CNN
+	1    950  3700
 	1    0    0    -1  
 $EndComp
 Wire Wire Line
-	1200 3950 1200 3900
-Connection ~ 1200 3900
-NoConn ~ 1650 4000
+	950  3700 950  3650
+Connection ~ 950  3650
+NoConn ~ 1400 3750
 $Comp
 L Connector_Generic:Conn_01x04 J5
 U 1 1 6139123D
@@ -1066,16 +1031,12 @@ Connection ~ 1500 1300
 Wire Wire Line
 	1500 1300 1500 1200
 Wire Wire Line
-	3150 2650 3650 2650
-Wire Wire Line
-	3650 2650 3650 1200
-Wire Wire Line
 	3650 1200 5100 1200
 $Comp
-L Connector_Generic:Conn_01x03 J?
+L Connector_Generic:Conn_01x03 J6
 U 1 1 6153C4C1
 P 6450 3250
-F 0 "J?" H 6368 2925 50  0000 C CNN
+F 0 "J6" H 6368 2925 50  0000 C CNN
 F 1 "Conn_01x03" H 6368 3016 50  0000 C CNN
 F 2 "Connector_PinHeader_2.54mm:PinHeader_1x03_P2.54mm_Vertical" H 6450 3250 50  0001 C CNN
 F 3 "~" H 6450 3250 50  0001 C CNN
@@ -1083,10 +1044,10 @@ F 3 "~" H 6450 3250 50  0001 C CNN
 	-1   0    0    1   
 $EndComp
 $Comp
-L Connector_Generic:Conn_01x03 J?
+L Connector_Generic:Conn_01x03 J7
 U 1 1 6153D402
 P 6450 3800
-F 0 "J?" H 6368 3475 50  0000 C CNN
+F 0 "J7" H 6368 3475 50  0000 C CNN
 F 1 "Conn_01x03" H 6368 3566 50  0000 C CNN
 F 2 "Connector_PinHeader_2.54mm:PinHeader_1x03_P2.54mm_Vertical" H 6450 3800 50  0001 C CNN
 F 3 "~" H 6450 3800 50  0001 C CNN
@@ -1112,10 +1073,10 @@ Wire Wire Line
 Wire Wire Line
 	7000 3900 6650 3900
 $Comp
-L power:+3V3 #PWR?
+L power:+3V3 #PWR0112
 U 1 1 61560EA5
 P 6800 2950
-F 0 "#PWR?" H 6800 2800 50  0001 C CNN
+F 0 "#PWR0112" H 6800 2800 50  0001 C CNN
 F 1 "+3V3" H 6815 3123 50  0000 C CNN
 F 2 "" H 6800 2950 50  0001 C CNN
 F 3 "" H 6800 2950 50  0001 C CNN
@@ -1123,10 +1084,10 @@ F 3 "" H 6800 2950 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L power:+5V #PWR?
+L power:+5V #PWR0113
 U 1 1 61561BCD
 P 7000 2950
-F 0 "#PWR?" H 7000 2800 50  0001 C CNN
+F 0 "#PWR0113" H 7000 2800 50  0001 C CNN
 F 1 "+5V" H 7015 3123 50  0000 C CNN
 F 2 "" H 7000 2950 50  0001 C CNN
 F 3 "" H 7000 2950 50  0001 C CNN
@@ -1134,10 +1095,10 @@ F 3 "" H 7000 2950 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L power:GND #PWR?
+L power:GND #PWR0114
 U 1 1 61562887
 P 6900 4050
-F 0 "#PWR?" H 6900 3800 50  0001 C CNN
+F 0 "#PWR0114" H 6900 3800 50  0001 C CNN
 F 1 "GND" H 6905 3877 50  0000 C CNN
 F 2 "" H 6900 4050 50  0001 C CNN
 F 3 "" H 6900 4050 50  0001 C CNN
@@ -1153,4 +1114,100 @@ Connection ~ 7000 3350
 Wire Wire Line
 	6800 2950 6800 3150
 Connection ~ 6800 3150
+$Comp
+L Transistor_FET:DMN2041L Q2
+U 1 1 616C1A7E
+P 2400 4050
+F 0 "Q2" H 2605 4096 50  0000 L CNN
+F 1 "JSM2302" H 2605 4005 50  0000 L CNN
+F 2 "Package_TO_SOT_SMD:SOT-23" H 2600 3975 50  0001 L CIN
+F 3 "" H 2400 4050 50  0001 L CNN
+F 4 "C916403" H 2400 4050 50  0001 C CNN "LCSC"
+	1    2400 4050
+	-1   0    0    -1  
+$EndComp
+$Comp
+L Device:R_Small R6
+U 1 1 616E0C20
+P 2700 4200
+F 0 "R6" H 2759 4246 50  0000 L CNN
+F 1 "100K" H 2759 4155 50  0000 L CNN
+F 2 "Resistor_SMD:R_0603_1608Metric_Pad0.98x0.95mm_HandSolder" H 2700 4200 50  0001 C CNN
+F 3 "~" H 2700 4200 50  0001 C CNN
+	1    2700 4200
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:R_Small R18
+U 1 1 616E2012
+P 2800 3150
+F 0 "R18" H 2859 3196 50  0000 L CNN
+F 1 "R10K" H 2859 3105 50  0000 L CNN
+F 2 "Resistor_SMD:R_0603_1608Metric_Pad0.98x0.95mm_HandSolder" H 2800 3150 50  0001 C CNN
+F 3 "~" H 2800 3150 50  0001 C CNN
+F 4 "2331740" H 2800 3150 50  0001 C CNN "Farnell"
+F 5 "https://uk.farnell.com/te-connectivity/crgh0603j10k/res-10k-5-0-2w-0603-thick-film/dp/2331740" H 2800 3150 50  0001 C CNN "Farnell Price/Stock"
+	1    2800 3150
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	2200 2300 2800 2300
+Wire Wire Line
+	3650 2300 3650 1200
+Wire Wire Line
+	3150 2300 3150 3100
+Connection ~ 3150 2300
+Wire Wire Line
+	3150 2300 3650 2300
+Wire Wire Line
+	2300 3650 2300 3750
+Wire Wire Line
+	2300 4250 2300 4350
+Wire Wire Line
+	2300 3750 1800 3750
+Wire Wire Line
+	1800 3750 1800 3950
+Connection ~ 2300 3750
+Wire Wire Line
+	2300 3750 2300 3850
+Wire Wire Line
+	1800 4150 1800 4350
+Wire Wire Line
+	1800 4350 2300 4350
+Connection ~ 2300 4350
+Wire Wire Line
+	2300 4350 2300 4400
+Wire Wire Line
+	2700 3800 2700 4050
+Wire Wire Line
+	2700 4050 2600 4050
+Wire Wire Line
+	2700 4300 2700 4350
+Wire Wire Line
+	2700 4350 2300 4350
+Wire Wire Line
+	2700 4100 2700 4050
+Connection ~ 2700 4050
+Wire Wire Line
+	2800 3050 2800 2300
+Connection ~ 2800 2300
+Wire Wire Line
+	2800 2300 3150 2300
+Wire Wire Line
+	2800 3250 2800 3400
+Wire Wire Line
+	4550 5300 4550 6100
+$Comp
+L Connector_Generic:Conn_01x03 J2
+U 1 1 5F8EED32
+P 4750 5700
+F 0 "J2" H 4668 6017 50  0000 C CNN
+F 1 "WS2812" H 4668 5926 50  0000 C CNN
+F 2 "Connector_PinHeader_2.54mm:PinHeader_1x03_P2.54mm_Horizontal" H 4750 5700 50  0001 C CNN
+F 3 "~" H 4750 5700 50  0001 C CNN
+F 4 "1593412" H 4750 5700 50  0001 C CNN "Farnell"
+F 5 "https://uk.farnell.com/multicomp/2211s-03g/header-1-row-vert-3way/dp/1593412" H 4750 5700 50  0001 C CNN "Farnell Price/Stock"
+	1    4750 5700
+	-1   0    0    1   
+$EndComp
 $EndSCHEMATC
