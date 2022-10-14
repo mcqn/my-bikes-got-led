@@ -1,2 +1,4 @@
 (sym_lib_table
+  (lib (name "MyBikesGotLED-rescue")(type "Legacy")(uri "${KIPRJMOD}/MyBikesGotLED-rescue.lib")(options "")(descr ""))
+  (lib (name "myBikesGotLED")(type "KiCad")(uri "/home/chris/.local/share/kicad/6.0/symbols/myBikesGotLED.kicad_sym")(options "")(descr ""))
 )
