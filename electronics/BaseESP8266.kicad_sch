@@ -571,7 +571,6 @@
     )
   )
 
-
   (junction (at 144.78 57.15) (diameter 0) (color 0 0 0 0)
     (uuid 07365455-e308-4312-941d-52f971495c78)
   )
@@ -1308,7 +1307,7 @@
     (property "Value" "LED" (at 251.46 91.44 0)
       (effects (font (size 1.27 1.27)))
     )
-    (property "Footprint" "mcqn-kicad-lib:LED_SMD_WL-SMSW_side-emitting" (at 248.92 91.44 0)
+    (property "Footprint" "LED_SMD:LED_0805_2012Metric_Pad1.15x1.40mm_HandSolder" (at 248.92 91.44 0)
       (effects (font (size 1.27 1.27)) hide)
     )
     (property "Datasheet" "" (at 248.92 91.44 0)
@@ -1325,7 +1324,7 @@
     (instances
       (project "MyBikesGotLED"
         (path "/ea56fda8-6f8e-4826-a040-5c9b3e8e5cfa/00000000-0000-0000-0000-00005f8dad46"
-          (reference "D6") (unit 1) (value "LED") (footprint "mcqn-kicad-lib:LED_SMD_WL-SMSW_side-emitting")
+          (reference "D6") (unit 1) (value "LED") (footprint "LED_SMD:LED_0805_2012Metric_Pad1.15x1.40mm_HandSolder")
         )
       )
     )
@@ -1340,7 +1339,7 @@
     (property "Value" "LED" (at 240.03 91.44 0)
       (effects (font (size 1.27 1.27)))
     )
-    (property "Footprint" "mcqn-kicad-lib:LED_SMD_WL-SMSW_side-emitting" (at 237.49 91.44 0)
+    (property "Footprint" "LED_SMD:LED_0805_2012Metric_Pad1.15x1.40mm_HandSolder" (at 237.49 91.44 0)
       (effects (font (size 1.27 1.27)) hide)
     )
     (property "Datasheet" "" (at 237.49 91.44 0)
@@ -1357,7 +1356,7 @@
     (instances
       (project "MyBikesGotLED"
         (path "/ea56fda8-6f8e-4826-a040-5c9b3e8e5cfa/00000000-0000-0000-0000-00005f8dad46"
-          (reference "D5") (unit 1) (value "LED") (footprint "mcqn-kicad-lib:LED_SMD_WL-SMSW_side-emitting")
+          (reference "D5") (unit 1) (value "LED") (footprint "LED_SMD:LED_0805_2012Metric_Pad1.15x1.40mm_HandSolder")
         )
       )
     )
