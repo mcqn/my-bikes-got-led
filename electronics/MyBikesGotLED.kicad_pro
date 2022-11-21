@@ -383,6 +383,7 @@
       "pin_to_pin": "warning",
       "power_pin_not_driven": "error",
       "similar_labels": "warning",
+      "simulation_model_issue": "error",
       "unannotated": "error",
       "unit_value_mismatch": "error",
       "unresolved_variable": "error",
@@ -485,6 +486,10 @@
     [
       "00000000-0000-0000-0000-00005f8dad46",
       "BaseESP8266"
+    ],
+    [
+      "2c074201-41ae-48a2-8f73-9baa1910d072",
+      "Battery Management"
     ]
   ],
   "text_variables": {}
