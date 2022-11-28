@@ -1,4 +1,4 @@
-(kicad_sch (version 20221004) (generator eeschema)
+(kicad_sch (version 20221110) (generator eeschema)
 
   (uuid cacb85f3-d9c8-4c02-abde-6929c5b88a24)
 
@@ -1085,7 +1085,7 @@
   (symbol (lib_id "Device:R") (at 261.62 96.52 180) (unit 1)
     (in_bom yes) (on_board yes) (dnp no)
     (uuid 00000000-0000-0000-0000-00005f9fd9e1)
-    (property "Reference" "R10" (at 259.588 96.52 90)
+    (property "Reference" "R17" (at 259.588 96.52 90)
       (effects (font (size 1.27 1.27)))
     )
     (property "Value" "R10k" (at 257.81 96.52 90)
@@ -1108,7 +1108,7 @@
     (instances
       (project "MyBikesGotLED"
         (path "/ea56fda8-6f8e-4826-a040-5c9b3e8e5cfa/00000000-0000-0000-0000-00005f8dad46"
-          (reference "R10") (unit 1) (value "R10k") (footprint "Resistor_SMD:R_0603_1608Metric_Pad1.05x0.95mm_HandSolder")
+          (reference "R17") (unit 1) (value "R10k") (footprint "Resistor_SMD:R_0603_1608Metric_Pad1.05x0.95mm_HandSolder")
         )
       )
     )
@@ -1173,7 +1173,7 @@
   (symbol (lib_id "Device:C") (at 273.05 96.52 0) (unit 1)
     (in_bom yes) (on_board yes) (dnp no)
     (uuid 00000000-0000-0000-0000-00005f9fda30)
-    (property "Reference" "C2" (at 266.6492 96.52 90)
+    (property "Reference" "C9" (at 266.6492 96.52 90)
       (effects (font (size 1.27 1.27)))
     )
     (property "Value" "C47nF" (at 268.9606 96.52 90)
@@ -1196,7 +1196,7 @@
     (instances
       (project "MyBikesGotLED"
         (path "/ea56fda8-6f8e-4826-a040-5c9b3e8e5cfa/00000000-0000-0000-0000-00005f8dad46"
-          (reference "C2") (unit 1) (value "C47nF") (footprint "Capacitor_SMD:C_0603_1608Metric_Pad1.05x0.95mm_HandSolder")
+          (reference "C9") (unit 1) (value "C47nF") (footprint "Capacitor_SMD:C_0603_1608Metric_Pad1.05x0.95mm_HandSolder")
         )
       )
     )
@@ -1205,7 +1205,7 @@
   (symbol (lib_id "Device:R") (at 144.78 50.8 0) (unit 1)
     (in_bom yes) (on_board yes) (dnp no)
     (uuid 00000000-0000-0000-0000-00005f9fda36)
-    (property "Reference" "R9" (at 146.558 49.6316 0)
+    (property "Reference" "R12" (at 146.558 49.6316 0)
       (effects (font (size 1.27 1.27)) (justify left))
     )
     (property "Value" "R560" (at 146.558 51.943 0)
@@ -1228,7 +1228,7 @@
     (instances
       (project "MyBikesGotLED"
         (path "/ea56fda8-6f8e-4826-a040-5c9b3e8e5cfa/00000000-0000-0000-0000-00005f8dad46"
-          (reference "R9") (unit 1) (value "R560") (footprint "Resistor_SMD:R_0603_1608Metric_Pad1.05x0.95mm_HandSolder")
+          (reference "R12") (unit 1) (value "R560") (footprint "Resistor_SMD:R_0603_1608Metric_Pad1.05x0.95mm_HandSolder")
         )
       )
     )
@@ -1237,7 +1237,7 @@
   (symbol (lib_id "Device:R") (at 248.92 101.6 180) (unit 1)
     (in_bom yes) (on_board yes) (dnp no)
     (uuid 00000000-0000-0000-0000-00005f9fda3c)
-    (property "Reference" "R8" (at 246.888 101.6 90)
+    (property "Reference" "R16" (at 246.888 101.6 90)
       (effects (font (size 1.27 1.27)))
     )
     (property "Value" "R560" (at 245.11 101.6 90)
@@ -1260,7 +1260,7 @@
     (instances
       (project "MyBikesGotLED"
         (path "/ea56fda8-6f8e-4826-a040-5c9b3e8e5cfa/00000000-0000-0000-0000-00005f8dad46"
-          (reference "R8") (unit 1) (value "R560") (footprint "Resistor_SMD:R_0603_1608Metric_Pad1.05x0.95mm_HandSolder")
+          (reference "R16") (unit 1) (value "R560") (footprint "Resistor_SMD:R_0603_1608Metric_Pad1.05x0.95mm_HandSolder")
         )
       )
     )
@@ -1269,7 +1269,7 @@
   (symbol (lib_id "Device:R") (at 237.49 101.6 180) (unit 1)
     (in_bom yes) (on_board yes) (dnp no)
     (uuid 00000000-0000-0000-0000-00005f9fda42)
-    (property "Reference" "R7" (at 235.458 101.6 90)
+    (property "Reference" "R15" (at 235.458 101.6 90)
       (effects (font (size 1.27 1.27)))
     )
     (property "Value" "R560" (at 233.68 101.6 90)
@@ -1292,7 +1292,7 @@
     (instances
       (project "MyBikesGotLED"
         (path "/ea56fda8-6f8e-4826-a040-5c9b3e8e5cfa/00000000-0000-0000-0000-00005f8dad46"
-          (reference "R7") (unit 1) (value "R560") (footprint "Resistor_SMD:R_0603_1608Metric_Pad1.05x0.95mm_HandSolder")
+          (reference "R15") (unit 1) (value "R560") (footprint "Resistor_SMD:R_0603_1608Metric_Pad1.05x0.95mm_HandSolder")
         )
       )
     )
@@ -1301,7 +1301,7 @@
   (symbol (lib_id "Device:LED") (at 248.92 91.44 90) (unit 1)
     (in_bom yes) (on_board yes) (dnp no)
     (uuid 00000000-0000-0000-0000-00005f9fda4e)
-    (property "Reference" "D6" (at 246.38 91.44 0)
+    (property "Reference" "D2" (at 246.38 91.44 0)
       (effects (font (size 1.27 1.27)))
     )
     (property "Value" "LED" (at 251.46 91.44 0)
@@ -1324,7 +1324,7 @@
     (instances
       (project "MyBikesGotLED"
         (path "/ea56fda8-6f8e-4826-a040-5c9b3e8e5cfa/00000000-0000-0000-0000-00005f8dad46"
-          (reference "D6") (unit 1) (value "LED") (footprint "LED_SMD:LED_0805_2012Metric_Pad1.15x1.40mm_HandSolder")
+          (reference "D2") (unit 1) (value "LED") (footprint "LED_SMD:LED_0805_2012Metric_Pad1.15x1.40mm_HandSolder")
         )
       )
     )
@@ -1333,7 +1333,7 @@
   (symbol (lib_id "Device:LED") (at 237.49 91.44 90) (unit 1)
     (in_bom yes) (on_board yes) (dnp no)
     (uuid 00000000-0000-0000-0000-00005f9fda54)
-    (property "Reference" "D5" (at 234.95 91.44 0)
+    (property "Reference" "D1" (at 234.95 91.44 0)
       (effects (font (size 1.27 1.27)))
     )
     (property "Value" "LED" (at 240.03 91.44 0)
@@ -1356,7 +1356,7 @@
     (instances
       (project "MyBikesGotLED"
         (path "/ea56fda8-6f8e-4826-a040-5c9b3e8e5cfa/00000000-0000-0000-0000-00005f8dad46"
-          (reference "D5") (unit 1) (value "LED") (footprint "LED_SMD:LED_0805_2012Metric_Pad1.15x1.40mm_HandSolder")
+          (reference "D1") (unit 1) (value "LED") (footprint "LED_SMD:LED_0805_2012Metric_Pad1.15x1.40mm_HandSolder")
         )
       )
     )
@@ -1397,7 +1397,7 @@
   (symbol (lib_id "Connector_Generic:Conn_01x09") (at 43.18 82.55 180) (unit 1)
     (in_bom yes) (on_board yes) (dnp no)
     (uuid 00000000-0000-0000-0000-00005f9fda66)
-    (property "Reference" "P1" (at 45.2374 66.675 0)
+    (property "Reference" "P3" (at 45.2374 66.675 0)
       (effects (font (size 1.27 1.27)))
     )
     (property "Value" "CONN_01X09" (at 45.2374 68.9864 0)
@@ -1424,7 +1424,7 @@
     (instances
       (project "MyBikesGotLED"
         (path "/ea56fda8-6f8e-4826-a040-5c9b3e8e5cfa/00000000-0000-0000-0000-00005f8dad46"
-          (reference "P1") (unit 1) (value "CONN_01X09") (footprint "Connector_PinSocket_2.54mm:PinSocket_1x09_P2.54mm_Vertical")
+          (reference "P3") (unit 1) (value "CONN_01X09") (footprint "Connector_PinSocket_2.54mm:PinSocket_1x09_P2.54mm_Vertical")
         )
       )
     )
@@ -1433,7 +1433,7 @@
   (symbol (lib_id "Connector_Generic:Conn_01x09") (at 92.71 82.55 0) (unit 1)
     (in_bom yes) (on_board yes) (dnp no)
     (uuid 00000000-0000-0000-0000-00005f9fda6c)
-    (property "Reference" "P2" (at 94.6912 81.5086 0)
+    (property "Reference" "P4" (at 94.6912 81.5086 0)
       (effects (font (size 1.27 1.27)) (justify left))
     )
     (property "Value" "CONN_01X09" (at 94.6912 83.82 0)
@@ -1460,7 +1460,7 @@
     (instances
       (project "MyBikesGotLED"
         (path "/ea56fda8-6f8e-4826-a040-5c9b3e8e5cfa/00000000-0000-0000-0000-00005f8dad46"
-          (reference "P2") (unit 1) (value "CONN_01X09") (footprint "Connector_PinSocket_2.54mm:PinSocket_1x09_P2.54mm_Vertical")
+          (reference "P4") (unit 1) (value "CONN_01X09") (footprint "Connector_PinSocket_2.54mm:PinSocket_1x09_P2.54mm_Vertical")
         )
       )
     )
@@ -1469,7 +1469,7 @@
   (symbol (lib_id "Device:R") (at 215.9 101.6 180) (unit 1)
     (in_bom yes) (on_board yes) (dnp no)
     (uuid 00000000-0000-0000-0000-00005f9fda72)
-    (property "Reference" "R1" (at 213.36 101.6 90)
+    (property "Reference" "R13" (at 213.36 101.6 90)
       (effects (font (size 1.27 1.27)))
     )
     (property "Value" "R10k" (at 212.09 101.6 90)
@@ -1492,7 +1492,7 @@
     (instances
       (project "MyBikesGotLED"
         (path "/ea56fda8-6f8e-4826-a040-5c9b3e8e5cfa/00000000-0000-0000-0000-00005f8dad46"
-          (reference "R1") (unit 1) (value "R10k") (footprint "Resistor_SMD:R_0603_1608Metric_Pad1.05x0.95mm_HandSolder")
+          (reference "R13") (unit 1) (value "R10k") (footprint "Resistor_SMD:R_0603_1608Metric_Pad1.05x0.95mm_HandSolder")
         )
       )
     )
@@ -1576,7 +1576,7 @@
   (symbol (lib_id "Device:R") (at 217.17 63.5 0) (unit 1)
     (in_bom yes) (on_board yes) (dnp no)
     (uuid 00000000-0000-0000-0000-00005f9fda90)
-    (property "Reference" "R2" (at 218.948 62.3316 0)
+    (property "Reference" "R14" (at 218.948 62.3316 0)
       (effects (font (size 1.27 1.27)) (justify left))
     )
     (property "Value" "R10k" (at 218.948 64.643 0)
@@ -1599,7 +1599,7 @@
     (instances
       (project "MyBikesGotLED"
         (path "/ea56fda8-6f8e-4826-a040-5c9b3e8e5cfa/00000000-0000-0000-0000-00005f8dad46"
-          (reference "R2") (unit 1) (value "R10k") (footprint "Resistor_SMD:R_0603_1608Metric_Pad1.05x0.95mm_HandSolder")
+          (reference "R14") (unit 1) (value "R10k") (footprint "Resistor_SMD:R_0603_1608Metric_Pad1.05x0.95mm_HandSolder")
         )
       )
     )
@@ -1608,7 +1608,7 @@
   (symbol (lib_id "RF_Module:ESP-WROOM-02") (at 171.45 81.28 0) (unit 1)
     (in_bom yes) (on_board yes) (dnp no)
     (uuid 00000000-0000-0000-0000-00005f9fda97)
-    (property "Reference" "U1" (at 170.815 61.849 0)
+    (property "Reference" "U4" (at 170.815 61.849 0)
       (effects (font (size 1.27 1.27)))
     )
     (property "Value" "ESP-13-WROOM-02" (at 170.815 64.1604 0)
@@ -1645,7 +1645,7 @@
     (instances
       (project "MyBikesGotLED"
         (path "/ea56fda8-6f8e-4826-a040-5c9b3e8e5cfa/00000000-0000-0000-0000-00005f8dad46"
-          (reference "U1") (unit 1) (value "ESP-13-WROOM-02") (footprint "RF_Module:ESP-WROOM-02")
+          (reference "U4") (unit 1) (value "ESP-13-WROOM-02") (footprint "RF_Module:ESP-WROOM-02")
         )
       )
     )
