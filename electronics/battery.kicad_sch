@@ -3673,7 +3673,7 @@
           (reference "#PWR0115") (unit 1) (value "GND") (footprint "")
         )
         (path "/ea56fda8-6f8e-4826-a040-5c9b3e8e5cfa/2c074201-41ae-48a2-8f73-9baa1910d072"
-          (reference "#PWR0115") (unit 1) (value "GND") (footprint "")
+          (reference "#PWR0107") (unit 1) (value "GND") (footprint "")
         )
       )
     )
