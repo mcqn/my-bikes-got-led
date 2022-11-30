@@ -2598,34 +2598,6 @@
     )
   )
 
-  (symbol (lib_id "power:GND") (at 57.15 123.19 0) (unit 1)
-    (in_bom yes) (on_board yes) (dnp no)
-    (uuid 017a475e-d40b-43fc-b5b6-f1e36d5e86e0)
-    (property "Reference" "#PWR0109" (at 57.15 129.54 0)
-      (effects (font (size 1.27 1.27)) hide)
-    )
-    (property "Value" "GND" (at 57.277 127.5842 0)
-      (effects (font (size 1.27 1.27)))
-    )
-    (property "Footprint" "" (at 57.15 123.19 0)
-      (effects (font (size 1.27 1.27)) hide)
-    )
-    (property "Datasheet" "" (at 57.15 123.19 0)
-      (effects (font (size 1.27 1.27)) hide)
-    )
-    (pin "1" (uuid 4991c981-7dc5-4440-8a88-7418c12247ab))
-    (instances
-      (project "MyBikesGotLED"
-        (path "/ea56fda8-6f8e-4826-a040-5c9b3e8e5cfa"
-          (reference "#PWR0109") (unit 1) (value "GND") (footprint "")
-        )
-        (path "/ea56fda8-6f8e-4826-a040-5c9b3e8e5cfa/2c074201-41ae-48a2-8f73-9baa1910d072"
-          (reference "#PWR0109") (unit 1) (value "GND") (footprint "")
-        )
-      )
-    )
-  )
-
   (symbol (lib_id "power:+BATT") (at 261.62 66.04 270) (unit 1)
     (in_bom yes) (on_board yes) (dnp no)
     (uuid 01da6da3-89fa-4250-8080-6ac2949ab58c)
@@ -2928,34 +2900,6 @@
     )
   )
 
-  (symbol (lib_id "power:GND") (at 64.77 123.19 0) (unit 1)
-    (in_bom yes) (on_board yes) (dnp no)
-    (uuid 3db82852-bd45-4f74-9cae-0055c67db849)
-    (property "Reference" "#PWR0115" (at 64.77 129.54 0)
-      (effects (font (size 1.27 1.27)) hide)
-    )
-    (property "Value" "GND" (at 64.897 127.5842 0)
-      (effects (font (size 1.27 1.27)))
-    )
-    (property "Footprint" "" (at 64.77 123.19 0)
-      (effects (font (size 1.27 1.27)) hide)
-    )
-    (property "Datasheet" "" (at 64.77 123.19 0)
-      (effects (font (size 1.27 1.27)) hide)
-    )
-    (pin "1" (uuid 2138bb44-5932-474c-8ef3-751d9f7d6f03))
-    (instances
-      (project "MyBikesGotLED"
-        (path "/ea56fda8-6f8e-4826-a040-5c9b3e8e5cfa"
-          (reference "#PWR0115") (unit 1) (value "GND") (footprint "")
-        )
-        (path "/ea56fda8-6f8e-4826-a040-5c9b3e8e5cfa/2c074201-41ae-48a2-8f73-9baa1910d072"
-          (reference "#PWR0115") (unit 1) (value "GND") (footprint "")
-        )
-      )
-    )
-  )
-
   (symbol (lib_id "Device:D_Zener") (at 261.62 72.39 270) (unit 1)
     (in_bom yes) (on_board yes) (dnp no) (fields_autoplaced)
     (uuid 415d3259-3f47-4360-ac4b-eb274914b06a)
@@ -3090,13 +3034,41 @@
     )
   )
 
-  (symbol (lib_id "power:GND") (at 30.48 181.61 0) (unit 1)
+  (symbol (lib_id "power:-BATT") (at 57.15 123.19 180) (unit 1)
     (in_bom yes) (on_board yes) (dnp no)
-    (uuid 5638252c-7f03-4184-8641-05c2691fdbb4)
-    (property "Reference" "#PWR0108" (at 30.48 187.96 0)
+    (uuid 587e8fbc-6719-4e2d-9a30-159084018b8b)
+    (property "Reference" "#PWR0107a01" (at 57.15 119.38 0)
       (effects (font (size 1.27 1.27)) hide)
     )
-    (property "Value" "GND" (at 30.607 186.0042 0)
+    (property "Value" "-BATT" (at 56.769 127.5842 0)
+      (effects (font (size 1.27 1.27)))
+    )
+    (property "Footprint" "" (at 57.15 123.19 0)
+      (effects (font (size 1.27 1.27)) hide)
+    )
+    (property "Datasheet" "" (at 57.15 123.19 0)
+      (effects (font (size 1.27 1.27)) hide)
+    )
+    (pin "1" (uuid 8cd01c4e-2476-42d6-907f-32e945592692))
+    (instances
+      (project "MyBikesGotLED"
+        (path "/ea56fda8-6f8e-4826-a040-5c9b3e8e5cfa"
+          (reference "#PWR0107a01") (unit 1) (value "-BATT") (footprint "")
+        )
+        (path "/ea56fda8-6f8e-4826-a040-5c9b3e8e5cfa/2c074201-41ae-48a2-8f73-9baa1910d072"
+          (reference "#PWR0107a01") (unit 1) (value "-BATT") (footprint "")
+        )
+      )
+    )
+  )
+
+  (symbol (lib_id "power:-BATT") (at 30.48 181.61 180) (unit 1)
+    (in_bom yes) (on_board yes) (dnp no)
+    (uuid 5d68f3a4-d0e9-4391-a137-d2b5706c874b)
+    (property "Reference" "#PWR0107a01" (at 30.48 177.8 0)
+      (effects (font (size 1.27 1.27)) hide)
+    )
+    (property "Value" "-BATT" (at 30.099 186.0042 0)
       (effects (font (size 1.27 1.27)))
     )
     (property "Footprint" "" (at 30.48 181.61 0)
@@ -3105,14 +3077,14 @@
     (property "Datasheet" "" (at 30.48 181.61 0)
       (effects (font (size 1.27 1.27)) hide)
     )
-    (pin "1" (uuid 43518fec-aa8b-49ac-a442-4893beac206b))
+    (pin "1" (uuid 5569648b-a833-4965-994f-3bdd51f5444c))
     (instances
       (project "MyBikesGotLED"
         (path "/ea56fda8-6f8e-4826-a040-5c9b3e8e5cfa"
-          (reference "#PWR0108") (unit 1) (value "GND") (footprint "")
+          (reference "#PWR0107a01") (unit 1) (value "-BATT") (footprint "")
         )
         (path "/ea56fda8-6f8e-4826-a040-5c9b3e8e5cfa/2c074201-41ae-48a2-8f73-9baa1910d072"
-          (reference "#PWR0108") (unit 1) (value "GND") (footprint "")
+          (reference "#PWR0107a01") (unit 1) (value "-BATT") (footprint "")
         )
       )
     )
@@ -3376,6 +3348,34 @@
         )
         (path "/ea56fda8-6f8e-4826-a040-5c9b3e8e5cfa/2c074201-41ae-48a2-8f73-9baa1910d072"
           (reference "D7") (unit 1) (value "D_Schottky") (footprint "Diode_SMD:D_SMF")
+        )
+      )
+    )
+  )
+
+  (symbol (lib_id "power:-BATT") (at 64.77 123.19 180) (unit 1)
+    (in_bom yes) (on_board yes) (dnp no)
+    (uuid 78baef78-22c6-46f0-b67f-f449eefe4b88)
+    (property "Reference" "#PWR0107a01" (at 64.77 119.38 0)
+      (effects (font (size 1.27 1.27)) hide)
+    )
+    (property "Value" "-BATT" (at 64.389 127.5842 0)
+      (effects (font (size 1.27 1.27)))
+    )
+    (property "Footprint" "" (at 64.77 123.19 0)
+      (effects (font (size 1.27 1.27)) hide)
+    )
+    (property "Datasheet" "" (at 64.77 123.19 0)
+      (effects (font (size 1.27 1.27)) hide)
+    )
+    (pin "1" (uuid db137383-592e-45d4-ae82-626e39a196cb))
+    (instances
+      (project "MyBikesGotLED"
+        (path "/ea56fda8-6f8e-4826-a040-5c9b3e8e5cfa"
+          (reference "#PWR0107a01") (unit 1) (value "-BATT") (footprint "")
+        )
+        (path "/ea56fda8-6f8e-4826-a040-5c9b3e8e5cfa/2c074201-41ae-48a2-8f73-9baa1910d072"
+          (reference "#PWR0107a01") (unit 1) (value "-BATT") (footprint "")
         )
       )
     )

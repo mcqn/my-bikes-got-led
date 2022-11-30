@@ -1179,7 +1179,7 @@
     (property "Value" "C47nF" (at 268.9606 96.52 90)
       (effects (font (size 1.27 1.27)))
     )
-    (property "Footprint" "Capacitor_SMD:C_0603_1608Metric_Pad1.05x0.95mm_HandSolder" (at 274.0152 100.33 0)
+    (property "Footprint" "Capacitor_SMD:C_0603_1608Metric_Pad1.08x0.95mm_HandSolder" (at 274.0152 100.33 0)
       (effects (font (size 1.27 1.27)) hide)
     )
     (property "Datasheet" "" (at 273.05 96.52 0)
@@ -1196,7 +1196,7 @@
     (instances
       (project "MyBikesGotLED"
         (path "/ea56fda8-6f8e-4826-a040-5c9b3e8e5cfa/00000000-0000-0000-0000-00005f8dad46"
-          (reference "C9") (unit 1) (value "C47nF") (footprint "Capacitor_SMD:C_0603_1608Metric_Pad1.05x0.95mm_HandSolder")
+          (reference "C9") (unit 1) (value "C47nF") (footprint "Capacitor_SMD:C_0603_1608Metric_Pad1.08x0.95mm_HandSolder")
         )
       )
     )
