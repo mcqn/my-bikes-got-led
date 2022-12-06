@@ -1091,7 +1091,7 @@
     (property "Value" "R10k" (at 257.81 96.52 90)
       (effects (font (size 1.27 1.27)))
     )
-    (property "Footprint" "Resistor_SMD:R_0603_1608Metric_Pad1.05x0.95mm_HandSolder" (at 263.398 96.52 90)
+    (property "Footprint" "Resistor_SMD:R_0603_1608Metric_Pad0.98x0.95mm_HandSolder" (at 263.398 96.52 90)
       (effects (font (size 1.27 1.27)) hide)
     )
     (property "Datasheet" "" (at 261.62 96.52 0)
@@ -1108,7 +1108,7 @@
     (instances
       (project "MyBikesGotLED"
         (path "/ea56fda8-6f8e-4826-a040-5c9b3e8e5cfa/00000000-0000-0000-0000-00005f8dad46"
-          (reference "R17") (unit 1) (value "R10k") (footprint "Resistor_SMD:R_0603_1608Metric_Pad1.05x0.95mm_HandSolder")
+          (reference "R17") (unit 1) (value "R10k") (footprint "Resistor_SMD:R_0603_1608Metric_Pad0.98x0.95mm_HandSolder")
         )
       )
     )
@@ -1211,7 +1211,7 @@
     (property "Value" "R560" (at 146.558 51.943 0)
       (effects (font (size 1.27 1.27)) (justify left))
     )
-    (property "Footprint" "Resistor_SMD:R_0603_1608Metric_Pad1.05x0.95mm_HandSolder" (at 143.002 50.8 90)
+    (property "Footprint" "Resistor_SMD:R_0603_1608Metric_Pad0.98x0.95mm_HandSolder" (at 143.002 50.8 90)
       (effects (font (size 1.27 1.27)) hide)
     )
     (property "Datasheet" "" (at 144.78 50.8 0)
@@ -1228,7 +1228,7 @@
     (instances
       (project "MyBikesGotLED"
         (path "/ea56fda8-6f8e-4826-a040-5c9b3e8e5cfa/00000000-0000-0000-0000-00005f8dad46"
-          (reference "R12") (unit 1) (value "R560") (footprint "Resistor_SMD:R_0603_1608Metric_Pad1.05x0.95mm_HandSolder")
+          (reference "R12") (unit 1) (value "R560") (footprint "Resistor_SMD:R_0603_1608Metric_Pad0.98x0.95mm_HandSolder")
         )
       )
     )
@@ -1243,7 +1243,7 @@
     (property "Value" "R560" (at 245.11 101.6 90)
       (effects (font (size 1.27 1.27)))
     )
-    (property "Footprint" "Resistor_SMD:R_0603_1608Metric_Pad1.05x0.95mm_HandSolder" (at 250.698 101.6 90)
+    (property "Footprint" "Resistor_SMD:R_0603_1608Metric_Pad0.98x0.95mm_HandSolder" (at 250.698 101.6 90)
       (effects (font (size 1.27 1.27)) hide)
     )
     (property "Datasheet" "" (at 248.92 101.6 0)
@@ -1260,7 +1260,7 @@
     (instances
       (project "MyBikesGotLED"
         (path "/ea56fda8-6f8e-4826-a040-5c9b3e8e5cfa/00000000-0000-0000-0000-00005f8dad46"
-          (reference "R16") (unit 1) (value "R560") (footprint "Resistor_SMD:R_0603_1608Metric_Pad1.05x0.95mm_HandSolder")
+          (reference "R16") (unit 1) (value "R560") (footprint "Resistor_SMD:R_0603_1608Metric_Pad0.98x0.95mm_HandSolder")
         )
       )
     )
@@ -1275,7 +1275,7 @@
     (property "Value" "R560" (at 233.68 101.6 90)
       (effects (font (size 1.27 1.27)))
     )
-    (property "Footprint" "Resistor_SMD:R_0603_1608Metric_Pad1.05x0.95mm_HandSolder" (at 239.268 101.6 90)
+    (property "Footprint" "Resistor_SMD:R_0603_1608Metric_Pad0.98x0.95mm_HandSolder" (at 239.268 101.6 90)
       (effects (font (size 1.27 1.27)) hide)
     )
     (property "Datasheet" "" (at 237.49 101.6 0)
@@ -1292,7 +1292,7 @@
     (instances
       (project "MyBikesGotLED"
         (path "/ea56fda8-6f8e-4826-a040-5c9b3e8e5cfa/00000000-0000-0000-0000-00005f8dad46"
-          (reference "R15") (unit 1) (value "R560") (footprint "Resistor_SMD:R_0603_1608Metric_Pad1.05x0.95mm_HandSolder")
+          (reference "R15") (unit 1) (value "R560") (footprint "Resistor_SMD:R_0603_1608Metric_Pad0.98x0.95mm_HandSolder")
         )
       )
     )
@@ -1475,7 +1475,7 @@
     (property "Value" "R10k" (at 212.09 101.6 90)
       (effects (font (size 1.27 1.27)))
     )
-    (property "Footprint" "Resistor_SMD:R_0603_1608Metric_Pad1.05x0.95mm_HandSolder" (at 217.678 101.6 90)
+    (property "Footprint" "Resistor_SMD:R_0603_1608Metric_Pad0.98x0.95mm_HandSolder" (at 217.678 101.6 90)
       (effects (font (size 1.27 1.27)))
     )
     (property "Datasheet" "" (at 215.9 101.6 0)
@@ -1492,7 +1492,7 @@
     (instances
       (project "MyBikesGotLED"
         (path "/ea56fda8-6f8e-4826-a040-5c9b3e8e5cfa/00000000-0000-0000-0000-00005f8dad46"
-          (reference "R13") (unit 1) (value "R10k") (footprint "Resistor_SMD:R_0603_1608Metric_Pad1.05x0.95mm_HandSolder")
+          (reference "R13") (unit 1) (value "R10k") (footprint "Resistor_SMD:R_0603_1608Metric_Pad0.98x0.95mm_HandSolder")
         )
       )
     )
@@ -1582,7 +1582,7 @@
     (property "Value" "R10k" (at 218.948 64.643 0)
       (effects (font (size 1.27 1.27)) (justify left))
     )
-    (property "Footprint" "Resistor_SMD:R_0603_1608Metric_Pad1.05x0.95mm_HandSolder" (at 215.392 63.5 90)
+    (property "Footprint" "Resistor_SMD:R_0603_1608Metric_Pad0.98x0.95mm_HandSolder" (at 215.392 63.5 90)
       (effects (font (size 1.27 1.27)))
     )
     (property "Datasheet" "" (at 217.17 63.5 0)
@@ -1599,7 +1599,7 @@
     (instances
       (project "MyBikesGotLED"
         (path "/ea56fda8-6f8e-4826-a040-5c9b3e8e5cfa/00000000-0000-0000-0000-00005f8dad46"
-          (reference "R14") (unit 1) (value "R10k") (footprint "Resistor_SMD:R_0603_1608Metric_Pad1.05x0.95mm_HandSolder")
+          (reference "R14") (unit 1) (value "R10k") (footprint "Resistor_SMD:R_0603_1608Metric_Pad0.98x0.95mm_HandSolder")
         )
       )
     )
