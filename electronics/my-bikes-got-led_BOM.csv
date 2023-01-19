@@ -1,0 +1,72 @@
+References	Qty	Description	Farnell	Farnell Price/Stock	LCSC	LCSC Price/Stock	Manuf#	description
+5V_T1, Clk_T1, Data_T1	3	DNP						
+BT1	1		9492615	https://uk.farnell.com/jst-japan-solderless-terminals/s2b-ph-sm4-tb-lf-sn/connector-header-smt-r-a-2mm-2way/dp/9492615				
+C1, C4	2				C342632	https://www.lcsc.com/product-detail/Multilayer-Ceramic-Capacitors-MLCC-SMD-SMT_TDK-C4532X7R1C226MT000N_C342632.html		
+C3	1				C28504	https://www.lcsc.com/product-detail/Multilayer-Ceramic-Capacitors-MLCC-SMD-SMT_FH_1812X226K250NT_22uF-226-10-25V_C28504.html		
+C5	1				C342632	https://www.lcsc.com/product-detail/Multilayer-Ceramic-Capacitors-MLCC-SMD-SMT_TDK-C4532X7R1C226MT000N_C342632.html		
+C6, C8	2				C28504	https://www.lcsc.com/product-detail/Multilayer-Ceramic-Capacitors-MLCC-SMD-SMT_FH_1812X226K250NT_22uF-226-10-25V_C28504.html		
+C7	1		1759038RL	https://uk.farnell.com/multicomp/mc0603f104z250ct/cap-0-1-f-25v-y5v-0603/dp/1759038RL				
+C9	1		1759031	https://uk.farnell.com/multicomp/mc0603b473k250ct/cap-0-047-f-25v-10-x7r-0603/dp/1759031				
+C10	1		3013512	https://uk.farnell.com/samsung-electro-mechanics/cl31a106kbhnnne/cap-10uf-50v-mlcc-1206/dp/3013512				
+C11, C14	2		2211179	https://uk.farnell.com/tdk/c1608x5r1h105k080ab/cap-1-f-50v-10-x5r-0603/dp/2211179				
+C12	1		2346906	https://uk.farnell.com/tdk/c1608x7r1h224k080ab/cap-0-22-f-50v-10-x7r-0603/dp/2346906				
+C13, C16	2		1759122	https://uk.farnell.com/multicomp/mc0603b104k500ct/cap-0-1-f-50v-10-x7r-0603/dp/1759122				
+C15	1		3013512	https://uk.farnell.com/samsung-electro-mechanics/cl31a106kbhnnne/cap-10uf-50v-mlcc-1206/dp/3013512				
+D1, D2	2		2322102	https://uk.farnell.com/wurth-elektronik/155124vs73200/led-1204-b-green-50mcd-573nm/dp/2322102				
+D3	1		3796308	https://uk.farnell.com/multicomp-pro/mp008279/led-green-70mcd-576nm-0805/dp/3796308				
+D4	1		3796325	https://uk.farnell.com/multicomp-pro/mp008293/led-red-220mcd-626nm-0805/dp/3796325				
+D5, D6, D7	3		3014176	https://uk.farnell.com/vishay/v3fl45hm3-h/schottky-rect-single-3a-45v-do/dp/3014176				
+D8	1		2844819	https://uk.farnell.com/on-semiconductor/mm3z4v3st1g/zener-diode-4-3v-0-2w-sod-323/dp/2844819				
+F1, F2	2		1861167RL	https://uk.farnell.com/multicomp/mc36225/fuse-ptc-reset-smd-24v-1-1a/dp/1861167RL				
+J1	1		3367461	https://uk.farnell.com/amphenol-fci/12401610e4-2a/usb-conn-3-1-type-c-rcpt-smd/dp/3367461				
+J2	1		3810182	https://uk.farnell.com/amphenol-anytek/oq0412510000g/terminal-block-r-a-header-4way/dp/3810182				
+J3	1		1593412	https://uk.farnell.com/multicomp/2211s-03g/header-1-row-vert-3way/dp/1593412				
+J4	1	DNP						
+J5, J6	2	DNP						dnp
+J7	1	DNP						
+J8	1	DNP						
+JP1	1	DNP						
+JP2	1	DNP						
+JP3	1	DNP						
+JP4	1	DNP						
+JP5	1	DNP						
+JP6	1	DNP						
+L1	1				C27442	https://www.lcsc.com/product-detail/Power-Inductors_ReliaPro_SMRH74-220MT_22uH_C27442.html		
+L2	1		2374058	https://uk.farnell.com/bourns/srf1260a-1r5y/inductor-dual-1-5uh-18-3a-pwr/dp/2374058				
+L3	1		3380989	https://uk.farnell.com/wurth-elektronik/7447706101/inductor-aec-q200-100uh-shld-1/dp/3380989				
+P1, P2	2	DNP						
+P3, P4	2	DNP						
+Q1, Q4	2		2769528	https://uk.farnell.com/rohm/rrr040p03fratl/mosfet-aec-q101-p-ch-30v-tsmt/dp/2769528				
+Q2	1				C32254	https://www.lcsc.com/product-detail/MOSFET_FORTUNE_FS8205_FS8205_C32254.html		
+Q3	1				C916403	https://www.lcsc.com/product-detail/MOSFETs_JSMSEMI-JSM2302_C916403.html		
+R1	1		3994449	https://uk.farnell.com/walsin/mr06x105-jtlv/res-1m-5-0-125w-0603-thick-film/dp/3994449				
+R2, R3	2		2447404	https://uk.farnell.com/multicomp/mcwr06x5101ftl/res-5k1-1-0-1w-0603-thick-film/dp/2447404				
+R4, R26	2		2331740	https://uk.farnell.com/te-connectivity/crgh0603j10k/res-10k-5-0-2w-0603-thick-film/dp/2331740				
+R5, R6	2		2502462	https://uk.farnell.com/walsin/wr06x4700ftl/res-470r-1-75v-0603-thick-film/dp/2502462				
+R7	1		2073501	https://uk.farnell.com/multicomp/mcmr06x4302ftl/res-43k-1-0-1w-0603-ceramic/dp/2073501				
+R8	1		3950855	https://uk.farnell.com/yageo/rc0603fr-0773k2l/res-73k2-1-0-1w-thick-film-0603/dp/3950855				
+R9	1		2331740	https://uk.farnell.com/te-connectivity/crgh0603j10k/res-10k-5-0-2w-0603-thick-film/dp/2331740				
+R10	1		2447449	https://uk.farnell.com/multicomp/mcwr06x9102ftl/res-91k-1-0-1w-thick-film/dp/2447449				
+R11	1		2447293	https://uk.farnell.com/multicomp/mcwr06x2002ftl/res-20k-1-0-1w-thick-film/dp/2447293				
+R12, R15, R16	3		2502470	https://uk.farnell.com/walsin/wr06x5600ftl/res-560r-1-75v-0603-thick-film/dp/2502470				
+R13, R17	2		2331740	https://uk.farnell.com/te-connectivity/crgh0603j10k/res-10k-5-0-2w-0603-thick-film/dp/2331740				
+R14	1		2331740	https://uk.farnell.com/te-connectivity/crgh0603j10k/res-10k-5-0-2w-0603-thick-film/dp/2331740				
+R18	1		2502470	https://uk.farnell.com/walsin/wr06x5600ftl/res-560r-1-75v-0603-thick-film/dp/2502470				
+R19	1		2447240	https://uk.farnell.com/multicomp/mcwr06x1200ftl/res-120r-1-0-1w-thick-film/dp/2447240				
+R20	1		2447338	https://uk.farnell.com/multicomp/mcwr06x3303ftl/res-330k-1-0-1w-thick-film/dp/2447338				
+R21	1		2447339	https://uk.farnell.com/multicomp/mcwr06x3300ftl/res-330r-1-0-1w-0603-thick-film/dp/2447339				
+R22	1		2447319	https://uk.farnell.com/multicomp/mcwr06x2001ftl/res-2k-1-0-1w-0603-thick-film/dp/2447319				
+R23	1		2483502	https://uk.farnell.com/te-connectivity/tlm2aer068jte/current-sense-res-0r068-5-250/dp/2483502				
+R24	1		2694684	https://uk.farnell.com/multicomp/mcwr06x101-jtl/res-100r-5-0-1w-0603-thick-film/dp/2694684				
+R25, R29	2		2073355	https://uk.farnell.com/multicomp/mcmr06x1023ftl/res-102k-1-0-1w-0603-ceramic/dp/2073355				
+R27	1		2331740	https://uk.farnell.com/te-connectivity/crgh0603j10k/res-10k-5-0-2w-0603-thick-film/dp/2331740				
+R28	1		2694684	https://uk.farnell.com/multicomp/mcwr06x101-jtl/res-100r-5-0-1w-0603-thick-film/dp/2694684				
+SW1	1		2435308	http://uk.farnell.com/c-k-components/ksek43g-lfs/tactile-switch-spst-0-05a-32vdc/dp/2435308				
+SW2	1		1201431	https://uk.farnell.com/c-k-components/os102011ma1qn1/switch-spdt-0-1a-12v-pcb-r-a/dp/1201431				
+T1, T2	2	DNP						
+U1	1				C82652	https://www.lcsc.com/product-detail/DC-DC-Converters_Advanced-Analog-Technology-FP6276BXR-G1_C82652.html		
+U2	1		3006129	https://uk.farnell.com/texas-instruments/sn74ahct125d/ic-buffer-gate-quad-3state-smd/dp/3006129				
+U3	1		2729771	https://uk.farnell.com/richtek/rt8097bhgb/dc-dc-conv-sync-buck-1mhz-sot/dp/2729771				
+U4	1	ESP-WROOM-02 free issue					ESP-WROOM-02	
+U5	1				C154992	https://www.lcsc.com/product-detail/Battery-Management-ICs_ShangHai-Consonance-Elec-CN3791_C154992.html		
+U6	1				C82736	https://www.lcsc.com/product-detail/Battery-Protection-ICs_FORTUNE_FS312F-G_FS312F-G_C82736.html		
