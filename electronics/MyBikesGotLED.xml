@@ -1,0 +1,2676 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<export version="E">
+  <design>
+    <source>/home/chris/my-bikes-got-led/electronics/MyBikesGotLED.kicad_sch</source>
+    <date>Thu 19 Jan 2023 14:31:04 GMT</date>
+    <tool>Eeschema 6.99.0-unknown-70a038877e~161~ubuntu22.04.1</tool>
+    <sheet number="1" name="/" tstamps="/">
+      <title_block>
+        <title/>
+        <company/>
+        <rev/>
+        <date/>
+        <source>MyBikesGotLED.kicad_sch</source>
+        <comment number="1" value=""/>
+        <comment number="2" value=""/>
+        <comment number="3" value=""/>
+        <comment number="4" value=""/>
+        <comment number="5" value=""/>
+        <comment number="6" value=""/>
+        <comment number="7" value=""/>
+        <comment number="8" value=""/>
+        <comment number="9" value=""/>
+      </title_block>
+    </sheet>
+    <sheet number="2" name="/BaseESP8266/" tstamps="/00000000-0000-0000-0000-00005f8dad46/">
+      <title_block>
+        <title/>
+        <company/>
+        <rev/>
+        <date/>
+        <source>BaseESP8266.kicad_sch</source>
+        <comment number="1" value=""/>
+        <comment number="2" value=""/>
+        <comment number="3" value=""/>
+        <comment number="4" value=""/>
+        <comment number="5" value=""/>
+        <comment number="6" value=""/>
+        <comment number="7" value=""/>
+        <comment number="8" value=""/>
+        <comment number="9" value=""/>
+      </title_block>
+    </sheet>
+    <sheet number="3" name="/Battery Management/" tstamps="/2c074201-41ae-48a2-8f73-9baa1910d072/">
+      <title_block>
+        <title/>
+        <company/>
+        <rev/>
+        <date/>
+        <source>battery.kicad_sch</source>
+        <comment number="1" value=""/>
+        <comment number="2" value=""/>
+        <comment number="3" value=""/>
+        <comment number="4" value=""/>
+        <comment number="5" value=""/>
+        <comment number="6" value=""/>
+        <comment number="7" value=""/>
+        <comment number="8" value=""/>
+        <comment number="9" value=""/>
+      </title_block>
+    </sheet>
+  </design>
+  <components>
+    <comp ref="5V_T1">
+      <value>Conn_01x01</value>
+      <footprint>TestPoint:TestPoint_Pad_D2.0mm</footprint>
+      <fields>
+        <field name="Description">DNP</field>
+      </fields>
+      <libsource lib="Connector_Generic" part="Conn_01x01" description="Generic connector, single row, 01x01, script generated (kicad-library-utils/schlib/autogen/connector/)"/>
+      <property name="Description" value="DNP"/>
+      <property name="Sheetname" value=""/>
+      <property name="Sheetfile" value="MyBikesGotLED.kicad_sch"/>
+      <property name="ki_description" value="Generic connector, single row, 01x01, script generated (kicad-library-utils/schlib/autogen/connector/)"/>
+      <property name="ki_keywords" value="connector"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>00000000-0000-0000-0000-00006042f12b</tstamps>
+    </comp>
+    <comp ref="C1">
+      <value>22uF</value>
+      <footprint>Capacitor_SMD:C_1812_4532Metric_Pad1.57x3.40mm_HandSolder</footprint>
+      <fields>
+        <field name="LCSC">C342632</field>
+        <field name="LCSC Price/Stock">https://www.lcsc.com/product-detail/Multilayer-Ceramic-Capacitors-MLCC-SMD-SMT_TDK-C4532X7R1C226MT000N_C342632.html</field>
+      </fields>
+      <libsource lib="Device" part="C_Small" description="Unpolarized capacitor, small symbol"/>
+      <property name="LCSC" value="C342632"/>
+      <property name="LCSC Price/Stock" value="https://www.lcsc.com/product-detail/Multilayer-Ceramic-Capacitors-MLCC-SMD-SMT_TDK-C4532X7R1C226MT000N_C342632.html"/>
+      <property name="Sheetname" value=""/>
+      <property name="Sheetfile" value="MyBikesGotLED.kicad_sch"/>
+      <property name="ki_description" value="Unpolarized capacitor, small symbol"/>
+      <property name="ki_keywords" value="capacitor cap"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>00000000-0000-0000-0000-0000613d121f</tstamps>
+    </comp>
+    <comp ref="C3">
+      <value>1nF</value>
+      <footprint>Capacitor_SMD:C_0603_1608Metric_Pad1.08x0.95mm_HandSolder</footprint>
+      <fields>
+        <field name="LCSC">C28504</field>
+        <field name="LCSC Price/Stock">https://www.lcsc.com/product-detail/Multilayer-Ceramic-Capacitors-MLCC-SMD-SMT_FH_1812X226K250NT_22uF-226-10-25V_C28504.html</field>
+      </fields>
+      <libsource lib="Device" part="C_Small" description="Unpolarized capacitor, small symbol"/>
+      <property name="LCSC" value="C28504"/>
+      <property name="LCSC Price/Stock" value="https://www.lcsc.com/product-detail/Multilayer-Ceramic-Capacitors-MLCC-SMD-SMT_FH_1812X226K250NT_22uF-226-10-25V_C28504.html"/>
+      <property name="Sheetname" value=""/>
+      <property name="Sheetfile" value="MyBikesGotLED.kicad_sch"/>
+      <property name="ki_description" value="Unpolarized capacitor, small symbol"/>
+      <property name="ki_keywords" value="capacitor cap"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>00000000-0000-0000-0000-0000613d1dd5</tstamps>
+    </comp>
+    <comp ref="C4">
+      <value>22uF</value>
+      <footprint>Capacitor_SMD:C_1812_4532Metric_Pad1.57x3.40mm_HandSolder</footprint>
+      <fields>
+        <field name="LCSC">C342632</field>
+        <field name="LCSC Price/Stock">https://www.lcsc.com/product-detail/Multilayer-Ceramic-Capacitors-MLCC-SMD-SMT_TDK-C4532X7R1C226MT000N_C342632.html</field>
+      </fields>
+      <libsource lib="Device" part="C_Small" description="Unpolarized capacitor, small symbol"/>
+      <property name="LCSC" value="C342632"/>
+      <property name="LCSC Price/Stock" value="https://www.lcsc.com/product-detail/Multilayer-Ceramic-Capacitors-MLCC-SMD-SMT_TDK-C4532X7R1C226MT000N_C342632.html"/>
+      <property name="Sheetname" value=""/>
+      <property name="Sheetfile" value="MyBikesGotLED.kicad_sch"/>
+      <property name="ki_description" value="Unpolarized capacitor, small symbol"/>
+      <property name="ki_keywords" value="capacitor cap"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>b50e477b-f0b3-49a7-84dd-2663e56d0d6d</tstamps>
+    </comp>
+    <comp ref="C5">
+      <value>100uF</value>
+      <footprint>Capacitor_SMD:C_0603_1608Metric_Pad1.08x0.95mm_HandSolder</footprint>
+      <fields>
+        <field name="LCSC">C342632</field>
+        <field name="LCSC Price/Stock">https://www.lcsc.com/product-detail/Multilayer-Ceramic-Capacitors-MLCC-SMD-SMT_TDK-C4532X7R1C226MT000N_C342632.html</field>
+      </fields>
+      <libsource lib="Device" part="C_Small" description="Unpolarized capacitor, small symbol"/>
+      <property name="LCSC" value="C342632"/>
+      <property name="LCSC Price/Stock" value="https://www.lcsc.com/product-detail/Multilayer-Ceramic-Capacitors-MLCC-SMD-SMT_TDK-C4532X7R1C226MT000N_C342632.html"/>
+      <property name="Sheetname" value=""/>
+      <property name="Sheetfile" value="MyBikesGotLED.kicad_sch"/>
+      <property name="ki_description" value="Unpolarized capacitor, small symbol"/>
+      <property name="ki_keywords" value="capacitor cap"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>6961b461-5423-42c7-8e1e-757910480401</tstamps>
+    </comp>
+    <comp ref="C6">
+      <value>22uF X5R</value>
+      <footprint>Capacitor_SMD:C_1812_4532Metric_Pad1.57x3.40mm_HandSolder</footprint>
+      <fields>
+        <field name="LCSC">C28504</field>
+        <field name="LCSC Price/Stock">https://www.lcsc.com/product-detail/Multilayer-Ceramic-Capacitors-MLCC-SMD-SMT_FH_1812X226K250NT_22uF-226-10-25V_C28504.html</field>
+      </fields>
+      <libsource lib="Device" part="C_Small" description="Unpolarized capacitor, small symbol"/>
+      <property name="LCSC" value="C28504"/>
+      <property name="LCSC Price/Stock" value="https://www.lcsc.com/product-detail/Multilayer-Ceramic-Capacitors-MLCC-SMD-SMT_FH_1812X226K250NT_22uF-226-10-25V_C28504.html"/>
+      <property name="Sheetname" value=""/>
+      <property name="Sheetfile" value="MyBikesGotLED.kicad_sch"/>
+      <property name="ki_description" value="Unpolarized capacitor, small symbol"/>
+      <property name="ki_keywords" value="capacitor cap"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>00000000-0000-0000-0000-00005f90adae</tstamps>
+    </comp>
+    <comp ref="C7">
+      <value>0.1uF</value>
+      <footprint>Capacitor_SMD:C_0603_1608Metric_Pad1.08x0.95mm_HandSolder</footprint>
+      <fields>
+        <field name="Farnell">1759038RL</field>
+        <field name="Farnell Price/Stock">https://uk.farnell.com/multicomp/mc0603f104z250ct/cap-0-1-f-25v-y5v-0603/dp/1759038RL</field>
+      </fields>
+      <libsource lib="Device" part="C" description="Unpolarized capacitor"/>
+      <property name="Farnell" value="1759038RL"/>
+      <property name="Farnell Price/Stock" value="https://uk.farnell.com/multicomp/mc0603f104z250ct/cap-0-1-f-25v-y5v-0603/dp/1759038RL"/>
+      <property name="Sheetname" value=""/>
+      <property name="Sheetfile" value="MyBikesGotLED.kicad_sch"/>
+      <property name="ki_description" value="Unpolarized capacitor"/>
+      <property name="ki_keywords" value="cap capacitor"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>00000000-0000-0000-0000-00005f900c18</tstamps>
+    </comp>
+    <comp ref="C8">
+      <value>22uF X5R</value>
+      <footprint>Capacitor_SMD:C_1812_4532Metric_Pad1.57x3.40mm_HandSolder</footprint>
+      <fields>
+        <field name="LCSC">C28504</field>
+        <field name="LCSC Price/Stock">https://www.lcsc.com/product-detail/Multilayer-Ceramic-Capacitors-MLCC-SMD-SMT_FH_1812X226K250NT_22uF-226-10-25V_C28504.html</field>
+      </fields>
+      <libsource lib="Device" part="C_Small" description="Unpolarized capacitor, small symbol"/>
+      <property name="LCSC" value="C28504"/>
+      <property name="LCSC Price/Stock" value="https://www.lcsc.com/product-detail/Multilayer-Ceramic-Capacitors-MLCC-SMD-SMT_FH_1812X226K250NT_22uF-226-10-25V_C28504.html"/>
+      <property name="Sheetname" value=""/>
+      <property name="Sheetfile" value="MyBikesGotLED.kicad_sch"/>
+      <property name="ki_description" value="Unpolarized capacitor, small symbol"/>
+      <property name="ki_keywords" value="capacitor cap"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>00000000-0000-0000-0000-00005f90b2c7</tstamps>
+    </comp>
+    <comp ref="Clk_T1">
+      <value>Conn_01x01</value>
+      <footprint>TestPoint:TestPoint_Pad_D2.0mm</footprint>
+      <fields>
+        <field name="Description">DNP</field>
+      </fields>
+      <libsource lib="Connector_Generic" part="Conn_01x01" description="Generic connector, single row, 01x01, script generated (kicad-library-utils/schlib/autogen/connector/)"/>
+      <property name="Description" value="DNP"/>
+      <property name="Sheetname" value=""/>
+      <property name="Sheetfile" value="MyBikesGotLED.kicad_sch"/>
+      <property name="ki_description" value="Generic connector, single row, 01x01, script generated (kicad-library-utils/schlib/autogen/connector/)"/>
+      <property name="ki_keywords" value="connector"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>00000000-0000-0000-0000-000060412156</tstamps>
+    </comp>
+    <comp ref="Data_T1">
+      <value>Conn_01x01</value>
+      <footprint>TestPoint:TestPoint_Pad_D2.0mm</footprint>
+      <fields>
+        <field name="Description">DNP</field>
+      </fields>
+      <libsource lib="Connector_Generic" part="Conn_01x01" description="Generic connector, single row, 01x01, script generated (kicad-library-utils/schlib/autogen/connector/)"/>
+      <property name="Description" value="DNP"/>
+      <property name="Sheetname" value=""/>
+      <property name="Sheetfile" value="MyBikesGotLED.kicad_sch"/>
+      <property name="ki_description" value="Generic connector, single row, 01x01, script generated (kicad-library-utils/schlib/autogen/connector/)"/>
+      <property name="ki_keywords" value="connector"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>00000000-0000-0000-0000-0000604127db</tstamps>
+    </comp>
+    <comp ref="F1">
+      <value>Polyfuse</value>
+      <footprint>Fuse:Fuse_1812_4532Metric_Pad1.30x3.40mm_HandSolder</footprint>
+      <fields>
+        <field name="Farnell">1861167RL</field>
+        <field name="Farnell Price/Stock">https://uk.farnell.com/multicomp/mc36225/fuse-ptc-reset-smd-24v-1-1a/dp/1861167RL</field>
+      </fields>
+      <libsource lib="Device" part="Polyfuse" description="Resettable fuse, polymeric positive temperature coefficient"/>
+      <property name="Farnell" value="1861167RL"/>
+      <property name="Farnell Price/Stock" value="https://uk.farnell.com/multicomp/mc36225/fuse-ptc-reset-smd-24v-1-1a/dp/1861167RL"/>
+      <property name="Sheetname" value=""/>
+      <property name="Sheetfile" value="MyBikesGotLED.kicad_sch"/>
+      <property name="ki_description" value="Resettable fuse, polymeric positive temperature coefficient"/>
+      <property name="ki_keywords" value="resettable fuse PTC PPTC polyfuse polyswitch"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>00000000-0000-0000-0000-00005f94a60a</tstamps>
+    </comp>
+    <comp ref="F2">
+      <value>Polyfuse</value>
+      <footprint>Fuse:Fuse_1812_4532Metric_Pad1.30x3.40mm_HandSolder</footprint>
+      <fields>
+        <field name="Farnell">1861167RL</field>
+        <field name="Farnell Price/Stock">https://uk.farnell.com/multicomp/mc36225/fuse-ptc-reset-smd-24v-1-1a/dp/1861167RL</field>
+      </fields>
+      <libsource lib="Device" part="Polyfuse" description="Resettable fuse, polymeric positive temperature coefficient"/>
+      <property name="Farnell" value="1861167RL"/>
+      <property name="Farnell Price/Stock" value="https://uk.farnell.com/multicomp/mc36225/fuse-ptc-reset-smd-24v-1-1a/dp/1861167RL"/>
+      <property name="Sheetname" value=""/>
+      <property name="Sheetfile" value="MyBikesGotLED.kicad_sch"/>
+      <property name="ki_description" value="Resettable fuse, polymeric positive temperature coefficient"/>
+      <property name="ki_keywords" value="resettable fuse PTC PPTC polyfuse polyswitch"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>00000000-0000-0000-0000-000061472df9</tstamps>
+    </comp>
+    <comp ref="J2">
+      <value>Conn_01x04</value>
+      <footprint>MCQN:OQ0412510000G</footprint>
+      <fields>
+        <field name="Farnell">3810182 </field>
+        <field name="Farnell Price/Stock">https://uk.farnell.com/amphenol-anytek/oq0412510000g/terminal-block-r-a-header-4way/dp/3810182</field>
+      </fields>
+      <libsource lib="Connector_Generic" part="Conn_01x04" description="Generic connector, single row, 01x04, script generated (kicad-library-utils/schlib/autogen/connector/)"/>
+      <property name="Farnell Price/Stock" value="https://uk.farnell.com/amphenol-anytek/oq0412510000g/terminal-block-r-a-header-4way/dp/3810182"/>
+      <property name="Farnell" value="3810182 "/>
+      <property name="Sheetname" value=""/>
+      <property name="Sheetfile" value="MyBikesGotLED.kicad_sch"/>
+      <property name="ki_description" value="Generic connector, single row, 01x04, script generated (kicad-library-utils/schlib/autogen/connector/)"/>
+      <property name="ki_keywords" value="connector"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>00000000-0000-0000-0000-00006139123d</tstamps>
+    </comp>
+    <comp ref="J3">
+      <value>WS2812</value>
+      <footprint>Connector_PinHeader_2.54mm:PinHeader_1x03_P2.54mm_Horizontal</footprint>
+      <fields>
+        <field name="Farnell">1593412</field>
+        <field name="Farnell Price/Stock">https://uk.farnell.com/multicomp/2211s-03g/header-1-row-vert-3way/dp/1593412</field>
+      </fields>
+      <libsource lib="Connector_Generic" part="Conn_01x03" description="Generic connector, single row, 01x03, script generated (kicad-library-utils/schlib/autogen/connector/)"/>
+      <property name="Farnell" value="1593412"/>
+      <property name="Farnell Price/Stock" value="https://uk.farnell.com/multicomp/2211s-03g/header-1-row-vert-3way/dp/1593412"/>
+      <property name="Sheetname" value=""/>
+      <property name="Sheetfile" value="MyBikesGotLED.kicad_sch"/>
+      <property name="ki_description" value="Generic connector, single row, 01x03, script generated (kicad-library-utils/schlib/autogen/connector/)"/>
+      <property name="ki_keywords" value="connector"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>00000000-0000-0000-0000-00005f8eed32</tstamps>
+    </comp>
+    <comp ref="J4">
+      <value>Serial</value>
+      <footprint>Connector_PinHeader_2.54mm:PinHeader_1x06_P2.54mm_Vertical</footprint>
+      <fields>
+        <field name="Description">DNP</field>
+      </fields>
+      <libsource lib="Connector_Generic" part="Conn_01x06" description="Generic connector, single row, 01x06, script generated (kicad-library-utils/schlib/autogen/connector/)"/>
+      <property name="Description" value="DNP"/>
+      <property name="Sheetname" value=""/>
+      <property name="Sheetfile" value="MyBikesGotLED.kicad_sch"/>
+      <property name="ki_description" value="Generic connector, single row, 01x06, script generated (kicad-library-utils/schlib/autogen/connector/)"/>
+      <property name="ki_keywords" value="connector"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>00000000-0000-0000-0000-00005f92e659</tstamps>
+    </comp>
+    <comp ref="J5">
+      <value>Conn_01x03</value>
+      <footprint>Connector_PinHeader_2.54mm:PinHeader_1x03_P2.54mm_Vertical</footprint>
+      <fields>
+        <field name="description">dnp</field>
+      </fields>
+      <libsource lib="Connector_Generic" part="Conn_01x03" description="Generic connector, single row, 01x03, script generated (kicad-library-utils/schlib/autogen/connector/)"/>
+      <property name="description" value="dnp"/>
+      <property name="Sheetname" value=""/>
+      <property name="Sheetfile" value="MyBikesGotLED.kicad_sch"/>
+      <property name="ki_description" value="Generic connector, single row, 01x03, script generated (kicad-library-utils/schlib/autogen/connector/)"/>
+      <property name="ki_keywords" value="connector"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>00000000-0000-0000-0000-00006153c4c1</tstamps>
+    </comp>
+    <comp ref="J6">
+      <value>Conn_01x03</value>
+      <footprint>Connector_PinHeader_2.54mm:PinHeader_1x03_P2.54mm_Vertical</footprint>
+      <fields>
+        <field name="Description">dnp</field>
+      </fields>
+      <libsource lib="Connector_Generic" part="Conn_01x03" description="Generic connector, single row, 01x03, script generated (kicad-library-utils/schlib/autogen/connector/)"/>
+      <property name="Description" value="dnp"/>
+      <property name="Sheetname" value=""/>
+      <property name="Sheetfile" value="MyBikesGotLED.kicad_sch"/>
+      <property name="ki_description" value="Generic connector, single row, 01x03, script generated (kicad-library-utils/schlib/autogen/connector/)"/>
+      <property name="ki_keywords" value="connector"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>00000000-0000-0000-0000-00006153d402</tstamps>
+    </comp>
+    <comp ref="JP1">
+      <value>FTDI_PWR</value>
+      <footprint>Jumper:SolderJumper-2_P1.3mm_Open_RoundedPad1.0x1.5mm</footprint>
+      <fields>
+        <field name="Description">DNP</field>
+      </fields>
+      <libsource lib="MyBikesGotLED-rescue" part="Jumper_NO_Small-Device" description=""/>
+      <property name="Description" value="DNP"/>
+      <property name="Sheetname" value=""/>
+      <property name="Sheetfile" value="MyBikesGotLED.kicad_sch"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>00000000-0000-0000-0000-00006149cae1</tstamps>
+    </comp>
+    <comp ref="JP2">
+      <value>p16 EN</value>
+      <footprint>Jumper:SolderJumper-2_P1.3mm_Open_RoundedPad1.0x1.5mm</footprint>
+      <fields>
+        <field name="Description">DNP</field>
+      </fields>
+      <libsource lib="MyBikesGotLED-rescue" part="Jumper_NO_Small-Device" description=""/>
+      <property name="Description" value="DNP"/>
+      <property name="Sheetname" value=""/>
+      <property name="Sheetfile" value="MyBikesGotLED.kicad_sch"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>34a4e6e5-086a-40ec-92e0-eea89eb6521b</tstamps>
+    </comp>
+    <comp ref="JP3">
+      <value>P5 EN</value>
+      <footprint>Jumper:SolderJumper-2_P1.3mm_Open_RoundedPad1.0x1.5mm</footprint>
+      <fields>
+        <field name="Description">DNP</field>
+      </fields>
+      <libsource lib="MyBikesGotLED-rescue" part="Jumper_NO_Small-Device" description=""/>
+      <property name="Description" value="DNP"/>
+      <property name="Sheetname" value=""/>
+      <property name="Sheetfile" value="MyBikesGotLED.kicad_sch"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>77d4d912-2039-4aa3-9849-de6a9ecf4708</tstamps>
+    </comp>
+    <comp ref="L1">
+      <value>3.3uH</value>
+      <footprint>Inductor_SMD:L_7.3x7.3_H3.5</footprint>
+      <fields>
+        <field name="LCSC">C27442</field>
+        <field name="LCSC Price/Stock">https://www.lcsc.com/product-detail/Power-Inductors_ReliaPro_SMRH74-220MT_22uH_C27442.html</field>
+      </fields>
+      <libsource lib="Device" part="L_Small" description="Inductor, small symbol"/>
+      <property name="LCSC" value="C27442"/>
+      <property name="LCSC Price/Stock" value="https://www.lcsc.com/product-detail/Power-Inductors_ReliaPro_SMRH74-220MT_22uH_C27442.html"/>
+      <property name="Sheetname" value=""/>
+      <property name="Sheetfile" value="MyBikesGotLED.kicad_sch"/>
+      <property name="ki_description" value="Inductor, small symbol"/>
+      <property name="ki_keywords" value="inductor choke coil reactor magnetic"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>00000000-0000-0000-0000-0000613afbf8</tstamps>
+    </comp>
+    <comp ref="L2">
+      <value>1.5uH</value>
+      <footprint>Inductor_SMD:L_12x12mm_H6mm</footprint>
+      <fields>
+        <field name="Farnell">2374058</field>
+        <field name="Farnell Price/Stock">https://uk.farnell.com/bourns/srf1260a-1r5y/inductor-dual-1-5uh-18-3a-pwr/dp/2374058</field>
+      </fields>
+      <libsource lib="Device" part="L_Small" description="Inductor, small symbol"/>
+      <property name="Farnell" value="2374058"/>
+      <property name="Farnell Price/Stock" value="https://uk.farnell.com/bourns/srf1260a-1r5y/inductor-dual-1-5uh-18-3a-pwr/dp/2374058"/>
+      <property name="Sheetname" value=""/>
+      <property name="Sheetfile" value="MyBikesGotLED.kicad_sch"/>
+      <property name="ki_description" value="Inductor, small symbol"/>
+      <property name="ki_keywords" value="inductor choke coil reactor magnetic"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>00000000-0000-0000-0000-0000613adf42</tstamps>
+    </comp>
+    <comp ref="P1">
+      <value>Conn_01x01</value>
+      <footprint>Connector_PinHeader_2.54mm:PinHeader_1x01_P2.54mm_Vertical</footprint>
+      <fields>
+        <field name="Description">dnp</field>
+      </fields>
+      <libsource lib="Connector_Generic" part="Conn_01x01" description="Generic connector, single row, 01x01, script generated (kicad-library-utils/schlib/autogen/connector/)"/>
+      <property name="Description" value="dnp"/>
+      <property name="Sheetname" value=""/>
+      <property name="Sheetfile" value="MyBikesGotLED.kicad_sch"/>
+      <property name="ki_description" value="Generic connector, single row, 01x01, script generated (kicad-library-utils/schlib/autogen/connector/)"/>
+      <property name="ki_keywords" value="connector"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>e0fd1714-b1cb-400d-bb81-b66891ee8e4e</tstamps>
+    </comp>
+    <comp ref="P2">
+      <value>Conn_01x01</value>
+      <footprint>Connector_PinHeader_2.54mm:PinHeader_1x01_P2.54mm_Vertical</footprint>
+      <fields>
+        <field name="Description">dnp</field>
+      </fields>
+      <libsource lib="Connector_Generic" part="Conn_01x01" description="Generic connector, single row, 01x01, script generated (kicad-library-utils/schlib/autogen/connector/)"/>
+      <property name="Description" value="dnp"/>
+      <property name="Sheetname" value=""/>
+      <property name="Sheetfile" value="MyBikesGotLED.kicad_sch"/>
+      <property name="ki_description" value="Generic connector, single row, 01x01, script generated (kicad-library-utils/schlib/autogen/connector/)"/>
+      <property name="ki_keywords" value="connector"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>c5f19512-1c20-47da-a617-684a5ecbe7de</tstamps>
+    </comp>
+    <comp ref="R4">
+      <value>R10K</value>
+      <footprint>Resistor_SMD:R_0603_1608Metric_Pad0.98x0.95mm_HandSolder</footprint>
+      <fields>
+        <field name="Farnell">2331740</field>
+        <field name="Farnell Price/Stock">https://uk.farnell.com/te-connectivity/crgh0603j10k/res-10k-5-0-2w-0603-thick-film/dp/2331740</field>
+      </fields>
+      <libsource lib="Device" part="R_Small" description="Resistor, small symbol"/>
+      <property name="Farnell" value="2331740"/>
+      <property name="Farnell Price/Stock" value="https://uk.farnell.com/te-connectivity/crgh0603j10k/res-10k-5-0-2w-0603-thick-film/dp/2331740"/>
+      <property name="Sheetname" value=""/>
+      <property name="Sheetfile" value="MyBikesGotLED.kicad_sch"/>
+      <property name="ki_description" value="Resistor, small symbol"/>
+      <property name="ki_keywords" value="R resistor"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>00000000-0000-0000-0000-00006136c2fb</tstamps>
+    </comp>
+    <comp ref="R5">
+      <value>470R</value>
+      <footprint>Resistor_SMD:R_0603_1608Metric_Pad0.98x0.95mm_HandSolder</footprint>
+      <fields>
+        <field name="Farnell">2502462</field>
+        <field name="Farnell Price/Stock">https://uk.farnell.com/walsin/wr06x4700ftl/res-470r-1-75v-0603-thick-film/dp/2502462</field>
+      </fields>
+      <libsource lib="Device" part="R" description="Resistor"/>
+      <property name="Farnell" value="2502462"/>
+      <property name="Farnell Price/Stock" value="https://uk.farnell.com/walsin/wr06x4700ftl/res-470r-1-75v-0603-thick-film/dp/2502462"/>
+      <property name="Sheetname" value=""/>
+      <property name="Sheetfile" value="MyBikesGotLED.kicad_sch"/>
+      <property name="ki_description" value="Resistor"/>
+      <property name="ki_keywords" value="R res resistor"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>00000000-0000-0000-0000-00005f9026f4</tstamps>
+    </comp>
+    <comp ref="R6">
+      <value>470R</value>
+      <footprint>Resistor_SMD:R_0603_1608Metric_Pad0.98x0.95mm_HandSolder</footprint>
+      <fields>
+        <field name="Farnell">2502462</field>
+        <field name="Farnell Price/Stock">https://uk.farnell.com/walsin/wr06x4700ftl/res-470r-1-75v-0603-thick-film/dp/2502462</field>
+      </fields>
+      <libsource lib="Device" part="R" description="Resistor"/>
+      <property name="Farnell" value="2502462"/>
+      <property name="Farnell Price/Stock" value="https://uk.farnell.com/walsin/wr06x4700ftl/res-470r-1-75v-0603-thick-film/dp/2502462"/>
+      <property name="Sheetname" value=""/>
+      <property name="Sheetfile" value="MyBikesGotLED.kicad_sch"/>
+      <property name="ki_description" value="Resistor"/>
+      <property name="ki_keywords" value="R res resistor"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>00000000-0000-0000-0000-00005f9011af</tstamps>
+    </comp>
+    <comp ref="R7">
+      <value>43K</value>
+      <footprint>Resistor_SMD:R_0603_1608Metric_Pad0.98x0.95mm_HandSolder</footprint>
+      <fields>
+        <field name="Farnell">2073501</field>
+        <field name="Farnell Price/Stock">https://uk.farnell.com/multicomp/mcmr06x4302ftl/res-43k-1-0-1w-0603-ceramic/dp/2073501</field>
+      </fields>
+      <libsource lib="Device" part="R_Small" description="Resistor, small symbol"/>
+      <property name="Farnell" value="2073501"/>
+      <property name="Farnell Price/Stock" value="https://uk.farnell.com/multicomp/mcmr06x4302ftl/res-43k-1-0-1w-0603-ceramic/dp/2073501"/>
+      <property name="Sheetname" value=""/>
+      <property name="Sheetfile" value="MyBikesGotLED.kicad_sch"/>
+      <property name="ki_description" value="Resistor, small symbol"/>
+      <property name="ki_keywords" value="R resistor"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>00000000-0000-0000-0000-0000613bb610</tstamps>
+    </comp>
+    <comp ref="R8">
+      <value>73K</value>
+      <footprint>Resistor_SMD:R_0603_1608Metric_Pad0.98x0.95mm_HandSolder</footprint>
+      <fields>
+        <field name="Farnell">3950855</field>
+        <field name="Farnell Price/Stock">https://uk.farnell.com/yageo/rc0603fr-0773k2l/res-73k2-1-0-1w-thick-film-0603/dp/3950855</field>
+      </fields>
+      <libsource lib="Device" part="R_Small" description="Resistor, small symbol"/>
+      <property name="Farnell" value="3950855"/>
+      <property name="Farnell Price/Stock" value="https://uk.farnell.com/yageo/rc0603fr-0773k2l/res-73k2-1-0-1w-thick-film-0603/dp/3950855"/>
+      <property name="Sheetname" value=""/>
+      <property name="Sheetfile" value="MyBikesGotLED.kicad_sch"/>
+      <property name="ki_description" value="Resistor, small symbol"/>
+      <property name="ki_keywords" value="R resistor"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>d7c4958c-ae0f-443f-bbb7-580b83b1f94d</tstamps>
+    </comp>
+    <comp ref="R9">
+      <value>10K</value>
+      <footprint>Resistor_SMD:R_0603_1608Metric_Pad0.98x0.95mm_HandSolder</footprint>
+      <fields>
+        <field name="Farnell">2331740</field>
+        <field name="Farnell Price/Stock">https://uk.farnell.com/te-connectivity/crgh0603j10k/res-10k-5-0-2w-0603-thick-film/dp/2331740</field>
+      </fields>
+      <libsource lib="Device" part="R_Small" description="Resistor, small symbol"/>
+      <property name="Farnell" value="2331740"/>
+      <property name="Farnell Price/Stock" value="https://uk.farnell.com/te-connectivity/crgh0603j10k/res-10k-5-0-2w-0603-thick-film/dp/2331740"/>
+      <property name="Sheetname" value=""/>
+      <property name="Sheetfile" value="MyBikesGotLED.kicad_sch"/>
+      <property name="ki_description" value="Resistor, small symbol"/>
+      <property name="ki_keywords" value="R resistor"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>00000000-0000-0000-0000-0000613bac63</tstamps>
+    </comp>
+    <comp ref="R10">
+      <value>91K</value>
+      <footprint>Resistor_SMD:R_0603_1608Metric_Pad0.98x0.95mm_HandSolder</footprint>
+      <fields>
+        <field name="Farnell">2447449</field>
+        <field name="Farnell Price/Stock">https://uk.farnell.com/multicomp/mcwr06x9102ftl/res-91k-1-0-1w-thick-film/dp/2447449</field>
+      </fields>
+      <libsource lib="Device" part="R_Small" description="Resistor, small symbol"/>
+      <property name="Farnell" value="2447449"/>
+      <property name="Farnell Price/Stock" value="https://uk.farnell.com/multicomp/mcwr06x9102ftl/res-91k-1-0-1w-thick-film/dp/2447449"/>
+      <property name="Sheetname" value=""/>
+      <property name="Sheetfile" value="MyBikesGotLED.kicad_sch"/>
+      <property name="ki_description" value="Resistor, small symbol"/>
+      <property name="ki_keywords" value="R resistor"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>00000000-0000-0000-0000-0000613af1af</tstamps>
+    </comp>
+    <comp ref="R11">
+      <value>20K</value>
+      <footprint>Resistor_SMD:R_0603_1608Metric_Pad0.98x0.95mm_HandSolder</footprint>
+      <fields>
+        <field name="Farnell">2447293</field>
+        <field name="Farnell Price/Stock">https://uk.farnell.com/multicomp/mcwr06x2002ftl/res-20k-1-0-1w-thick-film/dp/2447293</field>
+      </fields>
+      <libsource lib="Device" part="R_Small" description="Resistor, small symbol"/>
+      <property name="Farnell" value="2447293"/>
+      <property name="Farnell Price/Stock" value="https://uk.farnell.com/multicomp/mcwr06x2002ftl/res-20k-1-0-1w-thick-film/dp/2447293"/>
+      <property name="Sheetname" value=""/>
+      <property name="Sheetfile" value="MyBikesGotLED.kicad_sch"/>
+      <property name="ki_description" value="Resistor, small symbol"/>
+      <property name="ki_keywords" value="R resistor"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>00000000-0000-0000-0000-0000613afabc</tstamps>
+    </comp>
+    <comp ref="U1">
+      <value>FP6276B Boost_Convertor</value>
+      <footprint>Package_SO:Diodes_SO-8EP</footprint>
+      <datasheet>https://datasheet.lcsc.com/lcsc/1809251624_Feeling-Tech-FP6276BXR-G1_C82652.pdf</datasheet>
+      <fields>
+        <field name="LCSC">C82652</field>
+        <field name="LCSC Price/Stock">https://www.lcsc.com/product-detail/DC-DC-Converters_Advanced-Analog-Technology-FP6276BXR-G1_C82652.html</field>
+      </fields>
+      <libsource lib="myBikesGotLED" part="Boost_Convertor" description=""/>
+      <property name="LCSC" value="C82652"/>
+      <property name="LCSC Price/Stock" value="https://www.lcsc.com/product-detail/DC-DC-Converters_Advanced-Analog-Technology-FP6276BXR-G1_C82652.html"/>
+      <property name="Sheetname" value=""/>
+      <property name="Sheetfile" value="MyBikesGotLED.kicad_sch"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>2af8b86f-455b-4cb5-a66d-04f15724f542</tstamps>
+    </comp>
+    <comp ref="U2">
+      <value>SN74AHCT125</value>
+      <footprint>Package_SO:SOIC-14_3.9x8.7mm_P1.27mm</footprint>
+      <datasheet>https://www.ti.com/lit/ds/symlink/sn74ahct125.pdf</datasheet>
+      <fields>
+        <field name="Farnell">3006129</field>
+        <field name="Farnell Price/Stock">https://uk.farnell.com/texas-instruments/sn74ahct125d/ic-buffer-gate-quad-3state-smd/dp/3006129</field>
+      </fields>
+      <libsource lib="MyBikesGotLED-rescue" part="SN74AHCT125-MCQN-Schematic-Components" description=""/>
+      <property name="Farnell" value="3006129"/>
+      <property name="Farnell Price/Stock" value="https://uk.farnell.com/texas-instruments/sn74ahct125d/ic-buffer-gate-quad-3state-smd/dp/3006129"/>
+      <property name="Sheetname" value=""/>
+      <property name="Sheetfile" value="MyBikesGotLED.kicad_sch"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>00000000-0000-0000-0000-00005f8dc945</tstamps>
+    </comp>
+    <comp ref="U3">
+      <value>RT8097B</value>
+      <footprint>Package_TO_SOT_SMD:SOT-23-5</footprint>
+      <datasheet>http://www.ti.com/lit/ds/symlink/tlv62568.pdf</datasheet>
+      <fields>
+        <field name="Farnell">2729771</field>
+        <field name="Farnell Price/Stock">https://uk.farnell.com/richtek/rt8097bhgb/dc-dc-conv-sync-buck-1mhz-sot/dp/2729771</field>
+      </fields>
+      <libsource lib="Regulator_Switching" part="TLV62568DBV" description="High Efficiency Synchronous Buck Converter, Adjustable Output 0.6V-5.5V, 1A, SOT-23-5"/>
+      <property name="Farnell" value="2729771"/>
+      <property name="Farnell Price/Stock" value="https://uk.farnell.com/richtek/rt8097bhgb/dc-dc-conv-sync-buck-1mhz-sot/dp/2729771"/>
+      <property name="Sheetname" value=""/>
+      <property name="Sheetfile" value="MyBikesGotLED.kicad_sch"/>
+      <property name="ki_description" value="High Efficiency Synchronous Buck Converter, Adjustable Output 0.6V-5.5V, 1A, SOT-23-5"/>
+      <property name="ki_keywords" value="Step-Down Buck DC-DC Regulator Adjustable"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>00000000-0000-0000-0000-0000613ac1b7</tstamps>
+    </comp>
+    <comp ref="C9">
+      <value>C47nF</value>
+      <footprint>Capacitor_SMD:C_0603_1608Metric_Pad1.08x0.95mm_HandSolder</footprint>
+      <fields>
+        <field name="Farnell">1759031</field>
+        <field name="Farnell Price/Stock">https://uk.farnell.com/multicomp/mc0603b473k250ct/cap-0-047-f-25v-10-x7r-0603/dp/1759031</field>
+      </fields>
+      <libsource lib="Device" part="C" description="Unpolarized capacitor"/>
+      <property name="Farnell" value="1759031"/>
+      <property name="Farnell Price/Stock" value="https://uk.farnell.com/multicomp/mc0603b473k250ct/cap-0-047-f-25v-10-x7r-0603/dp/1759031"/>
+      <property name="Sheetname" value="BaseESP8266"/>
+      <property name="Sheetfile" value="BaseESP8266.kicad_sch"/>
+      <property name="ki_description" value="Unpolarized capacitor"/>
+      <property name="ki_keywords" value="cap capacitor"/>
+      <sheetpath names="/BaseESP8266/" tstamps="/00000000-0000-0000-0000-00005f8dad46/"/>
+      <tstamps>00000000-0000-0000-0000-00005f9fda30</tstamps>
+    </comp>
+    <comp ref="D1">
+      <value>LED</value>
+      <footprint>LED_SMD:LED_0805_2012Metric_Pad1.15x1.40mm_HandSolder</footprint>
+      <fields>
+        <field name="Farnell">2322102</field>
+        <field name="Farnell Price/Stock">https://uk.farnell.com/wurth-elektronik/155124vs73200/led-1204-b-green-50mcd-573nm/dp/2322102</field>
+      </fields>
+      <libsource lib="Device" part="LED" description="Light emitting diode"/>
+      <property name="Farnell" value="2322102"/>
+      <property name="Farnell Price/Stock" value="https://uk.farnell.com/wurth-elektronik/155124vs73200/led-1204-b-green-50mcd-573nm/dp/2322102"/>
+      <property name="Sheetname" value="BaseESP8266"/>
+      <property name="Sheetfile" value="BaseESP8266.kicad_sch"/>
+      <property name="ki_description" value="Light emitting diode"/>
+      <property name="ki_keywords" value="LED diode"/>
+      <sheetpath names="/BaseESP8266/" tstamps="/00000000-0000-0000-0000-00005f8dad46/"/>
+      <tstamps>00000000-0000-0000-0000-00005f9fda54</tstamps>
+    </comp>
+    <comp ref="D2">
+      <value>LED</value>
+      <footprint>LED_SMD:LED_0805_2012Metric_Pad1.15x1.40mm_HandSolder</footprint>
+      <fields>
+        <field name="Farnell">2322102</field>
+        <field name="Farnell Price/Stock">https://uk.farnell.com/wurth-elektronik/155124vs73200/led-1204-b-green-50mcd-573nm/dp/2322102</field>
+      </fields>
+      <libsource lib="Device" part="LED" description="Light emitting diode"/>
+      <property name="Farnell" value="2322102"/>
+      <property name="Farnell Price/Stock" value="https://uk.farnell.com/wurth-elektronik/155124vs73200/led-1204-b-green-50mcd-573nm/dp/2322102"/>
+      <property name="Sheetname" value="BaseESP8266"/>
+      <property name="Sheetfile" value="BaseESP8266.kicad_sch"/>
+      <property name="ki_description" value="Light emitting diode"/>
+      <property name="ki_keywords" value="LED diode"/>
+      <sheetpath names="/BaseESP8266/" tstamps="/00000000-0000-0000-0000-00005f8dad46/"/>
+      <tstamps>00000000-0000-0000-0000-00005f9fda4e</tstamps>
+    </comp>
+    <comp ref="P3">
+      <value>CONN_01X09</value>
+      <footprint>Connector_PinSocket_2.54mm:PinSocket_1x09_P2.54mm_Vertical</footprint>
+      <fields>
+        <field name="Description">DNP</field>
+      </fields>
+      <libsource lib="Connector_Generic" part="Conn_01x09" description="Generic connector, single row, 01x09, script generated (kicad-library-utils/schlib/autogen/connector/)"/>
+      <property name="Description" value="DNP"/>
+      <property name="Sheetname" value="BaseESP8266"/>
+      <property name="Sheetfile" value="BaseESP8266.kicad_sch"/>
+      <property name="ki_description" value="Generic connector, single row, 01x09, script generated (kicad-library-utils/schlib/autogen/connector/)"/>
+      <property name="ki_keywords" value="connector"/>
+      <sheetpath names="/BaseESP8266/" tstamps="/00000000-0000-0000-0000-00005f8dad46/"/>
+      <tstamps>00000000-0000-0000-0000-00005f9fda66</tstamps>
+    </comp>
+    <comp ref="P4">
+      <value>CONN_01X09</value>
+      <footprint>Connector_PinSocket_2.54mm:PinSocket_1x09_P2.54mm_Vertical</footprint>
+      <fields>
+        <field name="Description">DNP</field>
+      </fields>
+      <libsource lib="Connector_Generic" part="Conn_01x09" description="Generic connector, single row, 01x09, script generated (kicad-library-utils/schlib/autogen/connector/)"/>
+      <property name="Description" value="DNP"/>
+      <property name="Sheetname" value="BaseESP8266"/>
+      <property name="Sheetfile" value="BaseESP8266.kicad_sch"/>
+      <property name="ki_description" value="Generic connector, single row, 01x09, script generated (kicad-library-utils/schlib/autogen/connector/)"/>
+      <property name="ki_keywords" value="connector"/>
+      <sheetpath names="/BaseESP8266/" tstamps="/00000000-0000-0000-0000-00005f8dad46/"/>
+      <tstamps>00000000-0000-0000-0000-00005f9fda6c</tstamps>
+    </comp>
+    <comp ref="R12">
+      <value>R560</value>
+      <footprint>Resistor_SMD:R_0603_1608Metric_Pad0.98x0.95mm_HandSolder</footprint>
+      <fields>
+        <field name="Farnell">2502470</field>
+        <field name="Farnell Price/Stock">https://uk.farnell.com/walsin/wr06x5600ftl/res-560r-1-75v-0603-thick-film/dp/2502470</field>
+      </fields>
+      <libsource lib="Device" part="R" description="Resistor"/>
+      <property name="Farnell" value="2502470"/>
+      <property name="Farnell Price/Stock" value="https://uk.farnell.com/walsin/wr06x5600ftl/res-560r-1-75v-0603-thick-film/dp/2502470"/>
+      <property name="Sheetname" value="BaseESP8266"/>
+      <property name="Sheetfile" value="BaseESP8266.kicad_sch"/>
+      <property name="ki_description" value="Resistor"/>
+      <property name="ki_keywords" value="R res resistor"/>
+      <sheetpath names="/BaseESP8266/" tstamps="/00000000-0000-0000-0000-00005f8dad46/"/>
+      <tstamps>00000000-0000-0000-0000-00005f9fda36</tstamps>
+    </comp>
+    <comp ref="R13">
+      <value>R10k</value>
+      <footprint>Resistor_SMD:R_0603_1608Metric_Pad0.98x0.95mm_HandSolder</footprint>
+      <fields>
+        <field name="Farnell">2331740</field>
+        <field name="Farnell Price/Stock">https://uk.farnell.com/te-connectivity/crgh0603j10k/res-10k-5-0-2w-0603-thick-film/dp/2331740</field>
+      </fields>
+      <libsource lib="Device" part="R" description="Resistor"/>
+      <property name="Farnell" value="2331740"/>
+      <property name="Farnell Price/Stock" value="https://uk.farnell.com/te-connectivity/crgh0603j10k/res-10k-5-0-2w-0603-thick-film/dp/2331740"/>
+      <property name="Sheetname" value="BaseESP8266"/>
+      <property name="Sheetfile" value="BaseESP8266.kicad_sch"/>
+      <property name="ki_description" value="Resistor"/>
+      <property name="ki_keywords" value="R res resistor"/>
+      <sheetpath names="/BaseESP8266/" tstamps="/00000000-0000-0000-0000-00005f8dad46/"/>
+      <tstamps>00000000-0000-0000-0000-00005f9fda72</tstamps>
+    </comp>
+    <comp ref="R14">
+      <value>10k</value>
+      <footprint>Resistor_SMD:R_0603_1608Metric_Pad0.98x0.95mm_HandSolder</footprint>
+      <fields>
+        <field name="Farnell">2331740</field>
+        <field name="Farnell Price/Stock">https://uk.farnell.com/te-connectivity/crgh0603j10k/res-10k-5-0-2w-0603-thick-film/dp/2331740</field>
+      </fields>
+      <libsource lib="Device" part="R" description="Resistor"/>
+      <property name="Farnell" value="2331740"/>
+      <property name="Farnell Price/Stock" value="https://uk.farnell.com/te-connectivity/crgh0603j10k/res-10k-5-0-2w-0603-thick-film/dp/2331740"/>
+      <property name="Sheetname" value="BaseESP8266"/>
+      <property name="Sheetfile" value="BaseESP8266.kicad_sch"/>
+      <property name="ki_description" value="Resistor"/>
+      <property name="ki_keywords" value="R res resistor"/>
+      <sheetpath names="/BaseESP8266/" tstamps="/00000000-0000-0000-0000-00005f8dad46/"/>
+      <tstamps>00000000-0000-0000-0000-00005f9fda90</tstamps>
+    </comp>
+    <comp ref="R15">
+      <value>R560</value>
+      <footprint>Resistor_SMD:R_0603_1608Metric_Pad0.98x0.95mm_HandSolder</footprint>
+      <fields>
+        <field name="Farnell">2502470</field>
+        <field name="Farnell Price/Stock">https://uk.farnell.com/walsin/wr06x5600ftl/res-560r-1-75v-0603-thick-film/dp/2502470</field>
+      </fields>
+      <libsource lib="Device" part="R" description="Resistor"/>
+      <property name="Farnell" value="2502470"/>
+      <property name="Farnell Price/Stock" value="https://uk.farnell.com/walsin/wr06x5600ftl/res-560r-1-75v-0603-thick-film/dp/2502470"/>
+      <property name="Sheetname" value="BaseESP8266"/>
+      <property name="Sheetfile" value="BaseESP8266.kicad_sch"/>
+      <property name="ki_description" value="Resistor"/>
+      <property name="ki_keywords" value="R res resistor"/>
+      <sheetpath names="/BaseESP8266/" tstamps="/00000000-0000-0000-0000-00005f8dad46/"/>
+      <tstamps>00000000-0000-0000-0000-00005f9fda42</tstamps>
+    </comp>
+    <comp ref="R16">
+      <value>R560</value>
+      <footprint>Resistor_SMD:R_0603_1608Metric_Pad0.98x0.95mm_HandSolder</footprint>
+      <fields>
+        <field name="Farnell">2502470</field>
+        <field name="Farnell Price/Stock">https://uk.farnell.com/walsin/wr06x5600ftl/res-560r-1-75v-0603-thick-film/dp/2502470</field>
+      </fields>
+      <libsource lib="Device" part="R" description="Resistor"/>
+      <property name="Farnell" value="2502470"/>
+      <property name="Farnell Price/Stock" value="https://uk.farnell.com/walsin/wr06x5600ftl/res-560r-1-75v-0603-thick-film/dp/2502470"/>
+      <property name="Sheetname" value="BaseESP8266"/>
+      <property name="Sheetfile" value="BaseESP8266.kicad_sch"/>
+      <property name="ki_description" value="Resistor"/>
+      <property name="ki_keywords" value="R res resistor"/>
+      <sheetpath names="/BaseESP8266/" tstamps="/00000000-0000-0000-0000-00005f8dad46/"/>
+      <tstamps>00000000-0000-0000-0000-00005f9fda3c</tstamps>
+    </comp>
+    <comp ref="R17">
+      <value>R10k</value>
+      <footprint>Resistor_SMD:R_0603_1608Metric_Pad0.98x0.95mm_HandSolder</footprint>
+      <fields>
+        <field name="Farnell">2331740</field>
+        <field name="Farnell Price/Stock">https://uk.farnell.com/te-connectivity/crgh0603j10k/res-10k-5-0-2w-0603-thick-film/dp/2331740</field>
+      </fields>
+      <libsource lib="Device" part="R" description="Resistor"/>
+      <property name="Farnell" value="2331740"/>
+      <property name="Farnell Price/Stock" value="https://uk.farnell.com/te-connectivity/crgh0603j10k/res-10k-5-0-2w-0603-thick-film/dp/2331740"/>
+      <property name="Sheetname" value="BaseESP8266"/>
+      <property name="Sheetfile" value="BaseESP8266.kicad_sch"/>
+      <property name="ki_description" value="Resistor"/>
+      <property name="ki_keywords" value="R res resistor"/>
+      <sheetpath names="/BaseESP8266/" tstamps="/00000000-0000-0000-0000-00005f8dad46/"/>
+      <tstamps>00000000-0000-0000-0000-00005f9fd9e1</tstamps>
+    </comp>
+    <comp ref="SW1">
+      <value>Reset</value>
+      <footprint>mcqn-kicad-lib:SW_SPST_GULLWING</footprint>
+      <fields>
+        <field name="Farnell">2435308</field>
+        <field name="Farnell Price/Stock">http://uk.farnell.com/c-k-components/ksek43g-lfs/tactile-switch-spst-0-05a-32vdc/dp/2435308</field>
+      </fields>
+      <libsource lib="Switch" part="SW_Push" description="Push button switch, generic, two pins"/>
+      <property name="Farnell" value="2435308"/>
+      <property name="Farnell Price/Stock" value="http://uk.farnell.com/c-k-components/ksek43g-lfs/tactile-switch-spst-0-05a-32vdc/dp/2435308"/>
+      <property name="Sheetname" value="BaseESP8266"/>
+      <property name="Sheetfile" value="BaseESP8266.kicad_sch"/>
+      <property name="ki_description" value="Push button switch, generic, two pins"/>
+      <property name="ki_keywords" value="switch normally-open pushbutton push-button"/>
+      <sheetpath names="/BaseESP8266/" tstamps="/00000000-0000-0000-0000-00005f8dad46/"/>
+      <tstamps>00000000-0000-0000-0000-00005f9fda60</tstamps>
+    </comp>
+    <comp ref="T1">
+      <value>CONN_01X01</value>
+      <footprint>TestPoint:TestPoint_Pad_D2.0mm</footprint>
+      <fields>
+        <field name="Description">DNP</field>
+      </fields>
+      <libsource lib="Connector_Generic" part="Conn_01x01" description="Generic connector, single row, 01x01, script generated (kicad-library-utils/schlib/autogen/connector/)"/>
+      <property name="Description" value="DNP"/>
+      <property name="Sheetname" value="BaseESP8266"/>
+      <property name="Sheetfile" value="BaseESP8266.kicad_sch"/>
+      <property name="ki_description" value="Generic connector, single row, 01x01, script generated (kicad-library-utils/schlib/autogen/connector/)"/>
+      <property name="ki_keywords" value="connector"/>
+      <sheetpath names="/BaseESP8266/" tstamps="/00000000-0000-0000-0000-00005f8dad46/"/>
+      <tstamps>00000000-0000-0000-0000-00005f9fd9ee</tstamps>
+    </comp>
+    <comp ref="T2">
+      <value>CONN_01X01</value>
+      <footprint>TestPoint:TestPoint_Pad_D2.0mm</footprint>
+      <fields>
+        <field name="Description">DNP</field>
+      </fields>
+      <libsource lib="Connector_Generic" part="Conn_01x01" description="Generic connector, single row, 01x01, script generated (kicad-library-utils/schlib/autogen/connector/)"/>
+      <property name="Description" value="DNP"/>
+      <property name="Sheetname" value="BaseESP8266"/>
+      <property name="Sheetfile" value="BaseESP8266.kicad_sch"/>
+      <property name="ki_description" value="Generic connector, single row, 01x01, script generated (kicad-library-utils/schlib/autogen/connector/)"/>
+      <property name="ki_keywords" value="connector"/>
+      <sheetpath names="/BaseESP8266/" tstamps="/00000000-0000-0000-0000-00005f8dad46/"/>
+      <tstamps>00000000-0000-0000-0000-00005f9fd9e8</tstamps>
+    </comp>
+    <comp ref="U4">
+      <value>ESP-13-WROOM-02</value>
+      <footprint>RF_Module:ESP-WROOM-02</footprint>
+      <datasheet>https://www.espressif.com/sites/default/files/documentation/0c-esp-wroom-02_datasheet_en.pdf</datasheet>
+      <fields>
+        <field name="Description">ESP-WROOM-02 free issue</field>
+        <field name="Manuf#">ESP-WROOM-02</field>
+      </fields>
+      <libsource lib="RF_Module" part="ESP-WROOM-02" description="Wi-Fi Module, ESP8266EX SoC, 32-bit, 802.11b/g/n, WPA/WPA2, 2.7-3.6V, SMD"/>
+      <property name="Manuf#" value="ESP-WROOM-02"/>
+      <property name="Description" value="ESP-WROOM-02 free issue"/>
+      <property name="Sheetname" value="BaseESP8266"/>
+      <property name="Sheetfile" value="BaseESP8266.kicad_sch"/>
+      <property name="ki_description" value="Wi-Fi Module, ESP8266EX SoC, 32-bit, 802.11b/g/n, WPA/WPA2, 2.7-3.6V, SMD"/>
+      <property name="ki_keywords" value="RF Radio ESP Espressif"/>
+      <sheetpath names="/BaseESP8266/" tstamps="/00000000-0000-0000-0000-00005f8dad46/"/>
+      <tstamps>00000000-0000-0000-0000-00005f9fda97</tstamps>
+    </comp>
+    <comp ref="BT1">
+      <value>Battery_Cell</value>
+      <footprint>Connector_JST:JST_PH_S2B-PH-SM4-TB_1x02-1MP_P2.00mm_Horizontal</footprint>
+      <fields>
+        <field name="Farnell">9492615</field>
+        <field name="Farnell Price/Stock">https://uk.farnell.com/jst-japan-solderless-terminals/s2b-ph-sm4-tb-lf-sn/connector-header-smt-r-a-2mm-2way/dp/9492615</field>
+      </fields>
+      <libsource lib="Device" part="Battery_Cell" description="Single-cell battery"/>
+      <property name="Farnell Price/Stock" value="https://uk.farnell.com/jst-japan-solderless-terminals/s2b-ph-sm4-tb-lf-sn/connector-header-smt-r-a-2mm-2way/dp/9492615"/>
+      <property name="Farnell" value="9492615"/>
+      <property name="Sheetname" value="Battery Management"/>
+      <property name="Sheetfile" value="battery.kicad_sch"/>
+      <property name="ki_description" value="Single-cell battery"/>
+      <property name="ki_keywords" value="battery cell"/>
+      <sheetpath names="/Battery Management/" tstamps="/2c074201-41ae-48a2-8f73-9baa1910d072/"/>
+      <tstamps>00cbc67b-797a-46eb-b639-c7e42197c2af</tstamps>
+    </comp>
+    <comp ref="C10">
+      <value>10uF 50V</value>
+      <footprint>Capacitor_SMD:C_1206_3216Metric_Pad1.33x1.80mm_HandSolder</footprint>
+      <fields>
+        <field name="Farnell">3013512</field>
+        <field name="Farnell Price/Stock">https://uk.farnell.com/samsung-electro-mechanics/cl31a106kbhnnne/cap-10uf-50v-mlcc-1206/dp/3013512</field>
+      </fields>
+      <libsource lib="Device" part="C_Small" description="Unpolarized capacitor, small symbol"/>
+      <property name="Farnell" value="3013512"/>
+      <property name="Farnell Price/Stock" value="https://uk.farnell.com/samsung-electro-mechanics/cl31a106kbhnnne/cap-10uf-50v-mlcc-1206/dp/3013512"/>
+      <property name="Sheetname" value="Battery Management"/>
+      <property name="Sheetfile" value="battery.kicad_sch"/>
+      <property name="ki_description" value="Unpolarized capacitor, small symbol"/>
+      <property name="ki_keywords" value="capacitor cap"/>
+      <sheetpath names="/Battery Management/" tstamps="/2c074201-41ae-48a2-8f73-9baa1910d072/"/>
+      <tstamps>eed9a4db-d937-4190-92ec-924ec56788b7</tstamps>
+    </comp>
+    <comp ref="C11">
+      <value>1uF</value>
+      <footprint>Capacitor_SMD:C_0603_1608Metric_Pad1.08x0.95mm_HandSolder</footprint>
+      <fields>
+        <field name="Farnell">2211179</field>
+        <field name="Farnell Price/Stock">https://uk.farnell.com/tdk/c1608x5r1h105k080ab/cap-1-f-50v-10-x5r-0603/dp/2211179</field>
+      </fields>
+      <libsource lib="Device" part="C_Small" description="Unpolarized capacitor, small symbol"/>
+      <property name="Farnell" value="2211179"/>
+      <property name="Farnell Price/Stock" value="https://uk.farnell.com/tdk/c1608x5r1h105k080ab/cap-1-f-50v-10-x5r-0603/dp/2211179"/>
+      <property name="Sheetname" value="Battery Management"/>
+      <property name="Sheetfile" value="battery.kicad_sch"/>
+      <property name="ki_description" value="Unpolarized capacitor, small symbol"/>
+      <property name="ki_keywords" value="capacitor cap"/>
+      <sheetpath names="/Battery Management/" tstamps="/2c074201-41ae-48a2-8f73-9baa1910d072/"/>
+      <tstamps>06269009-0411-47d2-9d86-228512968273</tstamps>
+    </comp>
+    <comp ref="C12">
+      <value>220nF</value>
+      <footprint>Capacitor_SMD:C_0603_1608Metric_Pad1.08x0.95mm_HandSolder</footprint>
+      <fields>
+        <field name="Farnell">2346906</field>
+        <field name="Farnell Price/Stock">https://uk.farnell.com/tdk/c1608x7r1h224k080ab/cap-0-22-f-50v-10-x7r-0603/dp/2346906</field>
+      </fields>
+      <libsource lib="Device" part="C_Small" description="Unpolarized capacitor, small symbol"/>
+      <property name="Farnell" value="2346906"/>
+      <property name="Farnell Price/Stock" value="https://uk.farnell.com/tdk/c1608x7r1h224k080ab/cap-0-22-f-50v-10-x7r-0603/dp/2346906"/>
+      <property name="Sheetname" value="Battery Management"/>
+      <property name="Sheetfile" value="battery.kicad_sch"/>
+      <property name="ki_description" value="Unpolarized capacitor, small symbol"/>
+      <property name="ki_keywords" value="capacitor cap"/>
+      <sheetpath names="/Battery Management/" tstamps="/2c074201-41ae-48a2-8f73-9baa1910d072/"/>
+      <tstamps>75712d07-1041-4718-866a-4cc2a38114de</tstamps>
+    </comp>
+    <comp ref="C13">
+      <value>0.1uF</value>
+      <footprint>Capacitor_SMD:C_0603_1608Metric_Pad1.08x0.95mm_HandSolder</footprint>
+      <fields>
+        <field name="Farnell">1759122</field>
+        <field name="Farnell Price/Stock">https://uk.farnell.com/multicomp/mc0603b104k500ct/cap-0-1-f-50v-10-x7r-0603/dp/1759122</field>
+      </fields>
+      <libsource lib="Device" part="C_Small" description="Unpolarized capacitor, small symbol"/>
+      <property name="Farnell" value="1759122"/>
+      <property name="Farnell Price/Stock" value="https://uk.farnell.com/multicomp/mc0603b104k500ct/cap-0-1-f-50v-10-x7r-0603/dp/1759122"/>
+      <property name="Sheetname" value="Battery Management"/>
+      <property name="Sheetfile" value="battery.kicad_sch"/>
+      <property name="ki_description" value="Unpolarized capacitor, small symbol"/>
+      <property name="ki_keywords" value="capacitor cap"/>
+      <sheetpath names="/Battery Management/" tstamps="/2c074201-41ae-48a2-8f73-9baa1910d072/"/>
+      <tstamps>88127333-0d56-4f39-b7d4-a7bc9c0192b6</tstamps>
+    </comp>
+    <comp ref="C14">
+      <value>1uF</value>
+      <footprint>Capacitor_SMD:C_0603_1608Metric_Pad1.08x0.95mm_HandSolder</footprint>
+      <fields>
+        <field name="Farnell">2211179</field>
+        <field name="Farnell Price/Stock">https://uk.farnell.com/tdk/c1608x5r1h105k080ab/cap-1-f-50v-10-x5r-0603/dp/2211179</field>
+      </fields>
+      <libsource lib="Device" part="C_Small" description="Unpolarized capacitor, small symbol"/>
+      <property name="Farnell" value="2211179"/>
+      <property name="Farnell Price/Stock" value="https://uk.farnell.com/tdk/c1608x5r1h105k080ab/cap-1-f-50v-10-x5r-0603/dp/2211179"/>
+      <property name="Sheetname" value="Battery Management"/>
+      <property name="Sheetfile" value="battery.kicad_sch"/>
+      <property name="ki_description" value="Unpolarized capacitor, small symbol"/>
+      <property name="ki_keywords" value="capacitor cap"/>
+      <sheetpath names="/Battery Management/" tstamps="/2c074201-41ae-48a2-8f73-9baa1910d072/"/>
+      <tstamps>fb25d3db-6be8-4a3b-a1d9-a0a50b33879d</tstamps>
+    </comp>
+    <comp ref="C15">
+      <value>10uF 50V</value>
+      <footprint>Capacitor_SMD:C_1206_3216Metric_Pad1.33x1.80mm_HandSolder</footprint>
+      <fields>
+        <field name="Farnell">3013512</field>
+        <field name="Farnell Price/Stock">https://uk.farnell.com/samsung-electro-mechanics/cl31a106kbhnnne/cap-10uf-50v-mlcc-1206/dp/3013512</field>
+      </fields>
+      <libsource lib="Device" part="C_Polarized_Small" description="Polarized capacitor, small symbol"/>
+      <property name="Farnell" value="3013512"/>
+      <property name="Farnell Price/Stock" value="https://uk.farnell.com/samsung-electro-mechanics/cl31a106kbhnnne/cap-10uf-50v-mlcc-1206/dp/3013512"/>
+      <property name="Sheetname" value="Battery Management"/>
+      <property name="Sheetfile" value="battery.kicad_sch"/>
+      <property name="ki_description" value="Polarized capacitor, small symbol"/>
+      <property name="ki_keywords" value="cap capacitor"/>
+      <sheetpath names="/Battery Management/" tstamps="/2c074201-41ae-48a2-8f73-9baa1910d072/"/>
+      <tstamps>7b92fc19-3332-4254-8224-59f1db893d6c</tstamps>
+    </comp>
+    <comp ref="C16">
+      <value>0.1uF</value>
+      <footprint>Capacitor_SMD:C_0603_1608Metric_Pad1.08x0.95mm_HandSolder</footprint>
+      <fields>
+        <field name="Farnell">1759038RL</field>
+        <field name="Farnell Price/Stock">https://uk.farnell.com/multicomp/mc0603f104z250ct/cap-0-1-f-25v-y5v-0603/dp/1759038RL</field>
+      </fields>
+      <libsource lib="Device" part="C_Small" description="Unpolarized capacitor, small symbol"/>
+      <property name="Farnell" value="1759038RL"/>
+      <property name="Farnell Price/Stock" value="https://uk.farnell.com/multicomp/mc0603f104z250ct/cap-0-1-f-25v-y5v-0603/dp/1759038RL"/>
+      <property name="Sheetname" value="Battery Management"/>
+      <property name="Sheetfile" value="battery.kicad_sch"/>
+      <property name="ki_description" value="Unpolarized capacitor, small symbol"/>
+      <property name="ki_keywords" value="capacitor cap"/>
+      <sheetpath names="/Battery Management/" tstamps="/2c074201-41ae-48a2-8f73-9baa1910d072/"/>
+      <tstamps>7956e252-95f5-4700-9805-25be8f16b356</tstamps>
+    </comp>
+    <comp ref="D3">
+      <value>LED Green</value>
+      <footprint>LED_SMD:LED_0805_2012Metric_Pad1.15x1.40mm_HandSolder</footprint>
+      <fields>
+        <field name="Farnell">3796308</field>
+        <field name="Farnell Price/Stock">https://uk.farnell.com/multicomp-pro/mp008279/led-green-70mcd-576nm-0805/dp/3796308</field>
+      </fields>
+      <libsource lib="Device" part="LED" description="Light emitting diode"/>
+      <property name="Farnell" value="3796308"/>
+      <property name="Farnell Price/Stock" value="https://uk.farnell.com/multicomp-pro/mp008279/led-green-70mcd-576nm-0805/dp/3796308"/>
+      <property name="Sheetname" value="Battery Management"/>
+      <property name="Sheetfile" value="battery.kicad_sch"/>
+      <property name="ki_description" value="Light emitting diode"/>
+      <property name="ki_keywords" value="LED diode"/>
+      <sheetpath names="/Battery Management/" tstamps="/2c074201-41ae-48a2-8f73-9baa1910d072/"/>
+      <tstamps>296405ab-b5df-4b72-8675-4d3b4ae2d4fb</tstamps>
+    </comp>
+    <comp ref="D4">
+      <value>LED Red</value>
+      <footprint>LED_SMD:LED_0805_2012Metric_Pad1.15x1.40mm_HandSolder</footprint>
+      <fields>
+        <field name="Farnell">3796325</field>
+        <field name="Farnell Price/Stock">https://uk.farnell.com/multicomp-pro/mp008293/led-red-220mcd-626nm-0805/dp/3796325</field>
+      </fields>
+      <libsource lib="Device" part="LED" description="Light emitting diode"/>
+      <property name="Farnell" value="3796325"/>
+      <property name="Farnell Price/Stock" value="https://uk.farnell.com/multicomp-pro/mp008293/led-red-220mcd-626nm-0805/dp/3796325"/>
+      <property name="Sheetname" value="Battery Management"/>
+      <property name="Sheetfile" value="battery.kicad_sch"/>
+      <property name="ki_description" value="Light emitting diode"/>
+      <property name="ki_keywords" value="LED diode"/>
+      <sheetpath names="/Battery Management/" tstamps="/2c074201-41ae-48a2-8f73-9baa1910d072/"/>
+      <tstamps>fbed19f9-1ac1-46e5-9218-58ec46a424e0</tstamps>
+    </comp>
+    <comp ref="D5">
+      <value>D_Schottky</value>
+      <footprint>Diode_SMD:D_SMF</footprint>
+      <fields>
+        <field name="Farnell">3014176</field>
+        <field name="Farnell Price/Stock">https://uk.farnell.com/vishay/v3fl45hm3-h/schottky-rect-single-3a-45v-do/dp/3014176</field>
+      </fields>
+      <libsource lib="Device" part="D_Schottky" description="Schottky diode"/>
+      <property name="Farnell" value="3014176"/>
+      <property name="Farnell Price/Stock" value="https://uk.farnell.com/vishay/v3fl45hm3-h/schottky-rect-single-3a-45v-do/dp/3014176"/>
+      <property name="Sheetname" value="Battery Management"/>
+      <property name="Sheetfile" value="battery.kicad_sch"/>
+      <property name="ki_description" value="Schottky diode"/>
+      <property name="ki_keywords" value="diode Schottky"/>
+      <sheetpath names="/Battery Management/" tstamps="/2c074201-41ae-48a2-8f73-9baa1910d072/"/>
+      <tstamps>1a1b6eab-2909-4fd8-95bb-c305343f888f</tstamps>
+    </comp>
+    <comp ref="D6">
+      <value>D_Schottky</value>
+      <footprint>Diode_SMD:D_SMF</footprint>
+      <fields>
+        <field name="Farnell">3014176</field>
+        <field name="Farnell Price/Stock">https://uk.farnell.com/vishay/v3fl45hm3-h/schottky-rect-single-3a-45v-do/dp/3014176</field>
+      </fields>
+      <libsource lib="Device" part="D_Schottky" description="Schottky diode"/>
+      <property name="Farnell" value="3014176"/>
+      <property name="Farnell Price/Stock" value="https://uk.farnell.com/vishay/v3fl45hm3-h/schottky-rect-single-3a-45v-do/dp/3014176"/>
+      <property name="Sheetname" value="Battery Management"/>
+      <property name="Sheetfile" value="battery.kicad_sch"/>
+      <property name="ki_description" value="Schottky diode"/>
+      <property name="ki_keywords" value="diode Schottky"/>
+      <sheetpath names="/Battery Management/" tstamps="/2c074201-41ae-48a2-8f73-9baa1910d072/"/>
+      <tstamps>f6ba39e1-5305-4722-bed4-26ebd61e92ec</tstamps>
+    </comp>
+    <comp ref="D7">
+      <value>D_Schottky</value>
+      <footprint>Diode_SMD:D_SMF</footprint>
+      <fields>
+        <field name="Farnell">3014176</field>
+        <field name="Farnell Price/Stock">https://uk.farnell.com/vishay/v3fl45hm3-h/schottky-rect-single-3a-45v-do/dp/3014176</field>
+      </fields>
+      <libsource lib="Device" part="D_Schottky" description="Schottky diode"/>
+      <property name="Farnell" value="3014176"/>
+      <property name="Farnell Price/Stock" value="https://uk.farnell.com/vishay/v3fl45hm3-h/schottky-rect-single-3a-45v-do/dp/3014176"/>
+      <property name="Sheetname" value="Battery Management"/>
+      <property name="Sheetfile" value="battery.kicad_sch"/>
+      <property name="ki_description" value="Schottky diode"/>
+      <property name="ki_keywords" value="diode Schottky"/>
+      <sheetpath names="/Battery Management/" tstamps="/2c074201-41ae-48a2-8f73-9baa1910d072/"/>
+      <tstamps>75b55134-0ac3-426d-9f25-6ed787976edd</tstamps>
+    </comp>
+    <comp ref="D8">
+      <value>MM3Z4V3ST1G</value>
+      <footprint>Diode_SMD:D_SOD-323</footprint>
+      <fields>
+        <field name="Farnell">2844819 </field>
+        <field name="Farnell Price/Stock">https://uk.farnell.com/on-semiconductor/mm3z4v3st1g/zener-diode-4-3v-0-2w-sod-323/dp/2844819</field>
+      </fields>
+      <libsource lib="Device" part="D_Zener" description="Zener diode"/>
+      <property name="Farnell" value="2844819 "/>
+      <property name="Farnell Price/Stock" value="https://uk.farnell.com/on-semiconductor/mm3z4v3st1g/zener-diode-4-3v-0-2w-sod-323/dp/2844819"/>
+      <property name="Sheetname" value="Battery Management"/>
+      <property name="Sheetfile" value="battery.kicad_sch"/>
+      <property name="ki_description" value="Zener diode"/>
+      <property name="ki_keywords" value="diode"/>
+      <sheetpath names="/Battery Management/" tstamps="/2c074201-41ae-48a2-8f73-9baa1910d072/"/>
+      <tstamps>415d3259-3f47-4360-ac4b-eb274914b06a</tstamps>
+    </comp>
+    <comp ref="J1">
+      <value>USB_C_Receptacle</value>
+      <footprint>Connector_USB:USB_C_Receptacle_Amphenol_12401610E4-2A</footprint>
+      <datasheet>https://www.usb.org/sites/default/files/documents/usb_type-c.zip</datasheet>
+      <fields>
+        <field name="Farnell">3367461</field>
+        <field name="Farnell Price/Stock">https://uk.farnell.com/amphenol-fci/12401610e4-2a/usb-conn-3-1-type-c-rcpt-smd/dp/3367461</field>
+      </fields>
+      <libsource lib="Connector" part="USB_C_Receptacle" description="USB Full-Featured Type-C Receptacle connector"/>
+      <property name="Farnell" value="3367461"/>
+      <property name="Farnell Price/Stock" value="https://uk.farnell.com/amphenol-fci/12401610e4-2a/usb-conn-3-1-type-c-rcpt-smd/dp/3367461"/>
+      <property name="Sheetname" value="Battery Management"/>
+      <property name="Sheetfile" value="battery.kicad_sch"/>
+      <property name="ki_description" value="USB Full-Featured Type-C Receptacle connector"/>
+      <property name="ki_keywords" value="usb universal serial bus type-C full-featured"/>
+      <sheetpath names="/Battery Management/" tstamps="/2c074201-41ae-48a2-8f73-9baa1910d072/"/>
+      <tstamps>cc0ded08-7480-47c4-aca6-e6f8119958f9</tstamps>
+    </comp>
+    <comp ref="J7">
+      <value>Solar Input</value>
+      <footprint>MCQN:OQ0212510000G</footprint>
+      <fields>
+        <field name="Description">DNP</field>
+      </fields>
+      <libsource lib="Connector_Generic" part="Conn_01x02" description="Generic connector, single row, 01x02, script generated (kicad-library-utils/schlib/autogen/connector/)"/>
+      <property name="Description" value="DNP"/>
+      <property name="Sheetname" value="Battery Management"/>
+      <property name="Sheetfile" value="battery.kicad_sch"/>
+      <property name="ki_description" value="Generic connector, single row, 01x02, script generated (kicad-library-utils/schlib/autogen/connector/)"/>
+      <property name="ki_keywords" value="connector"/>
+      <sheetpath names="/Battery Management/" tstamps="/2c074201-41ae-48a2-8f73-9baa1910d072/"/>
+      <tstamps>f51cafa8-099d-49f9-b7c5-db53d1414879</tstamps>
+    </comp>
+    <comp ref="J8">
+      <value>Battery</value>
+      <footprint>Connector_PinHeader_2.54mm:PinHeader_1x02_P2.54mm_Vertical</footprint>
+      <fields>
+        <field name="Description">dnp</field>
+      </fields>
+      <libsource lib="Connector_Generic" part="Conn_01x02" description="Generic connector, single row, 01x02, script generated (kicad-library-utils/schlib/autogen/connector/)"/>
+      <property name="Description" value="dnp"/>
+      <property name="Sheetname" value="Battery Management"/>
+      <property name="Sheetfile" value="battery.kicad_sch"/>
+      <property name="ki_description" value="Generic connector, single row, 01x02, script generated (kicad-library-utils/schlib/autogen/connector/)"/>
+      <property name="ki_keywords" value="connector"/>
+      <sheetpath names="/Battery Management/" tstamps="/2c074201-41ae-48a2-8f73-9baa1910d072/"/>
+      <tstamps>eaaac74b-8948-47fd-a4e8-06637d083b5f</tstamps>
+    </comp>
+    <comp ref="JP4">
+      <value>Jumper_2_Bridged</value>
+      <footprint>Jumper:SolderJumper-2_P1.3mm_Bridged_RoundedPad1.0x1.5mm</footprint>
+      <fields>
+        <field name="Description">DNP</field>
+      </fields>
+      <libsource lib="Jumper" part="Jumper_2_Bridged" description="Jumper, 2-pole, closed/bridged"/>
+      <property name="Description" value="DNP"/>
+      <property name="Sheetname" value="Battery Management"/>
+      <property name="Sheetfile" value="battery.kicad_sch"/>
+      <property name="ki_description" value="Jumper, 2-pole, closed/bridged"/>
+      <property name="ki_keywords" value="Jumper SPST"/>
+      <sheetpath names="/Battery Management/" tstamps="/2c074201-41ae-48a2-8f73-9baa1910d072/"/>
+      <tstamps>4a8d7f94-38c0-43d7-af9f-7c3d82bffe7b</tstamps>
+    </comp>
+    <comp ref="JP5">
+      <value>Test Point</value>
+      <footprint>Jumper:SolderJumper-2_P1.3mm_Bridged2Bar_RoundedPad1.0x1.5mm</footprint>
+      <fields>
+        <field name="Description">DNP</field>
+      </fields>
+      <libsource lib="Jumper" part="SolderJumper_2_Bridged" description="Solder Jumper, 2-pole, closed/bridged"/>
+      <property name="Description" value="DNP"/>
+      <property name="Sheetname" value="Battery Management"/>
+      <property name="Sheetfile" value="battery.kicad_sch"/>
+      <property name="ki_description" value="Solder Jumper, 2-pole, closed/bridged"/>
+      <property name="ki_keywords" value="solder jumper SPST"/>
+      <sheetpath names="/Battery Management/" tstamps="/2c074201-41ae-48a2-8f73-9baa1910d072/"/>
+      <tstamps>6529a4e4-fb62-46c9-982f-96f5ba32bbe1</tstamps>
+    </comp>
+    <comp ref="JP6">
+      <value>Jumper_on</value>
+      <footprint>Jumper:SolderJumper-2_P1.3mm_Open_RoundedPad1.0x1.5mm</footprint>
+      <fields>
+        <field name="Description">DNP</field>
+      </fields>
+      <libsource lib="MyBikesGotLED-rescue" part="Jumper_NO_Small-Device" description=""/>
+      <property name="Description" value="DNP"/>
+      <property name="Sheetname" value="Battery Management"/>
+      <property name="Sheetfile" value="battery.kicad_sch"/>
+      <sheetpath names="/Battery Management/" tstamps="/2c074201-41ae-48a2-8f73-9baa1910d072/"/>
+      <tstamps>1b6c0561-797b-4a73-a8fa-faa4752b288a</tstamps>
+    </comp>
+    <comp ref="L3">
+      <value>100uH 2.5A</value>
+      <footprint>Inductor_SMD:L_12x12mm_H6mm</footprint>
+      <fields>
+        <field name="Farnell">3380989</field>
+        <field name="Farnell Price/Stock">https://uk.farnell.com/wurth-elektronik/7447706101/inductor-aec-q200-100uh-shld-1/dp/3380989</field>
+      </fields>
+      <libsource lib="Device" part="L_Small" description="Inductor, small symbol"/>
+      <property name="Farnell" value="3380989"/>
+      <property name="Farnell Price/Stock" value="https://uk.farnell.com/wurth-elektronik/7447706101/inductor-aec-q200-100uh-shld-1/dp/3380989"/>
+      <property name="Sheetname" value="Battery Management"/>
+      <property name="Sheetfile" value="battery.kicad_sch"/>
+      <property name="ki_description" value="Inductor, small symbol"/>
+      <property name="ki_keywords" value="inductor choke coil reactor magnetic"/>
+      <sheetpath names="/Battery Management/" tstamps="/2c074201-41ae-48a2-8f73-9baa1910d072/"/>
+      <tstamps>6c5a8e77-b791-4b17-ad15-1268a7114222</tstamps>
+    </comp>
+    <comp ref="Q1">
+      <value>P-channel 30V 4A MOSfet</value>
+      <footprint>Package_TO_SOT_SMD:SOT-23</footprint>
+      <datasheet>http://www.aosmd.com/pdfs/datasheet/AO3401A.pdf</datasheet>
+      <fields>
+        <field name="Farnell">2769528</field>
+        <field name="Farnell Price/Stock">https://uk.farnell.com/rohm/rrr040p03fratl/mosfet-aec-q101-p-ch-30v-tsmt/dp/2769528</field>
+      </fields>
+      <libsource lib="Transistor_FET" part="AO3401A" description="-4.0A Id, -30V Vds, P-Channel MOSFET, SOT-23"/>
+      <property name="Farnell" value="2769528"/>
+      <property name="Farnell Price/Stock" value="https://uk.farnell.com/rohm/rrr040p03fratl/mosfet-aec-q101-p-ch-30v-tsmt/dp/2769528"/>
+      <property name="Sheetname" value="Battery Management"/>
+      <property name="Sheetfile" value="battery.kicad_sch"/>
+      <property name="ki_description" value="-4.0A Id, -30V Vds, P-Channel MOSFET, SOT-23"/>
+      <property name="ki_keywords" value="P-Channel MOSFET"/>
+      <sheetpath names="/Battery Management/" tstamps="/2c074201-41ae-48a2-8f73-9baa1910d072/"/>
+      <tstamps>8dab80e0-4485-401e-9e87-c6bab965cedd</tstamps>
+    </comp>
+    <comp ref="Q2">
+      <value>FS8205</value>
+      <footprint>Package_TO_SOT_SMD:SOT-23-6</footprint>
+      <fields>
+        <field name="LCSC">C32254</field>
+        <field name="LCSC Price/Stock">https://www.lcsc.com/product-detail/MOSFET_FORTUNE_FS8205_FS8205_C32254.html</field>
+      </fields>
+      <libsource lib="MyBikesGotLED-rescue" part="FS8205-MCQN-Schematic-Components" description=""/>
+      <property name="LCSC" value="C32254"/>
+      <property name="LCSC Price/Stock" value="https://www.lcsc.com/product-detail/MOSFET_FORTUNE_FS8205_FS8205_C32254.html"/>
+      <property name="Sheetname" value="Battery Management"/>
+      <property name="Sheetfile" value="battery.kicad_sch"/>
+      <sheetpath names="/Battery Management/" tstamps="/2c074201-41ae-48a2-8f73-9baa1910d072/"/>
+      <tstamps>670e1ffe-b6f1-47d4-afa0-f7c59f8fa55b</tstamps>
+    </comp>
+    <comp ref="Q3">
+      <value>JSM2302</value>
+      <footprint>Package_TO_SOT_SMD:SOT-23</footprint>
+      <datasheet>https://www.diodes.com/assets/Datasheets/products_inactive_data/DMN2041L.pdf</datasheet>
+      <fields>
+        <field name="LCSC">C916403</field>
+        <field name="LCSC Price/Stock">https://www.lcsc.com/product-detail/MOSFETs_JSMSEMI-JSM2302_C916403.html</field>
+      </fields>
+      <libsource lib="Transistor_FET" part="DMN2041L" description="6.4A Id, 20V Vds, N-Channel MOSFET, SOT-23"/>
+      <property name="LCSC" value="C916403"/>
+      <property name="LCSC Price/Stock" value="https://www.lcsc.com/product-detail/MOSFETs_JSMSEMI-JSM2302_C916403.html"/>
+      <property name="Sheetname" value="Battery Management"/>
+      <property name="Sheetfile" value="battery.kicad_sch"/>
+      <property name="ki_description" value="6.4A Id, 20V Vds, N-Channel MOSFET, SOT-23"/>
+      <property name="ki_keywords" value="N-Channel MOSFET"/>
+      <sheetpath names="/Battery Management/" tstamps="/2c074201-41ae-48a2-8f73-9baa1910d072/"/>
+      <tstamps>a6c8c442-feb8-410d-8100-488c575166eb</tstamps>
+    </comp>
+    <comp ref="Q4">
+      <value>P-channel 30V 4A MOSfet</value>
+      <footprint>Package_TO_SOT_SMD:SOT-23</footprint>
+      <datasheet>http://www.aosmd.com/pdfs/datasheet/AO3401A.pdf</datasheet>
+      <fields>
+        <field name="Farnell">2769528</field>
+        <field name="Farnell Price/Stock">https://uk.farnell.com/rohm/rrr040p03fratl/mosfet-aec-q101-p-ch-30v-tsmt/dp/2769528</field>
+      </fields>
+      <libsource lib="Transistor_FET" part="AO3401A" description="-4.0A Id, -30V Vds, P-Channel MOSFET, SOT-23"/>
+      <property name="Farnell" value="2769528"/>
+      <property name="Farnell Price/Stock" value="https://uk.farnell.com/rohm/rrr040p03fratl/mosfet-aec-q101-p-ch-30v-tsmt/dp/2769528"/>
+      <property name="Sheetname" value="Battery Management"/>
+      <property name="Sheetfile" value="battery.kicad_sch"/>
+      <property name="ki_description" value="-4.0A Id, -30V Vds, P-Channel MOSFET, SOT-23"/>
+      <property name="ki_keywords" value="P-Channel MOSFET"/>
+      <sheetpath names="/Battery Management/" tstamps="/2c074201-41ae-48a2-8f73-9baa1910d072/"/>
+      <tstamps>6f439b26-92ce-45dd-95ad-dc2227e935c8</tstamps>
+    </comp>
+    <comp ref="R1">
+      <value>1M</value>
+      <footprint>Resistor_SMD:R_0603_1608Metric_Pad0.98x0.95mm_HandSolder</footprint>
+      <fields>
+        <field name="Farnell">3994449</field>
+        <field name="Farnell Price/Stock">https://uk.farnell.com/walsin/mr06x105-jtlv/res-1m-5-0-125w-0603-thick-film/dp/3994449</field>
+      </fields>
+      <libsource lib="Device" part="R_Small" description="Resistor, small symbol"/>
+      <property name="Farnell" value="3994449"/>
+      <property name="Farnell Price/Stock" value="https://uk.farnell.com/walsin/mr06x105-jtlv/res-1m-5-0-125w-0603-thick-film/dp/3994449"/>
+      <property name="Sheetname" value="Battery Management"/>
+      <property name="Sheetfile" value="battery.kicad_sch"/>
+      <property name="ki_description" value="Resistor, small symbol"/>
+      <property name="ki_keywords" value="R resistor"/>
+      <sheetpath names="/Battery Management/" tstamps="/2c074201-41ae-48a2-8f73-9baa1910d072/"/>
+      <tstamps>0167a29d-9e60-43f4-81dd-64bc4a8b874b</tstamps>
+    </comp>
+    <comp ref="R2">
+      <value>5.1K</value>
+      <footprint>Resistor_SMD:R_0603_1608Metric_Pad0.98x0.95mm_HandSolder</footprint>
+      <fields>
+        <field name="Farnell">2447404</field>
+        <field name="Farnell Price/Stock">https://uk.farnell.com/multicomp/mcwr06x5101ftl/res-5k1-1-0-1w-0603-thick-film/dp/2447404</field>
+      </fields>
+      <libsource lib="Device" part="R_Small" description="Resistor, small symbol"/>
+      <property name="Farnell" value="2447404"/>
+      <property name="Farnell Price/Stock" value="https://uk.farnell.com/multicomp/mcwr06x5101ftl/res-5k1-1-0-1w-0603-thick-film/dp/2447404"/>
+      <property name="Sheetname" value="Battery Management"/>
+      <property name="Sheetfile" value="battery.kicad_sch"/>
+      <property name="ki_description" value="Resistor, small symbol"/>
+      <property name="ki_keywords" value="R resistor"/>
+      <sheetpath names="/Battery Management/" tstamps="/2c074201-41ae-48a2-8f73-9baa1910d072/"/>
+      <tstamps>f2c7e477-8459-47ea-9cc1-6662c83ebfec</tstamps>
+    </comp>
+    <comp ref="R3">
+      <value>5.1K</value>
+      <footprint>Resistor_SMD:R_0603_1608Metric_Pad0.98x0.95mm_HandSolder</footprint>
+      <fields>
+        <field name="Farnell">2447404</field>
+        <field name="Farnell Price/Stock">https://uk.farnell.com/multicomp/mcwr06x5101ftl/res-5k1-1-0-1w-0603-thick-film/dp/2447404</field>
+      </fields>
+      <libsource lib="Device" part="R_Small" description="Resistor, small symbol"/>
+      <property name="Farnell Price/Stock" value="https://uk.farnell.com/multicomp/mcwr06x5101ftl/res-5k1-1-0-1w-0603-thick-film/dp/2447404"/>
+      <property name="Farnell" value="2447404"/>
+      <property name="Sheetname" value="Battery Management"/>
+      <property name="Sheetfile" value="battery.kicad_sch"/>
+      <property name="ki_description" value="Resistor, small symbol"/>
+      <property name="ki_keywords" value="R resistor"/>
+      <sheetpath names="/Battery Management/" tstamps="/2c074201-41ae-48a2-8f73-9baa1910d072/"/>
+      <tstamps>9dfbfa79-ed26-4053-90a8-117d76ebc0cb</tstamps>
+    </comp>
+    <comp ref="R18">
+      <value>560</value>
+      <footprint>Resistor_SMD:R_0603_1608Metric_Pad0.98x0.95mm_HandSolder</footprint>
+      <fields>
+        <field name="Farnell">2502470</field>
+        <field name="Farnell Price/Stock">https://uk.farnell.com/walsin/wr06x5600ftl/res-560r-1-75v-0603-thick-film/dp/2502470</field>
+      </fields>
+      <libsource lib="Device" part="R_Small" description="Resistor, small symbol"/>
+      <property name="Farnell" value="2502470"/>
+      <property name="Farnell Price/Stock" value="https://uk.farnell.com/walsin/wr06x5600ftl/res-560r-1-75v-0603-thick-film/dp/2502470"/>
+      <property name="Sheetname" value="Battery Management"/>
+      <property name="Sheetfile" value="battery.kicad_sch"/>
+      <property name="ki_description" value="Resistor, small symbol"/>
+      <property name="ki_keywords" value="R resistor"/>
+      <sheetpath names="/Battery Management/" tstamps="/2c074201-41ae-48a2-8f73-9baa1910d072/"/>
+      <tstamps>36d56824-9760-4478-8f21-f8f97ded75db</tstamps>
+    </comp>
+    <comp ref="R19">
+      <value>120R</value>
+      <footprint>Resistor_SMD:R_0603_1608Metric_Pad0.98x0.95mm_HandSolder</footprint>
+      <fields>
+        <field name="Farnell">2447240</field>
+        <field name="Farnell Price/Stock">https://uk.farnell.com/multicomp/mcwr06x1200ftl/res-120r-1-0-1w-thick-film/dp/2447240</field>
+      </fields>
+      <libsource lib="Device" part="R_Small" description="Resistor, small symbol"/>
+      <property name="Farnell" value="2447240"/>
+      <property name="Farnell Price/Stock" value="https://uk.farnell.com/multicomp/mcwr06x1200ftl/res-120r-1-0-1w-thick-film/dp/2447240"/>
+      <property name="Sheetname" value="Battery Management"/>
+      <property name="Sheetfile" value="battery.kicad_sch"/>
+      <property name="ki_description" value="Resistor, small symbol"/>
+      <property name="ki_keywords" value="R resistor"/>
+      <sheetpath names="/Battery Management/" tstamps="/2c074201-41ae-48a2-8f73-9baa1910d072/"/>
+      <tstamps>79ec754d-e7e2-4249-a394-436a7ad35db4</tstamps>
+    </comp>
+    <comp ref="R20">
+      <value>330K</value>
+      <footprint>Resistor_SMD:R_0603_1608Metric_Pad0.98x0.95mm_HandSolder</footprint>
+      <fields>
+        <field name="Farnell">2447338</field>
+        <field name="Farnell Price/Stock">https://uk.farnell.com/multicomp/mcwr06x3303ftl/res-330k-1-0-1w-thick-film/dp/2447338</field>
+      </fields>
+      <libsource lib="Device" part="R_Small" description="Resistor, small symbol"/>
+      <property name="Farnell" value="2447338"/>
+      <property name="Farnell Price/Stock" value="https://uk.farnell.com/multicomp/mcwr06x3303ftl/res-330k-1-0-1w-thick-film/dp/2447338"/>
+      <property name="Sheetname" value="Battery Management"/>
+      <property name="Sheetfile" value="battery.kicad_sch"/>
+      <property name="ki_description" value="Resistor, small symbol"/>
+      <property name="ki_keywords" value="R resistor"/>
+      <sheetpath names="/Battery Management/" tstamps="/2c074201-41ae-48a2-8f73-9baa1910d072/"/>
+      <tstamps>667b4b1b-5d45-487f-8f25-f472289cc95b</tstamps>
+    </comp>
+    <comp ref="R21">
+      <value>330</value>
+      <footprint>Resistor_SMD:R_0805_2012Metric_Pad1.20x1.40mm_HandSolder</footprint>
+      <fields>
+        <field name="Farnell">2447339</field>
+        <field name="Farnell Price/Stock">https://uk.farnell.com/multicomp/mcwr06x3300ftl/res-330r-1-0-1w-0603-thick-film/dp/2447339</field>
+      </fields>
+      <libsource lib="Device" part="R_Small" description="Resistor, small symbol"/>
+      <property name="Farnell" value="2447339"/>
+      <property name="Farnell Price/Stock" value="https://uk.farnell.com/multicomp/mcwr06x3300ftl/res-330r-1-0-1w-0603-thick-film/dp/2447339"/>
+      <property name="Sheetname" value="Battery Management"/>
+      <property name="Sheetfile" value="battery.kicad_sch"/>
+      <property name="ki_description" value="Resistor, small symbol"/>
+      <property name="ki_keywords" value="R resistor"/>
+      <sheetpath names="/Battery Management/" tstamps="/2c074201-41ae-48a2-8f73-9baa1910d072/"/>
+      <tstamps>e91d713f-1126-4d98-a947-2a4175462f3e</tstamps>
+    </comp>
+    <comp ref="R22">
+      <value>2k</value>
+      <footprint>Resistor_SMD:R_0805_2012Metric_Pad1.20x1.40mm_HandSolder</footprint>
+      <fields>
+        <field name="Farnell">2447319</field>
+        <field name="Farnell Price/Stock">https://uk.farnell.com/multicomp/mcwr06x2001ftl/res-2k-1-0-1w-0603-thick-film/dp/2447319</field>
+      </fields>
+      <libsource lib="Device" part="R_Small" description="Resistor, small symbol"/>
+      <property name="Farnell" value="2447319"/>
+      <property name="Farnell Price/Stock" value="https://uk.farnell.com/multicomp/mcwr06x2001ftl/res-2k-1-0-1w-0603-thick-film/dp/2447319"/>
+      <property name="Sheetname" value="Battery Management"/>
+      <property name="Sheetfile" value="battery.kicad_sch"/>
+      <property name="ki_description" value="Resistor, small symbol"/>
+      <property name="ki_keywords" value="R resistor"/>
+      <sheetpath names="/Battery Management/" tstamps="/2c074201-41ae-48a2-8f73-9baa1910d072/"/>
+      <tstamps>1f6d72a4-40d7-481f-ab16-7fd1c3330971</tstamps>
+    </comp>
+    <comp ref="R23">
+      <value>0.068</value>
+      <footprint>Resistor_SMD:R_0805_2012Metric_Pad1.20x1.40mm_HandSolder</footprint>
+      <fields>
+        <field name="Farnell">2483502</field>
+        <field name="Farnell Price/Stock">https://uk.farnell.com/te-connectivity/tlm2aer068jte/current-sense-res-0r068-5-250/dp/2483502</field>
+      </fields>
+      <libsource lib="Device" part="R_Small" description="Resistor, small symbol"/>
+      <property name="Farnell" value="2483502"/>
+      <property name="Farnell Price/Stock" value="https://uk.farnell.com/te-connectivity/tlm2aer068jte/current-sense-res-0r068-5-250/dp/2483502"/>
+      <property name="Sheetname" value="Battery Management"/>
+      <property name="Sheetfile" value="battery.kicad_sch"/>
+      <property name="ki_description" value="Resistor, small symbol"/>
+      <property name="ki_keywords" value="R resistor"/>
+      <sheetpath names="/Battery Management/" tstamps="/2c074201-41ae-48a2-8f73-9baa1910d072/"/>
+      <tstamps>90c26690-e7c5-4cee-a993-e11ba8a08912</tstamps>
+    </comp>
+    <comp ref="R24">
+      <value>100R</value>
+      <footprint>Resistor_SMD:R_0603_1608Metric_Pad0.98x0.95mm_HandSolder</footprint>
+      <fields>
+        <field name="Farnell">2694684</field>
+        <field name="Farnell Price/Stock">https://uk.farnell.com/multicomp/mcwr06x101-jtl/res-100r-5-0-1w-0603-thick-film/dp/2694684</field>
+      </fields>
+      <libsource lib="Device" part="R_Small" description="Resistor, small symbol"/>
+      <property name="Farnell" value="2694684"/>
+      <property name="Farnell Price/Stock" value="https://uk.farnell.com/multicomp/mcwr06x101-jtl/res-100r-5-0-1w-0603-thick-film/dp/2694684"/>
+      <property name="Sheetname" value="Battery Management"/>
+      <property name="Sheetfile" value="battery.kicad_sch"/>
+      <property name="ki_description" value="Resistor, small symbol"/>
+      <property name="ki_keywords" value="R resistor"/>
+      <sheetpath names="/Battery Management/" tstamps="/2c074201-41ae-48a2-8f73-9baa1910d072/"/>
+      <tstamps>9f06f0b2-cdb9-4287-9d8b-357ce394152a</tstamps>
+    </comp>
+    <comp ref="R25">
+      <value>102K</value>
+      <footprint>Resistor_SMD:R_0603_1608Metric_Pad0.98x0.95mm_HandSolder</footprint>
+      <fields>
+        <field name="Farnell">2073355</field>
+        <field name="Farnell Price/Stock">https://uk.farnell.com/multicomp/mcmr06x1023ftl/res-102k-1-0-1w-0603-ceramic/dp/2073355</field>
+      </fields>
+      <libsource lib="Device" part="R_Small" description="Resistor, small symbol"/>
+      <property name="Farnell" value="2073355"/>
+      <property name="Farnell Price/Stock" value="https://uk.farnell.com/multicomp/mcmr06x1023ftl/res-102k-1-0-1w-0603-ceramic/dp/2073355"/>
+      <property name="Sheetname" value="Battery Management"/>
+      <property name="Sheetfile" value="battery.kicad_sch"/>
+      <property name="ki_description" value="Resistor, small symbol"/>
+      <property name="ki_keywords" value="R resistor"/>
+      <sheetpath names="/Battery Management/" tstamps="/2c074201-41ae-48a2-8f73-9baa1910d072/"/>
+      <tstamps>33aa663f-d02f-49d1-aaa9-89aa13c2e78a</tstamps>
+    </comp>
+    <comp ref="R26">
+      <value>R10K</value>
+      <footprint>Resistor_SMD:R_0603_1608Metric_Pad0.98x0.95mm_HandSolder</footprint>
+      <fields>
+        <field name="Farnell">2331740</field>
+        <field name="Farnell Price/Stock">https://uk.farnell.com/te-connectivity/crgh0603j10k/res-10k-5-0-2w-0603-thick-film/dp/2331740</field>
+      </fields>
+      <libsource lib="Device" part="R_Small" description="Resistor, small symbol"/>
+      <property name="Farnell" value="2331740"/>
+      <property name="Farnell Price/Stock" value="https://uk.farnell.com/te-connectivity/crgh0603j10k/res-10k-5-0-2w-0603-thick-film/dp/2331740"/>
+      <property name="Sheetname" value="Battery Management"/>
+      <property name="Sheetfile" value="battery.kicad_sch"/>
+      <property name="ki_description" value="Resistor, small symbol"/>
+      <property name="ki_keywords" value="R resistor"/>
+      <sheetpath names="/Battery Management/" tstamps="/2c074201-41ae-48a2-8f73-9baa1910d072/"/>
+      <tstamps>de202bd7-7a8d-47d8-9379-8f7713da6f0e</tstamps>
+    </comp>
+    <comp ref="R27">
+      <value>10k</value>
+      <footprint>Resistor_SMD:R_0603_1608Metric_Pad0.98x0.95mm_HandSolder</footprint>
+      <fields>
+        <field name="Farnell">2331740</field>
+        <field name="Farnell Price/Stock">https://uk.farnell.com/te-connectivity/crgh0603j10k/res-10k-5-0-2w-0603-thick-film/dp/2331740</field>
+      </fields>
+      <libsource lib="Device" part="R_Small" description="Resistor, small symbol"/>
+      <property name="Farnell" value="2331740"/>
+      <property name="Farnell Price/Stock" value="https://uk.farnell.com/te-connectivity/crgh0603j10k/res-10k-5-0-2w-0603-thick-film/dp/2331740"/>
+      <property name="Sheetname" value="Battery Management"/>
+      <property name="Sheetfile" value="battery.kicad_sch"/>
+      <property name="ki_description" value="Resistor, small symbol"/>
+      <property name="ki_keywords" value="R resistor"/>
+      <sheetpath names="/Battery Management/" tstamps="/2c074201-41ae-48a2-8f73-9baa1910d072/"/>
+      <tstamps>8f0b9a62-4deb-469a-a110-6933a512c209</tstamps>
+    </comp>
+    <comp ref="R28">
+      <value>??</value>
+      <footprint>Resistor_SMD:R_0805_2012Metric_Pad1.20x1.40mm_HandSolder</footprint>
+      <fields>
+        <field name="Farnell">2694684</field>
+        <field name="Farnell Price/Stock">https://uk.farnell.com/multicomp/mcwr06x101-jtl/res-100r-5-0-1w-0603-thick-film/dp/2694684</field>
+      </fields>
+      <libsource lib="Device" part="R_Small" description="Resistor, small symbol"/>
+      <property name="Farnell" value="2694684"/>
+      <property name="Farnell Price/Stock" value="https://uk.farnell.com/multicomp/mcwr06x101-jtl/res-100r-5-0-1w-0603-thick-film/dp/2694684"/>
+      <property name="Sheetname" value="Battery Management"/>
+      <property name="Sheetfile" value="battery.kicad_sch"/>
+      <property name="ki_description" value="Resistor, small symbol"/>
+      <property name="ki_keywords" value="R resistor"/>
+      <sheetpath names="/Battery Management/" tstamps="/2c074201-41ae-48a2-8f73-9baa1910d072/"/>
+      <tstamps>490c8bae-1032-4e3e-9a28-15c6fe2115ef</tstamps>
+    </comp>
+    <comp ref="R29">
+      <value>102K</value>
+      <footprint>Resistor_SMD:R_0603_1608Metric_Pad0.98x0.95mm_HandSolder</footprint>
+      <fields>
+        <field name="Farnell">2073355</field>
+        <field name="Farnell Price/Stock">https://uk.farnell.com/multicomp/mcmr06x1023ftl/res-102k-1-0-1w-0603-ceramic/dp/2073355</field>
+      </fields>
+      <libsource lib="Device" part="R_Small" description="Resistor, small symbol"/>
+      <property name="Farnell" value="2073355"/>
+      <property name="Farnell Price/Stock" value="https://uk.farnell.com/multicomp/mcmr06x1023ftl/res-102k-1-0-1w-0603-ceramic/dp/2073355"/>
+      <property name="Sheetname" value="Battery Management"/>
+      <property name="Sheetfile" value="battery.kicad_sch"/>
+      <property name="ki_description" value="Resistor, small symbol"/>
+      <property name="ki_keywords" value="R resistor"/>
+      <sheetpath names="/Battery Management/" tstamps="/2c074201-41ae-48a2-8f73-9baa1910d072/"/>
+      <tstamps>34e74248-0d0e-47c1-b47e-34921e19ea71</tstamps>
+    </comp>
+    <comp ref="SW2">
+      <value>ON/OFF</value>
+      <footprint>Button_Switch_THT:SW_CuK_OS102011MA1QN1_SPDT_Angled</footprint>
+      <fields>
+        <field name="Farnell">1201431</field>
+        <field name="Farnell Price/Stock">https://uk.farnell.com/c-k-components/os102011ma1qn1/switch-spdt-0-1a-12v-pcb-r-a/dp/1201431</field>
+      </fields>
+      <libsource lib="Switch" part="SW_SPDT" description="Switch, single pole double throw"/>
+      <property name="Farnell" value="1201431"/>
+      <property name="Farnell Price/Stock" value="https://uk.farnell.com/c-k-components/os102011ma1qn1/switch-spdt-0-1a-12v-pcb-r-a/dp/1201431"/>
+      <property name="Sheetname" value="Battery Management"/>
+      <property name="Sheetfile" value="battery.kicad_sch"/>
+      <property name="ki_description" value="Switch, single pole double throw"/>
+      <property name="ki_keywords" value="switch single-pole double-throw spdt ON-ON"/>
+      <sheetpath names="/Battery Management/" tstamps="/2c074201-41ae-48a2-8f73-9baa1910d072/"/>
+      <tstamps>9f8f6d71-b21f-4c98-a42a-a8853afa5e8e</tstamps>
+    </comp>
+    <comp ref="U5">
+      <value>CN3791</value>
+      <footprint>Package_SO:SSOP-10_3.9x4.9mm_P1.00mm</footprint>
+      <datasheet>http://www.consonance-elec.com/pdf/datasheet/DSE-CN3791.pdf</datasheet>
+      <fields>
+        <field name="LCSC">C154992</field>
+        <field name="LCSC Price/Stock">https://www.lcsc.com/product-detail/Battery-Management-ICs_ShangHai-Consonance-Elec-CN3791_C154992.html</field>
+      </fields>
+      <libsource lib="CustomComponents" part="CN3791" description="4A, Standalone Li-ion Battery Charger IC With Photovoltaic Cell MPPT Function"/>
+      <property name="LCSC" value="C154992"/>
+      <property name="LCSC Price/Stock" value="https://www.lcsc.com/product-detail/Battery-Management-ICs_ShangHai-Consonance-Elec-CN3791_C154992.html"/>
+      <property name="Sheetname" value="Battery Management"/>
+      <property name="Sheetfile" value="battery.kicad_sch"/>
+      <property name="ki_description" value="4A, Standalone Li-ion Battery Charger IC With Photovoltaic Cell MPPT Function"/>
+      <property name="ki_keywords" value="solar MPPT charger"/>
+      <sheetpath names="/Battery Management/" tstamps="/2c074201-41ae-48a2-8f73-9baa1910d072/"/>
+      <tstamps>c5f26490-cc0c-4362-bb21-431ffac613c2</tstamps>
+    </comp>
+    <comp ref="U6">
+      <value>FS312F-G</value>
+      <footprint>Package_TO_SOT_SMD:SOT-23-6_Handsoldering</footprint>
+      <fields>
+        <field name="LCSC">C82736</field>
+        <field name="LCSC Price/Stock">https://www.lcsc.com/product-detail/Battery-Protection-ICs_FORTUNE_FS312F-G_FS312F-G_C82736.html</field>
+      </fields>
+      <libsource lib="MyBikesGotLED-rescue" part="FS312F-G-MCQN-Schematic-Components" description=""/>
+      <property name="LCSC" value="C82736"/>
+      <property name="LCSC Price/Stock" value="https://www.lcsc.com/product-detail/Battery-Protection-ICs_FORTUNE_FS312F-G_FS312F-G_C82736.html"/>
+      <property name="Sheetname" value="Battery Management"/>
+      <property name="Sheetfile" value="battery.kicad_sch"/>
+      <sheetpath names="/Battery Management/" tstamps="/2c074201-41ae-48a2-8f73-9baa1910d072/"/>
+      <tstamps>43d78a15-9baa-47bd-8890-d985798d372b</tstamps>
+    </comp>
+  </components>
+  <libparts>
+    <libpart lib="Connector" part="USB_C_Receptacle">
+      <description>USB Full-Featured Type-C Receptacle connector</description>
+      <docs>https://www.usb.org/sites/default/files/documents/usb_type-c.zip</docs>
+      <footprints>
+        <fp>USB*C*Receptacle*</fp>
+      </footprints>
+      <fields>
+        <field name="Reference">J</field>
+        <field name="Value">USB_C_Receptacle</field>
+        <field name="Datasheet">https://www.usb.org/sites/default/files/documents/usb_type-c.zip</field>
+      </fields>
+      <pins>
+        <pin num="A1" name="GND" type="passive"/>
+        <pin num="A2" name="TX1+" type="bidirectional"/>
+        <pin num="A3" name="TX1-" type="bidirectional"/>
+        <pin num="A4" name="VBUS" type="passive"/>
+        <pin num="A5" name="CC1" type="bidirectional"/>
+        <pin num="A6" name="D+" type="bidirectional"/>
+        <pin num="A7" name="D-" type="bidirectional"/>
+        <pin num="A8" name="SBU1" type="bidirectional"/>
+        <pin num="A9" name="VBUS" type="passive"/>
+        <pin num="A10" name="RX2-" type="bidirectional"/>
+        <pin num="A11" name="RX2+" type="bidirectional"/>
+        <pin num="A12" name="GND" type="passive"/>
+        <pin num="B1" name="GND" type="passive"/>
+        <pin num="B2" name="TX2+" type="bidirectional"/>
+        <pin num="B3" name="TX2-" type="bidirectional"/>
+        <pin num="B4" name="VBUS" type="passive"/>
+        <pin num="B5" name="CC2" type="bidirectional"/>
+        <pin num="B6" name="D+" type="bidirectional"/>
+        <pin num="B7" name="D-" type="bidirectional"/>
+        <pin num="B8" name="SBU2" type="bidirectional"/>
+        <pin num="B9" name="VBUS" type="passive"/>
+        <pin num="B10" name="RX1-" type="bidirectional"/>
+        <pin num="B11" name="RX1+" type="bidirectional"/>
+        <pin num="B12" name="GND" type="passive"/>
+        <pin num="S1" name="SHIELD" type="passive"/>
+      </pins>
+    </libpart>
+    <libpart lib="Connector_Generic" part="Conn_01x01">
+      <description>Generic connector, single row, 01x01, script generated (kicad-library-utils/schlib/autogen/connector/)</description>
+      <docs>~</docs>
+      <footprints>
+        <fp>Connector*:*_1x??_*</fp>
+      </footprints>
+      <fields>
+        <field name="Reference">J</field>
+        <field name="Value">Conn_01x01</field>
+        <field name="Datasheet">~</field>
+      </fields>
+      <pins>
+        <pin num="1" name="Pin_1" type="passive"/>
+      </pins>
+    </libpart>
+    <libpart lib="Connector_Generic" part="Conn_01x02">
+      <description>Generic connector, single row, 01x02, script generated (kicad-library-utils/schlib/autogen/connector/)</description>
+      <docs>~</docs>
+      <footprints>
+        <fp>Connector*:*_1x??_*</fp>
+      </footprints>
+      <fields>
+        <field name="Reference">J</field>
+        <field name="Value">Conn_01x02</field>
+        <field name="Datasheet">~</field>
+      </fields>
+      <pins>
+        <pin num="1" name="Pin_1" type="passive"/>
+        <pin num="2" name="Pin_2" type="passive"/>
+      </pins>
+    </libpart>
+    <libpart lib="Connector_Generic" part="Conn_01x03">
+      <description>Generic connector, single row, 01x03, script generated (kicad-library-utils/schlib/autogen/connector/)</description>
+      <docs>~</docs>
+      <footprints>
+        <fp>Connector*:*_1x??_*</fp>
+      </footprints>
+      <fields>
+        <field name="Reference">J</field>
+        <field name="Value">Conn_01x03</field>
+        <field name="Datasheet">~</field>
+      </fields>
+      <pins>
+        <pin num="1" name="Pin_1" type="passive"/>
+        <pin num="2" name="Pin_2" type="passive"/>
+        <pin num="3" name="Pin_3" type="passive"/>
+      </pins>
+    </libpart>
+    <libpart lib="Connector_Generic" part="Conn_01x04">
+      <description>Generic connector, single row, 01x04, script generated (kicad-library-utils/schlib/autogen/connector/)</description>
+      <docs>~</docs>
+      <footprints>
+        <fp>Connector*:*_1x??_*</fp>
+      </footprints>
+      <fields>
+        <field name="Reference">J</field>
+        <field name="Value">Conn_01x04</field>
+        <field name="Datasheet">~</field>
+      </fields>
+      <pins>
+        <pin num="1" name="Pin_1" type="passive"/>
+        <pin num="2" name="Pin_2" type="passive"/>
+        <pin num="3" name="Pin_3" type="passive"/>
+        <pin num="4" name="Pin_4" type="passive"/>
+      </pins>
+    </libpart>
+    <libpart lib="Connector_Generic" part="Conn_01x06">
+      <description>Generic connector, single row, 01x06, script generated (kicad-library-utils/schlib/autogen/connector/)</description>
+      <docs>~</docs>
+      <footprints>
+        <fp>Connector*:*_1x??_*</fp>
+      </footprints>
+      <fields>
+        <field name="Reference">J</field>
+        <field name="Value">Conn_01x06</field>
+        <field name="Datasheet">~</field>
+      </fields>
+      <pins>
+        <pin num="1" name="Pin_1" type="passive"/>
+        <pin num="2" name="Pin_2" type="passive"/>
+        <pin num="3" name="Pin_3" type="passive"/>
+        <pin num="4" name="Pin_4" type="passive"/>
+        <pin num="5" name="Pin_5" type="passive"/>
+        <pin num="6" name="Pin_6" type="passive"/>
+      </pins>
+    </libpart>
+    <libpart lib="Connector_Generic" part="Conn_01x09">
+      <description>Generic connector, single row, 01x09, script generated (kicad-library-utils/schlib/autogen/connector/)</description>
+      <docs>~</docs>
+      <footprints>
+        <fp>Connector*:*_1x??_*</fp>
+      </footprints>
+      <fields>
+        <field name="Reference">J</field>
+        <field name="Value">Conn_01x09</field>
+        <field name="Datasheet">~</field>
+      </fields>
+      <pins>
+        <pin num="1" name="Pin_1" type="passive"/>
+        <pin num="2" name="Pin_2" type="passive"/>
+        <pin num="3" name="Pin_3" type="passive"/>
+        <pin num="4" name="Pin_4" type="passive"/>
+        <pin num="5" name="Pin_5" type="passive"/>
+        <pin num="6" name="Pin_6" type="passive"/>
+        <pin num="7" name="Pin_7" type="passive"/>
+        <pin num="8" name="Pin_8" type="passive"/>
+        <pin num="9" name="Pin_9" type="passive"/>
+      </pins>
+    </libpart>
+    <libpart lib="CustomComponents" part="CN3791">
+      <description>4A, Standalone Li-ion Battery Charger IC With Photovoltaic Cell MPPT Function</description>
+      <docs>http://www.consonance-elec.com/pdf/datasheet/DSE-CN3791.pdf</docs>
+      <fields>
+        <field name="Reference">U</field>
+        <field name="Value">CN3791</field>
+        <field name="Footprint">Package_SO:SSOP-10_3.9x4.9mm_P1.00mm</field>
+        <field name="Datasheet">http://www.consonance-elec.com/pdf/datasheet/DSE-CN3791.pdf</field>
+      </fields>
+      <pins>
+        <pin num="1" name="VG" type="input"/>
+        <pin num="2" name="GND" type="power_out"/>
+        <pin num="3" name="CHRG" type="output"/>
+        <pin num="4" name="DONE" type="output"/>
+        <pin num="5" name="COM" type="input"/>
+        <pin num="6" name="MPPT" type="input"/>
+        <pin num="7" name="BAT" type="input"/>
+        <pin num="8" name="CSP" type="input"/>
+        <pin num="9" name="VCC" type="power_in"/>
+        <pin num="10" name="DRV" type="output"/>
+      </pins>
+    </libpart>
+    <libpart lib="Device" part="Battery_Cell">
+      <description>Single-cell battery</description>
+      <docs>~</docs>
+      <fields>
+        <field name="Reference">BT</field>
+        <field name="Value">Battery_Cell</field>
+        <field name="Datasheet">~</field>
+      </fields>
+      <pins>
+        <pin num="1" name="+" type="passive"/>
+        <pin num="2" name="-" type="passive"/>
+      </pins>
+    </libpart>
+    <libpart lib="Device" part="C">
+      <description>Unpolarized capacitor</description>
+      <docs>~</docs>
+      <footprints>
+        <fp>C_*</fp>
+      </footprints>
+      <fields>
+        <field name="Reference">C</field>
+        <field name="Value">C</field>
+        <field name="Datasheet">~</field>
+      </fields>
+      <pins>
+        <pin num="1" name="" type="passive"/>
+        <pin num="2" name="" type="passive"/>
+      </pins>
+    </libpart>
+    <libpart lib="Device" part="C_Polarized_Small">
+      <description>Polarized capacitor, small symbol</description>
+      <docs>~</docs>
+      <footprints>
+        <fp>CP_*</fp>
+      </footprints>
+      <fields>
+        <field name="Reference">C</field>
+        <field name="Value">C_Polarized_Small</field>
+        <field name="Datasheet">~</field>
+      </fields>
+      <pins>
+        <pin num="1" name="" type="passive"/>
+        <pin num="2" name="" type="passive"/>
+      </pins>
+    </libpart>
+    <libpart lib="Device" part="C_Small">
+      <description>Unpolarized capacitor, small symbol</description>
+      <docs>~</docs>
+      <footprints>
+        <fp>C_*</fp>
+      </footprints>
+      <fields>
+        <field name="Reference">C</field>
+        <field name="Value">C_Small</field>
+        <field name="Datasheet">~</field>
+      </fields>
+      <pins>
+        <pin num="1" name="" type="passive"/>
+        <pin num="2" name="" type="passive"/>
+      </pins>
+    </libpart>
+    <libpart lib="Device" part="D_Schottky">
+      <description>Schottky diode</description>
+      <docs>~</docs>
+      <footprints>
+        <fp>TO-???*</fp>
+        <fp>*_Diode_*</fp>
+        <fp>*SingleDiode*</fp>
+        <fp>D_*</fp>
+      </footprints>
+      <fields>
+        <field name="Reference">D</field>
+        <field name="Value">D_Schottky</field>
+        <field name="Datasheet">~</field>
+      </fields>
+      <pins>
+        <pin num="1" name="K" type="passive"/>
+        <pin num="2" name="A" type="passive"/>
+      </pins>
+    </libpart>
+    <libpart lib="Device" part="D_Zener">
+      <description>Zener diode</description>
+      <docs>~</docs>
+      <footprints>
+        <fp>TO-???*</fp>
+        <fp>*_Diode_*</fp>
+        <fp>*SingleDiode*</fp>
+        <fp>D_*</fp>
+      </footprints>
+      <fields>
+        <field name="Reference">D</field>
+        <field name="Value">D_Zener</field>
+        <field name="Datasheet">~</field>
+      </fields>
+      <pins>
+        <pin num="1" name="K" type="passive"/>
+        <pin num="2" name="A" type="passive"/>
+      </pins>
+    </libpart>
+    <libpart lib="Device" part="LED">
+      <description>Light emitting diode</description>
+      <docs>~</docs>
+      <footprints>
+        <fp>LED*</fp>
+        <fp>LED_SMD:*</fp>
+        <fp>LED_THT:*</fp>
+      </footprints>
+      <fields>
+        <field name="Reference">D</field>
+        <field name="Value">LED</field>
+        <field name="Datasheet">~</field>
+      </fields>
+      <pins>
+        <pin num="1" name="K" type="passive"/>
+        <pin num="2" name="A" type="passive"/>
+      </pins>
+    </libpart>
+    <libpart lib="Device" part="L_Small">
+      <description>Inductor, small symbol</description>
+      <docs>~</docs>
+      <footprints>
+        <fp>Choke_*</fp>
+        <fp>*Coil*</fp>
+        <fp>Inductor_*</fp>
+        <fp>L_*</fp>
+      </footprints>
+      <fields>
+        <field name="Reference">L</field>
+        <field name="Value">L_Small</field>
+        <field name="Datasheet">~</field>
+      </fields>
+      <pins>
+        <pin num="1" name="" type="passive"/>
+        <pin num="2" name="" type="passive"/>
+      </pins>
+    </libpart>
+    <libpart lib="Device" part="Polyfuse">
+      <description>Resettable fuse, polymeric positive temperature coefficient</description>
+      <docs>~</docs>
+      <footprints>
+        <fp>*polyfuse*</fp>
+        <fp>*PTC*</fp>
+      </footprints>
+      <fields>
+        <field name="Reference">F</field>
+        <field name="Value">Polyfuse</field>
+        <field name="Datasheet">~</field>
+      </fields>
+      <pins>
+        <pin num="1" name="" type="passive"/>
+        <pin num="2" name="" type="passive"/>
+      </pins>
+    </libpart>
+    <libpart lib="Device" part="R">
+      <description>Resistor</description>
+      <docs>~</docs>
+      <footprints>
+        <fp>R_*</fp>
+      </footprints>
+      <fields>
+        <field name="Reference">R</field>
+        <field name="Value">R</field>
+        <field name="Datasheet">~</field>
+      </fields>
+      <pins>
+        <pin num="1" name="" type="passive"/>
+        <pin num="2" name="" type="passive"/>
+      </pins>
+    </libpart>
+    <libpart lib="Device" part="R_Small">
+      <description>Resistor, small symbol</description>
+      <docs>~</docs>
+      <footprints>
+        <fp>R_*</fp>
+      </footprints>
+      <fields>
+        <field name="Reference">R</field>
+        <field name="Value">R_Small</field>
+        <field name="Datasheet">~</field>
+      </fields>
+      <pins>
+        <pin num="1" name="" type="passive"/>
+        <pin num="2" name="" type="passive"/>
+      </pins>
+    </libpart>
+    <libpart lib="Jumper" part="Jumper_2_Bridged">
+      <description>Jumper, 2-pole, closed/bridged</description>
+      <docs>~</docs>
+      <footprints>
+        <fp>Jumper*</fp>
+        <fp>TestPoint*2Pads*</fp>
+        <fp>TestPoint*Bridge*</fp>
+      </footprints>
+      <fields>
+        <field name="Reference">JP</field>
+        <field name="Value">Jumper_2_Bridged</field>
+        <field name="Datasheet">~</field>
+      </fields>
+      <pins>
+        <pin num="1" name="A" type="passive"/>
+        <pin num="2" name="B" type="passive"/>
+      </pins>
+    </libpart>
+    <libpart lib="Jumper" part="SolderJumper_2_Bridged">
+      <description>Solder Jumper, 2-pole, closed/bridged</description>
+      <docs>~</docs>
+      <footprints>
+        <fp>SolderJumper*Bridged*</fp>
+      </footprints>
+      <fields>
+        <field name="Reference">JP</field>
+        <field name="Value">SolderJumper_2_Bridged</field>
+        <field name="Datasheet">~</field>
+      </fields>
+      <pins>
+        <pin num="1" name="A" type="passive"/>
+        <pin num="2" name="B" type="passive"/>
+      </pins>
+    </libpart>
+    <libpart lib="MyBikesGotLED-rescue" part="FS312F-G-MCQN-Schematic-Components">
+      <fields>
+        <field name="Reference">U</field>
+        <field name="Value">FS312F-G-MCQN-Schematic-Components</field>
+        <field name="Footprint">Package_TO_SOT_SMD:SOT-23-6_Handsoldering</field>
+      </fields>
+      <pins>
+        <pin num="1" name="OD" type="output"/>
+        <pin num="2" name="CS" type="input"/>
+        <pin num="3" name="OC" type="output"/>
+        <pin num="4" name="TD" type="input"/>
+        <pin num="5" name="VCC" type="power_in"/>
+        <pin num="6" name="GND" type="passive"/>
+      </pins>
+    </libpart>
+    <libpart lib="MyBikesGotLED-rescue" part="FS8205-MCQN-Schematic-Components">
+      <footprints>
+        <fp>SOT?23*</fp>
+      </footprints>
+      <fields>
+        <field name="Reference">Q</field>
+        <field name="Value">FS8205-MCQN-Schematic-Components</field>
+        <field name="Footprint">Package_TO_SOT_SMD:SOT-23-6</field>
+      </fields>
+      <pins>
+        <pin num="1" name="S1" type="passive"/>
+        <pin num="2" name="D1/D2" type="passive"/>
+        <pin num="3" name="S2" type="passive"/>
+        <pin num="4" name="G2" type="input"/>
+        <pin num="5" name="D1/D2" type="passive"/>
+        <pin num="6" name="G1" type="input"/>
+      </pins>
+    </libpart>
+    <libpart lib="MyBikesGotLED-rescue" part="Jumper_NO_Small-Device">
+      <footprints>
+        <fp>SolderJumper*Open*</fp>
+        <fp>Jumper*</fp>
+        <fp>TestPoint*2Pads*</fp>
+        <fp>TestPoint*Bridge*</fp>
+      </footprints>
+      <fields>
+        <field name="Reference">JP</field>
+        <field name="Value">Jumper_NO_Small-Device</field>
+      </fields>
+      <pins>
+        <pin num="1" name="1" type="passive"/>
+        <pin num="2" name="2" type="passive"/>
+      </pins>
+    </libpart>
+    <libpart lib="MyBikesGotLED-rescue" part="SN74AHCT125-MCQN-Schematic-Components">
+      <fields>
+        <field name="Reference">U</field>
+        <field name="Value">SN74AHCT125-MCQN-Schematic-Components</field>
+      </fields>
+      <pins>
+        <pin num="1" name="1~{OE}" type="input"/>
+        <pin num="2" name="1A" type="input"/>
+        <pin num="3" name="1Y" type="output"/>
+        <pin num="4" name="2~{OE}" type="input"/>
+        <pin num="5" name="2A" type="input"/>
+        <pin num="6" name="2Y" type="output"/>
+        <pin num="7" name="GND" type="power_in"/>
+        <pin num="8" name="3Y" type="output"/>
+        <pin num="9" name="3A" type="input"/>
+        <pin num="10" name="3~{OE}" type="input"/>
+        <pin num="11" name="4Y" type="output"/>
+        <pin num="12" name="4A" type="input"/>
+        <pin num="13" name="4~{OE}" type="input"/>
+        <pin num="14" name="Vcc" type="power_in"/>
+      </pins>
+    </libpart>
+    <libpart lib="RF_Module" part="ESP-WROOM-02">
+      <description>Wi-Fi Module, ESP8266EX SoC, 32-bit, 802.11b/g/n, WPA/WPA2, 2.7-3.6V, SMD</description>
+      <docs>https://www.espressif.com/sites/default/files/documentation/0c-esp-wroom-02_datasheet_en.pdf</docs>
+      <footprints>
+        <fp>ESP?WROOM?02*</fp>
+      </footprints>
+      <fields>
+        <field name="Reference">U</field>
+        <field name="Value">ESP-WROOM-02</field>
+        <field name="Footprint">RF_Module:ESP-WROOM-02</field>
+        <field name="Datasheet">https://www.espressif.com/sites/default/files/documentation/0c-esp-wroom-02_datasheet_en.pdf</field>
+      </fields>
+      <pins>
+        <pin num="1" name="VDD" type="power_in"/>
+        <pin num="2" name="EN" type="input"/>
+        <pin num="3" name="IO14" type="bidirectional"/>
+        <pin num="4" name="IO12" type="bidirectional"/>
+        <pin num="5" name="IO13" type="bidirectional"/>
+        <pin num="6" name="IO15" type="bidirectional"/>
+        <pin num="7" name="IO2" type="bidirectional"/>
+        <pin num="8" name="IO0" type="bidirectional"/>
+        <pin num="9" name="GND" type="power_in"/>
+        <pin num="10" name="IO4" type="bidirectional"/>
+        <pin num="11" name="RXD" type="bidirectional"/>
+        <pin num="12" name="TXD" type="bidirectional"/>
+        <pin num="13" name="GND" type="passive"/>
+        <pin num="14" name="IO5" type="bidirectional"/>
+        <pin num="15" name="RST" type="input"/>
+        <pin num="16" name="TOUT" type="input"/>
+        <pin num="17" name="IO16" type="bidirectional"/>
+        <pin num="18" name="GND" type="passive"/>
+        <pin num="19" name="GND" type="passive"/>
+      </pins>
+    </libpart>
+    <libpart lib="Regulator_Switching" part="TLV62568DBV">
+      <description>High Efficiency Synchronous Buck Converter, Adjustable Output 0.6V-5.5V, 1A, SOT-23-5</description>
+      <docs>http://www.ti.com/lit/ds/symlink/tlv62568.pdf</docs>
+      <footprints>
+        <fp>SOT?23*</fp>
+      </footprints>
+      <fields>
+        <field name="Reference">U</field>
+        <field name="Value">TLV62568DBV</field>
+        <field name="Footprint">Package_TO_SOT_SMD:SOT-23-5</field>
+        <field name="Datasheet">http://www.ti.com/lit/ds/symlink/tlv62568.pdf</field>
+      </fields>
+      <pins>
+        <pin num="1" name="EN" type="input"/>
+        <pin num="2" name="GND" type="power_in"/>
+        <pin num="3" name="SW" type="power_out"/>
+        <pin num="4" name="VIN" type="power_in"/>
+        <pin num="5" name="FB" type="input"/>
+      </pins>
+    </libpart>
+    <libpart lib="Switch" part="SW_Push">
+      <description>Push button switch, generic, two pins</description>
+      <docs>~</docs>
+      <fields>
+        <field name="Reference">SW</field>
+        <field name="Value">SW_Push</field>
+        <field name="Datasheet">~</field>
+      </fields>
+      <pins>
+        <pin num="1" name="1" type="passive"/>
+        <pin num="2" name="2" type="passive"/>
+      </pins>
+    </libpart>
+    <libpart lib="Switch" part="SW_SPDT">
+      <description>Switch, single pole double throw</description>
+      <docs>~</docs>
+      <fields>
+        <field name="Reference">SW</field>
+        <field name="Value">SW_SPDT</field>
+        <field name="Datasheet">~</field>
+      </fields>
+      <pins>
+        <pin num="1" name="A" type="passive"/>
+        <pin num="2" name="B" type="passive"/>
+        <pin num="3" name="C" type="passive"/>
+      </pins>
+    </libpart>
+    <libpart lib="Transistor_FET" part="AO3401A">
+      <description>-4.0A Id, -30V Vds, P-Channel MOSFET, SOT-23</description>
+      <docs>http://www.aosmd.com/pdfs/datasheet/AO3401A.pdf</docs>
+      <footprints>
+        <fp>SOT?23*</fp>
+      </footprints>
+      <fields>
+        <field name="Reference">Q</field>
+        <field name="Value">AO3401A</field>
+        <field name="Footprint">Package_TO_SOT_SMD:SOT-23</field>
+        <field name="Datasheet">http://www.aosmd.com/pdfs/datasheet/AO3401A.pdf</field>
+      </fields>
+      <pins>
+        <pin num="1" name="G" type="input"/>
+        <pin num="2" name="S" type="passive"/>
+        <pin num="3" name="D" type="passive"/>
+      </pins>
+    </libpart>
+    <libpart lib="Transistor_FET" part="DMN2041L">
+      <description>6.4A Id, 20V Vds, N-Channel MOSFET, SOT-23</description>
+      <docs>https://www.diodes.com/assets/Datasheets/products_inactive_data/DMN2041L.pdf</docs>
+      <footprints>
+        <fp>SOT?23*</fp>
+      </footprints>
+      <fields>
+        <field name="Reference">Q</field>
+        <field name="Value">DMN2041L</field>
+        <field name="Footprint">Package_TO_SOT_SMD:SOT-23</field>
+        <field name="Datasheet">https://www.diodes.com/assets/Datasheets/products_inactive_data/DMN2041L.pdf</field>
+      </fields>
+      <pins>
+        <pin num="1" name="G" type="input"/>
+        <pin num="2" name="S" type="passive"/>
+        <pin num="3" name="D" type="passive"/>
+      </pins>
+    </libpart>
+    <libpart lib="myBikesGotLED" part="Boost_Convertor">
+      <fields>
+        <field name="Reference">U</field>
+        <field name="Value">Boost_Convertor</field>
+      </fields>
+      <pins>
+        <pin num="1" name="LX" type="input"/>
+        <pin num="2" name="LX" type="input"/>
+        <pin num="3" name="VIN" type="power_in"/>
+        <pin num="4" name="EN" type="power_in"/>
+        <pin num="5" name="GND" type="power_in"/>
+        <pin num="6" name="FB" type="input"/>
+        <pin num="7" name="OC" type="input"/>
+        <pin num="8" name="VO" type="power_out"/>
+        <pin num="9" name="PGND" type="power_in"/>
+      </pins>
+    </libpart>
+  </libparts>
+  <libraries>
+    <library logical="Connector">
+      <uri>/usr/share/kicad-nightly/symbols//Connector.kicad_sym</uri>
+    </library>
+    <library logical="Connector_Generic">
+      <uri>/usr/share/kicad-nightly/symbols//Connector_Generic.kicad_sym</uri>
+    </library>
+    <library logical="Device">
+      <uri>/usr/share/kicad-nightly/symbols//Device.kicad_sym</uri>
+    </library>
+    <library logical="Jumper">
+      <uri>/usr/share/kicad-nightly/symbols//Jumper.kicad_sym</uri>
+    </library>
+    <library logical="MyBikesGotLED-rescue">
+      <uri>/home/chris/my-bikes-got-led/electronics/MyBikesGotLED-rescue.lib</uri>
+    </library>
+    <library logical="RF_Module">
+      <uri>/usr/share/kicad-nightly/symbols//RF_Module.kicad_sym</uri>
+    </library>
+    <library logical="Regulator_Switching">
+      <uri>/usr/share/kicad-nightly/symbols//Regulator_Switching.kicad_sym</uri>
+    </library>
+    <library logical="Switch">
+      <uri>/usr/share/kicad-nightly/symbols//Switch.kicad_sym</uri>
+    </library>
+    <library logical="Transistor_FET">
+      <uri>/usr/share/kicad-nightly/symbols//Transistor_FET.kicad_sym</uri>
+    </library>
+    <library logical="myBikesGotLED">
+      <uri>/home/chris/.local/share/kicad/6.0/symbols/myBikesGotLED.kicad_sym</uri>
+    </library>
+  </libraries>
+  <nets>
+    <net code="1" name="+3V3">
+      <node ref="C8" pin="1" pintype="passive"/>
+      <node ref="J5" pin="3" pinfunction="Pin_3" pintype="passive"/>
+      <node ref="J6" pin="3" pinfunction="Pin_3" pintype="passive"/>
+      <node ref="L2" pin="2" pintype="passive"/>
+      <node ref="P3" pin="8" pinfunction="Pin_8" pintype="passive"/>
+      <node ref="P3" pin="9" pinfunction="Pin_9" pintype="passive"/>
+      <node ref="R10" pin="1" pintype="passive"/>
+      <node ref="R12" pin="1" pintype="passive"/>
+      <node ref="R14" pin="1" pintype="passive"/>
+      <node ref="U4" pin="1" pinfunction="VDD" pintype="power_in"/>
+      <node ref="U4" pin="2" pinfunction="EN" pintype="input"/>
+    </net>
+    <net code="2" name="+5V">
+      <node ref="C4" pin="1" pintype="passive"/>
+      <node ref="C5" pin="1" pintype="passive"/>
+      <node ref="F2" pin="1" pintype="passive"/>
+      <node ref="J5" pin="1" pinfunction="Pin_1" pintype="passive"/>
+      <node ref="J6" pin="1" pinfunction="Pin_1" pintype="passive"/>
+      <node ref="R8" pin="1" pintype="passive"/>
+      <node ref="U1" pin="8" pinfunction="VO" pintype="power_out"/>
+    </net>
+    <net code="3" name="+BATT">
+      <node ref="C1" pin="1" pintype="passive"/>
+      <node ref="D8" pin="1" pinfunction="K" pintype="passive"/>
+      <node ref="F1" pin="2" pintype="passive"/>
+      <node ref="JP1" pin="1" pinfunction="1" pintype="passive"/>
+      <node ref="L1" pin="1" pintype="passive"/>
+      <node ref="R20" pin="2" pintype="passive"/>
+      <node ref="R28" pin="1" pintype="passive"/>
+      <node ref="U1" pin="3" pinfunction="VIN" pintype="power_in"/>
+    </net>
+    <net code="4" name="-BATT">
+      <node ref="BT1" pin="2" pinfunction="-" pintype="passive"/>
+      <node ref="C10" pin="2" pintype="passive"/>
+      <node ref="C11" pin="2" pintype="passive"/>
+      <node ref="C12" pin="2" pintype="passive"/>
+      <node ref="C14" pin="2" pintype="passive"/>
+      <node ref="C15" pin="2" pintype="passive"/>
+      <node ref="D6" pin="2" pinfunction="A" pintype="passive"/>
+      <node ref="J1" pin="A1" pinfunction="GND" pintype="passive"/>
+      <node ref="J1" pin="A12" pinfunction="GND" pintype="passive"/>
+      <node ref="J1" pin="B1" pinfunction="GND" pintype="passive"/>
+      <node ref="J1" pin="B12" pinfunction="GND" pintype="passive"/>
+      <node ref="J7" pin="2" pinfunction="Pin_2" pintype="passive"/>
+      <node ref="J8" pin="2" pinfunction="Pin_2" pintype="passive"/>
+      <node ref="R1" pin="2" pintype="passive"/>
+      <node ref="R2" pin="2" pintype="passive"/>
+      <node ref="R21" pin="2" pintype="passive"/>
+      <node ref="R3" pin="2" pintype="passive"/>
+      <node ref="U5" pin="2" pinfunction="GND" pintype="power_out"/>
+      <node ref="U6" pin="6" pinfunction="GND" pintype="passive"/>
+    </net>
+    <net code="5" name="/BaseESP8266/IO4">
+      <node ref="C9" pin="1" pintype="passive"/>
+      <node ref="P4" pin="9" pinfunction="Pin_9" pintype="passive"/>
+      <node ref="R17" pin="2" pintype="passive"/>
+      <node ref="SW1" pin="1" pinfunction="1" pintype="passive"/>
+      <node ref="T1" pin="1" pinfunction="Pin_1" pintype="passive"/>
+      <node ref="U4" pin="10" pinfunction="IO4" pintype="bidirectional"/>
+    </net>
+    <net code="6" name="/BaseESP8266/IO13">
+      <node ref="D1" pin="2" pinfunction="A" pintype="passive"/>
+      <node ref="P3" pin="5" pinfunction="Pin_5" pintype="passive"/>
+      <node ref="U4" pin="5" pinfunction="IO13" pintype="bidirectional"/>
+    </net>
+    <net code="7" name="/BaseESP8266/IO14">
+      <node ref="D2" pin="2" pinfunction="A" pintype="passive"/>
+      <node ref="P3" pin="7" pinfunction="Pin_7" pintype="passive"/>
+      <node ref="U4" pin="3" pinfunction="IO14" pintype="bidirectional"/>
+    </net>
+    <net code="8" name="/BaseESP8266/IO15">
+      <node ref="P3" pin="4" pinfunction="Pin_4" pintype="passive"/>
+      <node ref="R13" pin="2" pintype="passive"/>
+      <node ref="U4" pin="6" pinfunction="IO15" pintype="bidirectional"/>
+    </net>
+    <net code="9" name="/BaseESP8266/RST">
+      <node ref="P4" pin="4" pinfunction="Pin_4" pintype="passive"/>
+      <node ref="R12" pin="2" pintype="passive"/>
+      <node ref="SW1" pin="2" pinfunction="2" pintype="passive"/>
+      <node ref="T2" pin="1" pinfunction="Pin_1" pintype="passive"/>
+      <node ref="U4" pin="15" pinfunction="RST" pintype="input"/>
+    </net>
+    <net code="10" name="/BaseESP8266/RXD">
+      <node ref="J4" pin="4" pinfunction="Pin_4" pintype="passive"/>
+      <node ref="P4" pin="8" pinfunction="Pin_8" pintype="passive"/>
+      <node ref="U4" pin="11" pinfunction="RXD" pintype="bidirectional"/>
+    </net>
+    <net code="11" name="/BaseESP8266/TXD">
+      <node ref="J4" pin="5" pinfunction="Pin_5" pintype="passive"/>
+      <node ref="P4" pin="7" pinfunction="Pin_7" pintype="passive"/>
+      <node ref="U4" pin="12" pinfunction="TXD" pintype="bidirectional"/>
+    </net>
+    <net code="12" name="/Battery Management/Power +">
+      <node ref="C10" pin="1" pintype="passive"/>
+      <node ref="C11" pin="1" pintype="passive"/>
+      <node ref="C13" pin="1" pintype="passive"/>
+      <node ref="D7" pin="2" pinfunction="A" pintype="passive"/>
+      <node ref="J1" pin="A4" pinfunction="VBUS" pintype="passive"/>
+      <node ref="J1" pin="A9" pinfunction="VBUS" pintype="passive"/>
+      <node ref="J1" pin="B4" pinfunction="VBUS" pintype="passive"/>
+      <node ref="J1" pin="B9" pinfunction="VBUS" pintype="passive"/>
+      <node ref="J7" pin="1" pinfunction="Pin_1" pintype="passive"/>
+      <node ref="Q1" pin="2" pinfunction="S" pintype="passive"/>
+      <node ref="Q4" pin="1" pinfunction="G" pintype="input"/>
+      <node ref="R18" pin="1" pintype="passive"/>
+      <node ref="R22" pin="1" pintype="passive"/>
+      <node ref="R27" pin="1" pintype="passive"/>
+      <node ref="U5" pin="9" pinfunction="VCC" pintype="power_in"/>
+    </net>
+    <net code="13" name="5V_Enable">
+      <node ref="P3" pin="6" pinfunction="Pin_6" pintype="passive"/>
+      <node ref="R4" pin="2" pintype="passive"/>
+      <node ref="U4" pin="4" pinfunction="IO12" pintype="bidirectional"/>
+    </net>
+    <net code="14" name="ADC">
+      <node ref="JP4" pin="1" pinfunction="A" pintype="passive"/>
+      <node ref="P4" pin="3" pinfunction="Pin_3" pintype="passive"/>
+      <node ref="U4" pin="16" pinfunction="TOUT" pintype="input"/>
+    </net>
+    <net code="15" name="ESP_IO5">
+      <node ref="JP3" pin="2" pinfunction="2" pintype="passive"/>
+      <node ref="P4" pin="5" pinfunction="Pin_5" pintype="passive"/>
+      <node ref="U4" pin="14" pinfunction="IO5" pintype="bidirectional"/>
+    </net>
+    <net code="16" name="ESP_IO16">
+      <node ref="JP2" pin="2" pinfunction="2" pintype="passive"/>
+      <node ref="P4" pin="2" pinfunction="Pin_2" pintype="passive"/>
+      <node ref="U4" pin="17" pinfunction="IO16" pintype="bidirectional"/>
+    </net>
+    <net code="17" name="GND">
+      <node ref="C1" pin="2" pintype="passive"/>
+      <node ref="C3" pin="2" pintype="passive"/>
+      <node ref="C4" pin="2" pintype="passive"/>
+      <node ref="C5" pin="2" pintype="passive"/>
+      <node ref="C6" pin="2" pintype="passive"/>
+      <node ref="C7" pin="2" pintype="passive"/>
+      <node ref="C8" pin="2" pintype="passive"/>
+      <node ref="C9" pin="2" pintype="passive"/>
+      <node ref="D8" pin="2" pinfunction="A" pintype="passive"/>
+      <node ref="J2" pin="1" pinfunction="Pin_1" pintype="passive"/>
+      <node ref="J3" pin="1" pinfunction="Pin_1" pintype="passive"/>
+      <node ref="J4" pin="1" pinfunction="Pin_1" pintype="passive"/>
+      <node ref="J5" pin="2" pinfunction="Pin_2" pintype="passive"/>
+      <node ref="J6" pin="2" pinfunction="Pin_2" pintype="passive"/>
+      <node ref="JP6" pin="1" pinfunction="1" pintype="passive"/>
+      <node ref="P3" pin="1" pinfunction="Pin_1" pintype="passive"/>
+      <node ref="P4" pin="1" pinfunction="Pin_1" pintype="passive"/>
+      <node ref="P4" pin="6" pinfunction="Pin_6" pintype="passive"/>
+      <node ref="Q3" pin="2" pinfunction="S" pintype="passive"/>
+      <node ref="R11" pin="2" pintype="passive"/>
+      <node ref="R13" pin="1" pintype="passive"/>
+      <node ref="R15" pin="1" pintype="passive"/>
+      <node ref="R16" pin="1" pintype="passive"/>
+      <node ref="R17" pin="1" pintype="passive"/>
+      <node ref="R25" pin="2" pintype="passive"/>
+      <node ref="R27" pin="2" pintype="passive"/>
+      <node ref="R29" pin="1" pintype="passive"/>
+      <node ref="R7" pin="1" pintype="passive"/>
+      <node ref="R9" pin="2" pintype="passive"/>
+      <node ref="U1" pin="5" pinfunction="GND" pintype="power_in"/>
+      <node ref="U1" pin="9" pinfunction="PGND" pintype="power_in"/>
+      <node ref="U2" pin="1" pinfunction="1~{OE}" pintype="input"/>
+      <node ref="U2" pin="10" pinfunction="3~{OE}" pintype="input"/>
+      <node ref="U2" pin="13" pinfunction="4~{OE}" pintype="input"/>
+      <node ref="U2" pin="4" pinfunction="2~{OE}" pintype="input"/>
+      <node ref="U2" pin="7" pinfunction="GND" pintype="power_in"/>
+      <node ref="U3" pin="2" pinfunction="GND" pintype="power_in"/>
+      <node ref="U4" pin="13" pinfunction="GND" pintype="passive"/>
+      <node ref="U4" pin="18" pinfunction="GND" pintype="passive"/>
+      <node ref="U4" pin="19" pinfunction="GND" pintype="passive"/>
+      <node ref="U4" pin="9" pinfunction="GND" pintype="power_in"/>
+    </net>
+    <net code="18" name="LED_Clk">
+      <node ref="P3" pin="2" pinfunction="Pin_2" pintype="passive"/>
+      <node ref="U2" pin="2" pinfunction="1A" pintype="input"/>
+      <node ref="U4" pin="8" pinfunction="IO0" pintype="bidirectional"/>
+    </net>
+    <net code="19" name="LED_Data">
+      <node ref="P3" pin="3" pinfunction="Pin_3" pintype="passive"/>
+      <node ref="R14" pin="2" pintype="passive"/>
+      <node ref="U2" pin="5" pinfunction="2A" pintype="input"/>
+      <node ref="U4" pin="7" pinfunction="IO2" pintype="bidirectional"/>
+    </net>
+    <net code="20" name="Net-(5V_T1-Pin_1)">
+      <node ref="5V_T1" pin="1" pinfunction="Pin_1" pintype="passive"/>
+      <node ref="C7" pin="1" pintype="passive"/>
+      <node ref="F2" pin="2" pintype="passive"/>
+      <node ref="J2" pin="4" pinfunction="Pin_4" pintype="passive"/>
+      <node ref="J3" pin="3" pinfunction="Pin_3" pintype="passive"/>
+      <node ref="U2" pin="14" pinfunction="Vcc" pintype="power_in"/>
+    </net>
+    <net code="21" name="Net-(BT1-+)">
+      <node ref="BT1" pin="1" pinfunction="+" pintype="passive"/>
+      <node ref="J8" pin="1" pinfunction="Pin_1" pintype="passive"/>
+      <node ref="JP5" pin="2" pinfunction="B" pintype="passive"/>
+      <node ref="R24" pin="2" pintype="passive"/>
+    </net>
+    <net code="22" name="Net-(C12-Pad1)">
+      <node ref="C12" pin="1" pintype="passive"/>
+      <node ref="R19" pin="2" pintype="passive"/>
+    </net>
+    <net code="23" name="Net-(Clk_T1-Pin_1)">
+      <node ref="Clk_T1" pin="1" pinfunction="Pin_1" pintype="passive"/>
+      <node ref="J2" pin="3" pinfunction="Pin_3" pintype="passive"/>
+      <node ref="R5" pin="2" pintype="passive"/>
+    </net>
+    <net code="24" name="Net-(D1-K)">
+      <node ref="D1" pin="1" pinfunction="K" pintype="passive"/>
+      <node ref="R15" pin="2" pintype="passive"/>
+    </net>
+    <net code="25" name="Net-(D2-K)">
+      <node ref="D2" pin="1" pinfunction="K" pintype="passive"/>
+      <node ref="R16" pin="2" pintype="passive"/>
+    </net>
+    <net code="26" name="Net-(D3-A)">
+      <node ref="D3" pin="2" pinfunction="A" pintype="passive"/>
+      <node ref="D4" pin="2" pinfunction="A" pintype="passive"/>
+      <node ref="R18" pin="2" pintype="passive"/>
+    </net>
+    <net code="27" name="Net-(D3-K)">
+      <node ref="D3" pin="1" pinfunction="K" pintype="passive"/>
+      <node ref="U5" pin="4" pinfunction="DONE" pintype="output"/>
+    </net>
+    <net code="28" name="Net-(D4-K)">
+      <node ref="D4" pin="1" pinfunction="K" pintype="passive"/>
+      <node ref="U5" pin="3" pinfunction="CHRG" pintype="output"/>
+    </net>
+    <net code="29" name="Net-(D5-A)">
+      <node ref="D5" pin="2" pinfunction="A" pintype="passive"/>
+      <node ref="Q1" pin="3" pinfunction="D" pintype="passive"/>
+    </net>
+    <net code="30" name="Net-(D5-K)">
+      <node ref="D5" pin="1" pinfunction="K" pintype="passive"/>
+      <node ref="D6" pin="1" pinfunction="K" pintype="passive"/>
+      <node ref="L3" pin="1" pintype="passive"/>
+    </net>
+    <net code="31" name="Net-(D7-K)">
+      <node ref="D7" pin="1" pinfunction="K" pintype="passive"/>
+      <node ref="Q4" pin="2" pinfunction="S" pintype="passive"/>
+      <node ref="R28" pin="2" pintype="passive"/>
+    </net>
+    <net code="32" name="Net-(Data_T1-Pin_1)">
+      <node ref="Data_T1" pin="1" pinfunction="Pin_1" pintype="passive"/>
+      <node ref="J2" pin="2" pinfunction="Pin_2" pintype="passive"/>
+      <node ref="J3" pin="2" pinfunction="Pin_2" pintype="passive"/>
+      <node ref="R6" pin="2" pintype="passive"/>
+    </net>
+    <net code="33" name="Net-(J1-CC1)">
+      <node ref="J1" pin="A5" pinfunction="CC1" pintype="bidirectional"/>
+      <node ref="R3" pin="1" pintype="passive"/>
+    </net>
+    <net code="34" name="Net-(J1-CC2)">
+      <node ref="J1" pin="B5" pinfunction="CC2" pintype="bidirectional"/>
+      <node ref="R2" pin="1" pintype="passive"/>
+    </net>
+    <net code="35" name="Net-(J1-SHIELD)">
+      <node ref="J1" pin="S1" pinfunction="SHIELD" pintype="passive"/>
+      <node ref="R1" pin="1" pintype="passive"/>
+    </net>
+    <net code="36" name="Net-(J4-Pin_3)">
+      <node ref="J4" pin="3" pinfunction="Pin_3" pintype="passive"/>
+      <node ref="JP1" pin="2" pinfunction="2" pintype="passive"/>
+    </net>
+    <net code="37" name="Net-(JP4-B)">
+      <node ref="JP4" pin="2" pinfunction="B" pintype="passive"/>
+      <node ref="R20" pin="1" pintype="passive"/>
+      <node ref="R29" pin="2" pintype="passive"/>
+    </net>
+    <net code="38" name="Net-(JP5-A)">
+      <node ref="C14" pin="1" pintype="passive"/>
+      <node ref="C15" pin="1" pintype="passive"/>
+      <node ref="JP5" pin="1" pinfunction="A" pintype="passive"/>
+      <node ref="Q4" pin="3" pinfunction="D" pintype="passive"/>
+      <node ref="R23" pin="2" pintype="passive"/>
+      <node ref="R26" pin="1" pintype="passive"/>
+      <node ref="U5" pin="7" pinfunction="BAT" pintype="input"/>
+    </net>
+    <net code="39" name="Net-(P1-Pin_1)">
+      <node ref="P1" pin="1" pinfunction="Pin_1" pintype="passive"/>
+      <node ref="U2" pin="11" pinfunction="4Y" pintype="output"/>
+    </net>
+    <net code="40" name="Net-(P2-Pin_1)">
+      <node ref="P2" pin="1" pinfunction="Pin_1" pintype="passive"/>
+      <node ref="U2" pin="8" pinfunction="3Y" pintype="output"/>
+    </net>
+    <net code="41" name="Net-(Q1-G)">
+      <node ref="Q1" pin="1" pinfunction="G" pintype="input"/>
+      <node ref="U5" pin="10" pinfunction="DRV" pintype="output"/>
+    </net>
+    <net code="42" name="Net-(Q2-G1)">
+      <node ref="Q2" pin="6" pinfunction="G1" pintype="input"/>
+      <node ref="U6" pin="3" pinfunction="OC" pintype="output"/>
+    </net>
+    <net code="43" name="Net-(Q2-G2)">
+      <node ref="Q2" pin="4" pinfunction="G2" pintype="input"/>
+      <node ref="U6" pin="1" pinfunction="OD" pintype="output"/>
+    </net>
+    <net code="44" name="Net-(Q2-S1)">
+      <node ref="JP6" pin="2" pinfunction="2" pintype="passive"/>
+      <node ref="Q2" pin="1" pinfunction="S1" pintype="passive"/>
+      <node ref="Q3" pin="3" pinfunction="D" pintype="passive"/>
+      <node ref="U6" pin="2" pinfunction="CS" pintype="input"/>
+    </net>
+    <net code="45" name="Net-(Q2-S2)">
+      <node ref="C16" pin="2" pintype="passive"/>
+      <node ref="Q2" pin="3" pinfunction="S2" pintype="passive"/>
+    </net>
+    <net code="46" name="Net-(Q3-G)">
+      <node ref="Q3" pin="1" pinfunction="G" pintype="input"/>
+      <node ref="R25" pin="1" pintype="passive"/>
+      <node ref="SW2" pin="3" pinfunction="C" pintype="passive"/>
+    </net>
+    <net code="47" name="Net-(SW2-B)">
+      <node ref="R26" pin="2" pintype="passive"/>
+      <node ref="SW2" pin="2" pinfunction="B" pintype="passive"/>
+    </net>
+    <net code="48" name="Net-(U1-EN)">
+      <node ref="C3" pin="1" pintype="passive"/>
+      <node ref="R4" pin="1" pintype="passive"/>
+      <node ref="U1" pin="4" pinfunction="EN" pintype="power_in"/>
+    </net>
+    <net code="49" name="Net-(U1-FB)">
+      <node ref="R8" pin="2" pintype="passive"/>
+      <node ref="R9" pin="1" pintype="passive"/>
+      <node ref="U1" pin="6" pinfunction="FB" pintype="input"/>
+    </net>
+    <net code="50" name="Net-(U1-LX)">
+      <node ref="L1" pin="2" pintype="passive"/>
+      <node ref="U1" pin="1" pinfunction="LX" pintype="input"/>
+      <node ref="U1" pin="2" pinfunction="LX" pintype="input"/>
+    </net>
+    <net code="51" name="Net-(U1-OC)">
+      <node ref="R7" pin="2" pintype="passive"/>
+      <node ref="U1" pin="7" pinfunction="OC" pintype="input"/>
+    </net>
+    <net code="52" name="Net-(U2-1Y)">
+      <node ref="R5" pin="1" pintype="passive"/>
+      <node ref="U2" pin="3" pinfunction="1Y" pintype="output"/>
+    </net>
+    <net code="53" name="Net-(U2-2Y)">
+      <node ref="R6" pin="1" pintype="passive"/>
+      <node ref="U2" pin="6" pinfunction="2Y" pintype="output"/>
+    </net>
+    <net code="54" name="Net-(U2-3A)">
+      <node ref="JP2" pin="1" pinfunction="1" pintype="passive"/>
+      <node ref="U2" pin="9" pinfunction="3A" pintype="input"/>
+    </net>
+    <net code="55" name="Net-(U2-4A)">
+      <node ref="JP3" pin="1" pinfunction="1" pintype="passive"/>
+      <node ref="U2" pin="12" pinfunction="4A" pintype="input"/>
+    </net>
+    <net code="56" name="Net-(U3-EN)">
+      <node ref="C6" pin="1" pintype="passive"/>
+      <node ref="F1" pin="1" pintype="passive"/>
+      <node ref="U3" pin="1" pinfunction="EN" pintype="input"/>
+      <node ref="U3" pin="4" pinfunction="VIN" pintype="power_in"/>
+    </net>
+    <net code="57" name="Net-(U3-FB)">
+      <node ref="R10" pin="2" pintype="passive"/>
+      <node ref="R11" pin="1" pintype="passive"/>
+      <node ref="U3" pin="5" pinfunction="FB" pintype="input"/>
+    </net>
+    <net code="58" name="Net-(U3-SW)">
+      <node ref="L2" pin="1" pintype="passive"/>
+      <node ref="U3" pin="3" pinfunction="SW" pintype="power_out"/>
+    </net>
+    <net code="59" name="Net-(U5-COM)">
+      <node ref="R19" pin="1" pintype="passive"/>
+      <node ref="U5" pin="5" pinfunction="COM" pintype="input"/>
+    </net>
+    <net code="60" name="Net-(U5-CSP)">
+      <node ref="L3" pin="2" pintype="passive"/>
+      <node ref="R23" pin="1" pintype="passive"/>
+      <node ref="U5" pin="8" pinfunction="CSP" pintype="input"/>
+    </net>
+    <net code="61" name="Net-(U5-MPPT)">
+      <node ref="R21" pin="1" pintype="passive"/>
+      <node ref="R22" pin="2" pintype="passive"/>
+      <node ref="U5" pin="6" pinfunction="MPPT" pintype="input"/>
+    </net>
+    <net code="62" name="Net-(U5-VG)">
+      <node ref="C13" pin="2" pintype="passive"/>
+      <node ref="U5" pin="1" pinfunction="VG" pintype="input"/>
+    </net>
+    <net code="63" name="Net-(U6-VCC)">
+      <node ref="C16" pin="1" pintype="passive"/>
+      <node ref="R24" pin="1" pintype="passive"/>
+      <node ref="U6" pin="5" pinfunction="VCC" pintype="power_in"/>
+    </net>
+    <net code="64" name="unconnected-(J1-D+)">
+      <node ref="J1" pin="B6" pinfunction="D+" pintype="bidirectional+no_connect"/>
+    </net>
+    <net code="65" name="unconnected-(J1-D+)_1">
+      <node ref="J1" pin="A6" pinfunction="D+" pintype="bidirectional+no_connect"/>
+    </net>
+    <net code="66" name="unconnected-(J1-D-)">
+      <node ref="J1" pin="B7" pinfunction="D-" pintype="bidirectional+no_connect"/>
+    </net>
+    <net code="67" name="unconnected-(J1-D-)_1">
+      <node ref="J1" pin="A7" pinfunction="D-" pintype="bidirectional+no_connect"/>
+    </net>
+    <net code="68" name="unconnected-(J1-RX1+)">
+      <node ref="J1" pin="B11" pinfunction="RX1+" pintype="bidirectional+no_connect"/>
+    </net>
+    <net code="69" name="unconnected-(J1-RX1-)">
+      <node ref="J1" pin="B10" pinfunction="RX1-" pintype="bidirectional+no_connect"/>
+    </net>
+    <net code="70" name="unconnected-(J1-RX2+)">
+      <node ref="J1" pin="A11" pinfunction="RX2+" pintype="bidirectional+no_connect"/>
+    </net>
+    <net code="71" name="unconnected-(J1-RX2-)">
+      <node ref="J1" pin="A10" pinfunction="RX2-" pintype="bidirectional+no_connect"/>
+    </net>
+    <net code="72" name="unconnected-(J1-SBU1)">
+      <node ref="J1" pin="A8" pinfunction="SBU1" pintype="bidirectional+no_connect"/>
+    </net>
+    <net code="73" name="unconnected-(J1-SBU2)">
+      <node ref="J1" pin="B8" pinfunction="SBU2" pintype="bidirectional+no_connect"/>
+    </net>
+    <net code="74" name="unconnected-(J1-TX1+)">
+      <node ref="J1" pin="A2" pinfunction="TX1+" pintype="bidirectional+no_connect"/>
+    </net>
+    <net code="75" name="unconnected-(J1-TX1-)">
+      <node ref="J1" pin="A3" pinfunction="TX1-" pintype="bidirectional+no_connect"/>
+    </net>
+    <net code="76" name="unconnected-(J1-TX2+)">
+      <node ref="J1" pin="B2" pinfunction="TX2+" pintype="bidirectional+no_connect"/>
+    </net>
+    <net code="77" name="unconnected-(J1-TX2-)">
+      <node ref="J1" pin="B3" pinfunction="TX2-" pintype="bidirectional+no_connect"/>
+    </net>
+    <net code="78" name="unconnected-(J4-Pin_2)">
+      <node ref="J4" pin="2" pinfunction="Pin_2" pintype="passive+no_connect"/>
+    </net>
+    <net code="79" name="unconnected-(J4-Pin_6)">
+      <node ref="J4" pin="6" pinfunction="Pin_6" pintype="passive+no_connect"/>
+    </net>
+    <net code="80" name="unconnected-(Q2-D1{slash}D2)">
+      <node ref="Q2" pin="2" pinfunction="D1/D2" pintype="passive+no_connect"/>
+      <node ref="Q2" pin="5" pinfunction="D1/D2" pintype="passive+no_connect"/>
+    </net>
+    <net code="81" name="unconnected-(SW2-A)">
+      <node ref="SW2" pin="1" pinfunction="A" pintype="passive+no_connect"/>
+    </net>
+    <net code="82" name="unconnected-(U6-TD)">
+      <node ref="U6" pin="4" pinfunction="TD" pintype="input+no_connect"/>
+    </net>
+  </nets>
+</export>
