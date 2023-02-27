@@ -478,16 +478,20 @@
   },
   "sheets": [
     [
-      "ea56fda8-6f8e-4826-a040-5c9b3e8e5cfa",
-      ""
-    ],
-    [
       "00000000-0000-0000-0000-00005f8dad46",
       "BaseESP8266"
     ],
     [
+      "ea56fda8-6f8e-4826-a040-5c9b3e8e5cfa",
+      ""
+    ],
+    [
       "2c074201-41ae-48a2-8f73-9baa1910d072",
       "Battery Management"
+    ],
+    [
+      "ff8e9e07-e1dd-4ffa-ae44-50f6b37cd1a1",
+      "Battery input and protection"
     ]
   ],
   "text_variables": {}
