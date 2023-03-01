@@ -1,4 +1,4 @@
-(kicad_sch (version 20221110) (generator eeschema)
+(kicad_sch (version 20230121) (generator eeschema)
 
   (uuid c2c99dcb-1b07-4ad7-9cf5-edf70652f226)
 
@@ -545,6 +545,7 @@
     )
   )
 
+
   (junction (at 96.52 78.74) (diameter 0) (color 0 0 0 0)
     (uuid 29336e81-30f7-443c-ba2a-52111c196c15)
   )
@@ -570,7 +571,7 @@
   (no_connect (at 130.81 101.6) (uuid 2b333ac2-34a8-4245-b5d8-4243f4297181))
   (no_connect (at 133.35 71.12) (uuid 4fa47b17-53f0-41dc-8de1-d2c1c23d69eb))
 
-  (wire (pts (xy 95.25 78.74) (xy 96.52 78.74))
+  (wire (pts (xy 93.98 78.74) (xy 96.52 78.74))
     (stroke (width 0) (type default))
     (uuid 0001dcd5-9dd9-4900-9ba8-4430d219670b)
   )
@@ -622,7 +623,7 @@
     (stroke (width 0) (type default))
     (uuid 8f0a6b91-3f1d-42b2-b071-68b78bf57c9c)
   )
-  (wire (pts (xy 95.25 76.2) (xy 96.52 76.2))
+  (wire (pts (xy 93.98 76.2) (xy 96.52 76.2))
     (stroke (width 0) (type default))
     (uuid 92f5fcfe-b8f4-4355-8d1c-fe7b7fad39fb)
   )
@@ -695,25 +696,25 @@
     (uuid 49613765-f5c8-40ba-8b7b-3044385e7649)
   )
 
-  (symbol (lib_id "Connector_Generic:Conn_01x02") (at 90.17 76.2 0) (mirror y) (unit 1)
+  (symbol (lib_id "Connector_Generic:Conn_01x02") (at 88.9 76.2 0) (mirror y) (unit 1)
     (in_bom yes) (on_board yes) (dnp no)
     (uuid 09db3ec6-c806-44b3-87b0-ca2e989c14d3)
-    (property "Reference" "J1" (at 92.2528 70.6882 0)
+    (property "Reference" "J1" (at 90.9828 70.6882 0)
       (effects (font (size 1.27 1.27)))
     )
-    (property "Value" "Battery" (at 92.2528 72.9996 0)
+    (property "Value" "Battery" (at 90.9828 72.9996 0)
       (effects (font (size 1.27 1.27)))
     )
-    (property "Footprint" "Connector_JST:JST_PH_S2B-PH-SM4-TB_1x02-1MP_P2.00mm_Horizontal" (at 90.17 76.2 0)
+    (property "Footprint" "Connector_JST:JST_PH_S2B-PH-SM4-TB_1x02-1MP_P2.00mm_Horizontal" (at 88.9 76.2 0)
       (effects (font (size 1.27 1.27)) hide)
     )
-    (property "Datasheet" "~" (at 90.17 76.2 0)
+    (property "Datasheet" "~" (at 88.9 76.2 0)
       (effects (font (size 1.27 1.27)) hide)
     )
-    (property "Farnell" "9492615" (at 90.17 76.2 0)
+    (property "Farnell" "9492615" (at 88.9 76.2 0)
       (effects (font (size 1.27 1.27)) hide)
     )
-    (property "Farnell Price/Stock" "https://uk.farnell.com/jst-japan-solderless-terminals/s2b-ph-sm4-tb-lf-sn/connector-header-smt-r-a-2mm-2way/dp/9492615" (at 90.17 76.2 0)
+    (property "Farnell Price/Stock" "https://uk.farnell.com/jst-japan-solderless-terminals/s2b-ph-sm4-tb-lf-sn/connector-header-smt-r-a-2mm-2way/dp/9492615" (at 88.9 76.2 0)
       (effects (font (size 1.27 1.27)) hide)
     )
     (pin "1" (uuid 20066073-447f-4b9c-98bb-2d4f7c9986df))
@@ -721,12 +722,12 @@
     (instances
       (project "MyBikesGotLED"
         (path "/83a6ea55-4e1e-4a4d-a7df-1ef93962bced"
-          (reference "J1") (unit 1) (value "Battery") (footprint "Connector_JST:JST_PH_S2B-PH-SM4-TB_1x02-1MP_P2.00mm_Horizontal")
+          (reference "J1") (unit 1)
         )
       )
       (project "MyBikesGotLED"
         (path "/ea56fda8-6f8e-4826-a040-5c9b3e8e5cfa/2c074201-41ae-48a2-8f73-9baa1910d072/ff8e9e07-e1dd-4ffa-ae44-50f6b37cd1a1"
-          (reference "J9") (unit 1) (value "Battery") (footprint "Connector_JST:JST_PH_S2B-PH-SM4-TB_1x02-1MP_P2.00mm_Horizontal")
+          (reference "J9") (unit 1)
         )
       )
     )
@@ -758,12 +759,12 @@
     (instances
       (project "MyBikesGotLED"
         (path "/83a6ea55-4e1e-4a4d-a7df-1ef93962bced"
-          (reference "R5") (unit 1) (value "1K") (footprint "Resistor_SMD:R_0603_1608Metric_Pad0.98x0.95mm_HandSolder")
+          (reference "R5") (unit 1)
         )
       )
       (project "MyBikesGotLED"
         (path "/ea56fda8-6f8e-4826-a040-5c9b3e8e5cfa/2c074201-41ae-48a2-8f73-9baa1910d072/ff8e9e07-e1dd-4ffa-ae44-50f6b37cd1a1"
-          (reference "R30") (unit 1) (value "1K") (footprint "Resistor_SMD:R_0603_1608Metric_Pad0.98x0.95mm_HandSolder")
+          (reference "R30") (unit 1)
         )
       )
     )
@@ -789,12 +790,12 @@
     (instances
       (project "MyBikesGotLED"
         (path "/83a6ea55-4e1e-4a4d-a7df-1ef93962bced"
-          (reference "J4") (unit 1) (value "Battery_Test_Points") (footprint "Connector_PinSocket_2.54mm:PinSocket_1x02_P2.54mm_Vertical")
+          (reference "J4") (unit 1)
         )
       )
       (project "MyBikesGotLED"
         (path "/ea56fda8-6f8e-4826-a040-5c9b3e8e5cfa/2c074201-41ae-48a2-8f73-9baa1910d072/ff8e9e07-e1dd-4ffa-ae44-50f6b37cd1a1"
-          (reference "J10") (unit 1) (value "Battery_Test_Points") (footprint "Connector_PinSocket_2.54mm:PinSocket_1x02_P2.54mm_Vertical")
+          (reference "J10") (unit 1)
         )
       )
     )
@@ -826,13 +827,13 @@
     (instances
       (project "MyBikesGotLED"
         (path "/ea56fda8-6f8e-4826-a040-5c9b3e8e5cfa"
-          (reference "R11") (unit 1) (value "100R") (footprint "Resistor_SMD:R_0603_1608Metric_Pad0.98x0.95mm_HandSolder")
+          (reference "R11") (unit 1)
         )
         (path "/ea56fda8-6f8e-4826-a040-5c9b3e8e5cfa/2c074201-41ae-48a2-8f73-9baa1910d072"
-          (reference "R30") (unit 1) (value "1k") (footprint "Resistor_SMD:R_0603_1608Metric_Pad0.98x0.95mm_HandSolder")
+          (reference "R30") (unit 1)
         )
         (path "/ea56fda8-6f8e-4826-a040-5c9b3e8e5cfa/2c074201-41ae-48a2-8f73-9baa1910d072/ff8e9e07-e1dd-4ffa-ae44-50f6b37cd1a1"
-          (reference "R29") (unit 1) (value "100R") (footprint "Resistor_SMD:R_0603_1608Metric_Pad0.98x0.95mm_HandSolder")
+          (reference "R29") (unit 1)
         )
       )
     )
@@ -857,13 +858,13 @@
     (instances
       (project "MyBikesGotLED"
         (path "/ea56fda8-6f8e-4826-a040-5c9b3e8e5cfa"
-          (reference "#PWR0102a01") (unit 1) (value "+BATT") (footprint "")
+          (reference "#PWR0102a01") (unit 1)
         )
         (path "/ea56fda8-6f8e-4826-a040-5c9b3e8e5cfa/2c074201-41ae-48a2-8f73-9baa1910d072"
-          (reference "#PWR0102a01") (unit 1) (value "+BATT") (footprint "")
+          (reference "#PWR0102a01") (unit 1)
         )
         (path "/ea56fda8-6f8e-4826-a040-5c9b3e8e5cfa/2c074201-41ae-48a2-8f73-9baa1910d072/ff8e9e07-e1dd-4ffa-ae44-50f6b37cd1a1"
-          (reference "#PWR0102a01") (unit 1) (value "+BATT") (footprint "")
+          (reference "#PWR0102a0101") (unit 1)
         )
       )
     )
@@ -899,13 +900,13 @@
     (instances
       (project "MyBikesGotLED"
         (path "/ea56fda8-6f8e-4826-a040-5c9b3e8e5cfa"
-          (reference "Q1") (unit 1) (value "FS8205") (footprint "Package_TO_SOT_SMD:SOT-23-6")
+          (reference "Q1") (unit 1)
         )
         (path "/ea56fda8-6f8e-4826-a040-5c9b3e8e5cfa/2c074201-41ae-48a2-8f73-9baa1910d072"
-          (reference "Q2") (unit 1) (value "FS8205") (footprint "Package_TO_SOT_SMD:SOT-23-6")
+          (reference "Q2") (unit 1)
         )
         (path "/ea56fda8-6f8e-4826-a040-5c9b3e8e5cfa/2c074201-41ae-48a2-8f73-9baa1910d072/ff8e9e07-e1dd-4ffa-ae44-50f6b37cd1a1"
-          (reference "Q2") (unit 1) (value "FS8205") (footprint "Package_TO_SOT_SMD:SOT-23-6")
+          (reference "Q2") (unit 1)
         )
       )
     )
@@ -937,13 +938,13 @@
     (instances
       (project "MyBikesGotLED"
         (path "/ea56fda8-6f8e-4826-a040-5c9b3e8e5cfa"
-          (reference "C1") (unit 1) (value "0.1uF") (footprint "Capacitor_SMD:C_0603_1608Metric_Pad1.08x0.95mm_HandSolder")
+          (reference "C1") (unit 1)
         )
         (path "/ea56fda8-6f8e-4826-a040-5c9b3e8e5cfa/2c074201-41ae-48a2-8f73-9baa1910d072"
-          (reference "C2") (unit 1) (value "0.1uF") (footprint "Capacitor_SMD:C_0603_1608Metric_Pad1.08x0.95mm_HandSolder")
+          (reference "C2") (unit 1)
         )
         (path "/ea56fda8-6f8e-4826-a040-5c9b3e8e5cfa/2c074201-41ae-48a2-8f73-9baa1910d072/ff8e9e07-e1dd-4ffa-ae44-50f6b37cd1a1"
-          (reference "C2") (unit 1) (value "0.1uF") (footprint "Capacitor_SMD:C_0603_1608Metric_Pad1.08x0.95mm_HandSolder")
+          (reference "C2") (unit 1)
         )
       )
     )
@@ -968,12 +969,12 @@
     (instances
       (project "MyBikesGotLED"
         (path "/83a6ea55-4e1e-4a4d-a7df-1ef93962bced"
-          (reference "#PWR0109") (unit 1) (value "-BATT") (footprint "")
+          (reference "#PWR0109") (unit 1)
         )
       )
       (project "MyBikesGotLED"
         (path "/ea56fda8-6f8e-4826-a040-5c9b3e8e5cfa/2c074201-41ae-48a2-8f73-9baa1910d072/ff8e9e07-e1dd-4ffa-ae44-50f6b37cd1a1"
-          (reference "#PWR0109") (unit 1) (value "-BATT") (footprint "")
+          (reference "#PWR0109") (unit 1)
         )
       )
     )
@@ -1009,13 +1010,13 @@
     (instances
       (project "MyBikesGotLED"
         (path "/ea56fda8-6f8e-4826-a040-5c9b3e8e5cfa"
-          (reference "U3") (unit 1) (value "FS312F-G") (footprint "Package_TO_SOT_SMD:SOT-23-6_Handsoldering")
+          (reference "U3") (unit 1)
         )
         (path "/ea56fda8-6f8e-4826-a040-5c9b3e8e5cfa/2c074201-41ae-48a2-8f73-9baa1910d072"
-          (reference "U6") (unit 1) (value "FS312F-G") (footprint "Package_TO_SOT_SMD:SOT-23-6_Handsoldering")
+          (reference "U6") (unit 1)
         )
         (path "/ea56fda8-6f8e-4826-a040-5c9b3e8e5cfa/2c074201-41ae-48a2-8f73-9baa1910d072/ff8e9e07-e1dd-4ffa-ae44-50f6b37cd1a1"
-          (reference "U6") (unit 1) (value "FS312F-G") (footprint "Package_TO_SOT_SMD:SOT-23-6_Handsoldering")
+          (reference "U6") (unit 1)
         )
       )
     )

@@ -1,4 +1,4 @@
-(kicad_sch (version 20221110) (generator eeschema)
+(kicad_sch (version 20230121) (generator eeschema)
 
   (uuid cacb85f3-d9c8-4c02-abde-6929c5b88a24)
 
@@ -571,6 +571,7 @@
     )
   )
 
+
   (junction (at 144.78 57.15) (diameter 0) (color 0 0 0 0)
     (uuid 07365455-e308-4312-941d-52f971495c78)
   )
@@ -1108,7 +1109,7 @@
     (instances
       (project "MyBikesGotLED"
         (path "/ea56fda8-6f8e-4826-a040-5c9b3e8e5cfa/00000000-0000-0000-0000-00005f8dad46"
-          (reference "R17") (unit 1) (value "R10k") (footprint "Resistor_SMD:R_0603_1608Metric_Pad0.98x0.95mm_HandSolder")
+          (reference "R17") (unit 1)
         )
       )
     )
@@ -1136,7 +1137,7 @@
     (instances
       (project "MyBikesGotLED"
         (path "/ea56fda8-6f8e-4826-a040-5c9b3e8e5cfa/00000000-0000-0000-0000-00005f8dad46"
-          (reference "T2") (unit 1) (value "CONN_01X01") (footprint "TestPoint:TestPoint_Pad_D2.0mm")
+          (reference "T2") (unit 1)
         )
       )
     )
@@ -1164,7 +1165,7 @@
     (instances
       (project "MyBikesGotLED"
         (path "/ea56fda8-6f8e-4826-a040-5c9b3e8e5cfa/00000000-0000-0000-0000-00005f8dad46"
-          (reference "T1") (unit 1) (value "CONN_01X01") (footprint "TestPoint:TestPoint_Pad_D2.0mm")
+          (reference "T1") (unit 1)
         )
       )
     )
@@ -1196,7 +1197,7 @@
     (instances
       (project "MyBikesGotLED"
         (path "/ea56fda8-6f8e-4826-a040-5c9b3e8e5cfa/00000000-0000-0000-0000-00005f8dad46"
-          (reference "C9") (unit 1) (value "C47nF") (footprint "Capacitor_SMD:C_0603_1608Metric_Pad1.08x0.95mm_HandSolder")
+          (reference "C9") (unit 1)
         )
       )
     )
@@ -1228,7 +1229,7 @@
     (instances
       (project "MyBikesGotLED"
         (path "/ea56fda8-6f8e-4826-a040-5c9b3e8e5cfa/00000000-0000-0000-0000-00005f8dad46"
-          (reference "R12") (unit 1) (value "R560") (footprint "Resistor_SMD:R_0603_1608Metric_Pad0.98x0.95mm_HandSolder")
+          (reference "R12") (unit 1)
         )
       )
     )
@@ -1260,7 +1261,7 @@
     (instances
       (project "MyBikesGotLED"
         (path "/ea56fda8-6f8e-4826-a040-5c9b3e8e5cfa/00000000-0000-0000-0000-00005f8dad46"
-          (reference "R16") (unit 1) (value "R560") (footprint "Resistor_SMD:R_0603_1608Metric_Pad0.98x0.95mm_HandSolder")
+          (reference "R16") (unit 1)
         )
       )
     )
@@ -1292,7 +1293,7 @@
     (instances
       (project "MyBikesGotLED"
         (path "/ea56fda8-6f8e-4826-a040-5c9b3e8e5cfa/00000000-0000-0000-0000-00005f8dad46"
-          (reference "R15") (unit 1) (value "R560") (footprint "Resistor_SMD:R_0603_1608Metric_Pad0.98x0.95mm_HandSolder")
+          (reference "R15") (unit 1)
         )
       )
     )
@@ -1316,7 +1317,7 @@
     (property "Farnell" "2322102" (at 248.92 91.44 0)
       (effects (font (size 1.27 1.27)) hide)
     )
-    (property "Farnell Price/Stock" "https://uk.farnell.com/wurth-elektronik/155124vs73200/led-1204-b-green-50mcd-573nm/dp/2322102" (at 248.92 91.44 0)
+    (property "Farnell Price/Stock" "https://uk.farnell.com/multicomp-pro/mp008279/led-green-70mcd-576nm-0805/dp/3796308" (at 248.92 91.44 0)
       (effects (font (size 1.27 1.27)) hide)
     )
     (pin "1" (uuid 9ff30b38-9fb0-443a-bedf-7fc9403057a7))
@@ -1324,7 +1325,7 @@
     (instances
       (project "MyBikesGotLED"
         (path "/ea56fda8-6f8e-4826-a040-5c9b3e8e5cfa/00000000-0000-0000-0000-00005f8dad46"
-          (reference "D2") (unit 1) (value "LED") (footprint "LED_SMD:LED_0805_2012Metric_Pad1.15x1.40mm_HandSolder")
+          (reference "D2") (unit 1)
         )
       )
     )
@@ -1348,7 +1349,7 @@
     (property "Farnell" "2322102" (at 237.49 91.44 0)
       (effects (font (size 1.27 1.27)) hide)
     )
-    (property "Farnell Price/Stock" "https://uk.farnell.com/wurth-elektronik/155124vs73200/led-1204-b-green-50mcd-573nm/dp/2322102" (at 237.49 91.44 0)
+    (property "Farnell Price/Stock" "https://uk.farnell.com/multicomp-pro/mp008279/led-green-70mcd-576nm-0805/dp/3796308" (at 237.49 91.44 0)
       (effects (font (size 1.27 1.27)) hide)
     )
     (pin "1" (uuid 7b9e6051-09b6-4a24-a1c8-5634e6b11b0f))
@@ -1356,7 +1357,7 @@
     (instances
       (project "MyBikesGotLED"
         (path "/ea56fda8-6f8e-4826-a040-5c9b3e8e5cfa/00000000-0000-0000-0000-00005f8dad46"
-          (reference "D1") (unit 1) (value "LED") (footprint "LED_SMD:LED_0805_2012Metric_Pad1.15x1.40mm_HandSolder")
+          (reference "D1") (unit 1)
         )
       )
     )
@@ -1388,7 +1389,7 @@
     (instances
       (project "MyBikesGotLED"
         (path "/ea56fda8-6f8e-4826-a040-5c9b3e8e5cfa/00000000-0000-0000-0000-00005f8dad46"
-          (reference "SW1") (unit 1) (value "Reset") (footprint "mcqn-kicad-lib:SW_SPST_GULLWING")
+          (reference "SW1") (unit 1)
         )
       )
     )
@@ -1424,7 +1425,7 @@
     (instances
       (project "MyBikesGotLED"
         (path "/ea56fda8-6f8e-4826-a040-5c9b3e8e5cfa/00000000-0000-0000-0000-00005f8dad46"
-          (reference "P3") (unit 1) (value "CONN_01X09") (footprint "Connector_PinSocket_2.54mm:PinSocket_1x09_P2.54mm_Vertical")
+          (reference "P3") (unit 1)
         )
       )
     )
@@ -1460,7 +1461,7 @@
     (instances
       (project "MyBikesGotLED"
         (path "/ea56fda8-6f8e-4826-a040-5c9b3e8e5cfa/00000000-0000-0000-0000-00005f8dad46"
-          (reference "P4") (unit 1) (value "CONN_01X09") (footprint "Connector_PinSocket_2.54mm:PinSocket_1x09_P2.54mm_Vertical")
+          (reference "P4") (unit 1)
         )
       )
     )
@@ -1492,7 +1493,7 @@
     (instances
       (project "MyBikesGotLED"
         (path "/ea56fda8-6f8e-4826-a040-5c9b3e8e5cfa/00000000-0000-0000-0000-00005f8dad46"
-          (reference "R13") (unit 1) (value "R10k") (footprint "Resistor_SMD:R_0603_1608Metric_Pad0.98x0.95mm_HandSolder")
+          (reference "R13") (unit 1)
         )
       )
     )
@@ -1517,7 +1518,7 @@
     (instances
       (project "MyBikesGotLED"
         (path "/ea56fda8-6f8e-4826-a040-5c9b3e8e5cfa/00000000-0000-0000-0000-00005f8dad46"
-          (reference "#PWR05") (unit 1) (value "+3V3") (footprint "")
+          (reference "#PWR05") (unit 1)
         )
       )
     )
@@ -1542,7 +1543,7 @@
     (instances
       (project "MyBikesGotLED"
         (path "/ea56fda8-6f8e-4826-a040-5c9b3e8e5cfa/00000000-0000-0000-0000-00005f8dad46"
-          (reference "#PWR06") (unit 1) (value "GND") (footprint "")
+          (reference "#PWR06") (unit 1)
         )
       )
     )
@@ -1567,7 +1568,7 @@
     (instances
       (project "MyBikesGotLED"
         (path "/ea56fda8-6f8e-4826-a040-5c9b3e8e5cfa/00000000-0000-0000-0000-00005f8dad46"
-          (reference "#PWR04") (unit 1) (value "GND") (footprint "")
+          (reference "#PWR04") (unit 1)
         )
       )
     )
@@ -1599,7 +1600,7 @@
     (instances
       (project "MyBikesGotLED"
         (path "/ea56fda8-6f8e-4826-a040-5c9b3e8e5cfa/00000000-0000-0000-0000-00005f8dad46"
-          (reference "R14") (unit 1) (value "10k") (footprint "Resistor_SMD:R_0603_1608Metric_Pad0.98x0.95mm_HandSolder")
+          (reference "R14") (unit 1)
         )
       )
     )
@@ -1648,7 +1649,7 @@
     (instances
       (project "MyBikesGotLED"
         (path "/ea56fda8-6f8e-4826-a040-5c9b3e8e5cfa/00000000-0000-0000-0000-00005f8dad46"
-          (reference "U4") (unit 1) (value "ESP-13-WROOM-02") (footprint "RF_Module:ESP-WROOM-02")
+          (reference "U4") (unit 1)
         )
       )
     )
@@ -1673,7 +1674,7 @@
     (instances
       (project "MyBikesGotLED"
         (path "/ea56fda8-6f8e-4826-a040-5c9b3e8e5cfa/00000000-0000-0000-0000-00005f8dad46"
-          (reference "#PWR03") (unit 1) (value "+3V3") (footprint "")
+          (reference "#PWR03") (unit 1)
         )
       )
     )

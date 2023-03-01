@@ -1,4 +1,4 @@
-(kicad_sch (version 20221110) (generator eeschema)
+(kicad_sch (version 20230121) (generator eeschema)
 
   (uuid 9c310a5e-d1f9-4494-aa65-d63f334b0c64)
 
@@ -1142,6 +1142,46 @@
         )
       )
     )
+    (symbol "power:PWR_FLAG" (power) (pin_numbers hide) (pin_names (offset 0) hide) (in_bom yes) (on_board yes)
+      (property "Reference" "#FLG" (at 0 1.905 0)
+        (effects (font (size 1.27 1.27)) hide)
+      )
+      (property "Value" "PWR_FLAG" (at 0 3.81 0)
+        (effects (font (size 1.27 1.27)))
+      )
+      (property "Footprint" "" (at 0 0 0)
+        (effects (font (size 1.27 1.27)) hide)
+      )
+      (property "Datasheet" "~" (at 0 0 0)
+        (effects (font (size 1.27 1.27)) hide)
+      )
+      (property "ki_keywords" "power-flag" (at 0 0 0)
+        (effects (font (size 1.27 1.27)) hide)
+      )
+      (property "ki_description" "Special symbol for telling ERC where power comes from" (at 0 0 0)
+        (effects (font (size 1.27 1.27)) hide)
+      )
+      (symbol "PWR_FLAG_0_0"
+        (pin power_out line (at 0 0 90) (length 0)
+          (name "pwr" (effects (font (size 1.27 1.27))))
+          (number "1" (effects (font (size 1.27 1.27))))
+        )
+      )
+      (symbol "PWR_FLAG_0_1"
+        (polyline
+          (pts
+            (xy 0 0)
+            (xy 0 1.27)
+            (xy -1.016 1.905)
+            (xy 0 2.54)
+            (xy 1.016 1.905)
+            (xy 0 1.27)
+          )
+          (stroke (width 0) (type default))
+          (fill (type none))
+        )
+      )
+    )
     (symbol "power:VCC" (power) (pin_names (offset 0)) (in_bom yes) (on_board yes)
       (property "Reference" "#PWR" (at 0 -3.81 0)
         (effects (font (size 1.27 1.27)) hide)
@@ -1196,6 +1236,7 @@
     )
   )
 
+
   (junction (at 261.62 49.53) (diameter 0) (color 0 0 0 0)
     (uuid 01520f7f-f170-4416-b238-21b31cd6fa2e)
   )
@@ -1240,6 +1281,9 @@
   )
   (junction (at 78.74 91.44) (diameter 0) (color 0 0 0 0)
     (uuid 80320b3e-acb1-4572-a56b-5c0d24f763b4)
+  )
+  (junction (at 181.61 49.53) (diameter 0) (color 0 0 0 0)
+    (uuid 867c0768-b10f-4abd-aefd-2424f312e799)
   )
   (junction (at 261.62 64.77) (diameter 0) (color 0 0 0 0)
     (uuid 8763dd40-39da-4f1b-a74f-308ea47efb75)
@@ -1478,7 +1522,7 @@
     (stroke (width 0) (type default))
     (uuid 6bf5c6b1-e58f-4761-bcbe-7a8f798ef41c)
   )
-  (wire (pts (xy 163.83 49.53) (xy 243.84 49.53))
+  (wire (pts (xy 163.83 49.53) (xy 181.61 49.53))
     (stroke (width 0) (type default))
     (uuid 6efb1d79-8cc3-4011-b1c5-5d3126a449d8)
   )
@@ -1529,6 +1573,10 @@
   (wire (pts (xy 135.89 69.85) (xy 101.6 69.85))
     (stroke (width 0) (type default))
     (uuid 8b0bf870-88b0-4ea8-ad91-ef59b3b88437)
+  )
+  (wire (pts (xy 181.61 49.53) (xy 243.84 49.53))
+    (stroke (width 0) (type default))
+    (uuid 8bf1cce0-a827-4486-a203-28c168ca9b97)
   )
   (wire (pts (xy 83.82 72.39) (xy 62.23 72.39))
     (stroke (width 0) (type default))
@@ -1745,10 +1793,10 @@
     (instances
       (project "MyBikesGotLED"
         (path "/ea56fda8-6f8e-4826-a040-5c9b3e8e5cfa"
-          (reference "R1") (unit 1) (value "1M") (footprint "Resistor_SMD:R_0603_1608Metric_Pad0.98x0.95mm_HandSolder")
+          (reference "R1") (unit 1)
         )
         (path "/ea56fda8-6f8e-4826-a040-5c9b3e8e5cfa/2c074201-41ae-48a2-8f73-9baa1910d072"
-          (reference "R1") (unit 1) (value "1M") (footprint "Resistor_SMD:R_0603_1608Metric_Pad0.98x0.95mm_HandSolder")
+          (reference "R1") (unit 1)
         )
       )
     )
@@ -1780,15 +1828,15 @@
     (instances
       (project "renewable-charger"
         (path "/e63e39d7-6ac0-4ffd-8aa3-1841a4541b55"
-          (reference "C2") (unit 1) (value "1uF") (footprint "Capacitor_SMD:C_0603_1608Metric_Pad1.08x0.95mm_HandSolder")
+          (reference "C2") (unit 1)
         )
       )
       (project "MyBikesGotLED"
         (path "/ea56fda8-6f8e-4826-a040-5c9b3e8e5cfa"
-          (reference "C12") (unit 1) (value "1uF") (footprint "Capacitor_SMD:C_0603_1608Metric_Pad1.08x0.95mm_HandSolder")
+          (reference "C12") (unit 1)
         )
         (path "/ea56fda8-6f8e-4826-a040-5c9b3e8e5cfa/2c074201-41ae-48a2-8f73-9baa1910d072"
-          (reference "C11") (unit 1) (value "1uF") (footprint "Capacitor_SMD:C_0603_1608Metric_Pad1.08x0.95mm_HandSolder")
+          (reference "C11") (unit 1)
         )
       )
     )
@@ -1797,7 +1845,7 @@
   (symbol (lib_id "power:VCC") (at 261.62 64.77 270) (unit 1)
     (in_bom yes) (on_board yes) (dnp no) (fields_autoplaced)
     (uuid 0902d7c9-a1e8-4d9b-82d9-9491b197854c)
-    (property "Reference" "#PWR?" (at 257.81 64.77 0)
+    (property "Reference" "#PWR0108" (at 257.81 64.77 0)
       (effects (font (size 1.27 1.27)) hide)
     )
     (property "Value" "VCC" (at 265.43 65.405 90)
@@ -1813,7 +1861,7 @@
     (instances
       (project "MyBikesGotLED"
         (path "/ea56fda8-6f8e-4826-a040-5c9b3e8e5cfa/2c074201-41ae-48a2-8f73-9baa1910d072"
-          (reference "#PWR?") (unit 1) (value "VCC") (footprint "")
+          (reference "#PWR0108") (unit 1)
         )
       )
     )
@@ -1845,15 +1893,15 @@
     (instances
       (project "renewable-charger"
         (path "/e63e39d7-6ac0-4ffd-8aa3-1841a4541b55"
-          (reference "D5") (unit 1) (value "D_Schottky") (footprint "Diode_SMD:D_SMF")
+          (reference "D5") (unit 1)
         )
       )
       (project "MyBikesGotLED"
         (path "/ea56fda8-6f8e-4826-a040-5c9b3e8e5cfa"
-          (reference "D7") (unit 1) (value "D_Schottky") (footprint "Diode_SMD:D_SMF")
+          (reference "D7") (unit 1)
         )
         (path "/ea56fda8-6f8e-4826-a040-5c9b3e8e5cfa/2c074201-41ae-48a2-8f73-9baa1910d072"
-          (reference "D5") (unit 1) (value "D_Schottky") (footprint "Diode_SMD:D_SMF")
+          (reference "D5") (unit 1)
         )
       )
     )
@@ -1865,7 +1913,7 @@
     (property "Reference" "R3" (at 108.1786 59.1693 0)
       (effects (font (size 1.27 1.27)) (justify left))
     )
-    (property "Value" "R_Small" (at 108.1786 60.6933 0)
+    (property "Value" "2k" (at 108.1786 60.6933 0)
       (effects (font (size 1.27 1.27)) (justify left))
     )
     (property "Footprint" "Resistor_SMD:R_0805_2012Metric_Pad1.20x1.40mm_HandSolder" (at 106.68 59.69 0)
@@ -1885,15 +1933,15 @@
     (instances
       (project "renewable-charger"
         (path "/e63e39d7-6ac0-4ffd-8aa3-1841a4541b55"
-          (reference "R3") (unit 1) (value "R_Small") (footprint "Resistor_SMD:R_0805_2012Metric_Pad1.20x1.40mm_HandSolder")
+          (reference "R3") (unit 1)
         )
       )
       (project "MyBikesGotLED"
         (path "/ea56fda8-6f8e-4826-a040-5c9b3e8e5cfa"
-          (reference "R21") (unit 1) (value "R_Small") (footprint "Resistor_SMD:R_0805_2012Metric_Pad1.20x1.40mm_HandSolder")
+          (reference "R21") (unit 1)
         )
         (path "/ea56fda8-6f8e-4826-a040-5c9b3e8e5cfa/2c074201-41ae-48a2-8f73-9baa1910d072"
-          (reference "R22") (unit 1) (value "2k") (footprint "Resistor_SMD:R_0805_2012Metric_Pad1.20x1.40mm_HandSolder")
+          (reference "R22") (unit 1)
         )
       )
     )
@@ -1925,15 +1973,40 @@
     (instances
       (project "renewable-charger"
         (path "/e63e39d7-6ac0-4ffd-8aa3-1841a4541b55"
-          (reference "D3") (unit 1) (value "LED Green") (footprint "LED_SMD:LED_0805_2012Metric_Pad1.15x1.40mm_HandSolder")
+          (reference "D3") (unit 1)
         )
       )
       (project "MyBikesGotLED"
         (path "/ea56fda8-6f8e-4826-a040-5c9b3e8e5cfa"
-          (reference "D3") (unit 1) (value "LED Green") (footprint "LED_SMD:LED_0805_2012Metric_Pad1.15x1.40mm_HandSolder")
+          (reference "D3") (unit 1)
         )
         (path "/ea56fda8-6f8e-4826-a040-5c9b3e8e5cfa/2c074201-41ae-48a2-8f73-9baa1910d072"
-          (reference "D3") (unit 1) (value "LED Green") (footprint "LED_SMD:LED_0805_2012Metric_Pad1.15x1.40mm_HandSolder")
+          (reference "D3") (unit 1)
+        )
+      )
+    )
+  )
+
+  (symbol (lib_id "power:PWR_FLAG") (at 181.61 49.53 0) (unit 1)
+    (in_bom yes) (on_board yes) (dnp no) (fields_autoplaced)
+    (uuid 2b03467d-3106-4303-a817-230f31bd72a8)
+    (property "Reference" "#FLG01" (at 181.61 47.625 0)
+      (effects (font (size 1.27 1.27)) hide)
+    )
+    (property "Value" "PWR_FLAG" (at 181.61 45.72 0)
+      (effects (font (size 1.27 1.27)))
+    )
+    (property "Footprint" "" (at 181.61 49.53 0)
+      (effects (font (size 1.27 1.27)) hide)
+    )
+    (property "Datasheet" "~" (at 181.61 49.53 0)
+      (effects (font (size 1.27 1.27)) hide)
+    )
+    (pin "1" (uuid e5eafae3-da76-4333-bf7e-f61f458a6fcc))
+    (instances
+      (project "MyBikesGotLED"
+        (path "/ea56fda8-6f8e-4826-a040-5c9b3e8e5cfa/2c074201-41ae-48a2-8f73-9baa1910d072"
+          (reference "#FLG01") (unit 1)
         )
       )
     )
@@ -1945,7 +2018,7 @@
     (property "Reference" "R1" (at 67.5386 54.0893 0)
       (effects (font (size 1.27 1.27)) (justify left))
     )
-    (property "Value" "R_Small" (at 67.5386 55.6133 0)
+    (property "Value" "560" (at 67.5386 55.6133 0)
       (effects (font (size 1.27 1.27)) (justify left))
     )
     (property "Footprint" "Resistor_SMD:R_0603_1608Metric_Pad0.98x0.95mm_HandSolder" (at 66.04 54.61 0)
@@ -1965,15 +2038,15 @@
     (instances
       (project "renewable-charger"
         (path "/e63e39d7-6ac0-4ffd-8aa3-1841a4541b55"
-          (reference "R1") (unit 1) (value "R_Small") (footprint "Resistor_SMD:R_0603_1608Metric_Pad0.98x0.95mm_HandSolder")
+          (reference "R1") (unit 1)
         )
       )
       (project "MyBikesGotLED"
         (path "/ea56fda8-6f8e-4826-a040-5c9b3e8e5cfa"
-          (reference "R17") (unit 1) (value "R_Small") (footprint "Resistor_SMD:R_0603_1608Metric_Pad0.98x0.95mm_HandSolder")
+          (reference "R17") (unit 1)
         )
         (path "/ea56fda8-6f8e-4826-a040-5c9b3e8e5cfa/2c074201-41ae-48a2-8f73-9baa1910d072"
-          (reference "R18") (unit 1) (value "560") (footprint "Resistor_SMD:R_0603_1608Metric_Pad0.98x0.95mm_HandSolder")
+          (reference "R18") (unit 1)
         )
       )
     )
@@ -2005,10 +2078,10 @@
     (instances
       (project "MyBikesGotLED"
         (path "/ea56fda8-6f8e-4826-a040-5c9b3e8e5cfa"
-          (reference "D1") (unit 1) (value "MM3Z4V3ST1G") (footprint "Diode_SMD:D_SOD-323")
+          (reference "D1") (unit 1)
         )
         (path "/ea56fda8-6f8e-4826-a040-5c9b3e8e5cfa/2c074201-41ae-48a2-8f73-9baa1910d072"
-          (reference "D8") (unit 1) (value "MM3Z4V3ST1G") (footprint "Diode_SMD:D_SOD-323")
+          (reference "D8") (unit 1)
         )
       )
     )
@@ -2020,10 +2093,10 @@
     (property "Reference" "R5" (at 264.16 57.785 0)
       (effects (font (size 1.27 1.27)) (justify right))
     )
-    (property "Value" "Rcs" (at 264.16 60.325 0)
+    (property "Value" "0" (at 264.16 60.325 0)
       (effects (font (size 1.27 1.27)) (justify right))
     )
-    (property "Footprint" "Resistor_SMD:R_0805_2012Metric_Pad1.20x1.40mm_HandSolder" (at 261.62 58.42 0)
+    (property "Footprint" "Resistor_SMD:R_0603_1608Metric_Pad0.98x0.95mm_HandSolder" (at 261.62 58.42 0)
       (effects (font (size 1.27 1.27)) hide)
     )
     (property "Datasheet" "~" (at 261.62 58.42 0)
@@ -2040,15 +2113,15 @@
     (instances
       (project "renewable-charger"
         (path "/e63e39d7-6ac0-4ffd-8aa3-1841a4541b55"
-          (reference "R5") (unit 1) (value "Rcs") (footprint "Resistor_SMD:R_0805_2012Metric_Pad1.20x1.40mm_HandSolder")
+          (reference "R5") (unit 1)
         )
       )
       (project "MyBikesGotLED"
         (path "/ea56fda8-6f8e-4826-a040-5c9b3e8e5cfa"
-          (reference "R28") (unit 1) (value "Rcs") (footprint "Resistor_SMD:R_0805_2012Metric_Pad1.20x1.40mm_HandSolder")
+          (reference "R28") (unit 1)
         )
         (path "/ea56fda8-6f8e-4826-a040-5c9b3e8e5cfa/2c074201-41ae-48a2-8f73-9baa1910d072"
-          (reference "R28") (unit 1) (value "0") (footprint "Resistor_SMD:R_0805_2012Metric_Pad1.20x1.40mm_HandSolder")
+          (reference "R28") (unit 1)
         )
       )
     )
@@ -2077,15 +2150,15 @@
     (instances
       (project "renewable-charger"
         (path "/e63e39d7-6ac0-4ffd-8aa3-1841a4541b55"
-          (reference "JP3") (unit 1) (value "Test Point") (footprint "Jumper:SolderJumper-2_P1.3mm_Bridged2Bar_RoundedPad1.0x1.5mm")
+          (reference "JP3") (unit 1)
         )
       )
       (project "MyBikesGotLED"
         (path "/ea56fda8-6f8e-4826-a040-5c9b3e8e5cfa"
-          (reference "JP3") (unit 1) (value "Test Point") (footprint "Jumper:SolderJumper-2_P1.3mm_Bridged2Bar_RoundedPad1.0x1.5mm")
+          (reference "JP3") (unit 1)
         )
         (path "/ea56fda8-6f8e-4826-a040-5c9b3e8e5cfa/2c074201-41ae-48a2-8f73-9baa1910d072"
-          (reference "JP5") (unit 1) (value "Test Point") (footprint "Jumper:SolderJumper-2_P1.3mm_Bridged2Bar_RoundedPad1.0x1.5mm")
+          (reference "JP5") (unit 1)
         )
       )
     )
@@ -2117,15 +2190,15 @@
     (instances
       (project "renewable-charger"
         (path "/e63e39d7-6ac0-4ffd-8aa3-1841a4541b55"
-          (reference "L1") (unit 1) (value "100uH 2.5A") (footprint "Inductor_SMD:L_12x12mm_H6mm")
+          (reference "L1") (unit 1)
         )
       )
       (project "MyBikesGotLED"
         (path "/ea56fda8-6f8e-4826-a040-5c9b3e8e5cfa"
-          (reference "L3") (unit 1) (value "100uH 2.5A") (footprint "Inductor_SMD:L_12x12mm_H6mm")
+          (reference "L3") (unit 1)
         )
         (path "/ea56fda8-6f8e-4826-a040-5c9b3e8e5cfa/2c074201-41ae-48a2-8f73-9baa1910d072"
-          (reference "L3") (unit 1) (value "100uH 2.5A") (footprint "Inductor_SMD:L_12x12mm_H6mm")
+          (reference "L3") (unit 1)
         )
       )
     )
@@ -2158,15 +2231,15 @@
     (instances
       (project "renewable-charger"
         (path "/e63e39d7-6ac0-4ffd-8aa3-1841a4541b55"
-          (reference "Q2") (unit 1) (value "P-channel 30V 4A MOSfet") (footprint "Package_TO_SOT_SMD:SOT-23")
+          (reference "Q2") (unit 1)
         )
       )
       (project "MyBikesGotLED"
         (path "/ea56fda8-6f8e-4826-a040-5c9b3e8e5cfa"
-          (reference "Q4") (unit 1) (value "P-channel 30V 4A MOSfet") (footprint "Package_TO_SOT_SMD:SOT-23")
+          (reference "Q4") (unit 1)
         )
         (path "/ea56fda8-6f8e-4826-a040-5c9b3e8e5cfa/2c074201-41ae-48a2-8f73-9baa1910d072"
-          (reference "Q4") (unit 1) (value "P-channel 30V 4A MOSfet") (footprint "Package_TO_SOT_SMD:SOT-23")
+          (reference "Q4") (unit 1)
         )
       )
     )
@@ -2198,15 +2271,15 @@
     (instances
       (project "renewable-charger"
         (path "/e63e39d7-6ac0-4ffd-8aa3-1841a4541b55"
-          (reference "C3") (unit 1) (value "220nF") (footprint "Capacitor_SMD:C_0603_1608Metric_Pad1.08x0.95mm_HandSolder")
+          (reference "C3") (unit 1)
         )
       )
       (project "MyBikesGotLED"
         (path "/ea56fda8-6f8e-4826-a040-5c9b3e8e5cfa"
-          (reference "C13") (unit 1) (value "220nF") (footprint "Capacitor_SMD:C_0603_1608Metric_Pad1.08x0.95mm_HandSolder")
+          (reference "C13") (unit 1)
         )
         (path "/ea56fda8-6f8e-4826-a040-5c9b3e8e5cfa/2c074201-41ae-48a2-8f73-9baa1910d072"
-          (reference "C12") (unit 1) (value "220nF") (footprint "Capacitor_SMD:C_0603_1608Metric_Pad1.08x0.95mm_HandSolder")
+          (reference "C12") (unit 1)
         )
       )
     )
@@ -2238,15 +2311,15 @@
     (instances
       (project "renewable-charger"
         (path "/e63e39d7-6ac0-4ffd-8aa3-1841a4541b55"
-          (reference "D7") (unit 1) (value "D_Schottky") (footprint "Diode_SMD:D_SMF")
+          (reference "D7") (unit 1)
         )
       )
       (project "MyBikesGotLED"
         (path "/ea56fda8-6f8e-4826-a040-5c9b3e8e5cfa"
-          (reference "D9") (unit 1) (value "D_Schottky") (footprint "Diode_SMD:D_SMF")
+          (reference "D9") (unit 1)
         )
         (path "/ea56fda8-6f8e-4826-a040-5c9b3e8e5cfa/2c074201-41ae-48a2-8f73-9baa1910d072"
-          (reference "D7") (unit 1) (value "D_Schottky") (footprint "Diode_SMD:D_SMF")
+          (reference "D7") (unit 1)
         )
       )
     )
@@ -2278,15 +2351,15 @@
     (instances
       (project "renewable-charger"
         (path "/e63e39d7-6ac0-4ffd-8aa3-1841a4541b55"
-          (reference "R2") (unit 1) (value "120R") (footprint "Resistor_SMD:R_0603_1608Metric_Pad0.98x0.95mm_HandSolder")
+          (reference "R2") (unit 1)
         )
       )
       (project "MyBikesGotLED"
         (path "/ea56fda8-6f8e-4826-a040-5c9b3e8e5cfa"
-          (reference "R20") (unit 1) (value "120R") (footprint "Resistor_SMD:R_0603_1608Metric_Pad0.98x0.95mm_HandSolder")
+          (reference "R20") (unit 1)
         )
         (path "/ea56fda8-6f8e-4826-a040-5c9b3e8e5cfa/2c074201-41ae-48a2-8f73-9baa1910d072"
-          (reference "R19") (unit 1) (value "120R") (footprint "Resistor_SMD:R_0603_1608Metric_Pad0.98x0.95mm_HandSolder")
+          (reference "R19") (unit 1)
         )
       )
     )
@@ -2318,15 +2391,15 @@
     (instances
       (project "renewable-charger"
         (path "/e63e39d7-6ac0-4ffd-8aa3-1841a4541b55"
-          (reference "C10") (unit 1) (value "10uF 50V") (footprint "Capacitor_SMD:C_1206_3216Metric_Pad1.33x1.80mm_HandSolder")
+          (reference "C10") (unit 1)
         )
       )
       (project "MyBikesGotLED"
         (path "/ea56fda8-6f8e-4826-a040-5c9b3e8e5cfa"
-          (reference "C16") (unit 1) (value "10uF 50V") (footprint "Capacitor_SMD:C_1206_3216Metric_Pad1.33x1.80mm_HandSolder")
+          (reference "C16") (unit 1)
         )
         (path "/ea56fda8-6f8e-4826-a040-5c9b3e8e5cfa/2c074201-41ae-48a2-8f73-9baa1910d072"
-          (reference "C15") (unit 1) (value "10uF 50V") (footprint "Capacitor_SMD:C_1206_3216Metric_Pad1.33x1.80mm_HandSolder")
+          (reference "C15") (unit 1)
         )
       )
     )
@@ -2358,15 +2431,15 @@
     (instances
       (project "renewable-charger"
         (path "/e63e39d7-6ac0-4ffd-8aa3-1841a4541b55"
-          (reference "C8") (unit 1) (value "0.1uF") (footprint "Capacitor_SMD:C_0603_1608Metric_Pad1.08x0.95mm_HandSolder")
+          (reference "C8") (unit 1)
         )
       )
       (project "MyBikesGotLED"
         (path "/ea56fda8-6f8e-4826-a040-5c9b3e8e5cfa"
-          (reference "C14") (unit 1) (value "0.1uF") (footprint "Capacitor_SMD:C_0603_1608Metric_Pad1.08x0.95mm_HandSolder")
+          (reference "C14") (unit 1)
         )
         (path "/ea56fda8-6f8e-4826-a040-5c9b3e8e5cfa/2c074201-41ae-48a2-8f73-9baa1910d072"
-          (reference "C13") (unit 1) (value "0.1uF") (footprint "Capacitor_SMD:C_0603_1608Metric_Pad1.08x0.95mm_HandSolder")
+          (reference "C13") (unit 1)
         )
       )
     )
@@ -2399,15 +2472,15 @@
     (instances
       (project "renewable-charger"
         (path "/e63e39d7-6ac0-4ffd-8aa3-1841a4541b55"
-          (reference "Q1") (unit 1) (value "P-channel 30V 4A MOSfet") (footprint "Package_TO_SOT_SMD:SOT-23")
+          (reference "Q1") (unit 1)
         )
       )
       (project "MyBikesGotLED"
         (path "/ea56fda8-6f8e-4826-a040-5c9b3e8e5cfa"
-          (reference "Q3") (unit 1) (value "P-channel 30V 4A MOSfet") (footprint "Package_TO_SOT_SMD:SOT-23")
+          (reference "Q3") (unit 1)
         )
         (path "/ea56fda8-6f8e-4826-a040-5c9b3e8e5cfa/2c074201-41ae-48a2-8f73-9baa1910d072"
-          (reference "Q1") (unit 1) (value "P-channel 30V 4A MOSfet") (footprint "Package_TO_SOT_SMD:SOT-23")
+          (reference "Q1") (unit 1)
         )
       )
     )
@@ -2419,7 +2492,7 @@
     (property "Reference" "R6" (at 244.0686 66.7893 0)
       (effects (font (size 1.27 1.27)) (justify left))
     )
-    (property "Value" "R_Small" (at 244.0686 68.3133 0)
+    (property "Value" "10k" (at 244.0686 68.3133 0)
       (effects (font (size 1.27 1.27)) (justify left))
     )
     (property "Footprint" "Resistor_SMD:R_0603_1608Metric_Pad0.98x0.95mm_HandSolder" (at 242.57 67.31 0)
@@ -2439,15 +2512,15 @@
     (instances
       (project "renewable-charger"
         (path "/e63e39d7-6ac0-4ffd-8aa3-1841a4541b55"
-          (reference "R6") (unit 1) (value "R_Small") (footprint "Resistor_SMD:R_0603_1608Metric_Pad0.98x0.95mm_HandSolder")
+          (reference "R6") (unit 1)
         )
       )
       (project "MyBikesGotLED"
         (path "/ea56fda8-6f8e-4826-a040-5c9b3e8e5cfa"
-          (reference "R24") (unit 1) (value "R_Small") (footprint "Resistor_SMD:R_0603_1608Metric_Pad0.98x0.95mm_HandSolder")
+          (reference "R24") (unit 1)
         )
         (path "/ea56fda8-6f8e-4826-a040-5c9b3e8e5cfa/2c074201-41ae-48a2-8f73-9baa1910d072"
-          (reference "R27") (unit 1) (value "10k") (footprint "Resistor_SMD:R_0603_1608Metric_Pad0.98x0.95mm_HandSolder")
+          (reference "R27") (unit 1)
         )
       )
     )
@@ -2459,7 +2532,7 @@
     (property "Reference" "R5" (at 140.97 46.228 90)
       (effects (font (size 1.27 1.27)))
     )
-    (property "Value" "Rcs" (at 140.97 47.752 90)
+    (property "Value" "0.068" (at 140.97 47.752 90)
       (effects (font (size 1.27 1.27)))
     )
     (property "Footprint" "Resistor_SMD:R_0805_2012Metric_Pad1.20x1.40mm_HandSolder" (at 140.97 49.53 0)
@@ -2479,15 +2552,15 @@
     (instances
       (project "renewable-charger"
         (path "/e63e39d7-6ac0-4ffd-8aa3-1841a4541b55"
-          (reference "R5") (unit 1) (value "Rcs") (footprint "Resistor_SMD:R_0805_2012Metric_Pad1.20x1.40mm_HandSolder")
+          (reference "R5") (unit 1)
         )
       )
       (project "MyBikesGotLED"
         (path "/ea56fda8-6f8e-4826-a040-5c9b3e8e5cfa"
-          (reference "R23") (unit 1) (value "Rcs") (footprint "Resistor_SMD:R_0805_2012Metric_Pad1.20x1.40mm_HandSolder")
+          (reference "R23") (unit 1)
         )
         (path "/ea56fda8-6f8e-4826-a040-5c9b3e8e5cfa/2c074201-41ae-48a2-8f73-9baa1910d072"
-          (reference "R23") (unit 1) (value "0.068") (footprint "Resistor_SMD:R_0805_2012Metric_Pad1.20x1.40mm_HandSolder")
+          (reference "R23") (unit 1)
         )
       )
     )
@@ -2519,10 +2592,10 @@
     (instances
       (project "MyBikesGotLED"
         (path "/ea56fda8-6f8e-4826-a040-5c9b3e8e5cfa"
-          (reference "R3") (unit 1) (value "5.1K") (footprint "Resistor_SMD:R_0603_1608Metric_Pad0.98x0.95mm_HandSolder")
+          (reference "R3") (unit 1)
         )
         (path "/ea56fda8-6f8e-4826-a040-5c9b3e8e5cfa/2c074201-41ae-48a2-8f73-9baa1910d072"
-          (reference "R3") (unit 1) (value "5.1K") (footprint "Resistor_SMD:R_0603_1608Metric_Pad0.98x0.95mm_HandSolder")
+          (reference "R3") (unit 1)
         )
       )
     )
@@ -2547,10 +2620,10 @@
     (instances
       (project "MyBikesGotLED"
         (path "/ea56fda8-6f8e-4826-a040-5c9b3e8e5cfa"
-          (reference "#PWR0102a01") (unit 1) (value "+BATT") (footprint "")
+          (reference "#PWR0102a01") (unit 1)
         )
         (path "/ea56fda8-6f8e-4826-a040-5c9b3e8e5cfa/2c074201-41ae-48a2-8f73-9baa1910d072"
-          (reference "#PWR0102a01") (unit 1) (value "+BATT") (footprint "")
+          (reference "#PWR0102a01") (unit 1)
         )
       )
     )
@@ -2590,15 +2663,15 @@
     (instances
       (project "renewable-charger"
         (path "/e63e39d7-6ac0-4ffd-8aa3-1841a4541b55"
-          (reference "U1") (unit 1) (value "CN3791") (footprint "Package_SO:SSOP-10_3.9x4.9mm_P1.00mm")
+          (reference "U1") (unit 1)
         )
       )
       (project "MyBikesGotLED"
         (path "/ea56fda8-6f8e-4826-a040-5c9b3e8e5cfa"
-          (reference "U6") (unit 1) (value "CN3791") (footprint "Package_SO:SSOP-10_3.9x4.9mm_P1.00mm")
+          (reference "U6") (unit 1)
         )
         (path "/ea56fda8-6f8e-4826-a040-5c9b3e8e5cfa/2c074201-41ae-48a2-8f73-9baa1910d072"
-          (reference "U5") (unit 1) (value "CN3791") (footprint "Package_SO:SSOP-10_3.9x4.9mm_P1.00mm")
+          (reference "U5") (unit 1)
         )
       )
     )
@@ -2653,10 +2726,10 @@
     (instances
       (project "MyBikesGotLED"
         (path "/ea56fda8-6f8e-4826-a040-5c9b3e8e5cfa"
-          (reference "J1") (unit 1) (value "USB_C_Receptacle") (footprint "Connector_USB:USB_C_Receptacle_Amphenol_12401610E4-2A")
+          (reference "J1") (unit 1)
         )
         (path "/ea56fda8-6f8e-4826-a040-5c9b3e8e5cfa/2c074201-41ae-48a2-8f73-9baa1910d072"
-          (reference "J1") (unit 1) (value "USB_C_Receptacle") (footprint "Connector_USB:USB_C_Receptacle_Amphenol_12401610E4-2A")
+          (reference "J1") (unit 1)
         )
       )
     )
@@ -2668,7 +2741,7 @@
     (property "Reference" "R4" (at 104.3686 79.4893 0)
       (effects (font (size 1.27 1.27)) (justify left))
     )
-    (property "Value" "R_Small" (at 104.3686 81.0133 0)
+    (property "Value" "330" (at 104.3686 81.0133 0)
       (effects (font (size 1.27 1.27)) (justify left))
     )
     (property "Footprint" "Resistor_SMD:R_0805_2012Metric_Pad1.20x1.40mm_HandSolder" (at 102.87 80.01 0)
@@ -2688,15 +2761,15 @@
     (instances
       (project "renewable-charger"
         (path "/e63e39d7-6ac0-4ffd-8aa3-1841a4541b55"
-          (reference "R4") (unit 1) (value "R_Small") (footprint "Resistor_SMD:R_0805_2012Metric_Pad1.20x1.40mm_HandSolder")
+          (reference "R4") (unit 1)
         )
       )
       (project "MyBikesGotLED"
         (path "/ea56fda8-6f8e-4826-a040-5c9b3e8e5cfa"
-          (reference "R22") (unit 1) (value "R_Small") (footprint "Resistor_SMD:R_0805_2012Metric_Pad1.20x1.40mm_HandSolder")
+          (reference "R22") (unit 1)
         )
         (path "/ea56fda8-6f8e-4826-a040-5c9b3e8e5cfa/2c074201-41ae-48a2-8f73-9baa1910d072"
-          (reference "R21") (unit 1) (value "330") (footprint "Resistor_SMD:R_0805_2012Metric_Pad1.20x1.40mm_HandSolder")
+          (reference "R21") (unit 1)
         )
       )
     )
@@ -2728,15 +2801,15 @@
     (instances
       (project "renewable-charger"
         (path "/e63e39d7-6ac0-4ffd-8aa3-1841a4541b55"
-          (reference "C1") (unit 1) (value "10uF 50V") (footprint "Capacitor_SMD:C_1206_3216Metric_Pad1.33x1.80mm_HandSolder")
+          (reference "C1") (unit 1)
         )
       )
       (project "MyBikesGotLED"
         (path "/ea56fda8-6f8e-4826-a040-5c9b3e8e5cfa"
-          (reference "C11") (unit 1) (value "10uF 50V") (footprint "Capacitor_SMD:C_1206_3216Metric_Pad1.33x1.80mm_HandSolder")
+          (reference "C11") (unit 1)
         )
         (path "/ea56fda8-6f8e-4826-a040-5c9b3e8e5cfa/2c074201-41ae-48a2-8f73-9baa1910d072"
-          (reference "C10") (unit 1) (value "10uF 50V") (footprint "Capacitor_SMD:C_1206_3216Metric_Pad1.33x1.80mm_HandSolder")
+          (reference "C10") (unit 1)
         )
       )
     )
@@ -2768,10 +2841,10 @@
     (instances
       (project "MyBikesGotLED"
         (path "/ea56fda8-6f8e-4826-a040-5c9b3e8e5cfa"
-          (reference "R2") (unit 1) (value "5.1K") (footprint "Resistor_SMD:R_0603_1608Metric_Pad0.98x0.95mm_HandSolder")
+          (reference "R2") (unit 1)
         )
         (path "/ea56fda8-6f8e-4826-a040-5c9b3e8e5cfa/2c074201-41ae-48a2-8f73-9baa1910d072"
-          (reference "R2") (unit 1) (value "5.1K") (footprint "Resistor_SMD:R_0603_1608Metric_Pad0.98x0.95mm_HandSolder")
+          (reference "R2") (unit 1)
         )
       )
     )
@@ -2786,7 +2859,7 @@
     (property "Value" "Solar Input" (at 35.56 48.4886 0)
       (effects (font (size 1.27 1.27)))
     )
-    (property "Footprint" "Connector_Phoenix_MSTB:PhoenixContact_MSTBVA_2,5_2-G-5,08_1x02_P5.08mm_Vertical" (at 35.56 50.8 0)
+    (property "Footprint" "MCQN:OQ0212510000G" (at 35.56 50.8 0)
       (effects (font (size 1.27 1.27)) hide)
     )
     (property "Datasheet" "~" (at 35.56 50.8 0)
@@ -2800,15 +2873,15 @@
     (instances
       (project "renewable-charger"
         (path "/e63e39d7-6ac0-4ffd-8aa3-1841a4541b55"
-          (reference "J1") (unit 1) (value "Solar Input") (footprint "Connector_Phoenix_MSTB:PhoenixContact_MSTBVA_2,5_2-G-5,08_1x02_P5.08mm_Vertical")
+          (reference "J1") (unit 1)
         )
       )
       (project "MyBikesGotLED"
         (path "/ea56fda8-6f8e-4826-a040-5c9b3e8e5cfa"
-          (reference "J4") (unit 1) (value "Solar Input") (footprint "Connector_Phoenix_MSTB:PhoenixContact_MSTBVA_2,5_2-G-5,08_1x02_P5.08mm_Vertical")
+          (reference "J4") (unit 1)
         )
         (path "/ea56fda8-6f8e-4826-a040-5c9b3e8e5cfa/2c074201-41ae-48a2-8f73-9baa1910d072"
-          (reference "J7") (unit 1) (value "Solar Input") (footprint "MCQN:OQ0212510000G")
+          (reference "J7") (unit 1)
         )
       )
     )
@@ -2833,10 +2906,10 @@
     (instances
       (project "MyBikesGotLED"
         (path "/ea56fda8-6f8e-4826-a040-5c9b3e8e5cfa"
-          (reference "#PWR0107a01") (unit 1) (value "-BATT") (footprint "")
+          (reference "#PWR0107a01") (unit 1)
         )
         (path "/ea56fda8-6f8e-4826-a040-5c9b3e8e5cfa/2c074201-41ae-48a2-8f73-9baa1910d072"
-          (reference "#PWR0107a01") (unit 1) (value "-BATT") (footprint "")
+          (reference "#PWR0107a01") (unit 1)
         )
       )
     )
@@ -2868,15 +2941,15 @@
     (instances
       (project "renewable-charger"
         (path "/e63e39d7-6ac0-4ffd-8aa3-1841a4541b55"
-          (reference "D6") (unit 1) (value "D_Schottky") (footprint "Diode_SMD:D_SMF")
+          (reference "D6") (unit 1)
         )
       )
       (project "MyBikesGotLED"
         (path "/ea56fda8-6f8e-4826-a040-5c9b3e8e5cfa"
-          (reference "D8") (unit 1) (value "D_Schottky") (footprint "Diode_SMD:D_SMF")
+          (reference "D8") (unit 1)
         )
         (path "/ea56fda8-6f8e-4826-a040-5c9b3e8e5cfa/2c074201-41ae-48a2-8f73-9baa1910d072"
-          (reference "D6") (unit 1) (value "D_Schottky") (footprint "Diode_SMD:D_SMF")
+          (reference "D6") (unit 1)
         )
       )
     )
@@ -2908,15 +2981,15 @@
     (instances
       (project "renewable-charger"
         (path "/e63e39d7-6ac0-4ffd-8aa3-1841a4541b55"
-          (reference "C9") (unit 1) (value "1uF") (footprint "Capacitor_SMD:C_0603_1608Metric_Pad1.08x0.95mm_HandSolder")
+          (reference "C9") (unit 1)
         )
       )
       (project "MyBikesGotLED"
         (path "/ea56fda8-6f8e-4826-a040-5c9b3e8e5cfa"
-          (reference "C15") (unit 1) (value "1uF") (footprint "Capacitor_SMD:C_0603_1608Metric_Pad1.08x0.95mm_HandSolder")
+          (reference "C15") (unit 1)
         )
         (path "/ea56fda8-6f8e-4826-a040-5c9b3e8e5cfa/2c074201-41ae-48a2-8f73-9baa1910d072"
-          (reference "C14") (unit 1) (value "1uF") (footprint "Capacitor_SMD:C_0603_1608Metric_Pad1.08x0.95mm_HandSolder")
+          (reference "C14") (unit 1)
         )
       )
     )
@@ -2948,15 +3021,15 @@
     (instances
       (project "renewable-charger"
         (path "/e63e39d7-6ac0-4ffd-8aa3-1841a4541b55"
-          (reference "D4") (unit 1) (value "LED Red") (footprint "LED_SMD:LED_0805_2012Metric_Pad1.15x1.40mm_HandSolder")
+          (reference "D4") (unit 1)
         )
       )
       (project "MyBikesGotLED"
         (path "/ea56fda8-6f8e-4826-a040-5c9b3e8e5cfa"
-          (reference "D4") (unit 1) (value "LED Red") (footprint "LED_SMD:LED_0805_2012Metric_Pad1.15x1.40mm_HandSolder")
+          (reference "D4") (unit 1)
         )
         (path "/ea56fda8-6f8e-4826-a040-5c9b3e8e5cfa/2c074201-41ae-48a2-8f73-9baa1910d072"
-          (reference "D4") (unit 1) (value "LED Red") (footprint "LED_SMD:LED_0805_2012Metric_Pad1.15x1.40mm_HandSolder")
+          (reference "D4") (unit 1)
         )
       )
     )
@@ -2974,7 +3047,7 @@
     )
     (instances
       (project "MyBikesGotLED"
-        (path "/ea56fda8-6f8e-4826-a040-5c9b3e8e5cfa/2c074201-41ae-48a2-8f73-9baa1910d072" (page ""))
+        (path "/ea56fda8-6f8e-4826-a040-5c9b3e8e5cfa/2c074201-41ae-48a2-8f73-9baa1910d072" (page "#"))
       )
     )
   )
