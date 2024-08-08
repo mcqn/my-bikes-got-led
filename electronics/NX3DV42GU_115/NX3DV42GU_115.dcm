@@ -1,0 +1,9 @@
+EESchema-DOCLIB  Version 2.0
+#
+$CMP NX3DV42GU,115
+D USB Switch ICs NX3DV42GU/XQFN10///REEL 7 Q1/T1 *STANDARD MARK SM
+K
+F http://www.nxp.com/docs/en/data-sheet/NX3DV42.pdf
+$ENDCMP
+#
+#End Doc Library

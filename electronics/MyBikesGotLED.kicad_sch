@@ -1576,7 +1576,6 @@
     )
   )
 
-
   (junction (at 137.16 44.45) (diameter 0) (color 0 0 0 0)
     (uuid 020efa75-930d-4d0c-b929-e38bf63c80be)
   )
@@ -2448,6 +2447,21 @@
   (wire (pts (xy 95.25 52.07) (xy 95.25 54.61))
     (stroke (width 0) (type default))
     (uuid ff3a8452-bdd0-42eb-a451-d63579d6955a)
+  )
+
+  (text_box "Remove - function provided by battery manager"
+    (at 76.2 -1.27 0) (size 68.58 60.96)
+    (stroke (width 0) (type default))
+    (fill (type none))
+    (effects (font (size 1.27 1.27)) (justify left top))
+    (uuid 9bf6a7ee-929d-425c-bcea-ece906f2706f)
+  )
+  (text_box "Debug Switch - Issue on old boards with ground desc"
+    (at 22.86 20.32 0) (size 48.26 62.23)
+    (stroke (width 0) (type default))
+    (fill (type none))
+    (effects (font (size 1.27 1.27)) (justify left top))
+    (uuid a5d2ae09-aaab-4eee-bae0-af4096625af3)
   )
 
   (global_label "LED_Data" (shape input) (at 132.08 102.87 180) (fields_autoplaced)
@@ -3707,9 +3721,6 @@
         (path "/ea56fda8-6f8e-4826-a040-5c9b3e8e5cfa"
           (reference "R26") (unit 1)
         )
-        (path "/ea56fda8-6f8e-4826-a040-5c9b3e8e5cfa/2c074201-41ae-48a2-8f73-9baa1910d072"
-          (reference "R26") (unit 1)
-        )
       )
     )
   )
@@ -3766,12 +3777,6 @@
       (project "MyBikesGotLED"
         (path "/ea56fda8-6f8e-4826-a040-5c9b3e8e5cfa"
           (reference "R24") (unit 1)
-        )
-        (path "/ea56fda8-6f8e-4826-a040-5c9b3e8e5cfa/2c074201-41ae-48a2-8f73-9baa1910d072"
-          (reference "R29") (unit 1)
-        )
-        (path "/ea56fda8-6f8e-4826-a040-5c9b3e8e5cfa/2c074201-41ae-48a2-8f73-9baa1910d072/ff8e9e07-e1dd-4ffa-ae44-50f6b37cd1a1"
-          (reference "R29") (unit 1)
         )
       )
     )
@@ -3838,12 +3843,6 @@
     (pin "2" (uuid 9a57357f-6634-4a4e-bb2f-3372246088b2))
     (instances
       (project "MyBikesGotLED"
-        (path "/ea56fda8-6f8e-4826-a040-5c9b3e8e5cfa/2c074201-41ae-48a2-8f73-9baa1910d072"
-          (reference "JP4") (unit 1)
-        )
-        (path "/ea56fda8-6f8e-4826-a040-5c9b3e8e5cfa/2c074201-41ae-48a2-8f73-9baa1910d072/ff8e9e07-e1dd-4ffa-ae44-50f6b37cd1a1"
-          (reference "JP4") (unit 1)
-        )
         (path "/ea56fda8-6f8e-4826-a040-5c9b3e8e5cfa"
           (reference "JP4") (unit 1)
         )
@@ -3908,12 +3907,6 @@
         (path "/ea56fda8-6f8e-4826-a040-5c9b3e8e5cfa"
           (reference "R20") (unit 1)
         )
-        (path "/ea56fda8-6f8e-4826-a040-5c9b3e8e5cfa/2c074201-41ae-48a2-8f73-9baa1910d072"
-          (reference "R20") (unit 1)
-        )
-        (path "/ea56fda8-6f8e-4826-a040-5c9b3e8e5cfa/2c074201-41ae-48a2-8f73-9baa1910d072/ff8e9e07-e1dd-4ffa-ae44-50f6b37cd1a1"
-          (reference "R20") (unit 1)
-        )
       )
     )
   )
@@ -3945,9 +3938,6 @@
     (instances
       (project "MyBikesGotLED"
         (path "/ea56fda8-6f8e-4826-a040-5c9b3e8e5cfa"
-          (reference "SW2") (unit 1)
-        )
-        (path "/ea56fda8-6f8e-4826-a040-5c9b3e8e5cfa/2c074201-41ae-48a2-8f73-9baa1910d072"
           (reference "SW2") (unit 1)
         )
       )
@@ -3983,9 +3973,6 @@
         (path "/ea56fda8-6f8e-4826-a040-5c9b3e8e5cfa"
           (reference "Q3") (unit 1)
         )
-        (path "/ea56fda8-6f8e-4826-a040-5c9b3e8e5cfa/2c074201-41ae-48a2-8f73-9baa1910d072"
-          (reference "Q3") (unit 1)
-        )
       )
     )
   )
@@ -4009,12 +3996,6 @@
     (instances
       (project "MyBikesGotLED"
         (path "/ea56fda8-6f8e-4826-a040-5c9b3e8e5cfa"
-          (reference "#PWR0115") (unit 1)
-        )
-        (path "/ea56fda8-6f8e-4826-a040-5c9b3e8e5cfa/2c074201-41ae-48a2-8f73-9baa1910d072"
-          (reference "#PWR0115") (unit 1)
-        )
-        (path "/ea56fda8-6f8e-4826-a040-5c9b3e8e5cfa/2c074201-41ae-48a2-8f73-9baa1910d072/ff8e9e07-e1dd-4ffa-ae44-50f6b37cd1a1"
           (reference "#PWR0115") (unit 1)
         )
       )
@@ -4156,9 +4137,6 @@
     )
     (instances
       (project "MyBikesGotLED"
-        (path "/ea56fda8-6f8e-4826-a040-5c9b3e8e5cfa/2c074201-41ae-48a2-8f73-9baa1910d072"
-          (reference "#LOGO1") (unit 1)
-        )
         (path "/ea56fda8-6f8e-4826-a040-5c9b3e8e5cfa"
           (reference "#LOGO1") (unit 1)
         )
@@ -4276,9 +4254,6 @@
         (path "/ea56fda8-6f8e-4826-a040-5c9b3e8e5cfa"
           (reference "JP6") (unit 1)
         )
-        (path "/ea56fda8-6f8e-4826-a040-5c9b3e8e5cfa/2c074201-41ae-48a2-8f73-9baa1910d072"
-          (reference "JP6") (unit 1)
-        )
       )
     )
   )
@@ -4337,9 +4312,6 @@
     (instances
       (project "MyBikesGotLED"
         (path "/ea56fda8-6f8e-4826-a040-5c9b3e8e5cfa"
-          (reference "R25") (unit 1)
-        )
-        (path "/ea56fda8-6f8e-4826-a040-5c9b3e8e5cfa/2c074201-41ae-48a2-8f73-9baa1910d072"
           (reference "R25") (unit 1)
         )
       )
