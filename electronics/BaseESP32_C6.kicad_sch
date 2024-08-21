@@ -595,6 +595,60 @@
         )
       )
     )
+    (symbol "Switch:SW_Push" (pin_numbers hide) (pin_names (offset 1.016) hide) (in_bom yes) (on_board yes)
+      (property "Reference" "SW" (at 1.27 2.54 0)
+        (effects (font (size 1.27 1.27)) (justify left))
+      )
+      (property "Value" "SW_Push" (at 0 -1.524 0)
+        (effects (font (size 1.27 1.27)))
+      )
+      (property "Footprint" "" (at 0 5.08 0)
+        (effects (font (size 1.27 1.27)) hide)
+      )
+      (property "Datasheet" "~" (at 0 5.08 0)
+        (effects (font (size 1.27 1.27)) hide)
+      )
+      (property "ki_keywords" "switch normally-open pushbutton push-button" (at 0 0 0)
+        (effects (font (size 1.27 1.27)) hide)
+      )
+      (property "ki_description" "Push button switch, generic, two pins" (at 0 0 0)
+        (effects (font (size 1.27 1.27)) hide)
+      )
+      (symbol "SW_Push_0_1"
+        (circle (center -2.032 0) (radius 0.508)
+          (stroke (width 0) (type default))
+          (fill (type none))
+        )
+        (polyline
+          (pts
+            (xy 0 1.27)
+            (xy 0 3.048)
+          )
+          (stroke (width 0) (type default))
+          (fill (type none))
+        )
+        (polyline
+          (pts
+            (xy 2.54 1.27)
+            (xy -2.54 1.27)
+          )
+          (stroke (width 0) (type default))
+          (fill (type none))
+        )
+        (circle (center 2.032 0) (radius 0.508)
+          (stroke (width 0) (type default))
+          (fill (type none))
+        )
+        (pin passive line (at -5.08 0 0) (length 2.54)
+          (name "1" (effects (font (size 1.27 1.27))))
+          (number "1" (effects (font (size 1.27 1.27))))
+        )
+        (pin passive line (at 5.08 0 180) (length 2.54)
+          (name "2" (effects (font (size 1.27 1.27))))
+          (number "2" (effects (font (size 1.27 1.27))))
+        )
+      )
+    )
     (symbol "power:+3V3" (power) (pin_names (offset 0)) (in_bom yes) (on_board yes)
       (property "Reference" "#PWR" (at 0 -3.81 0)
         (effects (font (size 1.27 1.27)) hide)
@@ -689,20 +743,35 @@
     )
   )
 
+  (junction (at 144.78 60.96) (diameter 0) (color 0 0 0 0)
+    (uuid 2b5e78d5-ede3-4703-9182-6a24e111484a)
+  )
+  (junction (at 134.62 58.42) (diameter 0) (color 0 0 0 0)
+    (uuid 2cf840b1-5386-40ab-9651-d8e7fd2f8654)
+  )
   (junction (at 58.42 53.34) (diameter 0) (color 0 0 0 0)
     (uuid 2f5b0914-fded-4f01-be90-c7dcb4db5429)
   )
   (junction (at 58.42 45.72) (diameter 0) (color 0 0 0 0)
     (uuid 3f78a5cb-2641-4447-9767-9e891987d972)
   )
+  (junction (at 144.78 72.39) (diameter 0) (color 0 0 0 0)
+    (uuid 43c74cd6-b273-409e-b489-95f4ed76ebc7)
+  )
   (junction (at 55.88 91.44) (diameter 0) (color 0 0 0 0)
     (uuid 66e58d1e-f2a4-4feb-a270-57007301f09c)
+  )
+  (junction (at 170.18 60.96) (diameter 0) (color 0 0 0 0)
+    (uuid 680ae1c0-e8f3-4373-a9fe-3679f63d0b66)
   )
   (junction (at 66.04 83.82) (diameter 0) (color 0 0 0 0)
     (uuid 786edfe8-4a0d-468a-97a4-66f5fa2ed563)
   )
   (junction (at 66.04 91.44) (diameter 0) (color 0 0 0 0)
     (uuid a0ee306c-fa8d-48ee-b476-1cfb53f1dbc8)
+  )
+  (junction (at 170.18 69.85) (diameter 0) (color 0 0 0 0)
+    (uuid ac696305-4856-41c0-8fd0-706f5010b54e)
   )
   (junction (at 255.27 151.13) (diameter 0) (color 0 0 0 0)
     (uuid bf3cdfe3-cee4-4be0-8844-0cde85401e85)
@@ -713,15 +782,12 @@
   (junction (at 142.24 72.39) (diameter 0) (color 0 0 0 0)
     (uuid d6ab06fb-42fa-4f08-9a5e-6505df30c3cb)
   )
-  (junction (at 170.18 72.39) (diameter 0) (color 0 0 0 0)
-    (uuid d6f605ab-0e48-4e73-928c-f2caf147b7b5)
-  )
 
   (wire (pts (xy 71.12 35.56) (xy 68.58 35.56))
     (stroke (width 0) (type default))
     (uuid 0b82f05e-a6ff-41bd-8fb9-2295aeb7daad)
   )
-  (wire (pts (xy 170.18 68.58) (xy 170.18 72.39))
+  (wire (pts (xy 170.18 54.61) (xy 170.18 60.96))
     (stroke (width 0) (type default))
     (uuid 0bc18b15-30aa-4560-863f-f8bd39ce99ca)
   )
@@ -732,6 +798,14 @@
   (wire (pts (xy 34.29 43.18) (xy 31.75 43.18))
     (stroke (width 0) (type default))
     (uuid 17ae31b6-944c-46ed-b4cf-f06cbeb37dd6)
+  )
+  (wire (pts (xy 170.18 69.85) (xy 170.18 76.2))
+    (stroke (width 0) (type default))
+    (uuid 1bca2737-b7a1-445d-9101-ead66346491f)
+  )
+  (wire (pts (xy 137.16 60.96) (xy 134.62 60.96))
+    (stroke (width 0) (type default))
+    (uuid 1c59fe91-730d-41ae-a01c-2033de3df446)
   )
   (wire (pts (xy 198.12 81.28) (xy 201.93 81.28))
     (stroke (width 0) (type default))
@@ -769,9 +843,17 @@
     (stroke (width 0) (type default))
     (uuid 3d5e144c-a007-4510-b8b2-7b96b23a39b4)
   )
+  (wire (pts (xy 144.78 55.88) (xy 144.78 60.96))
+    (stroke (width 0) (type default))
+    (uuid 3d95b749-a121-4d3a-98f0-1f76f58293be)
+  )
   (wire (pts (xy 34.29 48.26) (xy 31.75 48.26))
     (stroke (width 0) (type default))
     (uuid 3fcf7dec-2042-4eb3-baf6-8cac4d2878d0)
+  )
+  (wire (pts (xy 127 58.42) (xy 134.62 58.42))
+    (stroke (width 0) (type default))
+    (uuid 4691f63a-e21f-422f-9487-01cb59a71248)
   )
   (wire (pts (xy 68.58 43.18) (xy 71.12 43.18))
     (stroke (width 0) (type default))
@@ -805,9 +887,9 @@
     (stroke (width 0) (type default))
     (uuid 6c15a9cb-699f-4bfd-a8e5-1c2e3bea8631)
   )
-  (wire (pts (xy 153.67 72.39) (xy 170.18 72.39))
+  (wire (pts (xy 134.62 60.96) (xy 134.62 58.42))
     (stroke (width 0) (type default))
-    (uuid 733fbdcc-68e6-4100-9de7-9864e574168c)
+    (uuid 755c3795-86e9-4f94-a677-ec541ddd61fa)
   )
   (wire (pts (xy 55.88 90.17) (xy 55.88 91.44))
     (stroke (width 0) (type default))
@@ -829,13 +911,13 @@
     (stroke (width 0) (type default))
     (uuid 87b0a00e-d13d-4206-ab74-f65015e5425d)
   )
-  (wire (pts (xy 198.12 104.14) (xy 238.76 104.14))
-    (stroke (width 0) (type default))
-    (uuid 881aba1b-ac31-4de8-b54f-ada5837bcf49)
-  )
   (wire (pts (xy 68.58 50.8) (xy 71.12 50.8))
     (stroke (width 0) (type default))
     (uuid 8978bf96-4c6c-4a97-bc06-cf6c320ca965)
+  )
+  (wire (pts (xy 170.18 60.96) (xy 170.18 69.85))
+    (stroke (width 0) (type default))
+    (uuid 90c73a12-3587-41d4-9464-a5cc629ad8b6)
   )
   (wire (pts (xy 198.12 91.44) (xy 205.74 91.44))
     (stroke (width 0) (type default))
@@ -877,17 +959,21 @@
     (stroke (width 0) (type default))
     (uuid bfbd758e-e9d2-48c7-9069-cde313bf8a8b)
   )
+  (wire (pts (xy 134.62 58.42) (xy 134.62 55.88))
+    (stroke (width 0) (type default))
+    (uuid c62cdf12-38a8-458c-a1c4-534354bff92e)
+  )
   (wire (pts (xy 71.12 48.26) (xy 68.58 48.26))
     (stroke (width 0) (type default))
     (uuid d8bfde63-b998-424a-9be2-8726d4b7497a)
   )
-  (wire (pts (xy 170.18 72.39) (xy 170.18 76.2))
-    (stroke (width 0) (type default))
-    (uuid dfe6e081-4959-46c1-a2be-3b7f64cb26ac)
-  )
   (wire (pts (xy 71.12 53.34) (xy 68.58 53.34))
     (stroke (width 0) (type default))
     (uuid e11d460d-6dc8-4a84-8611-6bba3f069d35)
+  )
+  (wire (pts (xy 144.78 72.39) (xy 146.05 72.39))
+    (stroke (width 0) (type default))
+    (uuid e4405a1d-9478-4551-a8d4-8a928d8dc976)
   )
   (wire (pts (xy 68.58 88.9) (xy 68.58 91.44))
     (stroke (width 0) (type default))
@@ -897,7 +983,7 @@
     (stroke (width 0) (type default))
     (uuid e8d2585f-fb5c-44e7-9651-04ef7af9a106)
   )
-  (wire (pts (xy 142.24 72.39) (xy 146.05 72.39))
+  (wire (pts (xy 142.24 72.39) (xy 144.78 72.39))
     (stroke (width 0) (type default))
     (uuid e935b8e1-e690-4b02-a537-2b659aa1cf38)
   )
@@ -905,7 +991,18 @@
     (stroke (width 0) (type default))
     (uuid edc057ae-0a9c-4035-9952-30f51ed0ce70)
   )
+  (wire (pts (xy 144.78 60.96) (xy 144.78 72.39))
+    (stroke (width 0) (type default))
+    (uuid fb2416f9-9fee-4ba9-9ace-61471c639a86)
+  )
 
+  (text_box "GPIO 08/09\n3.3.2 Chip Boot Mode Control"
+    (at 199.39 99.06 0) (size 31.75 5.08)
+    (stroke (width 0) (type default))
+    (fill (type none))
+    (effects (font (size 1.27 1.27)) (justify left top))
+    (uuid 0097437c-4984-45fc-bb8b-a1824532a821)
+  )
   (text_box "Battery management - Needs GPIO"
     (at 240.03 62.23 0) (size 34.29 31.75)
     (stroke (width 0) (type default))
@@ -919,20 +1016,6 @@
     (fill (type none))
     (effects (font (size 1.27 1.27)) (justify left top))
     (uuid 3a8a6ac7-3e82-4b35-9df5-d6cfce87e78f)
-  )
-  (text_box "LED outputs Needs GPIO"
-    (at 240.03 127 0) (size 35.56 36.83)
-    (stroke (width 0) (type default))
-    (fill (type none))
-    (effects (font (size 1.27 1.27)) (justify left top))
-    (uuid 5534b189-24ee-4fa0-b869-56a6493922f5)
-  )
-  (text_box "SN74AHCT125 Needs GPIO"
-    (at 240.03 96.52 0) (size 35.56 27.94)
-    (stroke (width 0) (type default))
-    (fill (type none))
-    (effects (font (size 1.27 1.27)) (justify left top))
-    (uuid 7e82f633-fa4b-4d5d-83a7-f89679b2da37)
   )
   (text_box "Rationalise - \nEnough for a button (in WLED, so in addition to the usual bootstrapping ones), and an ADC and I2S pins to allow either option for the sound-reactive options (if the ADC can use one of the I2S pins that'd be fine, as you won't want both options at the same time)"
     (at 20.32 10.16 0) (size 64.77 49.53)
@@ -956,10 +1039,31 @@
       (effects (font (size 1.27 1.27)) (justify left) hide)
     )
   )
+  (global_label "5V_Enable" (shape input) (at 262.89 82.55 180) (fields_autoplaced)
+    (effects (font (size 1.27 1.27)) (justify right))
+    (uuid 22d34222-8b4e-4e5a-9f49-830511cabf44)
+    (property "Intersheetrefs" "${INTERSHEET_REFS}" (at 30.48 15.24 0)
+      (effects (font (size 1.27 1.27)) hide)
+    )
+  )
   (global_label "D+ ESP32" (shape input) (at 205.74 88.9 0) (fields_autoplaced)
     (effects (font (size 1.27 1.27)) (justify left))
     (uuid 3507ee7f-491e-47af-857c-5d9d43bf9f90)
     (property "Intersheetrefs" "${INTERSHEET_REFS}" (at 217.9285 88.9 0)
+      (effects (font (size 1.27 1.27)) (justify left) hide)
+    )
+  )
+  (global_label "WIFI_LED" (shape input) (at 250.19 133.35 180) (fields_autoplaced)
+    (effects (font (size 1.27 1.27)) (justify right))
+    (uuid 445d2353-44a4-4391-9f55-7d1232466ddc)
+    (property "Intersheetrefs" "${INTERSHEET_REFS}" (at 239.6947 133.35 0)
+      (effects (font (size 1.27 1.27)) (justify right) hide)
+    )
+  )
+  (global_label "WIFI_Network" (shape input) (at 261.62 133.35 0) (fields_autoplaced)
+    (effects (font (size 1.27 1.27)) (justify left))
+    (uuid 550afa8b-8158-4ee5-8f8d-80f8fe9f6918)
+    (property "Intersheetrefs" "${INTERSHEET_REFS}" (at 276.1068 133.35 0)
       (effects (font (size 1.27 1.27)) (justify left) hide)
     )
   )
@@ -970,11 +1074,32 @@
       (effects (font (size 1.27 1.27)) (justify right) hide)
     )
   )
-  (global_label "ESP_IO5" (shape input) (at 259.08 110.49 180) (fields_autoplaced)
+  (global_label "ADC" (shape input) (at 142.24 91.44 180) (fields_autoplaced)
     (effects (font (size 1.27 1.27)) (justify right))
-    (uuid ae59859d-93ab-402b-bb6e-bb74788e3f6f)
-    (property "Intersheetrefs" "${INTERSHEET_REFS}" (at 249.2463 110.49 0)
+    (uuid 898d24da-441e-4c30-a33c-38221b945c51)
+    (property "Intersheetrefs" "${INTERSHEET_REFS}" (at 142.24 93.2752 0)
       (effects (font (size 1.27 1.27)) (justify right) hide)
+    )
+  )
+  (global_label "WIFI_LED" (shape input) (at 198.12 116.84 0) (fields_autoplaced)
+    (effects (font (size 1.27 1.27)) (justify left))
+    (uuid 8e6d295f-c8b6-4576-887e-ef0fd8a11574)
+    (property "Intersheetrefs" "${INTERSHEET_REFS}" (at 208.6153 116.84 0)
+      (effects (font (size 1.27 1.27)) (justify left) hide)
+    )
+  )
+  (global_label "WIFI_Network" (shape input) (at 198.12 119.38 0) (fields_autoplaced)
+    (effects (font (size 1.27 1.27)) (justify left))
+    (uuid 977fbb63-30c0-4d3c-bc75-9e964bfd8eca)
+    (property "Intersheetrefs" "${INTERSHEET_REFS}" (at 212.6068 119.38 0)
+      (effects (font (size 1.27 1.27)) (justify left) hide)
+    )
+  )
+  (global_label "ESP_IO5" (shape input) (at 198.12 111.76 0) (fields_autoplaced)
+    (effects (font (size 1.27 1.27)) (justify left))
+    (uuid ae59859d-93ab-402b-bb6e-bb74788e3f6f)
+    (property "Intersheetrefs" "${INTERSHEET_REFS}" (at 207.9537 111.76 0)
+      (effects (font (size 1.27 1.27)) (justify left) hide)
     )
   )
   (global_label "CE" (shape input) (at 248.92 78.74 180) (fields_autoplaced)
@@ -984,25 +1109,25 @@
       (effects (font (size 1.27 1.27)) (justify right) hide)
     )
   )
-  (global_label "SCL" (shape input) (at 250.19 71.12 180) (fields_autoplaced)
+  (global_label "SCL" (shape input) (at 142.24 109.22 180) (fields_autoplaced)
     (effects (font (size 1.27 1.27)) (justify right))
     (uuid b64cd98c-99bf-45e9-9175-2525223b2028)
-    (property "Intersheetrefs" "${INTERSHEET_REFS}" (at 244.3514 71.12 0)
+    (property "Intersheetrefs" "${INTERSHEET_REFS}" (at 136.4014 109.22 0)
       (effects (font (size 1.27 1.27)) (justify right) hide)
     )
   )
-  (global_label "LED_Data" (shape input) (at 259.08 105.41 180) (fields_autoplaced)
-    (effects (font (size 1.27 1.27)) (justify right))
+  (global_label "LED_Data" (shape input) (at 198.12 109.22 0) (fields_autoplaced)
+    (effects (font (size 1.27 1.27)) (justify left))
     (uuid bcdb88a9-42b1-45a7-888f-b8aec22f38bd)
-    (property "Intersheetrefs" "${INTERSHEET_REFS}" (at 26.67 45.72 0)
-      (effects (font (size 1.27 1.27)) hide)
+    (property "Intersheetrefs" "${INTERSHEET_REFS}" (at 430.53 49.53 0)
+      (effects (font (size 1.27 1.27)) (justify left) hide)
     )
   )
-  (global_label "LED_Clk" (shape input) (at 259.08 102.87 180) (fields_autoplaced)
-    (effects (font (size 1.27 1.27)) (justify right))
+  (global_label "LED_Clk" (shape input) (at 198.12 106.68 0) (fields_autoplaced)
+    (effects (font (size 1.27 1.27)) (justify left))
     (uuid d74ebec6-a3cf-4994-b141-5b8a1bb56c2e)
-    (property "Intersheetrefs" "${INTERSHEET_REFS}" (at 26.67 45.72 0)
-      (effects (font (size 1.27 1.27)) hide)
+    (property "Intersheetrefs" "${INTERSHEET_REFS}" (at 430.53 49.53 0)
+      (effects (font (size 1.27 1.27)) (justify left) hide)
     )
   )
   (global_label "INT" (shape input) (at 250.19 86.36 180) (fields_autoplaced)
@@ -1012,10 +1137,10 @@
       (effects (font (size 1.27 1.27)) (justify right) hide)
     )
   )
-  (global_label "SDA" (shape input) (at 250.19 74.93 180) (fields_autoplaced)
+  (global_label "SDA" (shape input) (at 142.24 106.68 180) (fields_autoplaced)
     (effects (font (size 1.27 1.27)) (justify right))
     (uuid dd8f0397-0fad-43eb-9810-db81bc26fd89)
-    (property "Intersheetrefs" "${INTERSHEET_REFS}" (at 244.2909 74.93 0)
+    (property "Intersheetrefs" "${INTERSHEET_REFS}" (at 136.3409 106.68 0)
       (effects (font (size 1.27 1.27)) (justify right) hide)
     )
   )
@@ -1033,11 +1158,11 @@
       (effects (font (size 1.27 1.27)) (justify left) hide)
     )
   )
-  (global_label "ESP_IO16" (shape input) (at 260.35 114.3 180) (fields_autoplaced)
-    (effects (font (size 1.27 1.27)) (justify right))
+  (global_label "ESP_IO16" (shape input) (at 198.12 114.3 0) (fields_autoplaced)
+    (effects (font (size 1.27 1.27)) (justify left))
     (uuid fb0f76bd-b266-4ab5-88b4-3c5d2fc4c778)
-    (property "Intersheetrefs" "${INTERSHEET_REFS}" (at 249.3068 114.3 0)
-      (effects (font (size 1.27 1.27)) (justify right) hide)
+    (property "Intersheetrefs" "${INTERSHEET_REFS}" (at 209.1632 114.3 0)
+      (effects (font (size 1.27 1.27)) (justify left) hide)
     )
   )
 
@@ -1127,7 +1252,7 @@
     (pin "9" (uuid b7202bb0-b754-4246-bbf7-7a3b172f5b13))
     (instances
       (project "MyBikesGotLED"
-        (path "/ea56fda8-6f8e-4826-a040-5c9b3e8e5cfa/00000000-0000-0000-0000-00005f8dad46"
+        (path "/ea56fda8-6f8e-4826-a040-5c9b3e8e5cfa/88a3a1ef-5bc6-4f24-9217-01fd214eb76a"
           (reference "P3") (unit 1)
         )
       )
@@ -1163,7 +1288,7 @@
     (pin "9" (uuid c553556e-2419-4bb1-94ac-15fd556bbccb))
     (instances
       (project "MyBikesGotLED"
-        (path "/ea56fda8-6f8e-4826-a040-5c9b3e8e5cfa/00000000-0000-0000-0000-00005f8dad46"
+        (path "/ea56fda8-6f8e-4826-a040-5c9b3e8e5cfa/88a3a1ef-5bc6-4f24-9217-01fd214eb76a"
           (reference "P4") (unit 1)
         )
       )
@@ -1188,7 +1313,7 @@
     (pin "1" (uuid f3afe9fd-6497-45b1-a41b-0a7158e89e99))
     (instances
       (project "MyBikesGotLED"
-        (path "/ea56fda8-6f8e-4826-a040-5c9b3e8e5cfa/00000000-0000-0000-0000-00005f8dad46"
+        (path "/ea56fda8-6f8e-4826-a040-5c9b3e8e5cfa/88a3a1ef-5bc6-4f24-9217-01fd214eb76a"
           (reference "#PWR04") (unit 1)
         )
       )
@@ -1213,8 +1338,33 @@
     (pin "1" (uuid 8a7a91bd-a08a-4cb7-911b-a18d97b707f8))
     (instances
       (project "MyBikesGotLED"
-        (path "/ea56fda8-6f8e-4826-a040-5c9b3e8e5cfa/00000000-0000-0000-0000-00005f8dad46"
+        (path "/ea56fda8-6f8e-4826-a040-5c9b3e8e5cfa/88a3a1ef-5bc6-4f24-9217-01fd214eb76a"
           (reference "#PWR03") (unit 1)
+        )
+      )
+    )
+  )
+
+  (symbol (lib_id "power:GND") (at 127 58.42 270) (unit 1)
+    (in_bom yes) (on_board yes) (dnp no) (fields_autoplaced)
+    (uuid 070907e4-6f38-4b34-a716-52b8de8815e4)
+    (property "Reference" "#PWR033" (at 120.65 58.42 0)
+      (effects (font (size 1.27 1.27)) hide)
+    )
+    (property "Value" "GND" (at 121.92 58.42 0)
+      (effects (font (size 1.27 1.27)))
+    )
+    (property "Footprint" "" (at 127 58.42 0)
+      (effects (font (size 1.27 1.27)) hide)
+    )
+    (property "Datasheet" "" (at 127 58.42 0)
+      (effects (font (size 1.27 1.27)) hide)
+    )
+    (pin "1" (uuid e99e121a-9b50-4257-898a-f1fc0194f751))
+    (instances
+      (project "MyBikesGotLED"
+        (path "/ea56fda8-6f8e-4826-a040-5c9b3e8e5cfa/88a3a1ef-5bc6-4f24-9217-01fd214eb76a"
+          (reference "#PWR033") (unit 1)
         )
       )
     )
@@ -1229,7 +1379,7 @@
     (property "Value" "C" (at 49.53 78.74 90)
       (effects (font (size 1.27 1.27)))
     )
-    (property "Footprint" "" (at 45.72 84.7852 0)
+    (property "Footprint" "Capacitor_SMD:C_0603_1608Metric_Pad1.08x0.95mm_HandSolder" (at 45.72 84.7852 0)
       (effects (font (size 1.27 1.27)) hide)
     )
     (property "Datasheet" "~" (at 49.53 83.82 0)
@@ -1239,7 +1389,7 @@
     (pin "1" (uuid b0b9b350-c0c9-42b5-9fec-abfc8e7323bc))
     (instances
       (project "MyBikesGotLED"
-        (path "/ea56fda8-6f8e-4826-a040-5c9b3e8e5cfa/00000000-0000-0000-0000-00005f8dad46"
+        (path "/ea56fda8-6f8e-4826-a040-5c9b3e8e5cfa/88a3a1ef-5bc6-4f24-9217-01fd214eb76a"
           (reference "C2") (unit 1)
         )
       )
@@ -1264,7 +1414,7 @@
     (pin "1" (uuid bd3435c6-d8b4-4a5f-a120-9c6c625aab50))
     (instances
       (project "MyBikesGotLED"
-        (path "/ea56fda8-6f8e-4826-a040-5c9b3e8e5cfa/00000000-0000-0000-0000-00005f8dad46"
+        (path "/ea56fda8-6f8e-4826-a040-5c9b3e8e5cfa/88a3a1ef-5bc6-4f24-9217-01fd214eb76a"
           (reference "#PWR02") (unit 1)
         )
       )
@@ -1290,7 +1440,7 @@
     (pin "1" (uuid 7a6be234-675e-44db-8bcd-1ee49d35c387))
     (instances
       (project "MyBikesGotLED"
-        (path "/ea56fda8-6f8e-4826-a040-5c9b3e8e5cfa/00000000-0000-0000-0000-00005f8dad46"
+        (path "/ea56fda8-6f8e-4826-a040-5c9b3e8e5cfa/88a3a1ef-5bc6-4f24-9217-01fd214eb76a"
           (reference "Y1") (unit 1)
         )
       )
@@ -1306,7 +1456,7 @@
     (property "Value" "1uF/16V(10%)" (at 130.81 76.2 0)
       (effects (font (size 1.27 1.27)) (justify left))
     )
-    (property "Footprint" "" (at 128.27 73.3552 0)
+    (property "Footprint" "Capacitor_SMD:C_0603_1608Metric_Pad1.08x0.95mm_HandSolder" (at 128.27 73.3552 0)
       (effects (font (size 1.27 1.27)) hide)
     )
     (property "Datasheet" "~" (at 132.08 72.39 0)
@@ -1316,7 +1466,7 @@
     (pin "1" (uuid ece10ebd-be31-430b-8d0a-5e797e4a5565))
     (instances
       (project "MyBikesGotLED"
-        (path "/ea56fda8-6f8e-4826-a040-5c9b3e8e5cfa/00000000-0000-0000-0000-00005f8dad46"
+        (path "/ea56fda8-6f8e-4826-a040-5c9b3e8e5cfa/88a3a1ef-5bc6-4f24-9217-01fd214eb76a"
           (reference "C11") (unit 1)
         )
       )
@@ -1341,7 +1491,7 @@
     (pin "1" (uuid 93e5cbd3-14d2-41ab-942f-72d71e4d1215))
     (instances
       (project "MyBikesGotLED"
-        (path "/ea56fda8-6f8e-4826-a040-5c9b3e8e5cfa/00000000-0000-0000-0000-00005f8dad46"
+        (path "/ea56fda8-6f8e-4826-a040-5c9b3e8e5cfa/88a3a1ef-5bc6-4f24-9217-01fd214eb76a"
           (reference "#PWR011") (unit 1)
         )
       )
@@ -1357,7 +1507,7 @@
     (property "Value" "10M" (at 68.58 88.9 0)
       (effects (font (size 1.27 1.27)) (justify left))
     )
-    (property "Footprint" "" (at 64.262 87.63 90)
+    (property "Footprint" "Resistor_SMD:R_0603_1608Metric_Pad0.98x0.95mm_HandSolder" (at 64.262 87.63 90)
       (effects (font (size 1.27 1.27)) hide)
     )
     (property "Datasheet" "~" (at 66.04 87.63 0)
@@ -1367,32 +1517,32 @@
     (pin "2" (uuid 7440740a-530a-42cf-988a-bf76232d4929))
     (instances
       (project "MyBikesGotLED"
-        (path "/ea56fda8-6f8e-4826-a040-5c9b3e8e5cfa/00000000-0000-0000-0000-00005f8dad46"
+        (path "/ea56fda8-6f8e-4826-a040-5c9b3e8e5cfa/88a3a1ef-5bc6-4f24-9217-01fd214eb76a"
           (reference "R19") (unit 1)
         )
       )
     )
   )
 
-  (symbol (lib_id "power:+3V3") (at 170.18 68.58 0) (unit 1)
+  (symbol (lib_id "power:+3V3") (at 170.18 54.61 0) (unit 1)
     (in_bom yes) (on_board yes) (dnp no) (fields_autoplaced)
     (uuid 7c0bd265-1940-41b5-899b-a128cc49c598)
-    (property "Reference" "#PWR07" (at 170.18 72.39 0)
+    (property "Reference" "#PWR07" (at 170.18 58.42 0)
       (effects (font (size 1.27 1.27)) hide)
     )
-    (property "Value" "+3V3" (at 170.18 63.5 0)
+    (property "Value" "+3V3" (at 170.18 49.53 0)
       (effects (font (size 1.27 1.27)))
     )
-    (property "Footprint" "" (at 170.18 68.58 0)
+    (property "Footprint" "" (at 170.18 54.61 0)
       (effects (font (size 1.27 1.27)) hide)
     )
-    (property "Datasheet" "" (at 170.18 68.58 0)
+    (property "Datasheet" "" (at 170.18 54.61 0)
       (effects (font (size 1.27 1.27)) hide)
     )
     (pin "1" (uuid 55540f7f-3bc8-4011-a437-7c74ba15798d))
     (instances
       (project "MyBikesGotLED"
-        (path "/ea56fda8-6f8e-4826-a040-5c9b3e8e5cfa/00000000-0000-0000-0000-00005f8dad46"
+        (path "/ea56fda8-6f8e-4826-a040-5c9b3e8e5cfa/88a3a1ef-5bc6-4f24-9217-01fd214eb76a"
           (reference "#PWR07") (unit 1)
         )
       )
@@ -1408,7 +1558,7 @@
     (property "Value" "C" (at 49.53 85.09 90)
       (effects (font (size 1.27 1.27)))
     )
-    (property "Footprint" "" (at 45.72 92.4052 0)
+    (property "Footprint" "Capacitor_SMD:C_0603_1608Metric_Pad1.08x0.95mm_HandSolder" (at 45.72 92.4052 0)
       (effects (font (size 1.27 1.27)) hide)
     )
     (property "Datasheet" "~" (at 49.53 91.44 0)
@@ -1418,7 +1568,7 @@
     (pin "1" (uuid 84a401d7-9260-48a8-ac5e-f3f77f6c270f))
     (instances
       (project "MyBikesGotLED"
-        (path "/ea56fda8-6f8e-4826-a040-5c9b3e8e5cfa/00000000-0000-0000-0000-00005f8dad46"
+        (path "/ea56fda8-6f8e-4826-a040-5c9b3e8e5cfa/88a3a1ef-5bc6-4f24-9217-01fd214eb76a"
           (reference "C10") (unit 1)
         )
       )
@@ -1443,7 +1593,7 @@
     (pin "1" (uuid 9e9589cc-4abe-4139-b261-440ad886cacc))
     (instances
       (project "MyBikesGotLED"
-        (path "/ea56fda8-6f8e-4826-a040-5c9b3e8e5cfa/00000000-0000-0000-0000-00005f8dad46"
+        (path "/ea56fda8-6f8e-4826-a040-5c9b3e8e5cfa/88a3a1ef-5bc6-4f24-9217-01fd214eb76a"
           (reference "#PWR012") (unit 1)
         )
       )
@@ -1468,7 +1618,7 @@
     (pin "1" (uuid acdb6e95-1a12-4bfe-973c-f8f1dbdd4b21))
     (instances
       (project "MyBikesGotLED"
-        (path "/ea56fda8-6f8e-4826-a040-5c9b3e8e5cfa/00000000-0000-0000-0000-00005f8dad46"
+        (path "/ea56fda8-6f8e-4826-a040-5c9b3e8e5cfa/88a3a1ef-5bc6-4f24-9217-01fd214eb76a"
           (reference "#PWR020") (unit 1)
         )
       )
@@ -1500,7 +1650,7 @@
     (pin "2" (uuid f4f95401-2b67-4317-99e5-f1fcfb71b953))
     (instances
       (project "MyBikesGotLED"
-        (path "/ea56fda8-6f8e-4826-a040-5c9b3e8e5cfa/00000000-0000-0000-0000-00005f8dad46"
+        (path "/ea56fda8-6f8e-4826-a040-5c9b3e8e5cfa/88a3a1ef-5bc6-4f24-9217-01fd214eb76a"
           (reference "R28") (unit 1)
         )
       )
@@ -1532,7 +1682,7 @@
     (pin "2" (uuid c301fefc-95c5-42dc-9bac-6b77ca738074))
     (instances
       (project "MyBikesGotLED"
-        (path "/ea56fda8-6f8e-4826-a040-5c9b3e8e5cfa/00000000-0000-0000-0000-00005f8dad46"
+        (path "/ea56fda8-6f8e-4826-a040-5c9b3e8e5cfa/88a3a1ef-5bc6-4f24-9217-01fd214eb76a"
           (reference "D5") (unit 1)
         )
       )
@@ -1557,8 +1707,34 @@
     (pin "1" (uuid 5ec1d944-898b-40d1-884f-2bee1fa2390f))
     (instances
       (project "MyBikesGotLED"
-        (path "/ea56fda8-6f8e-4826-a040-5c9b3e8e5cfa/00000000-0000-0000-0000-00005f8dad46"
+        (path "/ea56fda8-6f8e-4826-a040-5c9b3e8e5cfa/88a3a1ef-5bc6-4f24-9217-01fd214eb76a"
           (reference "#PWR013") (unit 1)
+        )
+      )
+    )
+  )
+
+  (symbol (lib_id "Switch:SW_Push") (at 139.7 55.88 0) (unit 1)
+    (in_bom yes) (on_board yes) (dnp no) (fields_autoplaced)
+    (uuid b43cb0ef-cf43-44af-8690-ff79426339bf)
+    (property "Reference" "SW1" (at 139.7 48.26 0)
+      (effects (font (size 1.27 1.27)))
+    )
+    (property "Value" "SW_Push" (at 139.7 50.8 0)
+      (effects (font (size 1.27 1.27)))
+    )
+    (property "Footprint" "Button_Switch_SMD:SW_Push_1P1T_NO_6x6mm_H9.5mm" (at 139.7 50.8 0)
+      (effects (font (size 1.27 1.27)) hide)
+    )
+    (property "Datasheet" "~" (at 139.7 50.8 0)
+      (effects (font (size 1.27 1.27)) hide)
+    )
+    (pin "2" (uuid 5773201e-9608-41d8-963e-2fcc8a6ad28f))
+    (pin "1" (uuid 20765b0f-4ed6-4d95-8147-f6dde4c7184f))
+    (instances
+      (project "MyBikesGotLED"
+        (path "/ea56fda8-6f8e-4826-a040-5c9b3e8e5cfa/88a3a1ef-5bc6-4f24-9217-01fd214eb76a"
+          (reference "SW1") (unit 1)
         )
       )
     )
@@ -1589,8 +1765,59 @@
     (pin "2" (uuid 6045a55a-50e9-4f13-96e9-a93dbd4f43e9))
     (instances
       (project "MyBikesGotLED"
-        (path "/ea56fda8-6f8e-4826-a040-5c9b3e8e5cfa/00000000-0000-0000-0000-00005f8dad46"
+        (path "/ea56fda8-6f8e-4826-a040-5c9b3e8e5cfa/88a3a1ef-5bc6-4f24-9217-01fd214eb76a"
           (reference "R27") (unit 1)
+        )
+      )
+    )
+  )
+
+  (symbol (lib_id "Device:C") (at 140.97 60.96 270) (unit 1)
+    (in_bom yes) (on_board yes) (dnp no) (fields_autoplaced)
+    (uuid bcba25e7-1c78-4c34-987d-6010fd1f14fa)
+    (property "Reference" "C18" (at 140.97 53.34 90)
+      (effects (font (size 1.27 1.27)))
+    )
+    (property "Value" "0.1uF/50V(10%)" (at 140.97 55.88 90)
+      (effects (font (size 1.27 1.27)))
+    )
+    (property "Footprint" "Capacitor_SMD:C_0603_1608Metric_Pad1.08x0.95mm_HandSolder" (at 137.16 61.9252 0)
+      (effects (font (size 1.27 1.27)) hide)
+    )
+    (property "Datasheet" "~" (at 140.97 60.96 0)
+      (effects (font (size 1.27 1.27)) hide)
+    )
+    (pin "2" (uuid 4ed757d7-f2de-4012-ad14-53910e736db9))
+    (pin "1" (uuid 311c0b68-2c94-4e15-872f-4b0cbdddacd5))
+    (instances
+      (project "MyBikesGotLED"
+        (path "/ea56fda8-6f8e-4826-a040-5c9b3e8e5cfa/88a3a1ef-5bc6-4f24-9217-01fd214eb76a"
+          (reference "C18") (unit 1)
+        )
+      )
+    )
+  )
+
+  (symbol (lib_id "power:+3V3") (at 153.67 72.39 270) (unit 1)
+    (in_bom yes) (on_board yes) (dnp no) (fields_autoplaced)
+    (uuid c15b4f13-98b3-447e-975f-b4db41a63ffa)
+    (property "Reference" "#PWR032" (at 149.86 72.39 0)
+      (effects (font (size 1.27 1.27)) hide)
+    )
+    (property "Value" "+3V3" (at 157.48 72.39 90)
+      (effects (font (size 1.27 1.27)) (justify left))
+    )
+    (property "Footprint" "" (at 153.67 72.39 0)
+      (effects (font (size 1.27 1.27)) hide)
+    )
+    (property "Datasheet" "" (at 153.67 72.39 0)
+      (effects (font (size 1.27 1.27)) hide)
+    )
+    (pin "1" (uuid 788d539b-18dc-4a7e-98ba-eea6d7670987))
+    (instances
+      (project "MyBikesGotLED"
+        (path "/ea56fda8-6f8e-4826-a040-5c9b3e8e5cfa/88a3a1ef-5bc6-4f24-9217-01fd214eb76a"
+          (reference "#PWR032") (unit 1)
         )
       )
     )
@@ -1605,7 +1832,7 @@
     (property "Value" "R" (at 148.59 74.93 0)
       (effects (font (size 1.27 1.27)) (justify left))
     )
-    (property "Footprint" "" (at 149.86 70.612 90)
+    (property "Footprint" "Resistor_SMD:R_0603_1608Metric_Pad0.98x0.95mm_HandSolder" (at 149.86 70.612 90)
       (effects (font (size 1.27 1.27)) hide)
     )
     (property "Datasheet" "~" (at 149.86 72.39 0)
@@ -1615,7 +1842,7 @@
     (pin "1" (uuid 19a6505d-86cb-4787-b6ca-555df9441db0))
     (instances
       (project "MyBikesGotLED"
-        (path "/ea56fda8-6f8e-4826-a040-5c9b3e8e5cfa/00000000-0000-0000-0000-00005f8dad46"
+        (path "/ea56fda8-6f8e-4826-a040-5c9b3e8e5cfa/88a3a1ef-5bc6-4f24-9217-01fd214eb76a"
           (reference "R21") (unit 1)
         )
       )
@@ -1647,8 +1874,110 @@
     (pin "2" (uuid 65fda653-4c4f-48e8-a592-5c2b9d2a76ef))
     (instances
       (project "MyBikesGotLED"
-        (path "/ea56fda8-6f8e-4826-a040-5c9b3e8e5cfa/00000000-0000-0000-0000-00005f8dad46"
+        (path "/ea56fda8-6f8e-4826-a040-5c9b3e8e5cfa/88a3a1ef-5bc6-4f24-9217-01fd214eb76a"
           (reference "D4") (unit 1)
+        )
+      )
+    )
+  )
+
+  (symbol (lib_id "Device:C") (at 173.99 69.85 270) (unit 1)
+    (in_bom yes) (on_board yes) (dnp no) (fields_autoplaced)
+    (uuid d2ca1d1f-0734-4704-98e4-fdc5e041e0ee)
+    (property "Reference" "C17" (at 173.99 62.23 90)
+      (effects (font (size 1.27 1.27)))
+    )
+    (property "Value" "0.1uF/50V(10%)" (at 173.99 64.77 90)
+      (effects (font (size 1.27 1.27)))
+    )
+    (property "Footprint" "Capacitor_SMD:C_0603_1608Metric_Pad1.08x0.95mm_HandSolder" (at 170.18 70.8152 0)
+      (effects (font (size 1.27 1.27)) hide)
+    )
+    (property "Datasheet" "~" (at 173.99 69.85 0)
+      (effects (font (size 1.27 1.27)) hide)
+    )
+    (pin "2" (uuid b8bd3a92-2c4a-4167-88ab-989c1fe32209))
+    (pin "1" (uuid 55eecc9f-15ee-4f4b-a3f3-264d2f06c54f))
+    (instances
+      (project "MyBikesGotLED"
+        (path "/ea56fda8-6f8e-4826-a040-5c9b3e8e5cfa/88a3a1ef-5bc6-4f24-9217-01fd214eb76a"
+          (reference "C17") (unit 1)
+        )
+      )
+    )
+  )
+
+  (symbol (lib_id "Device:C") (at 173.99 60.96 270) (unit 1)
+    (in_bom yes) (on_board yes) (dnp no) (fields_autoplaced)
+    (uuid e5f46f32-558b-49e3-b94f-9f8231fd6761)
+    (property "Reference" "C16" (at 173.99 53.34 90)
+      (effects (font (size 1.27 1.27)))
+    )
+    (property "Value" "10uF/25V(20%)" (at 173.99 55.88 90)
+      (effects (font (size 1.27 1.27)))
+    )
+    (property "Footprint" "Capacitor_SMD:C_0603_1608Metric_Pad1.08x0.95mm_HandSolder" (at 170.18 61.9252 0)
+      (effects (font (size 1.27 1.27)) hide)
+    )
+    (property "Datasheet" "~" (at 173.99 60.96 0)
+      (effects (font (size 1.27 1.27)) hide)
+    )
+    (pin "2" (uuid 092281fd-d726-4b43-9049-49656989402a))
+    (pin "1" (uuid 2068bb6c-bb29-45f7-8503-25dc7d062aa4))
+    (instances
+      (project "MyBikesGotLED"
+        (path "/ea56fda8-6f8e-4826-a040-5c9b3e8e5cfa/88a3a1ef-5bc6-4f24-9217-01fd214eb76a"
+          (reference "C16") (unit 1)
+        )
+      )
+    )
+  )
+
+  (symbol (lib_id "power:GND") (at 177.8 60.96 90) (unit 1)
+    (in_bom yes) (on_board yes) (dnp no) (fields_autoplaced)
+    (uuid ecba5bf7-fd6b-4863-8d94-082bd210e98d)
+    (property "Reference" "#PWR031" (at 184.15 60.96 0)
+      (effects (font (size 1.27 1.27)) hide)
+    )
+    (property "Value" "GND" (at 181.61 60.96 90)
+      (effects (font (size 1.27 1.27)) (justify right))
+    )
+    (property "Footprint" "" (at 177.8 60.96 0)
+      (effects (font (size 1.27 1.27)) hide)
+    )
+    (property "Datasheet" "" (at 177.8 60.96 0)
+      (effects (font (size 1.27 1.27)) hide)
+    )
+    (pin "1" (uuid 657a1877-f113-44d4-b31c-0e59265c2ec7))
+    (instances
+      (project "MyBikesGotLED"
+        (path "/ea56fda8-6f8e-4826-a040-5c9b3e8e5cfa/88a3a1ef-5bc6-4f24-9217-01fd214eb76a"
+          (reference "#PWR031") (unit 1)
+        )
+      )
+    )
+  )
+
+  (symbol (lib_id "power:GND") (at 177.8 69.85 90) (unit 1)
+    (in_bom yes) (on_board yes) (dnp no) (fields_autoplaced)
+    (uuid ecccaad2-3ea2-4d52-92a7-f7cceda55b26)
+    (property "Reference" "#PWR030" (at 184.15 69.85 0)
+      (effects (font (size 1.27 1.27)) hide)
+    )
+    (property "Value" "GND" (at 181.61 69.85 90)
+      (effects (font (size 1.27 1.27)) (justify right))
+    )
+    (property "Footprint" "" (at 177.8 69.85 0)
+      (effects (font (size 1.27 1.27)) hide)
+    )
+    (property "Datasheet" "" (at 177.8 69.85 0)
+      (effects (font (size 1.27 1.27)) hide)
+    )
+    (pin "1" (uuid 9782f421-55e5-4a3f-a71e-113e06744b47))
+    (instances
+      (project "MyBikesGotLED"
+        (path "/ea56fda8-6f8e-4826-a040-5c9b3e8e5cfa/88a3a1ef-5bc6-4f24-9217-01fd214eb76a"
+          (reference "#PWR030") (unit 1)
         )
       )
     )
@@ -1724,7 +2053,7 @@
     (pin "6" (uuid 1be9582e-41d0-4ed8-a985-3b9cfb8e4912))
     (instances
       (project "MyBikesGotLED"
-        (path "/ea56fda8-6f8e-4826-a040-5c9b3e8e5cfa/00000000-0000-0000-0000-00005f8dad46"
+        (path "/ea56fda8-6f8e-4826-a040-5c9b3e8e5cfa/88a3a1ef-5bc6-4f24-9217-01fd214eb76a"
           (reference "U7") (unit 1)
         )
       )
