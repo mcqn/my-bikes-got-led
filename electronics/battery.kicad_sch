@@ -1621,7 +1621,7 @@
   (symbol (lib_id "Device:R_Small") (at 168.91 115.57 90) (unit 1)
     (in_bom yes) (on_board yes) (dnp no)
     (uuid 025f4d8b-ff48-45ad-898d-c197f5c40715)
-    (property "Reference" "R13" (at 165.1 116.84 0)
+    (property "Reference" "R20" (at 165.1 116.84 0)
       (effects (font (size 1.27 1.27)) (justify left))
     )
     (property "Value" "0" (at 171.45 113.03 90)
@@ -1644,7 +1644,7 @@
     (instances
       (project "MyBikesGotLED"
         (path "/ea56fda8-6f8e-4826-a040-5c9b3e8e5cfa/2c074201-41ae-48a2-8f73-9baa1910d072"
-          (reference "R13") (unit 1)
+          (reference "R20") (unit 1)
         )
       )
     )
@@ -1735,7 +1735,7 @@
   (symbol (lib_id "Device:C") (at 151.13 119.38 0) (unit 1)
     (in_bom yes) (on_board yes) (dnp no)
     (uuid 1abe62fe-014e-49d8-be49-4303deb17b68)
-    (property "Reference" "C12" (at 154.94 119.38 90)
+    (property "Reference" "C20" (at 154.94 119.38 90)
       (effects (font (size 1.27 1.27)))
     )
     (property "Value" "22uF" (at 147.32 119.38 90)
@@ -1752,7 +1752,7 @@
     (instances
       (project "MyBikesGotLED"
         (path "/ea56fda8-6f8e-4826-a040-5c9b3e8e5cfa/2c074201-41ae-48a2-8f73-9baa1910d072"
-          (reference "C12") (unit 1)
+          (reference "C20") (unit 1)
         )
       )
     )
@@ -1761,7 +1761,7 @@
   (symbol (lib_id "Device:C") (at 62.23 105.41 90) (unit 1)
     (in_bom yes) (on_board yes) (dnp no)
     (uuid 1da393c4-ba47-434b-a490-a6e73083a969)
-    (property "Reference" "C13" (at 62.23 101.6 90)
+    (property "Reference" "C2" (at 62.23 101.6 90)
       (effects (font (size 1.27 1.27)))
     )
     (property "Value" "10uF" (at 62.23 109.22 90)
@@ -1778,7 +1778,7 @@
     (instances
       (project "MyBikesGotLED"
         (path "/ea56fda8-6f8e-4826-a040-5c9b3e8e5cfa/2c074201-41ae-48a2-8f73-9baa1910d072"
-          (reference "C13") (unit 1)
+          (reference "C2") (unit 1)
         )
       )
     )
@@ -1837,13 +1837,13 @@
   (symbol (lib_id "Device:C") (at 227.33 83.82 0) (unit 1)
     (in_bom yes) (on_board yes) (dnp no)
     (uuid 207290be-6529-4436-b40b-7c0d8cb85dae)
-    (property "Reference" "C9" (at 231.14 83.82 90)
+    (property "Reference" "C25" (at 231.14 83.82 90)
       (effects (font (size 1.27 1.27)))
     )
     (property "Value" "22uF" (at 223.52 83.82 90)
       (effects (font (size 1.27 1.27)))
     )
-    (property "Footprint" "Capacitor_SMD:C_0603_1608Metric" (at 228.2952 87.63 0)
+    (property "Footprint" "Capacitor_SMD:C_0603_1608Metric_Pad1.08x0.95mm_HandSolder" (at 228.2952 87.63 0)
       (effects (font (size 1.27 1.27)) hide)
     )
     (property "Datasheet" "~" (at 227.33 83.82 0)
@@ -1854,7 +1854,7 @@
     (instances
       (project "MyBikesGotLED"
         (path "/ea56fda8-6f8e-4826-a040-5c9b3e8e5cfa/2c074201-41ae-48a2-8f73-9baa1910d072"
-          (reference "C9") (unit 1)
+          (reference "C25") (unit 1)
         )
       )
     )
@@ -1894,7 +1894,7 @@
     (property "Value" "ON/OFF" (at 257.81 95.25 0)
       (effects (font (size 1.27 1.27)))
     )
-    (property "Footprint" "Button_Switch_THT:SW_CuK_OS102011MA1QN1_SPDT_Angled" (at 252.73 95.25 0)
+    (property "Footprint" "Button_Switch_THT:SW_Slide_SPDT_Angled_CK_OS102011MA1Q" (at 252.73 95.25 0)
       (effects (font (size 1.27 1.27)) hide)
     )
     (property "Datasheet" "~" (at 252.73 95.25 0)
@@ -1921,7 +1921,7 @@
   (symbol (lib_id "Device:C") (at 217.17 83.82 0) (unit 1)
     (in_bom yes) (on_board yes) (dnp no)
     (uuid 31741c60-a52d-49ad-bf12-faf547bb234a)
-    (property "Reference" "C5" (at 220.98 83.82 90)
+    (property "Reference" "C24" (at 220.98 83.82 90)
       (effects (font (size 1.27 1.27)))
     )
     (property "Value" "22uF" (at 213.36 83.82 90)
@@ -1938,7 +1938,7 @@
     (instances
       (project "MyBikesGotLED"
         (path "/ea56fda8-6f8e-4826-a040-5c9b3e8e5cfa/2c074201-41ae-48a2-8f73-9baa1910d072"
-          (reference "C5") (unit 1)
+          (reference "C24") (unit 1)
         )
       )
     )
@@ -1972,7 +1972,7 @@
   (symbol (lib_id "Device:R_Small") (at 135.89 80.01 90) (unit 1)
     (in_bom no) (on_board yes) (dnp yes)
     (uuid 3e285d90-edad-4eff-991f-8b25b634e852)
-    (property "Reference" "R12" (at 132.08 81.28 0)
+    (property "Reference" "R24" (at 132.08 81.28 0)
       (effects (font (size 1.27 1.27)) (justify left))
     )
     (property "Value" "0" (at 138.43 77.47 90)
@@ -1995,7 +1995,7 @@
     (instances
       (project "MyBikesGotLED"
         (path "/ea56fda8-6f8e-4826-a040-5c9b3e8e5cfa/2c074201-41ae-48a2-8f73-9baa1910d072"
-          (reference "R12") (unit 1)
+          (reference "R24") (unit 1)
         )
       )
     )
@@ -2029,7 +2029,7 @@
   (symbol (lib_id "Device:C") (at 199.39 83.82 0) (unit 1)
     (in_bom yes) (on_board yes) (dnp no)
     (uuid 4262b647-a733-4364-80d5-faa8577212c6)
-    (property "Reference" "C3" (at 203.2 83.82 90)
+    (property "Reference" "C22" (at 203.2 83.82 90)
       (effects (font (size 1.27 1.27)))
     )
     (property "Value" "22uF" (at 195.58 83.82 90)
@@ -2046,7 +2046,7 @@
     (instances
       (project "MyBikesGotLED"
         (path "/ea56fda8-6f8e-4826-a040-5c9b3e8e5cfa/2c074201-41ae-48a2-8f73-9baa1910d072"
-          (reference "C3") (unit 1)
+          (reference "C22") (unit 1)
         )
       )
     )
@@ -2244,7 +2244,7 @@
   (symbol (lib_id "Device:R_Small") (at 252.73 85.09 0) (mirror y) (unit 1)
     (in_bom yes) (on_board yes) (dnp no)
     (uuid 6f9a8962-42ad-4246-bf34-a01632a14fc4)
-    (property "Reference" "R14" (at 251.2314 83.9216 0)
+    (property "Reference" "R22" (at 251.2314 83.9216 0)
       (effects (font (size 1.27 1.27)) (justify left))
     )
     (property "Value" "R10K" (at 251.46 86.36 0)
@@ -2267,7 +2267,7 @@
     (instances
       (project "MyBikesGotLED"
         (path "/ea56fda8-6f8e-4826-a040-5c9b3e8e5cfa/2c074201-41ae-48a2-8f73-9baa1910d072"
-          (reference "R14") (unit 1)
+          (reference "R22") (unit 1)
         )
       )
     )
@@ -2276,7 +2276,7 @@
   (symbol (lib_id "Device:R_Small") (at 135.89 77.47 90) (unit 1)
     (in_bom no) (on_board yes) (dnp yes)
     (uuid 73a9cb15-1529-4771-ab12-9fbbbd9313fb)
-    (property "Reference" "R8" (at 132.08 78.74 0)
+    (property "Reference" "R23" (at 132.08 78.74 0)
       (effects (font (size 1.27 1.27)) (justify left))
     )
     (property "Value" "0" (at 138.43 74.93 90)
@@ -2299,7 +2299,7 @@
     (instances
       (project "MyBikesGotLED"
         (path "/ea56fda8-6f8e-4826-a040-5c9b3e8e5cfa/2c074201-41ae-48a2-8f73-9baa1910d072"
-          (reference "R8") (unit 1)
+          (reference "R23") (unit 1)
         )
       )
     )
@@ -2308,13 +2308,13 @@
   (symbol (lib_id "Device:L_Small") (at 189.23 106.68 90) (unit 1)
     (in_bom yes) (on_board yes) (dnp no)
     (uuid 7c0834e4-622a-4545-ad3e-7c0248a2ef0f)
-    (property "Reference" "L1" (at 189.23 101.981 90)
+    (property "Reference" "L2" (at 189.23 101.981 90)
       (effects (font (size 1.27 1.27)))
     )
     (property "Value" "1uH" (at 189.23 104.2924 90)
       (effects (font (size 1.27 1.27)))
     )
-    (property "Footprint" "Inductor_SMD:L_10.4x10.4_H4.8" (at 189.23 106.68 0)
+    (property "Footprint" "easyeda2kicad:IND-SMD_L10.8-W10.0" (at 189.23 106.68 0)
       (effects (font (size 1.27 1.27)) hide)
     )
     (property "Datasheet" "~" (at 189.23 106.68 0)
@@ -2326,7 +2326,7 @@
     (property "Farnell Price/Stock" "" (at 189.23 106.68 90)
       (effects (font (size 1.27 1.27)) hide)
     )
-    (property "LCSC" "C6364671" (at 189.23 106.68 90)
+    (property "LCSC" "C439017" (at 189.23 106.68 90)
       (effects (font (size 1.27 1.27)) hide)
     )
     (pin "1" (uuid 8f9f7984-17ef-4138-b50b-d7f3f3c23226))
@@ -2334,7 +2334,7 @@
     (instances
       (project "MyBikesGotLED"
         (path "/ea56fda8-6f8e-4826-a040-5c9b3e8e5cfa/2c074201-41ae-48a2-8f73-9baa1910d072"
-          (reference "L1") (unit 1)
+          (reference "L2") (unit 1)
         )
       )
     )
@@ -2343,7 +2343,7 @@
   (symbol (lib_id "Device:R_Small") (at 133.35 85.09 90) (unit 1)
     (in_bom yes) (on_board yes) (dnp no)
     (uuid 80807d9b-eb90-405e-9e2d-fbff6dafe59b)
-    (property "Reference" "R7" (at 129.54 86.36 0)
+    (property "Reference" "R26" (at 129.54 86.36 0)
       (effects (font (size 1.27 1.27)) (justify left))
     )
     (property "Value" "51K" (at 135.89 82.55 90)
@@ -2366,7 +2366,7 @@
     (instances
       (project "MyBikesGotLED"
         (path "/ea56fda8-6f8e-4826-a040-5c9b3e8e5cfa/2c074201-41ae-48a2-8f73-9baa1910d072"
-          (reference "R7") (unit 1)
+          (reference "R26") (unit 1)
         )
       )
     )
@@ -2564,7 +2564,7 @@
   (symbol (lib_id "Device:R_Small") (at 255.27 107.95 0) (mirror y) (unit 1)
     (in_bom yes) (on_board yes) (dnp no)
     (uuid b4129861-0bc1-4874-b337-366c3e095003)
-    (property "Reference" "R15" (at 253.7714 106.7816 0)
+    (property "Reference" "R21" (at 253.7714 106.7816 0)
       (effects (font (size 1.27 1.27)) (justify left))
     )
     (property "Value" "100K" (at 253.7714 109.093 0)
@@ -2587,7 +2587,7 @@
     (instances
       (project "MyBikesGotLED"
         (path "/ea56fda8-6f8e-4826-a040-5c9b3e8e5cfa/2c074201-41ae-48a2-8f73-9baa1910d072"
-          (reference "R15") (unit 1)
+          (reference "R21") (unit 1)
         )
       )
     )
@@ -2676,7 +2676,7 @@
   (symbol (lib_id "easyeda2kicad:IP5310") (at 160.02 81.28 0) (unit 1)
     (in_bom yes) (on_board yes) (dnp no) (fields_autoplaced)
     (uuid bed4d7de-4997-45a5-8333-9b6a30abbf56)
-    (property "Reference" "U1" (at 184.15 65.4619 0)
+    (property "Reference" "U2" (at 184.15 65.4619 0)
       (effects (font (size 1.27 1.27)))
     )
     (property "Value" "IP5310" (at 184.15 68.0019 0)
@@ -2727,7 +2727,7 @@
     (instances
       (project "MyBikesGotLED"
         (path "/ea56fda8-6f8e-4826-a040-5c9b3e8e5cfa/2c074201-41ae-48a2-8f73-9baa1910d072"
-          (reference "U1") (unit 1)
+          (reference "U2") (unit 1)
         )
       )
     )
@@ -2736,7 +2736,7 @@
   (symbol (lib_id "Device:C") (at 208.28 83.82 0) (unit 1)
     (in_bom yes) (on_board yes) (dnp no)
     (uuid c2234d5c-405f-4cbe-a88b-ad8f26ea2cfc)
-    (property "Reference" "C4" (at 212.09 83.82 90)
+    (property "Reference" "C23" (at 212.09 83.82 90)
       (effects (font (size 1.27 1.27)))
     )
     (property "Value" "22uF" (at 204.47 83.82 90)
@@ -2753,7 +2753,7 @@
     (instances
       (project "MyBikesGotLED"
         (path "/ea56fda8-6f8e-4826-a040-5c9b3e8e5cfa/2c074201-41ae-48a2-8f73-9baa1910d072"
-          (reference "C4") (unit 1)
+          (reference "C23") (unit 1)
         )
       )
     )
@@ -2762,7 +2762,7 @@
   (symbol (lib_id "Device:C") (at 194.31 119.38 0) (unit 1)
     (in_bom yes) (on_board yes) (dnp no)
     (uuid c8f3ed10-2d86-4365-9468-b47739468570)
-    (property "Reference" "C14" (at 198.12 119.38 90)
+    (property "Reference" "C21" (at 198.12 119.38 90)
       (effects (font (size 1.27 1.27)))
     )
     (property "Value" "22uF" (at 190.5 119.38 90)
@@ -2779,7 +2779,7 @@
     (instances
       (project "MyBikesGotLED"
         (path "/ea56fda8-6f8e-4826-a040-5c9b3e8e5cfa/2c074201-41ae-48a2-8f73-9baa1910d072"
-          (reference "C14") (unit 1)
+          (reference "C21") (unit 1)
         )
       )
     )
@@ -3065,7 +3065,7 @@
   (symbol (lib_id "Device:R_Small") (at 135.89 82.55 90) (unit 1)
     (in_bom no) (on_board yes) (dnp yes)
     (uuid f9d6f3d5-902d-4dac-924a-4b5e23b9d02a)
-    (property "Reference" "R9" (at 132.08 83.82 0)
+    (property "Reference" "R25" (at 132.08 83.82 0)
       (effects (font (size 1.27 1.27)) (justify left))
     )
     (property "Value" "0" (at 138.43 80.01 90)
@@ -3088,7 +3088,7 @@
     (instances
       (project "MyBikesGotLED"
         (path "/ea56fda8-6f8e-4826-a040-5c9b3e8e5cfa/2c074201-41ae-48a2-8f73-9baa1910d072"
-          (reference "R9") (unit 1)
+          (reference "R25") (unit 1)
         )
       )
     )
