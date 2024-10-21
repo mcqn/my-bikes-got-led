@@ -207,6 +207,12 @@
     (property "Farnell Price/Stock" "https://uk.farnell.com/jst-japan-solderless-terminals/s2b-ph-sm4-tb-lf-sn/connector-header-smt-r-a-2mm-2way/dp/9492615" (at 88.9 76.2 0)
       (effects (font (size 1.27 1.27)) hide)
     )
+    (property "LCSC" "C295747" (at 88.9 76.2 0)
+      (effects (font (size 1.27 1.27)) hide)
+    )
+    (property "LCSC Stock" "https://www.lcsc.com/product-detail/Wire-To-Board-Connector_JST-S2B-PH-SM4-TB-LF-SN_C295747.html" (at 88.9 76.2 0)
+      (effects (font (size 1.27 1.27)) hide)
+    )
     (pin "1" (uuid 20066073-447f-4b9c-98bb-2d4f7c9986df))
     (pin "2" (uuid 9209a21f-a2e2-4127-a34b-e88e70eb8666))
     (instances
