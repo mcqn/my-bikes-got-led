@@ -225,7 +225,7 @@
   )
 
   (symbol (lib_id "Connector_Generic:Conn_01x02") (at 101.6 76.2 0) (unit 1)
-    (in_bom yes) (on_board yes) (dnp no)
+    (in_bom yes) (on_board yes) (dnp yes)
     (uuid 8b71ff4e-247e-4da4-a555-d8a8cd22f44f)
     (property "Reference" "J10" (at 103.632 76.4032 0)
       (effects (font (size 1.27 1.27)) (justify left))
