@@ -567,7 +567,7 @@
 		(on_board yes)
 		(dnp yes)
 		(uuid "8b71ff4e-247e-4da4-a555-d8a8cd22f44f")
-		(property "Reference" "J10"
+		(property "Reference" "J50"
 			(at 103.632 76.4032 0)
 			(effects
 				(font
@@ -622,7 +622,7 @@
 		(instances
 			(project "MyBikesGotLED"
 				(path "/ea56fda8-6f8e-4826-a040-5c9b3e8e5cfa/2c074201-41ae-48a2-8f73-9baa1910d072/ff8e9e07-e1dd-4ffa-ae44-50f6b37cd1a1"
-					(reference "J10")
+					(reference "J50")
 					(unit 1)
 				)
 			)
