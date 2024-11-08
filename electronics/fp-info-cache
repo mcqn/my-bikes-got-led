@@ -1,4 +1,4 @@
-24096275345314144
+24098006431051180
 Audio_Module
 Reverb_BTDR-1H
 Digital Reverberation Unit, http://www.belton.co.kr/inc/downfile.php?seq=17&file=pdf (footprint from http://www.uk-electronic.de/PDF/BTDR-1.pdf)
@@ -64959,6 +64959,13 @@ mcqn-logo-30mm
 0
 0
 0
+Mibgl
+HTSSOP-14-1EP_4.4x5mm_P0.65mm_EP3.4x5mm_Mask3x3.1mm
+HTSSOP, 14 Pin (http://www.ti.com/lit/ds/symlink/lm5161.pdf#page=34), generated with kicad-footprint-generator ipc_gullwing_generator.py
+HTSSOP SO TI-PWP0014A
+0
+14
+14
 Module
 A20_OLINUXINO_LIME2
 A20 Olinuxino LIME2, 1.2GHz, 512-1024MB RAM, Micro-SD, NAND or eMMC, 1000Mbit Ethernet

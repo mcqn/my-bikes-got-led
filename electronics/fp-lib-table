@@ -1,4 +1,6 @@
 (fp_lib_table
+  (version 7)
   (lib (name "OQ0412510000G")(type "KiCad")(uri "/{KIPRJMOD}")(options "")(descr ""))
   (lib (name "MCQN")(type "KiCad")(uri "${KIPRJMOD}/MCQN.pretty")(options "")(descr ""))
+  (lib (name "Mibgl")(type "KiCad")(uri "${KIPRJMOD}/Mibgl.pretty")(options "")(descr ""))
 )

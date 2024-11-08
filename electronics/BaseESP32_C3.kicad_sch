@@ -2675,6 +2675,12 @@
 		(uuid "88547cec-55ea-483b-b435-48148232bda3")
 	)
 	(junction
+		(at 78.74 96.52)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "8f913fc5-a339-4a58-9aca-286ff907c9f8")
+	)
+	(junction
 		(at 148.59 88.9)
 		(diameter 0)
 		(color 0 0 0 0)
@@ -3398,28 +3404,6 @@
 			)
 		)
 	)
-	(global_label "LED_Data"
-		(shape input)
-		(at 148.59 139.7 180)
-		(fields_autoplaced yes)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify right)
-		)
-		(uuid "0da9babf-2803-4083-b6aa-eea2d336e037")
-		(property "Intersheetrefs" "${INTERSHEET_REFS}"
-			(at 137.5506 139.7 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify right)
-				(hide yes)
-			)
-		)
-	)
 	(global_label "Tx"
 		(shape input)
 		(at 171.45 142.24 0)
@@ -3508,28 +3492,6 @@
 			)
 		)
 	)
-	(global_label "WIFI_LED"
-		(shape input)
-		(at 148.59 134.62 180)
-		(fields_autoplaced yes)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify right)
-		)
-		(uuid "4d0c2211-03d5-4682-ba76-2104195d095b")
-		(property "Intersheetrefs" "${INTERSHEET_REFS}"
-			(at 138.0947 134.62 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify right)
-				(hide yes)
-			)
-		)
-	)
 	(global_label "D+ ESP32"
 		(shape input)
 		(at 176.53 152.4 0)
@@ -3570,6 +3532,28 @@
 					(size 1.27 1.27)
 				)
 				(justify left)
+				(hide yes)
+			)
+		)
+	)
+	(global_label "WIFI_LED"
+		(shape input)
+		(at 148.59 139.7 180)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right)
+		)
+		(uuid "896d1297-b6ea-4e47-b889-f9e0a7055834")
+		(property "Intersheetrefs" "${INTERSHEET_REFS}"
+			(at 138.0947 139.7 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
 				(hide yes)
 			)
 		)
@@ -3741,6 +3725,28 @@
 		(uuid "fc19ee38-40e7-4996-8a03-9f0de105df19")
 		(property "Intersheetrefs" "${INTERSHEET_REFS}"
 			(at 138.5181 132.08 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+				(hide yes)
+			)
+		)
+	)
+	(global_label "LED_Data"
+		(shape input)
+		(at 148.59 134.62 180)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right)
+		)
+		(uuid "ff00d0e1-ce13-4e47-97fd-6962fdf60074")
+		(property "Intersheetrefs" "${INTERSHEET_REFS}"
+			(at 137.5506 134.62 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4782,7 +4788,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" "Resistor_SMD:R_0603_1608Metric_Pad0.98x0.95mm_HandSolder"
+		(property "Footprint" "Resistor_SMD:R_0402_1005Metric_Pad0.72x0.64mm_HandSolder"
 			(at 173.99 152.4 0)
 			(effects
 				(font
@@ -4885,7 +4891,7 @@
 				)
 			)
 		)
-		(property "Footprint" "Resistor_SMD:R_0603_1608Metric_Pad0.98x0.95mm_HandSolder"
+		(property "Footprint" "Resistor_SMD:R_0402_1005Metric_Pad0.72x0.64mm_HandSolder"
 			(at 144.78 100.838 90)
 			(effects
 				(font
@@ -5349,6 +5355,70 @@
 			(project "MyBikesGotLED"
 				(path "/ea56fda8-6f8e-4826-a040-5c9b3e8e5cfa/0b0225ac-45b5-41c8-a760-6f29a7cb924b"
 					(reference "#PWR056")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Connector:TestPoint")
+		(at 78.74 96.52 90)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "9ab7748a-ddc2-4500-b64c-0e8a860acdec")
+		(property "Reference" "En2"
+			(at 68.58 96.52 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "TestPoint"
+			(at 75.438 93.98 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "TestPoint:TestPoint_Pad_D2.5mm"
+			(at 78.74 91.44 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 78.74 91.44 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" ""
+			(at 78.74 96.52 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "1cd87a91-c542-43b5-8680-f8a9c80385b4")
+		)
+		(instances
+			(project "MyBikesGotLED"
+				(path "/ea56fda8-6f8e-4826-a040-5c9b3e8e5cfa/0b0225ac-45b5-41c8-a760-6f29a7cb924b"
+					(reference "En2")
 					(unit 1)
 				)
 			)
@@ -5998,7 +6068,7 @@
 				)
 			)
 		)
-		(property "Footprint" "Resistor_SMD:R_0603_1608Metric_Pad0.98x0.95mm_HandSolder"
+		(property "Footprint" "Resistor_SMD:R_0402_1005Metric_Pad0.72x0.64mm_HandSolder"
 			(at 197.358 121.92 90)
 			(effects
 				(font
@@ -6474,7 +6544,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" "Resistor_SMD:R_0603_1608Metric_Pad0.98x0.95mm_HandSolder"
+		(property "Footprint" "Resistor_SMD:R_0402_1005Metric_Pad0.72x0.64mm_HandSolder"
 			(at 146.05 152.4 0)
 			(effects
 				(font
@@ -6765,7 +6835,7 @@
 				)
 			)
 		)
-		(property "Footprint" "Resistor_SMD:R_0603_1608Metric_Pad0.98x0.95mm_HandSolder"
+		(property "Footprint" "Resistor_SMD:R_0402_1005Metric_Pad0.72x0.64mm_HandSolder"
 			(at 144.78 144.018 90)
 			(effects
 				(font
