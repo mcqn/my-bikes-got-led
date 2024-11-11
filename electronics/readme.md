@@ -1,6 +1,6 @@
 # My Bikes got LED
 
-The hardware for MiBGL is based around the [ESP32 C3 Mini](https://www.espressif.com/sites/default/files/documentation/esp32-c3-mini-1_datasheet_en.pdf) 
+The hardware for MBiGL is based around the [ESP32 C3 Mini](https://www.espressif.com/sites/default/files/documentation/esp32-c3-mini-1_datasheet_en.pdf) 
 
 ## ESPC3-mini Pins Used
 
