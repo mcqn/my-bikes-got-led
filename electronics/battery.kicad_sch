@@ -4702,7 +4702,7 @@
 	)
 	(symbol
 		(lib_id "Device:R_Small")
-		(at 168.91 115.57 90)
+		(at 168.91 115.57 180)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -4710,7 +4710,7 @@
 		(dnp no)
 		(uuid "025f4d8b-ff48-45ad-898d-c197f5c40715")
 		(property "Reference" "R20"
-			(at 165.1 116.84 0)
+			(at 170.18 119.38 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4719,7 +4719,7 @@
 			)
 		)
 		(property "Value" "0"
-			(at 171.45 113.03 90)
+			(at 166.37 113.03 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4772,7 +4772,7 @@
 				(hide yes)
 			)
 		)
-		(property "LCSC" "C4085635"
+		(property "LCSC" "C325377"
 			(at 168.91 115.57 0)
 			(effects
 				(font
@@ -4781,7 +4781,7 @@
 				(hide yes)
 			)
 		)
-		(property "LCSC Stock" "https://www.lcsc.com/product-detail/Chip-span-style-background-color-ff0-Resistor-span-Surface-Mount_Vishay-Intertech-MCT0603MZ0000ZP500_C4085635.html"
+		(property "LCSC Stock" ""
 			(at 168.91 115.57 0)
 			(effects
 				(font
@@ -4939,7 +4939,7 @@
 				(hide yes)
 			)
 		)
-		(property "LCSC" "C22371291"
+		(property "LCSC" "C273624"
 			(at 121.92 71.12 0)
 			(effects
 				(font
@@ -4948,7 +4948,7 @@
 				(hide yes)
 			)
 		)
-		(property "LCSC Stock" "https://www.lcsc.com/product-detail/span-style-background-color-ff0-LED-span-Indication-Discrete_HONGLITRONIC-Hongli-Zhihui-HONGLITRONIC-PSC-1608H204BC-G4_C22371291.html"
+		(property "LCSC Stock" ""
 			(at 121.92 71.12 0)
 			(effects
 				(font
@@ -5090,7 +5090,7 @@
 				(hide yes)
 			)
 		)
-		(property "LCSC" "C2762594"
+		(property "LCSC" "C2179118"
 			(at 151.13 119.38 90)
 			(effects
 				(font
@@ -5099,7 +5099,7 @@
 				(hide yes)
 			)
 		)
-		(property "LCSC Stock" "https://www.lcsc.com/product-detail/Multilayer-Ceramic-Capacitors-MLCC-SMD-SMT_Samsung-Electro-Mechanics-CL10A226MO7JZNC_C2762594.html"
+		(property "LCSC Stock" ""
 			(at 151.13 119.38 90)
 			(effects
 				(font
@@ -5184,7 +5184,7 @@
 				(hide yes)
 			)
 		)
-		(property "LCSC Stock" "https://www.lcsc.com/product-detail/Multilayer-Ceramic-Capacitors-MLCC-SMD-SMT_TDK-C1608X5R1E106MT000E_C76614.html"
+		(property "LCSC Stock" ""
 			(at 58.42 85.09 90)
 			(effects
 				(font
@@ -5498,7 +5498,7 @@
 				(hide yes)
 			)
 		)
-		(property "LCSC" "C2762594"
+		(property "LCSC" "C2179118"
 			(at 223.52 83.82 90)
 			(effects
 				(font
@@ -5507,7 +5507,7 @@
 				(hide yes)
 			)
 		)
-		(property "LCSC Stock" "https://www.lcsc.com/product-detail/Multilayer-Ceramic-Capacitors-MLCC-SMD-SMT_Samsung-Electro-Mechanics-CL10A226MO7JZNC_C2762594.html"
+		(property "LCSC Stock" ""
 			(at 223.52 83.82 90)
 			(effects
 				(font
@@ -5668,7 +5668,7 @@
 				(hide yes)
 			)
 		)
-		(property "LCSC" "C70118"
+		(property "LCSC" "C369172"
 			(at 233.68 71.12 90)
 			(effects
 				(font
@@ -5677,7 +5677,7 @@
 				(hide yes)
 			)
 		)
-		(property "LCSC Stock" "https://www.lcsc.com/product-detail/Resettable-Fuses_TECHFUSE-mSMD110-24V_C70118.html"
+		(property "LCSC Stock" ""
 			(at 233.68 71.12 90)
 			(effects
 				(font
@@ -5924,7 +5924,7 @@
 				(hide yes)
 			)
 		)
-		(property "LCSC" "C2762594"
+		(property "LCSC" "C2179118"
 			(at 213.36 83.82 90)
 			(effects
 				(font
@@ -5933,7 +5933,7 @@
 				(hide yes)
 			)
 		)
-		(property "LCSC Stock" "https://www.lcsc.com/product-detail/Multilayer-Ceramic-Capacitors-MLCC-SMD-SMT_Samsung-Electro-Mechanics-CL10A226MO7JZNC_C2762594.html"
+		(property "LCSC Stock" ""
 			(at 213.36 83.82 90)
 			(effects
 				(font
@@ -6295,7 +6295,7 @@
 				(hide yes)
 			)
 		)
-		(property "LCSC" "C2762594"
+		(property "LCSC" "C2179118"
 			(at 193.04 83.82 90)
 			(effects
 				(font
@@ -6304,7 +6304,7 @@
 				(hide yes)
 			)
 		)
-		(property "LCSC Stock" "https://www.lcsc.com/product-detail/Multilayer-Ceramic-Capacitors-MLCC-SMD-SMT_Samsung-Electro-Mechanics-CL10A226MO7JZNC_C2762594.html"
+		(property "LCSC Stock" ""
 			(at 193.04 83.82 90)
 			(effects
 				(font
@@ -6662,7 +6662,7 @@
 				(hide yes)
 			)
 		)
-		(property "LCSC" "C22371291"
+		(property "LCSC" "C273624"
 			(at 121.92 53.34 0)
 			(effects
 				(font
@@ -6671,7 +6671,7 @@
 				(hide yes)
 			)
 		)
-		(property "LCSC Stock" "https://www.lcsc.com/product-detail/span-style-background-color-ff0-LED-span-Indication-Discrete_HONGLITRONIC-Hongli-Zhihui-HONGLITRONIC-PSC-1608H204BC-G4_C22371291.html"
+		(property "LCSC Stock" ""
 			(at 121.92 53.34 0)
 			(effects
 				(font
@@ -7054,7 +7054,7 @@
 				(hide yes)
 			)
 		)
-		(property "LCSC" "C22371291"
+		(property "LCSC" "C273624"
 			(at 121.92 62.23 0)
 			(effects
 				(font
@@ -7063,7 +7063,7 @@
 				(hide yes)
 			)
 		)
-		(property "LCSC Stock" "https://www.lcsc.com/product-detail/span-style-background-color-ff0-LED-span-Indication-Discrete_HONGLITRONIC-Hongli-Zhihui-HONGLITRONIC-PSC-1608H204BC-G4_C22371291.html"
+		(property "LCSC Stock" ""
 			(at 121.92 62.23 0)
 			(effects
 				(font
@@ -7227,7 +7227,7 @@
 				(hide yes)
 			)
 		)
-		(property "LCSC" "C862388"
+		(property "LCSC" "C3223188"
 			(at 252.73 85.09 0)
 			(effects
 				(font
@@ -7236,7 +7236,7 @@
 				(hide yes)
 			)
 		)
-		(property "LCSC Stock" "https://www.lcsc.com/product-detail/Chip-span-style-background-color-ff0-Resistor-span-Surface-Mount_YAGEO-RT0603CRD0710KL_C862388.html"
+		(property "LCSC Stock" ""
 			(at 252.73 85.09 0)
 			(effects
 				(font
@@ -7745,7 +7745,7 @@
 				(hide yes)
 			)
 		)
-		(property "LCSC" "C5455482"
+		(property "LCSC" "C269448"
 			(at 133.35 85.09 0)
 			(effects
 				(font
@@ -7754,7 +7754,7 @@
 				(hide yes)
 			)
 		)
-		(property "LCSC Stock" "https://www.lcsc.com/product-detail/Chip-span-style-background-color-ff0-Resistor-span-Surface-Mount_YAGEO-AT0603BRD0751KL_C5455482.html"
+		(property "LCSC Stock" ""
 			(at 133.35 85.09 0)
 			(effects
 				(font
@@ -8056,7 +8056,7 @@
 				(hide yes)
 			)
 		)
-		(property "LCSC Stock" "https://www.lcsc.com/product-detail/Chip-span-style-background-color-ff0-Resistor-span-Surface-Mount_PANASONIC-ERJPA3J2R0V_C445777.html"
+		(property "LCSC Stock" ""
 			(at 59.69 73.66 0)
 			(effects
 				(font
@@ -8152,7 +8152,7 @@
 				(hide yes)
 			)
 		)
-		(property "LCSC" "C860455"
+		(property "LCSC" "C103079"
 			(at 38.1 90.17 0)
 			(effects
 				(font
@@ -8161,7 +8161,7 @@
 				(hide yes)
 			)
 		)
-		(property "LCSC Stock" "https://www.lcsc.com/product-detail/Chip-span-style-background-color-ff0-Resistor-span-Surface-Mount_YAGEO-RT0603BRB075K1L_C860455.html"
+		(property "LCSC Stock" ""
 			(at 38.1 90.17 0)
 			(effects
 				(font
@@ -8458,7 +8458,7 @@
 				(hide yes)
 			)
 		)
-		(property "LCSC" "C860056"
+		(property "LCSC" "C667752"
 			(at 255.27 107.95 0)
 			(effects
 				(font
@@ -8467,7 +8467,7 @@
 				(hide yes)
 			)
 		)
-		(property "LCSC Stock" "https://www.lcsc.com/product-detail/Chip-span-style-background-color-ff0-Resistor-span-Surface-Mount_YAGEO-RT0603BRB07100KL_C860056.html"
+		(property "LCSC Stock" ""
 			(at 255.27 107.95 0)
 			(effects
 				(font
@@ -8543,7 +8543,7 @@
 				(hide yes)
 			)
 		)
-		(property "LCSC" "C76614"
+		(property "LCSC" "C237171"
 			(at 68.58 73.66 90)
 			(effects
 				(font
@@ -8552,7 +8552,7 @@
 				(hide yes)
 			)
 		)
-		(property "LCSC Stock" "https://www.lcsc.com/product-detail/Multilayer-Ceramic-Capacitors-MLCC-SMD-SMT_TDK-C1608X5R1E106MT000E_C76614.html"
+		(property "LCSC Stock" ""
 			(at 68.58 73.66 90)
 			(effects
 				(font
@@ -8940,7 +8940,7 @@
 				(hide yes)
 			)
 		)
-		(property "LCSC" "C2762594"
+		(property "LCSC" "C2179118"
 			(at 203.2 83.82 90)
 			(effects
 				(font
@@ -8949,7 +8949,7 @@
 				(hide yes)
 			)
 		)
-		(property "LCSC Stock" "https://www.lcsc.com/product-detail/Multilayer-Ceramic-Capacitors-MLCC-SMD-SMT_Samsung-Electro-Mechanics-CL10A226MO7JZNC_C2762594.html"
+		(property "LCSC Stock" ""
 			(at 203.2 83.82 90)
 			(effects
 				(font
@@ -9025,7 +9025,7 @@
 				(hide yes)
 			)
 		)
-		(property "LCSC" "C2762594"
+		(property "LCSC" "C2179118"
 			(at 194.31 119.38 90)
 			(effects
 				(font
@@ -9034,7 +9034,7 @@
 				(hide yes)
 			)
 		)
-		(property "LCSC Stock" "https://www.lcsc.com/product-detail/Multilayer-Ceramic-Capacitors-MLCC-SMD-SMT_Samsung-Electro-Mechanics-CL10A226MO7JZNC_C2762594.html"
+		(property "LCSC Stock" ""
 			(at 194.31 119.38 90)
 			(effects
 				(font
@@ -9127,7 +9127,7 @@
 				(hide yes)
 			)
 		)
-		(property "LCSC" "C22371291"
+		(property "LCSC" "C273624"
 			(at 121.92 44.45 0)
 			(effects
 				(font
@@ -9136,7 +9136,7 @@
 				(hide yes)
 			)
 		)
-		(property "LCSC Stock" "https://www.lcsc.com/product-detail/span-style-background-color-ff0-LED-span-Indication-Discrete_HONGLITRONIC-Hongli-Zhihui-HONGLITRONIC-PSC-1608H204BC-G4_C22371291.html"
+		(property "LCSC Stock" ""
 			(at 121.92 44.45 0)
 			(effects
 				(font
@@ -9789,7 +9789,7 @@
 				(hide yes)
 			)
 		)
-		(property "LCSC" "C860455"
+		(property "LCSC" "C103079"
 			(at -17.78 82.55 0)
 			(effects
 				(font
@@ -9798,7 +9798,7 @@
 				(hide yes)
 			)
 		)
-		(property "LCSC Stock" "https://www.lcsc.com/product-detail/Chip-span-style-background-color-ff0-Resistor-span-Surface-Mount_YAGEO-RT0603BRB075K1L_C860455.html"
+		(property "LCSC Stock" ""
 			(at -17.78 82.55 0)
 			(effects
 				(font

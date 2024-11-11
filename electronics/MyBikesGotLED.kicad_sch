@@ -4526,7 +4526,7 @@
 				(hide yes)
 			)
 		)
-		(property "LCSC" "C860404"
+		(property "LCSC" "C144600"
 			(at 115.57 105.41 90)
 			(effects
 				(font
@@ -4535,7 +4535,7 @@
 				(hide yes)
 			)
 		)
-		(property "LCSC Stock" "https://www.lcsc.com/product-detail/Chip-span-style-background-color-ff0-Resistor-span-Surface-Mount_YAGEO-RT0603BRB07470RL_C860404.html"
+		(property "LCSC Stock" ""
 			(at 115.57 105.41 90)
 			(effects
 				(font
@@ -4629,7 +4629,7 @@
 				(hide yes)
 			)
 		)
-		(property "LCSC" "C860404"
+		(property "LCSC" "C144600"
 			(at 115.57 97.79 90)
 			(effects
 				(font
@@ -4638,7 +4638,7 @@
 				(hide yes)
 			)
 		)
-		(property "LCSC Stock" "https://www.lcsc.com/product-detail/Chip-span-style-background-color-ff0-Resistor-span-Surface-Mount_YAGEO-RT0603BRB07470RL_C860404.html"
+		(property "LCSC Stock" ""
 			(at 115.57 97.79 90)
 			(effects
 				(font
@@ -4716,7 +4716,7 @@
 				(hide yes)
 			)
 		)
-		(property "LCSC" "C5189846"
+		(property "LCSC" "C128856"
 			(at 148.59 41.91 0)
 			(effects
 				(font
@@ -4725,7 +4725,7 @@
 				(hide yes)
 			)
 		)
-		(property "LCSC Price/Stock" "https://www.lcsc.com/product-detail/Multilayer-Ceramic-Capacitors-MLCC-SMD-SMT_Samwha-Capacitor-CS4532X5R226M250NRL_C5189846.html"
+		(property "LCSC Price/Stock" ""
 			(at 148.59 41.91 0)
 			(effects
 				(font
@@ -4803,7 +4803,7 @@
 				(hide yes)
 			)
 		)
-		(property "LCSC" "C5189846"
+		(property "LCSC" "C2179118"
 			(at 193.04 41.91 0)
 			(effects
 				(font
@@ -4812,7 +4812,7 @@
 				(hide yes)
 			)
 		)
-		(property "LCSC Price/Stock" "https://www.lcsc.com/product-detail/Multilayer-Ceramic-Capacitors-MLCC-SMD-SMT_Samwha-Capacitor-CS4532X5R226M250NRL_C5189846.html"
+		(property "LCSC Price/Stock" ""
 			(at 193.04 41.91 0)
 			(effects
 				(font
@@ -5702,7 +5702,7 @@
 				(hide yes)
 			)
 		)
-		(property "LCSC Stock" "https://www.lcsc.com/product-detail/Chip-span-style-background-color-ff0-Resistor-span-Surface-Mount_YAGEO-RT0603BRD0791KL_C326721.html"
+		(property "LCSC Stock" ""
 			(at 184.15 41.91 0)
 			(effects
 				(font
@@ -5798,7 +5798,7 @@
 				(hide yes)
 			)
 		)
-		(property "LCSC" "C860722"
+		(property "LCSC" "C136589"
 			(at 184.15 49.53 0)
 			(effects
 				(font
@@ -5807,7 +5807,7 @@
 				(hide yes)
 			)
 		)
-		(property "LCSC Stock" "https://www.lcsc.com/product-detail/Chip-span-style-background-color-ff0-Resistor-span-Surface-Mount_YAGEO-RT0603BRC0720KL_C860722.html"
+		(property "LCSC Stock" ""
 			(at 184.15 49.53 0)
 			(effects
 				(font

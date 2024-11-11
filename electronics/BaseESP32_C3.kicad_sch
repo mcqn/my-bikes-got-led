@@ -637,6 +637,174 @@
 				)
 			)
 		)
+		(symbol "Device:Crystal"
+			(pin_numbers hide)
+			(pin_names
+				(offset 1.016) hide)
+			(exclude_from_sim no)
+			(in_bom yes)
+			(on_board yes)
+			(property "Reference" "Y"
+				(at 0 3.81 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Value" "Crystal"
+				(at 0 -3.81 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Footprint" ""
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "Datasheet" "~"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "Description" "Two pin crystal"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "ki_keywords" "quartz ceramic resonator oscillator"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "ki_fp_filters" "Crystal*"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(symbol "Crystal_0_1"
+				(rectangle
+					(start -1.143 2.54)
+					(end 1.143 -2.54)
+					(stroke
+						(width 0.3048)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy -2.54 0) (xy -1.905 0)
+					)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy -1.905 -1.27) (xy -1.905 1.27)
+					)
+					(stroke
+						(width 0.508)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy 1.905 -1.27) (xy 1.905 1.27)
+					)
+					(stroke
+						(width 0.508)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy 2.54 0) (xy 1.905 0)
+					)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+			)
+			(symbol "Crystal_1_1"
+				(pin passive line
+					(at -3.81 0 0)
+					(length 1.27)
+					(name "1"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "1"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin passive line
+					(at 3.81 0 180)
+					(length 1.27)
+					(name "2"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "2"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+			)
+		)
 		(symbol "Device:LED"
 			(pin_numbers hide)
 			(pin_names
@@ -3092,6 +3260,16 @@
 	)
 	(wire
 		(pts
+			(xy 90.17 171.45) (xy 86.36 171.45)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "7f1028e6-0427-4e75-9bed-0cb869641305")
+	)
+	(wire
+		(pts
 			(xy 171.45 101.6) (xy 171.45 104.14)
 		)
 		(stroke
@@ -3149,6 +3327,16 @@
 			(type default)
 		)
 		(uuid "ab9b51b5-8fcf-48d3-a878-a017c09efb95")
+	)
+	(wire
+		(pts
+			(xy 105.41 171.45) (xy 97.79 171.45)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "c0d689cc-e03f-4b7c-886e-54741a3dc720")
 	)
 	(wire
 		(pts
@@ -3239,25 +3427,6 @@
 			(type default)
 		)
 		(uuid "fc51a4ff-94d1-4ccd-bd82-ebe735b82724")
-	)
-	(text_box "Resource 0805 LEDS"
-		(exclude_from_sim no)
-		(at 303.53 99.06 0)
-		(size 64.77 57.15)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(fill
-			(type none)
-		)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify left top)
-		)
-		(uuid "0eddfa42-6e35-4039-af34-e8091024c004")
 	)
 	(text_box "Xstal test"
 		(exclude_from_sim no)
@@ -3514,6 +3683,28 @@
 			)
 		)
 	)
+	(global_label "ESP_IO1"
+		(shape input)
+		(at 105.41 171.45 90)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left)
+		)
+		(uuid "69f87e8c-0882-4bb7-a44f-5208544da2be")
+		(property "Intersheetrefs" "${INTERSHEET_REFS}"
+			(at 105.41 161.3781 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+				(hide yes)
+			)
+		)
+	)
 	(global_label "EN"
 		(shape input)
 		(at 100.33 81.28 90)
@@ -3620,6 +3811,28 @@
 					(size 1.27 1.27)
 				)
 				(justify right)
+				(hide yes)
+			)
+		)
+	)
+	(global_label "ESP_IO0"
+		(shape input)
+		(at 86.36 171.45 90)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left)
+		)
+		(uuid "bff1c995-e1b7-49c4-b690-083f44a5d071")
+		(property "Intersheetrefs" "${INTERSHEET_REFS}"
+			(at 86.36 161.3781 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
 				(hide yes)
 			)
 		)
@@ -4276,6 +4489,103 @@
 	)
 	(symbol
 		(lib_id "Device:C")
+		(at 105.41 175.26 180)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom no)
+		(on_board yes)
+		(dnp yes)
+		(fields_autoplaced yes)
+		(uuid "20887fe5-6bac-4f46-be5e-47a07f82989e")
+		(property "Reference" "C4"
+			(at 101.6 176.53 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "12pF"
+			(at 101.6 173.99 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" "Capacitor_SMD:C_0603_1608Metric_Pad1.08x0.95mm_HandSolder"
+			(at 104.4448 171.45 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 105.41 175.26 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" ""
+			(at 105.41 175.26 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Farnell" "2768395"
+			(at 105.41 175.26 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Stock" "https://uk.farnell.com/tdk/cga3e2c0g1h040c080aa/cap-4pf-50v-c0g-np0-0603/dp/2768395"
+			(at 105.41 175.26 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "LCSC" "C307494"
+			(at 105.41 175.26 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "8c36c1bd-9bc8-4ba1-a689-cb3dc03d72cc")
+		)
+		(pin "2"
+			(uuid "b248c1f7-d682-4449-b0c0-c64ca3b2dcaf")
+		)
+		(instances
+			(project "MyBikesGotLED"
+				(path "/ea56fda8-6f8e-4826-a040-5c9b3e8e5cfa/0b0225ac-45b5-41c8-a760-6f29a7cb924b"
+					(reference "C4")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Device:C")
 		(at 92.71 91.44 0)
 		(unit 1)
 		(exclude_from_sim no)
@@ -4562,6 +4872,72 @@
 	)
 	(symbol
 		(lib_id "power:GND")
+		(at 86.36 179.07 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "5aa8ed91-599c-46de-9068-dc1fb03a7c25")
+		(property "Reference" "#PWR030"
+			(at 86.36 185.42 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Value" "GND"
+			(at 86.36 184.15 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 86.36 179.07 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" ""
+			(at 86.36 179.07 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" ""
+			(at 86.36 179.07 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "28e34159-b643-44f2-8cee-e849bcf99bf1")
+		)
+		(instances
+			(project "MyBikesGotLED"
+				(path "/ea56fda8-6f8e-4826-a040-5c9b3e8e5cfa/0b0225ac-45b5-41c8-a760-6f29a7cb924b"
+					(reference "#PWR030")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "power:GND")
 		(at 148.59 114.3 270)
 		(unit 1)
 		(exclude_from_sim no)
@@ -4833,7 +5209,7 @@
 				(hide yes)
 			)
 		)
-		(property "LCSC" "C860239"
+		(property "LCSC" "C5139642"
 			(at 173.99 152.4 0)
 			(effects
 				(font
@@ -4842,7 +5218,7 @@
 				(hide yes)
 			)
 		)
-		(property "LCSC Stock" "https://www.lcsc.com/product-detail/Chip-span-style-background-color-ff0-Resistor-span-Surface-Mount_YAGEO-RT0603BRB0722RL_C860239.html"
+		(property "LCSC Stock" ""
 			(at 173.99 152.4 0)
 			(effects
 				(font
@@ -4918,7 +5294,7 @@
 				(hide yes)
 			)
 		)
-		(property "LCSC" "C862388"
+		(property "LCSC" "C2073569"
 			(at 144.78 99.06 90)
 			(effects
 				(font
@@ -4927,7 +5303,7 @@
 				(hide yes)
 			)
 		)
-		(property "LCSC Stock" "https://www.lcsc.com/product-detail/Chip-span-style-background-color-ff0-Resistor-span-Surface-Mount_YAGEO-RT0603CRD0710KL_C862388.html"
+		(property "LCSC Stock" ""
 			(at 144.78 99.06 90)
 			(effects
 				(font
@@ -5228,6 +5604,101 @@
 			(project ""
 				(path "/ea56fda8-6f8e-4826-a040-5c9b3e8e5cfa/0b0225ac-45b5-41c8-a760-6f29a7cb924b"
 					(reference "J10")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Device:Crystal")
+		(at 93.98 171.45 180)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom no)
+		(on_board yes)
+		(dnp yes)
+		(fields_autoplaced yes)
+		(uuid "8d6ae889-d8a4-4ee9-85e5-69d350fefddc")
+		(property "Reference" "Y1"
+			(at 93.98 179.07 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "Crystal"
+			(at 93.98 176.53 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "Crystal:Crystal_SMD_3215-2Pin_3.2x1.5mm"
+			(at 93.98 171.45 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 93.98 171.45 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" ""
+			(at 93.98 171.45 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Farnell" "2101346"
+			(at 93.98 171.45 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Stock" "https://uk.farnell.com/abracon/abs07-32-768khz-9-t/crystal-32-768khz-9pf-smd/dp/2101346"
+			(at 93.98 171.45 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "LCSC" "C1985478"
+			(at 93.98 171.45 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "f1a4a4db-a2ef-42df-8fbc-fb45aaf64014")
+		)
+		(pin "2"
+			(uuid "efd23313-5b0b-4f82-9c86-624f51b2b8da")
+		)
+		(instances
+			(project "MyBikesGotLED"
+				(path "/ea56fda8-6f8e-4826-a040-5c9b3e8e5cfa/0b0225ac-45b5-41c8-a760-6f29a7cb924b"
+					(reference "Y1")
 					(unit 1)
 				)
 			)
@@ -6112,7 +6583,7 @@
 				(hide yes)
 			)
 		)
-		(property "LCSC" "C5455512"
+		(property "LCSC" "C20573"
 			(at 195.58 121.92 90)
 			(effects
 				(font
@@ -6121,7 +6592,7 @@
 				(hide yes)
 			)
 		)
-		(property "LCSC Stock" "https://www.lcsc.com/product-detail/Chip-span-style-background-color-ff0-Resistor-span-Surface-Mount_YAGEO-AT0603BRD07560RL_C5455512.html"
+		(property "LCSC Stock" ""
 			(at 195.58 121.92 90)
 			(effects
 				(font
@@ -6350,7 +6821,7 @@
 				(hide yes)
 			)
 		)
-		(property "LCSC" "C862388"
+		(property "LCSC" "C95204"
 			(at 92.71 73.66 90)
 			(effects
 				(font
@@ -6359,7 +6830,7 @@
 				(hide yes)
 			)
 		)
-		(property "LCSC Stock" "https://www.lcsc.com/product-detail/Chip-span-style-background-color-ff0-Resistor-span-Surface-Mount_YAGEO-RT0603CRD0710KL_C862388.html"
+		(property "LCSC Stock" ""
 			(at 92.71 73.66 90)
 			(effects
 				(font
@@ -6589,7 +7060,7 @@
 				(hide yes)
 			)
 		)
-		(property "LCSC" "C860239"
+		(property "LCSC" "C5139642"
 			(at 146.05 152.4 0)
 			(effects
 				(font
@@ -6598,7 +7069,7 @@
 				(hide yes)
 			)
 		)
-		(property "LCSC Stock" "https://www.lcsc.com/product-detail/Chip-span-style-background-color-ff0-Resistor-span-Surface-Mount_YAGEO-RT0603BRB0722RL_C860239.html"
+		(property "LCSC Stock" ""
 			(at 146.05 152.4 0)
 			(effects
 				(font
@@ -6691,7 +7162,7 @@
 				(hide yes)
 			)
 		)
-		(property "LCSC" "C497935"
+		(property "LCSC" "C601686"
 			(at 195.58 111.76 0)
 			(effects
 				(font
@@ -6700,7 +7171,7 @@
 				(hide yes)
 			)
 		)
-		(property "LCSC Stock" "https://www.lcsc.com/product-detail/LED-Indication-Discrete_HONGLITRONIC-Hongli-Zhihui-HONGLITRONIC-HL-PST-1608S22OC-04_C497935.html"
+		(property "LCSC Stock" ""
 			(at 195.58 111.76 0)
 			(effects
 				(font
@@ -6786,7 +7257,7 @@
 				(hide yes)
 			)
 		)
-		(property "LCSC Stock" "https://www.lcsc.com/product-detail/Multilayer-Ceramic-Capacitors-MLCC-SMD-SMT_TDK-C1608X5R1E106MT000E_C76614.html"
+		(property "LCSC Stock" ""
 			(at 143.51 67.31 90)
 			(effects
 				(font
@@ -6805,6 +7276,169 @@
 			(project "MyBikesGotLED"
 				(path "/ea56fda8-6f8e-4826-a040-5c9b3e8e5cfa/0b0225ac-45b5-41c8-a760-6f29a7cb924b"
 					(reference "C11")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "power:GND")
+		(at 105.41 179.07 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "ea8e5ec8-d4a9-4904-b114-7eda61d3e802")
+		(property "Reference" "#PWR012"
+			(at 105.41 185.42 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Value" "GND"
+			(at 105.41 184.15 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 105.41 179.07 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" ""
+			(at 105.41 179.07 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" ""
+			(at 105.41 179.07 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "1fc2d93a-464c-4803-b727-8daadea864c1")
+		)
+		(instances
+			(project "MyBikesGotLED"
+				(path "/ea56fda8-6f8e-4826-a040-5c9b3e8e5cfa/0b0225ac-45b5-41c8-a760-6f29a7cb924b"
+					(reference "#PWR012")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Device:C")
+		(at 86.36 175.26 180)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom no)
+		(on_board yes)
+		(dnp yes)
+		(fields_autoplaced yes)
+		(uuid "f22378dc-639a-4211-bd04-f2c989f974df")
+		(property "Reference" "C3"
+			(at 82.55 176.53 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "12pF"
+			(at 82.55 173.99 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" "Capacitor_SMD:C_0603_1608Metric_Pad1.08x0.95mm_HandSolder"
+			(at 85.3948 171.45 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 86.36 175.26 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" ""
+			(at 86.36 175.26 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Farnell" "2768395"
+			(at 86.36 175.26 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Stock" "https://uk.farnell.com/tdk/cga3e2c0g1h040c080aa/cap-4pf-50v-c0g-np0-0603/dp/2768395"
+			(at 86.36 175.26 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "LCSC" "C307494"
+			(at 86.36 175.26 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "ab2fb65e-869a-4e5d-8458-c5e61045e658")
+		)
+		(pin "2"
+			(uuid "dd9047ea-4a94-4a36-ad70-9f9c8611e6f3")
+		)
+		(instances
+			(project "MyBikesGotLED"
+				(path "/ea56fda8-6f8e-4826-a040-5c9b3e8e5cfa/0b0225ac-45b5-41c8-a760-6f29a7cb924b"
+					(reference "C3")
 					(unit 1)
 				)
 			)
@@ -6862,7 +7496,7 @@
 				(hide yes)
 			)
 		)
-		(property "LCSC" "C862388"
+		(property "LCSC" "C2073569"
 			(at 144.78 142.24 90)
 			(effects
 				(font
@@ -6871,7 +7505,7 @@
 				(hide yes)
 			)
 		)
-		(property "LCSC Stock" "https://www.lcsc.com/product-detail/Chip-span-style-background-color-ff0-Resistor-span-Surface-Mount_YAGEO-RT0603CRD0710KL_C862388.html"
+		(property "LCSC Stock" ""
 			(at 144.78 142.24 90)
 			(effects
 				(font
