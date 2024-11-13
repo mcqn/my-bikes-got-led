@@ -43,7 +43,7 @@ IO7 is used to drive the Wifi LED indicator D6
 IO9 is used to toggle boot modes and can be accessed via J11 See the [C3 technical manual for more details](https://www.espressif.com/sites/default/files/documentation/esp32-c3_technical_reference_manual_en.pdf#bootctrl)
 
 IO10 is connected to the Enable pin via JP4, a breakable bridge. This pin is used for the reset usermod. In addition to the bridge pad there are two unpopulated 0603 resistors here in case an RC circuit is required for timing. R17 has GND and float pads R18 3V3 and float.
-These can be removed from development boards.
+These can be removed from production boards.
 
 ### Headers
 
