@@ -2930,6 +2930,16 @@
 	)
 	(wire
 		(pts
+			(xy 160.02 92.71) (xy 161.29 92.71)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "0923084c-4f98-44be-bc4f-f6620b48521a")
+	)
+	(wire
+		(pts
 			(xy 175.26 55.88) (xy 175.26 54.61)
 		)
 		(stroke
@@ -3050,16 +3060,6 @@
 	)
 	(wire
 		(pts
-			(xy 154.94 105.41) (xy 161.29 105.41)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "1d4bee80-95d8-4943-9414-af4a0e2df7a4")
-	)
-	(wire
-		(pts
 			(xy 148.59 44.45) (xy 148.59 54.61)
 		)
 		(stroke
@@ -3077,6 +3077,16 @@
 			(type default)
 		)
 		(uuid "1f83b752-9be3-4bd4-9370-3a66198a69e2")
+	)
+	(wire
+		(pts
+			(xy 167.64 105.41) (xy 171.45 105.41)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "1f8fbed0-00b0-40e3-bea7-0c177957c929")
 	)
 	(wire
 		(pts
@@ -3330,7 +3340,7 @@
 	)
 	(wire
 		(pts
-			(xy 166.37 105.41) (xy 171.45 105.41)
+			(xy 176.53 105.41) (xy 180.34 105.41)
 		)
 		(stroke
 			(width 0)
@@ -3470,7 +3480,7 @@
 	)
 	(wire
 		(pts
-			(xy 167.64 92.71) (xy 171.45 92.71)
+			(xy 176.53 92.71) (xy 181.61 92.71)
 		)
 		(stroke
 			(width 0)
@@ -3530,6 +3540,16 @@
 	)
 	(wire
 		(pts
+			(xy 154.94 105.41) (xy 160.02 105.41)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "85ccedbd-d65d-43e6-9f99-77654c0ff43f")
+	)
+	(wire
+		(pts
 			(xy 184.15 45.72) (xy 184.15 44.45)
 		)
 		(stroke
@@ -3547,6 +3567,16 @@
 			(type default)
 		)
 		(uuid "8dcf9d78-586e-4e4e-836f-d697fdade72b")
+	)
+	(wire
+		(pts
+			(xy 168.91 92.71) (xy 171.45 92.71)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "8e3dce3e-bba8-44c9-9db0-6d481a0c2235")
 	)
 	(wire
 		(pts
@@ -3850,16 +3880,6 @@
 	)
 	(wire
 		(pts
-			(xy 160.02 92.71) (xy 162.56 92.71)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "eeae1441-aa51-455b-bf9b-b9c78f99dab8")
-	)
-	(wire
-		(pts
 			(xy 269.24 133.35) (xy 269.24 123.19)
 		)
 		(stroke
@@ -4017,7 +4037,7 @@
 	)
 	(global_label "ESP_IO4"
 		(shape input)
-		(at 171.45 105.41 0)
+		(at 180.34 105.41 0)
 		(fields_autoplaced yes)
 		(effects
 			(font
@@ -4027,7 +4047,7 @@
 		)
 		(uuid "b9522538-e948-4534-860f-96e71b4f8dd0")
 		(property "Intersheetrefs" "${INTERSHEET_REFS}"
-			(at 181.5219 105.41 0)
+			(at 190.4119 105.41 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4039,7 +4059,7 @@
 	)
 	(global_label "ESP_IO3"
 		(shape input)
-		(at 171.45 92.71 0)
+		(at 181.61 92.71 0)
 		(fields_autoplaced yes)
 		(effects
 			(font
@@ -4049,7 +4069,7 @@
 		)
 		(uuid "f606733b-d8b7-4ce4-8da7-5fee6a0f287c")
 		(property "Intersheetrefs" "${INTERSHEET_REFS}"
-			(at 181.5219 92.71 0)
+			(at 191.6819 92.71 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -6242,7 +6262,7 @@
 	)
 	(symbol
 		(lib_id "MyBikesGotLED-rescue:Jumper_NO_Small-Device")
-		(at 163.83 105.41 0)
+		(at 173.99 105.41 0)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -6250,7 +6270,7 @@
 		(dnp no)
 		(uuid "34a4e6e5-086a-40ec-92e0-eea89eb6521b")
 		(property "Reference" "JP43"
-			(at 163.83 100.711 0)
+			(at 173.99 100.711 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -6258,7 +6278,7 @@
 			)
 		)
 		(property "Value" "p16 EN"
-			(at 163.83 103.0224 0)
+			(at 173.99 103.0224 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -6266,7 +6286,7 @@
 			)
 		)
 		(property "Footprint" "Jumper:SolderJumper-2_P1.3mm_Open_RoundedPad1.0x1.5mm"
-			(at 163.83 105.41 0)
+			(at 173.99 105.41 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -6275,7 +6295,7 @@
 			)
 		)
 		(property "Datasheet" "~"
-			(at 163.83 105.41 0)
+			(at 173.99 105.41 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -6284,7 +6304,7 @@
 			)
 		)
 		(property "Description" "DNP"
-			(at 163.83 105.41 0)
+			(at 173.99 105.41 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -6309,7 +6329,7 @@
 	)
 	(symbol
 		(lib_id "MyBikesGotLED-rescue:Jumper_NO_Small-Device")
-		(at 165.1 92.71 0)
+		(at 173.99 92.71 0)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -6317,7 +6337,7 @@
 		(dnp no)
 		(uuid "77d4d912-2039-4aa3-9849-de6a9ecf4708")
 		(property "Reference" "JP42"
-			(at 165.1 88.011 0)
+			(at 173.99 88.011 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -6325,7 +6345,7 @@
 			)
 		)
 		(property "Value" "P3 EN"
-			(at 165.1 90.3224 0)
+			(at 173.99 90.3224 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -6333,7 +6353,7 @@
 			)
 		)
 		(property "Footprint" "Jumper:SolderJumper-2_P1.3mm_Open_RoundedPad1.0x1.5mm"
-			(at 165.1 92.71 0)
+			(at 173.99 92.71 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -6342,7 +6362,7 @@
 			)
 		)
 		(property "Datasheet" "~"
-			(at 165.1 92.71 0)
+			(at 173.99 92.71 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -6351,7 +6371,7 @@
 			)
 		)
 		(property "Description" "DNP"
-			(at 165.1 92.71 0)
+			(at 173.99 92.71 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -6434,6 +6454,212 @@
 			(project "MyBikesGotLED"
 				(path "/ea56fda8-6f8e-4826-a040-5c9b3e8e5cfa"
 					(reference "#PWR01")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Device:R")
+		(at 165.1 92.71 270)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "98c662d2-d765-418c-8aae-6c8b440b190b")
+		(property "Reference" "R5"
+			(at 165.1 87.4522 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "470R"
+			(at 165.1 89.7636 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "Resistor_SMD:R_0603_1608Metric_Pad0.98x0.95mm_HandSolder"
+			(at 165.1 90.932 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 165.1 92.71 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" ""
+			(at 165.1 92.71 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Farnell" "2502462"
+			(at 165.1 92.71 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Farnell Price/Stock" "https://uk.farnell.com/walsin/wr06x4700ftl/res-470r-1-75v-0603-thick-film/dp/2502462"
+			(at 165.1 92.71 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "LCSC" "C144600"
+			(at 165.1 92.71 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "LCSC Stock" ""
+			(at 165.1 92.71 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "fe1fd8da-f80e-4793-bc4e-f84b26df1ce3")
+		)
+		(pin "2"
+			(uuid "b6b4d125-9f4e-48ba-9538-332c3aea1c6e")
+		)
+		(instances
+			(project "MyBikesGotLED"
+				(path "/ea56fda8-6f8e-4826-a040-5c9b3e8e5cfa"
+					(reference "R5")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Device:R")
+		(at 163.83 105.41 270)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "ae9961c2-a86a-4bac-83b4-98e404927762")
+		(property "Reference" "R6"
+			(at 163.83 100.1522 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "470R"
+			(at 163.83 102.4636 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "Resistor_SMD:R_0603_1608Metric_Pad0.98x0.95mm_HandSolder"
+			(at 163.83 103.632 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 163.83 105.41 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" ""
+			(at 163.83 105.41 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Farnell" "2502462"
+			(at 163.83 105.41 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Farnell Price/Stock" "https://uk.farnell.com/walsin/wr06x4700ftl/res-470r-1-75v-0603-thick-film/dp/2502462"
+			(at 163.83 105.41 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "LCSC" "C144600"
+			(at 163.83 105.41 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "LCSC Stock" ""
+			(at 163.83 105.41 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "e860e6a6-ee06-40ff-9512-d6d6c12c23af")
+		)
+		(pin "2"
+			(uuid "730b2e17-e44c-4a09-a504-1876425404b2")
+		)
+		(instances
+			(project "MyBikesGotLED"
+				(path "/ea56fda8-6f8e-4826-a040-5c9b3e8e5cfa"
+					(reference "R6")
 					(unit 1)
 				)
 			)
