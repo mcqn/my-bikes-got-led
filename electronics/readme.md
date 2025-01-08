@@ -6,8 +6,8 @@ The hardware for MBiGL is based around the [ESP32 C3 Mini](https://www.espressif
 
 | Pin | Function | Note |
 | ---- | ---- | ----|
-| IO0 | GPIO | Also available for external crystal on reverse of board |
-| IO1 | GPIO | Also available for external crystal on reverse of board |
+| IO0 | GPIO | - |
+| IO1 | GPIO | - |
 | IO3 | GPIO | Also available as a level shifted data output by bridging JP42 |
 | IO4 | GPIO | Also available as a level shifted data output by bridging JP43 |
 | IO5 | LED_data | |
@@ -32,9 +32,8 @@ There are four pins available for RGB data output. LED_data (IO5) and LED_clock 
 
 ### External Crystal
 
-IO0 and IO1 are used by the C3 mini if an external crystal is required. On the reverese of the board there are test points and unpopulated cystal and capacitor pads if this is required.
-
-**NB IO0/1 are also available as GPIO pins via J10 but cannot be used for both**
+IO0 and IO1 are used by the C3 mini if an external crystal is required. The first revision had footprints for a crystal but this has now been removed as it isn't needed.
+These two pins are available via j10 as GPIO
 
 ### Additional pins
 
@@ -42,8 +41,9 @@ IO7 is used to drive the Wifi LED indicator D6
 
 IO9 is used to toggle boot modes and can be accessed via J11 See the [C3 technical manual for more details](https://www.espressif.com/sites/default/files/documentation/esp32-c3_technical_reference_manual_en.pdf#bootctrl)
 
-IO10 is connected to the Enable pin via JP4, a breakable bridge. This pin is used for the reset usermod. In addition to the bridge pad there are two unpopulated 0603 resistors here in case an RC circuit is required for timing. R17 has GND and float pads R18 3V3 and float.
-These can be removed from production boards.
+~~IO10 is connected to the Enable pin via JP4, a breakable bridge. This pin is used for the reset usermod. In addition to the bridge pad there are two unpopulated 0603 resistors here in case an RC circuit is required for timing. R17 has GND and float pads R18 3V3 and float.~~
+
+These have been removed from production boards.
 
 ### Headers
 
