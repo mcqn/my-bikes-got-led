@@ -3814,16 +3814,6 @@
 	)
 	(wire
 		(pts
-			(xy 191.77 53.34) (xy 191.77 55.88)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "527099c6-db42-411a-b252-0df738fc950d")
-	)
-	(wire
-		(pts
 			(xy 254 83.82) (xy 250.19 83.82)
 		)
 		(stroke
@@ -4231,6 +4221,16 @@
 			(type default)
 		)
 		(uuid "d0ae9b5e-ba7e-43f2-ba62-11e361c9799e")
+	)
+	(wire
+		(pts
+			(xy 191.77 45.72) (xy 191.77 55.88)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "d4eb0026-7ff3-4884-af7f-0cd4db6a2aad")
 	)
 	(wire
 		(pts
@@ -4876,7 +4876,7 @@
 				(hide yes)
 			)
 		)
-		(property "Farnell Price/Stock" "https://uk.farnell.com/multicomp/mcwr06x5101ftl/res-5k1-1-0-1w-0603-thick-film/dp/2447404"
+		(property "Farnell Price/Stock" ""
 			(at 102.87 93.98 0)
 			(effects
 				(font
@@ -4885,7 +4885,7 @@
 				(hide yes)
 			)
 		)
-		(property "Farnell" "2447404"
+		(property "Farnell" ""
 			(at 102.87 93.98 0)
 			(effects
 				(font
@@ -4894,7 +4894,7 @@
 				(hide yes)
 			)
 		)
-		(property "LCSC" "C325377"
+		(property "LCSC" "C17168"
 			(at 102.87 93.98 0)
 			(effects
 				(font
@@ -5100,7 +5100,7 @@
 				)
 			)
 		)
-		(property "Description" ""
+		(property "Description" "LED standard 0805 yellow"
 			(at 55.88 49.53 0)
 			(effects
 				(font
@@ -5118,7 +5118,7 @@
 				(hide yes)
 			)
 		)
-		(property "Farnell Price/Stock" "https://uk.farnell.com/multicomp-pro/mp008279/led-green-70mcd-576nm-0805/dp/3796308"
+		(property "Farnell Price/Stock" ""
 			(at 55.88 49.53 0)
 			(effects
 				(font
@@ -5127,7 +5127,7 @@
 				(hide yes)
 			)
 		)
-		(property "LCSC" "C273624"
+		(property "LCSC" "C965814"
 			(at 55.88 49.53 0)
 			(effects
 				(font
@@ -5136,7 +5136,7 @@
 				(hide yes)
 			)
 		)
-		(property "LCSC Stock" ""
+		(property "LCSC Stock" "https://jlcpcb.com/partdetail/Xinglight-XL2012UYC/C965814"
 			(at 55.88 49.53 0)
 			(effects
 				(font
@@ -5278,7 +5278,7 @@
 				(hide yes)
 			)
 		)
-		(property "LCSC" "C2179118"
+		(property "LCSC" " C2179118"
 			(at 85.09 97.79 90)
 			(effects
 				(font
@@ -5583,7 +5583,7 @@
 				(hide yes)
 			)
 		)
-		(property "Farnell" "3994449"
+		(property "Farnell" ""
 			(at 102.87 175.26 0)
 			(effects
 				(font
@@ -5592,7 +5592,7 @@
 				(hide yes)
 			)
 		)
-		(property "Farnell Price/Stock" "https://uk.farnell.com/walsin/mr06x105-jtlv/res-1m-5-0-125w-0603-thick-film/dp/3994449"
+		(property "Farnell Price/Stock" ""
 			(at 102.87 175.26 0)
 			(effects
 				(font
@@ -5601,7 +5601,7 @@
 				(hide yes)
 			)
 		)
-		(property "LCSC" "C346609"
+		(property "LCSC" "C26083"
 			(at 102.87 175.26 0)
 			(effects
 				(font
@@ -5610,7 +5610,7 @@
 				(hide yes)
 			)
 		)
-		(property "LCSC Stock" "https://www.lcsc.com/product-detail/Chip-span-style-background-color-ff0-Resistor-span-Surface-Mount_SEI-Stackpole-Elec-RNCF0603BKC1M00_C346609.html"
+		(property "LCSC Stock" ""
 			(at 102.87 175.26 0)
 			(effects
 				(font
@@ -6888,7 +6888,7 @@
 				)
 			)
 		)
-		(property "Description" ""
+		(property "Description" "Led standard 0805 yellow"
 			(at 55.88 31.75 0)
 			(effects
 				(font
@@ -6897,7 +6897,7 @@
 				(hide yes)
 			)
 		)
-		(property "Farnell" "2322102"
+		(property "Farnell" ""
 			(at 55.88 31.75 0)
 			(effects
 				(font
@@ -6906,7 +6906,7 @@
 				(hide yes)
 			)
 		)
-		(property "Farnell Price/Stock" "https://uk.farnell.com/multicomp-pro/mp008279/led-green-70mcd-576nm-0805/dp/3796308"
+		(property "Farnell Price/Stock" ""
 			(at 55.88 31.75 0)
 			(effects
 				(font
@@ -6915,7 +6915,7 @@
 				(hide yes)
 			)
 		)
-		(property "LCSC" "C273624"
+		(property "LCSC" "C965814"
 			(at 55.88 31.75 0)
 			(effects
 				(font
@@ -6924,7 +6924,7 @@
 				(hide yes)
 			)
 		)
-		(property "LCSC Stock" ""
+		(property "LCSC Stock" "https://jlcpcb.com/partdetail/Xinglight-XL2012UYC/C965814"
 			(at 55.88 31.75 0)
 			(effects
 				(font
@@ -6949,14 +6949,13 @@
 		)
 	)
 	(symbol
-		(lib_name "easyeda2kicad:105450-0101")
 		(lib_id "easyeda2kicad:105450-0101")
 		(at 124.46 148.59 0)
 		(unit 1)
 		(exclude_from_sim no)
-		(in_bom yes)
+		(in_bom no)
 		(on_board yes)
-		(dnp no)
+		(dnp yes)
 		(fields_autoplaced yes)
 		(uuid "658116b6-8182-4141-a59e-972798a5971c")
 		(property "Reference" "USBC1"
@@ -7281,7 +7280,7 @@
 				)
 			)
 		)
-		(property "Description" ""
+		(property "Description" "LED standard 0805 yellow"
 			(at 55.88 40.64 0)
 			(effects
 				(font
@@ -7290,7 +7289,7 @@
 				(hide yes)
 			)
 		)
-		(property "Farnell" "2322102"
+		(property "Farnell" ""
 			(at 55.88 40.64 0)
 			(effects
 				(font
@@ -7299,7 +7298,7 @@
 				(hide yes)
 			)
 		)
-		(property "Farnell Price/Stock" "https://uk.farnell.com/multicomp-pro/mp008279/led-green-70mcd-576nm-0805/dp/3796308"
+		(property "Farnell Price/Stock" ""
 			(at 55.88 40.64 0)
 			(effects
 				(font
@@ -7308,7 +7307,7 @@
 				(hide yes)
 			)
 		)
-		(property "LCSC" "C273624"
+		(property "LCSC" "C965814"
 			(at 55.88 40.64 0)
 			(effects
 				(font
@@ -7317,7 +7316,7 @@
 				(hide yes)
 			)
 		)
-		(property "LCSC Stock" ""
+		(property "LCSC Stock" "https://jlcpcb.com/partdetail/Xinglight-XL2012UYC/C965814"
 			(at 55.88 40.64 0)
 			(effects
 				(font
@@ -7520,9 +7519,9 @@
 		(at 58.42 148.59 0)
 		(unit 1)
 		(exclude_from_sim no)
-		(in_bom no)
+		(in_bom yes)
 		(on_board yes)
-		(dnp yes)
+		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "731d45c3-c278-480d-ae3f-072a474cdb8f")
 		(property "Reference" "USBC2"
@@ -7552,7 +7551,7 @@
 				(hide yes)
 			)
 		)
-		(property "Datasheet" "https://lcsc.com/product-detail/USB-Type-C_MOLEX_105450-0101_105450-0101_C134092.html"
+		(property "Datasheet" ""
 			(at 58.42 180.34 0)
 			(effects
 				(font
@@ -7820,108 +7819,6 @@
 			(project "MyBikesGotLED"
 				(path "/ea56fda8-6f8e-4826-a040-5c9b3e8e5cfa/2c074201-41ae-48a2-8f73-9baa1910d072"
 					(reference "#PWR044")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "Device:LED")
-		(at 191.77 49.53 90)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(uuid "7b8f9c46-e06a-4830-84a4-21d12a7bfec6")
-		(property "Reference" "D25"
-			(at 189.23 49.53 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Value" "LED"
-			(at 194.31 49.53 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Footprint" "LED_SMD:LED_0805_2012Metric_Pad1.15x1.40mm_HandSolder"
-			(at 191.77 49.53 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" "~"
-			(at 191.77 49.53 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Description" ""
-			(at 191.77 49.53 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Farnell" "2322102"
-			(at 191.77 49.53 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Farnell Price/Stock" "https://uk.farnell.com/multicomp-pro/mp008279/led-green-70mcd-576nm-0805/dp/3796308"
-			(at 191.77 49.53 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "LCSC" "C601686"
-			(at 191.77 49.53 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "LCSC Stock" ""
-			(at 191.77 49.53 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "1"
-			(uuid "01f649a8-8ff0-4862-8acd-4a513f5a83da")
-		)
-		(pin "2"
-			(uuid "d66bc046-2258-4918-9d01-ee7d013bf766")
-		)
-		(instances
-			(project "MyBikesGotLED"
-				(path "/ea56fda8-6f8e-4826-a040-5c9b3e8e5cfa/2c074201-41ae-48a2-8f73-9baa1910d072"
-					(reference "D25")
 					(unit 1)
 				)
 			)
@@ -8454,7 +8351,7 @@
 				)
 			)
 		)
-		(property "Value" "R560"
+		(property "Value" "R120"
 			(at 187.96 59.69 90)
 			(effects
 				(font
@@ -8488,7 +8385,7 @@
 				(hide yes)
 			)
 		)
-		(property "Farnell" "2502470"
+		(property "Farnell" ""
 			(at 191.77 59.69 90)
 			(effects
 				(font
@@ -8497,7 +8394,7 @@
 				(hide yes)
 			)
 		)
-		(property "Farnell Price/Stock" "https://uk.farnell.com/walsin/wr06x5600ftl/res-560r-1-75v-0603-thick-film/dp/2502470"
+		(property "Farnell Price/Stock" ""
 			(at 191.77 59.69 90)
 			(effects
 				(font
@@ -8506,7 +8403,7 @@
 				(hide yes)
 			)
 		)
-		(property "LCSC" "C20573"
+		(property "LCSC" "C22787"
 			(at 191.77 59.69 90)
 			(effects
 				(font
@@ -9002,7 +8899,7 @@
 				(hide yes)
 			)
 		)
-		(property "LCSC" "C237171"
+		(property "LCSC" " C76614"
 			(at 185.42 135.89 90)
 			(effects
 				(font
@@ -9484,7 +9381,7 @@
 				(hide yes)
 			)
 		)
-		(property "LCSC" "C2179118"
+		(property "LCSC" " C2179118"
 			(at 128.27 97.79 90)
 			(effects
 				(font
@@ -9559,7 +9456,7 @@
 				)
 			)
 		)
-		(property "Description" ""
+		(property "Description" "led standard 0805 yellow"
 			(at 55.88 22.86 0)
 			(effects
 				(font
@@ -9568,7 +9465,7 @@
 				(hide yes)
 			)
 		)
-		(property "Farnell" "2322102"
+		(property "Farnell" ""
 			(at 55.88 22.86 0)
 			(effects
 				(font
@@ -9577,7 +9474,7 @@
 				(hide yes)
 			)
 		)
-		(property "Farnell Price/Stock" "https://uk.farnell.com/multicomp-pro/mp008279/led-green-70mcd-576nm-0805/dp/3796308"
+		(property "Farnell Price/Stock" ""
 			(at 55.88 22.86 0)
 			(effects
 				(font
@@ -9586,7 +9483,7 @@
 				(hide yes)
 			)
 		)
-		(property "LCSC" "C273624"
+		(property "LCSC" "C965814"
 			(at 55.88 22.86 0)
 			(effects
 				(font
@@ -9595,7 +9492,7 @@
 				(hide yes)
 			)
 		)
-		(property "LCSC Stock" ""
+		(property "LCSC Stock" "https://jlcpcb.com/partdetail/Xinglight-XL2012UYC/C965814"
 			(at 55.88 22.86 0)
 			(effects
 				(font

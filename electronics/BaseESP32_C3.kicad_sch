@@ -4288,7 +4288,7 @@
 				(hide yes)
 			)
 		)
-		(property "Farnell" "3495168 "
+		(property "Farnell" ""
 			(at 173.99 152.4 0)
 			(effects
 				(font
@@ -4297,7 +4297,7 @@
 				(hide yes)
 			)
 		)
-		(property "Farnell Price/Stock" "https://uk.farnell.com/yageo/ac0201fr-0722rl/res-22r-1-0-05w-0201-thick-film/dp/3495168"
+		(property "Farnell Price/Stock" ""
 			(at 173.99 152.4 0)
 			(effects
 				(font
@@ -4306,7 +4306,7 @@
 				(hide yes)
 			)
 		)
-		(property "LCSC" "C5139642"
+		(property "LCSC" "C25092"
 			(at 173.99 152.4 0)
 			(effects
 				(font
@@ -4315,7 +4315,7 @@
 				(hide yes)
 			)
 		)
-		(property "LCSC Stock" ""
+		(property "LCSC Stock" "https://jlcpcb.com/partdetail/25835-0402WGF220JTCE/C25092"
 			(at 173.99 152.4 0)
 			(effects
 				(font
@@ -4939,7 +4939,7 @@
 				(hide yes)
 			)
 		)
-		(property "Farnell" "2502470"
+		(property "Farnell" ""
 			(at 195.58 121.92 90)
 			(effects
 				(font
@@ -4948,7 +4948,7 @@
 				(hide yes)
 			)
 		)
-		(property "Farnell Price/Stock" "https://uk.farnell.com/walsin/wr06x5600ftl/res-560r-1-75v-0603-thick-film/dp/2502470"
+		(property "Farnell Price/Stock" ""
 			(at 195.58 121.92 90)
 			(effects
 				(font
@@ -4957,7 +4957,7 @@
 				(hide yes)
 			)
 		)
-		(property "LCSC" "C20573"
+		(property "LCSC" "C163460"
 			(at 195.58 121.92 90)
 			(effects
 				(font
@@ -5331,7 +5331,7 @@
 				(hide yes)
 			)
 		)
-		(property "Farnell" "3495168 "
+		(property "Farnell" ""
 			(at 146.05 152.4 0)
 			(effects
 				(font
@@ -5340,7 +5340,7 @@
 				(hide yes)
 			)
 		)
-		(property "Farnell Price/Stock" "https://uk.farnell.com/yageo/ac0201fr-0722rl/res-22r-1-0-05w-0201-thick-film/dp/3495168"
+		(property "Farnell Price/Stock" ""
 			(at 146.05 152.4 0)
 			(effects
 				(font
@@ -5349,7 +5349,7 @@
 				(hide yes)
 			)
 		)
-		(property "LCSC" "C5139642"
+		(property "LCSC" "     C25092"
 			(at 146.05 152.4 0)
 			(effects
 				(font
@@ -5358,7 +5358,7 @@
 				(hide yes)
 			)
 		)
-		(property "LCSC Stock" ""
+		(property "LCSC Stock" "https://jlcpcb.com/partdetail/25835-0402WGF220JTCE/C25092"
 			(at 146.05 152.4 0)
 			(effects
 				(font
@@ -5424,7 +5424,7 @@
 				)
 			)
 		)
-		(property "Description" ""
+		(property "Description" "0805 Standard led Green"
 			(at 195.58 111.76 0)
 			(effects
 				(font
@@ -5433,7 +5433,7 @@
 				(hide yes)
 			)
 		)
-		(property "Farnell" "2322102"
+		(property "Farnell" ""
 			(at 195.58 111.76 0)
 			(effects
 				(font
@@ -5442,7 +5442,7 @@
 				(hide yes)
 			)
 		)
-		(property "Farnell Price/Stock" "https://uk.farnell.com/multicomp-pro/mp008279/led-green-70mcd-576nm-0805/dp/3796308"
+		(property "Farnell Price/Stock" ""
 			(at 195.58 111.76 0)
 			(effects
 				(font
@@ -5451,7 +5451,7 @@
 				(hide yes)
 			)
 		)
-		(property "LCSC" "C601686"
+		(property "LCSC" "C965815"
 			(at 195.58 111.76 0)
 			(effects
 				(font
@@ -5460,7 +5460,7 @@
 				(hide yes)
 			)
 		)
-		(property "LCSC Stock" ""
+		(property "LCSC Stock" "https://jlcpcb.com/partdetail/Xinglight-XL2012UGC/C965815"
 			(at 195.58 111.76 0)
 			(effects
 				(font

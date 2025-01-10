@@ -4823,7 +4823,7 @@
 				(hide yes)
 			)
 		)
-		(property "LCSC" "C2179118"
+		(property "LCSC" " C128856 "
 			(at 193.04 41.91 0)
 			(effects
 				(font
@@ -5695,7 +5695,7 @@
 				(hide yes)
 			)
 		)
-		(property "Farnell" "2447449"
+		(property "Farnell" ""
 			(at 184.15 41.91 0)
 			(effects
 				(font
@@ -5704,7 +5704,7 @@
 				(hide yes)
 			)
 		)
-		(property "Farnell Price/Stock" "https://uk.farnell.com/multicomp/mcwr06x9102ftl/res-91k-1-0-1w-thick-film/dp/2447449"
+		(property "Farnell Price/Stock" ""
 			(at 184.15 41.91 0)
 			(effects
 				(font
@@ -5713,7 +5713,7 @@
 				(hide yes)
 			)
 		)
-		(property "LCSC" "C326721"
+		(property "LCSC" "C23265"
 			(at 184.15 41.91 0)
 			(effects
 				(font
