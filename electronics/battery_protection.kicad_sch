@@ -532,9 +532,9 @@
 		(mirror y)
 		(unit 1)
 		(exclude_from_sim no)
-		(in_bom no)
+		(in_bom yes)
 		(on_board yes)
-		(dnp yes)
+		(dnp no)
 		(uuid "09db3ec6-c806-44b3-87b0-ca2e989c14d3")
 		(property "Reference" "J51"
 			(at 90.9828 70.6882 0)
@@ -771,9 +771,9 @@
 		(mirror y)
 		(unit 1)
 		(exclude_from_sim no)
-		(in_bom yes)
+		(in_bom no)
 		(on_board yes)
-		(dnp no)
+		(dnp yes)
 		(uuid "bac40cc8-eaea-4bbb-9a61-e17fb2df2b20")
 		(property "Reference" "J52"
 			(at 80.8228 70.6882 0)

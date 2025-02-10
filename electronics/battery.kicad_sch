@@ -2799,6 +2799,149 @@
 				)
 			)
 		)
+		(symbol "easyeda2kicad:MHCC10040-1R0M-R7"
+			(exclude_from_sim no)
+			(in_bom yes)
+			(on_board yes)
+			(property "Reference" "L"
+				(at 0 5.08 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Value" "MHCC10040-1R0M-R7"
+				(at 0 -5.08 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Footprint" "easyeda2kicad:IND-SMD_L11.6-W10.1"
+				(at 0 -7.62 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "Datasheet" "https://lcsc.com/product-detail/_Chilisin-Elec-MHCC10040-1R0M-R7_C280565.html"
+				(at 0 -10.16 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "Description" ""
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "LCSC Part" "C280565"
+				(at 0 -12.7 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(symbol "MHCC10040-1R0M-R7_0_1"
+				(arc
+					(start -2.27 -0.02)
+					(mid -3.28 0.9027)
+					(end -4.29 -0.02)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(arc
+					(start -0.11 -0.02)
+					(mid -1.12 0.9071)
+					(end -2.13 -0.02)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(arc
+					(start 2.04 -0.02)
+					(mid 1.03 0.9071)
+					(end 0.02 -0.02)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(arc
+					(start 4.23 -0.02)
+					(mid 3.22 0.9071)
+					(end 2.21 -0.02)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(pin unspecified line
+					(at -5.08 0 0)
+					(length 0.762)
+					(name "1"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "1"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin unspecified line
+					(at 5.08 0 180)
+					(length 0.762)
+					(name "2"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "2"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+			)
+		)
 		(symbol "power:+5V"
 			(power)
 			(pin_names
@@ -3644,16 +3787,6 @@
 	)
 	(wire
 		(pts
-			(xy 128.27 85.09) (xy 128.27 93.98)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "14b84360-f5c4-44a7-a411-31baf0429e97")
-	)
-	(wire
-		(pts
 			(xy 119.38 52.07) (xy 115.57 52.07)
 		)
 		(stroke
@@ -3934,6 +4067,16 @@
 	)
 	(wire
 		(pts
+			(xy 130.81 90.17) (xy 128.27 90.17)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "824a7f57-6e1c-4d40-9161-7e66c2c8e952")
+	)
+	(wire
+		(pts
 			(xy 72.39 53.34) (xy 52.07 53.34)
 		)
 		(stroke
@@ -4001,6 +4144,16 @@
 			(type default)
 		)
 		(uuid "9c2133a3-2128-4473-81f8-c9eec6f31f99")
+	)
+	(wire
+		(pts
+			(xy 130.81 85.09) (xy 130.81 90.17)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "9ddd3d2c-4c32-43c1-840d-a44004c892e7")
 	)
 	(wire
 		(pts
@@ -4224,6 +4377,16 @@
 	)
 	(wire
 		(pts
+			(xy 128.27 90.17) (xy 128.27 93.98)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "d130ba09-4bae-4eae-a808-1f1b66120cb6")
+	)
+	(wire
+		(pts
 			(xy 191.77 45.72) (xy 191.77 55.88)
 		)
 		(stroke
@@ -4394,16 +4557,6 @@
 	)
 	(wire
 		(pts
-			(xy 128.27 85.09) (xy 125.73 85.09)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "fce755b5-6756-44a3-9e7f-603e7ff4523d")
-	)
-	(wire
-		(pts
 			(xy 86.36 172.72) (xy 58.42 172.72)
 		)
 		(stroke
@@ -4449,6 +4602,25 @@
 			(justify left top)
 		)
 		(uuid "7bd1a528-fc17-4fc2-b918-dcc06b374269")
+	)
+	(text_box "Out of stock"
+		(exclude_from_sim no)
+		(at 138.43 77.47 0)
+		(size 10.16 10.16)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(fill
+			(type none)
+		)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left top)
+		)
+		(uuid "b4561e10-4bcc-42fe-9d23-bb3133407245")
 	)
 	(global_label "CC1"
 		(shape input)
@@ -4717,7 +4889,6 @@
 	(hierarchical_label "VBUS"
 		(shape input)
 		(at 69.85 154.94 0)
-		(fields_autoplaced yes)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -4729,7 +4900,6 @@
 	(hierarchical_label "VBUS"
 		(shape input)
 		(at 135.89 142.24 0)
-		(fields_autoplaced yes)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -4741,7 +4911,6 @@
 	(hierarchical_label "VBUS"
 		(shape input)
 		(at 113.03 142.24 180)
-		(fields_autoplaced yes)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -4753,7 +4922,6 @@
 	(hierarchical_label "VBUS"
 		(shape input)
 		(at 69.85 142.24 0)
-		(fields_autoplaced yes)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -4765,7 +4933,6 @@
 	(hierarchical_label "VBUS"
 		(shape input)
 		(at 171.45 127 90)
-		(fields_autoplaced yes)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -4777,7 +4944,6 @@
 	(hierarchical_label "VBUS"
 		(shape input)
 		(at 119.38 52.07 0)
-		(fields_autoplaced yes)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -4789,7 +4955,6 @@
 	(hierarchical_label "VBUS"
 		(shape input)
 		(at 46.99 142.24 180)
-		(fields_autoplaced yes)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -4801,7 +4966,6 @@
 	(hierarchical_label "VBUS"
 		(shape input)
 		(at 113.03 154.94 180)
-		(fields_autoplaced yes)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -4813,7 +4977,6 @@
 	(hierarchical_label "VBUS"
 		(shape input)
 		(at 46.99 154.94 180)
-		(fields_autoplaced yes)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -6953,9 +7116,9 @@
 		(at 124.46 148.59 0)
 		(unit 1)
 		(exclude_from_sim no)
-		(in_bom no)
+		(in_bom yes)
 		(on_board yes)
-		(dnp yes)
+		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "658116b6-8182-4141-a59e-972798a5971c")
 		(property "Reference" "USBC1"
@@ -7426,7 +7589,7 @@
 				(justify left)
 			)
 		)
-		(property "Value" "R10K"
+		(property "Value" "10K"
 			(at 238.76 58.42 0)
 			(effects
 				(font
@@ -7480,7 +7643,7 @@
 				(hide yes)
 			)
 		)
-		(property "LCSC" "C3223188"
+		(property "LCSC" "C95204"
 			(at 240.03 57.15 0)
 			(effects
 				(font
@@ -7518,9 +7681,9 @@
 		(at 58.42 148.59 0)
 		(unit 1)
 		(exclude_from_sim no)
-		(in_bom yes)
+		(in_bom no)
 		(on_board yes)
-		(dnp no)
+		(dnp yes)
 		(fields_autoplaced yes)
 		(uuid "731d45c3-c278-480d-ae3f-072a474cdb8f")
 		(property "Reference" "USBC2"
@@ -7665,6 +7828,83 @@
 			(project "MyBikesGotLED"
 				(path "/ea56fda8-6f8e-4826-a040-5c9b3e8e5cfa/2c074201-41ae-48a2-8f73-9baa1910d072"
 					(reference "USBC2")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "easyeda2kicad:MHCC10040-1R0M-R7")
+		(at 125.73 85.09 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "735c5074-79c5-4b71-b538-d122c1128993")
+		(property "Reference" "L2"
+			(at 125.73 78.74 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "MHCC10040-1R0M-R7"
+			(at 125.73 81.28 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "easyeda2kicad:IND-SMD_L11.6-W10.1"
+			(at 125.73 92.71 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "https://lcsc.com/product-detail/_Chilisin-Elec-MHCC10040-1R0M-R7_C280565.html"
+			(at 125.73 95.25 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" ""
+			(at 125.73 85.09 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "LCSC Part" "C280565"
+			(at 125.73 97.79 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "927213bc-f2c2-4dbb-a120-14614c035cc8")
+		)
+		(pin "2"
+			(uuid "90e99548-8277-41f2-aaf6-5da7a3b58313")
+		)
+		(instances
+			(project ""
+				(path "/ea56fda8-6f8e-4826-a040-5c9b3e8e5cfa/2c074201-41ae-48a2-8f73-9baa1910d072"
+					(reference "L2")
 					(unit 1)
 				)
 			)
@@ -7818,109 +8058,6 @@
 			(project "MyBikesGotLED"
 				(path "/ea56fda8-6f8e-4826-a040-5c9b3e8e5cfa/2c074201-41ae-48a2-8f73-9baa1910d072"
 					(reference "#PWR044")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "Device:L_Small")
-		(at 123.19 85.09 90)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(uuid "7c0834e4-622a-4545-ad3e-7c0248a2ef0f")
-		(property "Reference" "L2"
-			(at 123.19 80.391 90)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Value" "1uH"
-			(at 123.19 82.7024 90)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Footprint" "easyeda2kicad:IND-SMD_L10.8-W10.0"
-			(at 123.19 85.09 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" "~"
-			(at 123.19 85.09 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" ""
-			(at 123.19 85.09 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Farnell" ""
-			(at 123.19 85.09 90)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Farnell Price/Stock" ""
-			(at 123.19 85.09 90)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "LCSC" "C439017"
-			(at 123.19 85.09 90)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "LCSC Stock" "https://www.lcsc.com/product-detail/Power-Inductors_Cybermax-CMLO1040H1R0MTT_C439017.html"
-			(at 123.19 85.09 90)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "1"
-			(uuid "8f9f7984-17ef-4138-b50b-d7f3f3c23226")
-		)
-		(pin "2"
-			(uuid "4c978600-c259-4d84-89d1-27f4d6e9ca07")
-		)
-		(instances
-			(project "MyBikesGotLED"
-				(path "/ea56fda8-6f8e-4826-a040-5c9b3e8e5cfa/2c074201-41ae-48a2-8f73-9baa1910d072"
-					(reference "L2")
 					(unit 1)
 				)
 			)
@@ -9408,6 +9545,109 @@
 			(project "MyBikesGotLED"
 				(path "/ea56fda8-6f8e-4826-a040-5c9b3e8e5cfa/2c074201-41ae-48a2-8f73-9baa1910d072"
 					(reference "C21")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Device:L_Small")
+		(at 142.24 85.09 90)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom no)
+		(on_board no)
+		(dnp yes)
+		(uuid "caaedd81-7f19-454d-abf6-8ff559ce245c")
+		(property "Reference" "L1"
+			(at 142.24 80.391 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "1uH"
+			(at 142.24 82.7024 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "easyeda2kicad:IND-SMD_L10.8-W10.0"
+			(at 142.24 85.09 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 142.24 85.09 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" ""
+			(at 142.24 85.09 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Farnell" ""
+			(at 142.24 85.09 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Farnell Price/Stock" ""
+			(at 142.24 85.09 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "LCSC" "C439017"
+			(at 142.24 85.09 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "LCSC Stock" "https://www.lcsc.com/product-detail/Power-Inductors_Cybermax-CMLO1040H1R0MTT_C439017.html"
+			(at 142.24 85.09 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "9b6b6c82-b623-48fe-9168-97b3270fe7c4")
+		)
+		(pin "2"
+			(uuid "3aed62bc-ea46-49ea-8026-be099a99a9d9")
+		)
+		(instances
+			(project "MyBikesGotLED"
+				(path "/ea56fda8-6f8e-4826-a040-5c9b3e8e5cfa/2c074201-41ae-48a2-8f73-9baa1910d072"
+					(reference "L1")
 					(unit 1)
 				)
 			)

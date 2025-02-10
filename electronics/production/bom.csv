@@ -19,7 +19,7 @@ JP42,SolderJumper-2_P1.3mm_Open_RoundedPad1.0x1.5mm,1,P3 EN,
 JP43,SolderJumper-2_P1.3mm_Open_RoundedPad1.0x1.5mm,1,p16 EN,
 JP5,SolderJumper-2_P1.3mm_Open_RoundedPad1.0x1.5mm,1,Jumper_on,
 KEY1,TestPoint_Pad_D2.0mm,1,TestPoint,
-L2,IND-SMD_L10.8-W10.0,1,1uH,C439017
+L2,IND-SMD_L11.6-W10.1,1,MHCC10040-1R0M-R7,C280565
 L3,L_Vishay_IHLP-2525,1,1.5uH,C845020
 Q1,SOT-23,1,JSM2302,C916403
 R1,0402,1,1M,C26083
