@@ -6,4 +6,6 @@ project(peripheral)
 
 target_sources(app PRIVATE
   src/main.c
+  src/buttons.c
+  src/matrix.c
 )
