@@ -1,0 +1,3 @@
+[submodule "my-bollards-got-led/bollard/components/arduino"]
+	path = my-bollards-got-led/bollard/components/arduino
+	url = https://github.com/espressif/arduino-esp32.git
