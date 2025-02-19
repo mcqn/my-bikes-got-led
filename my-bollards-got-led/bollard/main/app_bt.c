@@ -16,7 +16,27 @@
 #include "freertos/queue.h"
 #include "bt_hci_common.h"
 
+/*
+Have a fixed bollard number 1-4
+
+Separate tasks to manage Bluetooth comms and display
+
+Bluetooth
+Maintain list of Parcel devices within given range (RSSI) over the last five seconds and if they are at the correct bollard or not
+
+Listen for Set/Check/Reset broadcasts from controller. Use a hop counter when rebroadcasting this signal to other bollards to extend the range
+
+On Set call display to enter waiting mode
+On Check call correct/incorrect display based on state of Parcel devices seen list
+On Reset enter waiting mode
+
+Display
+Receive calls to set lights based on game state. Ideally animated sequences
+*/
+
 static const char *TAG = "BLE_ADV_SCAN";
+
+static const char *parcel_name = "Lastmile_controller";
 
 typedef struct {
     char scan_local_name[32];
@@ -171,7 +191,7 @@ static void hci_cmd_send_ble_set_adv_param(void)
 
 static void hci_cmd_send_ble_set_adv_data(void)
 {
-    char *adv_name = "ESP-BLE-1";
+    char *adv_name = "Last Mile bollard";
     uint8_t name_len = (uint8_t)strlen(adv_name);
     uint8_t adv_data[31] = {0x02, 0x01, 0x06, 0x0, 0x09};
     uint8_t adv_data_len;
@@ -198,7 +218,9 @@ static esp_err_t get_local_name (uint8_t *data_msg, uint8_t data_len, ble_scan_l
         }
 
         /* Search for current data type and see if it contains name as data (0x08 or 0x09). */
-        if (curr_type == 0x08 || curr_type == 0x09) {
+        /*if (curr_type == 0x08 || curr_type == 0x09) { */
+	/*Search for 0x24 (URI) flag */
+	if (curr_type == 0x24) {
             for (uint8_t i = 0; i < curr_len - 1; i += 1) {
                 scanned_packet->scan_local_name[i] = data_msg[curr_ptr + i];
             }
@@ -235,7 +257,12 @@ void hci_evt_process(void *pvParameters)
             /* `data_ptr' keeps track of current position in the received data. */
             data_ptr = 0;
             queue_data = rcv_data->q_data;
-
+            //printf("Queue data: %s", queue_data);
+            
+            //ESP_LOG_BUFFER_HEXDUMP(TAG, queue_data, 100, ESP_LOG_INFO);
+            
+            
+            
             /* Parsing `data' and copying in various fields. */
             hci_event_opcode = queue_data[++data_ptr];
             if (hci_event_opcode == LE_META_EVENTS) {
@@ -326,27 +353,39 @@ void hci_evt_process(void *pvParameters)
                     }
                     for (uint8_t i = 0; i < num_responses; i += 1) {
                         ret = get_local_name(&data_msg[data_msg_ptr], data_len[i], scanned_name);
-
-                        /* Print the data if adv report has a valid name. */
+                        
+                                                        
+                           
                         if (ret == ESP_OK) {
+                           /* Print the data if adv report has a valid name. 
+                           If we are here the broadcast is an 0x24 event
+                           addr[] contains mac address
+                           scanned_name->scan_local_name[] contains data payload  currently includes a lot of non printing chars
+                           */
+                        
                             printf("******** Response %d/%d ********\n", i + 1, num_responses);
-                            printf("Event type: %02x\nAddress type: %02x\nAddress: ", event_type[i], addr_type[i]);
-                            for (int j = 5; j >= 0; j -= 1) {
-                                printf("%02x", addr[(6 * i) + j]);
-                                if (j > 0) {
-                                    printf(":");
-                                }
-                            }
+                                                     
+                            	printf("Event type: %02x\nAddress type: %02x\nAddress: ", event_type[i], addr_type[i]);
+                            	for (int j = 5; j >= 0; j -= 1) {
+                                	printf("%02x", addr[(6 * i) + j]);
+                                	if (j > 0) {
+                                    	printf(":");
+                                	}
+                            	}
 
-                            printf("\nData length: %d", data_len[i]);
-                            data_msg_ptr += data_len[i];
-                            printf("\nAdvertisement Name: ");
-                            for (int k = 0; k < scanned_name->name_len; k += 1 ) {
-                                printf("%c", scanned_name->scan_local_name[k]);
-                            }
-                            printf("\nRSSI: %ddB\n", rssi[i]);
+                            	printf("\nData length: %d", data_len[i]);
+                            	printf("\nData msg: %c", data_msg[7]);
+                            	data_msg_ptr += data_len[i];
+                            	
+                            	printf("\nAdvertisement Name: ");
+                            	for (int k = 0; k < scanned_name->name_len; k += 1 ) {
+                                	printf("%c", scanned_name->scan_local_name[k]);
+                            	}
+                            	printf("\nRSSI: %ddB\n", rssi[i]);
+
                         }
-                    }
+                
+                       } 
 
                     /* Freeing all spaces allocated. */
 reset:
