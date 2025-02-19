@@ -9,12 +9,14 @@
 #include <string.h>
 #include "freertos/FreeRTOS.h"
 #include "freertos/task.h"
+#include "Arduino.h"
 #include "esp_bt.h"
 #include "esp_log.h"
 #include "esp_timer.h"
 #include "nvs_flash.h"
 #include "freertos/queue.h"
 #include "bt_hci_common.h"
+#include "app_led.h"
 
 /*
 Have a fixed bollard number 1-4
@@ -453,12 +455,16 @@ void app_main(void)
         return;
     }
 
+    initArduino();
+
     /* A queue for storing received HCI packets. */
     adv_queue = xQueueCreate(15, sizeof(host_rcv_data_t));
     if (adv_queue == NULL) {
         ESP_LOGE(TAG, "Queue creation failed");
         return;
     }
+
+    LEDs_Start();
 
     esp_vhci_host_register_callback(&vhci_host_cb);
     while (continue_commands) {
