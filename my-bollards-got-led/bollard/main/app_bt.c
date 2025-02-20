@@ -384,6 +384,20 @@ void hci_evt_process(void *pvParameters)
                                 	printf("%c", scanned_name->scan_local_name[k]);
                             	}
                             	printf("\nRSSI: %ddB\n", rssi[i]);
+int r = rssi[i]+60;
+ESP_LOGE(TAG, "r: %d", r);
+if (rssi[i] < -98)
+{
+    LEDs_Failure();
+}
+else if (rssi[i] < -60)
+{
+    LEDs_Progress(100+(2*r));
+}
+else
+{
+    LEDs_Success();
+}
 
                         }
                 
@@ -465,6 +479,7 @@ void app_main(void)
     }
 
     LEDs_Start();
+    LEDs_Waiting();
 
     esp_vhci_host_register_callback(&vhci_host_cb);
     while (continue_commands) {

@@ -132,7 +132,7 @@ static void led_task(void* aParam)
         {
             // Set the i'th led to red 
             gLEDsA[idx] = CHSV(hue++, 255, 255);
-            gLEDsB[(kLEDCount-1)-idx] = CHSV(hue++, 255, 255);
+            gLEDsB[idx] = CHSV(hue++, 255, 255);
             // Move to the next LED based on our direction
             if (direction)
             {
@@ -162,7 +162,7 @@ static void led_task(void* aParam)
         break;
         case eDisplayFailure:
         {
-		    // We're going to abuse "hue" as the brightness level
+            // We're going to abuse "hue" as the brightness level
             for (int i =0; i < kLEDCount; i++)
             {
                 gLEDsA[i] = CHSV(95, 255, hue);
@@ -194,7 +194,7 @@ static void led_task(void* aParam)
         {
             // Set the i'th led to yellow 
             gLEDsA[idx] = CHSV(60, 255, 255);
-            gLEDsB[(kLEDCount-1)-idx] = CHSV(hue++, 255, 255);
+            gLEDsB[idx] = CHSV(60, 255, 255);
             // Move to the next LED based on our direction
             if (direction)
             {
