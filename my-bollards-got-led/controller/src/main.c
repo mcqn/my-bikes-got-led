@@ -41,6 +41,8 @@ Manages the game running with button presses
 LOG_MODULE_REGISTER(Last_Mile_Controller, LOG_LEVEL_INF);
 
 
+volatile bool last_button = true;
+
 #define DEVICE_NAME CONFIG_BT_DEVICE_NAME
 #define DEVICE_NAME_LEN (sizeof(DEVICE_NAME) - 1)
 
@@ -55,33 +57,40 @@ static const struct bt_data ad[] = {
 };
 
 /* Declare the URL data to include in the scan response */
-static unsigned char payload_data[] = { 0x0C, 'C', 'H', 'E', 'C', 'K' };
+static unsigned char check_data[] = { 0x0C, 'C', 'H', 'E', 'C', 'K' };
+static unsigned char set_data[] = { 0x0C, 'S', 'E', 'T' };
+
+
+
 
 /* Declare the scan response packet */
-static const struct bt_data sd[] = {
+struct bt_data sd[] = {
 	/* Include the payload data in the scan response packet */
-	BT_DATA(BT_DATA_URI, payload_data, sizeof(payload_data)),
+	BT_DATA(BT_DATA_URI, check_data, sizeof(check_data)),
 };
 
 
 void button_a_callback(void)
 {
 
+
+LOG_INF("button A\n");
+last_button = false;
+
+/*
 	if(get_buttonB()){
 		matrix_put_pattern(0x1f,0);
 	} else {
 		matrix_put_pattern(0,0);
 	}
-
+*/
 }
 
 void button_b_callback(void)
 {
-	if(get_buttonA()){
-		matrix_put_pattern(0xaa,0xaa);
-	} else {
-		matrix_put_pattern(0,0);
-	}
+LOG_INF("button B\n");
+last_button = true;
+
 }
 
 
@@ -106,7 +115,7 @@ int main(void)
 
 	/*  Start advertising */
 	err = bt_le_adv_start(BT_LE_ADV_CONN_FAST_1, ad, ARRAY_SIZE(ad), sd, ARRAY_SIZE(sd));
-	if (err) {
+       if (err) {
 		LOG_ERR("Advertising failed to start (err %d)\n", err);
 		return -1;
 	}
@@ -129,9 +138,28 @@ int main(void)
 	attach_callback_to_button_b(button_b_callback);
 
 	LOG_INF("Advertising successfully started\n");	
+	bool current_button = last_button;
 	while(1) {
-		LOG_INF("Advertising\n");
-	
+		k_msleep(100);	
+		if(current_button != last_button) {
+		 	
+			LOG_INF("Set data\n");
+			if(last_button) {
+				sd->data = check_data;
+				sd->data_len = sizeof(check_data);
+			} else {
+				sd->data = set_data;
+				sd->data_len = sizeof(set_data);			
+			}
+			current_button = last_button;
+
+			LOG_INF("Update advertising\n");
+			bt_le_adv_update_data(ad, ARRAY_SIZE(ad),
+			      sd, ARRAY_SIZE(sd));
+			LOG_INF("Return\n");
+		}		
+		
+		
 	}
 	return 0;
 }
