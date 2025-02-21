@@ -17,6 +17,7 @@
 #include "freertos/queue.h"
 #include "bt_hci_common.h"
 #include "app_led.h"
+#include "app_game.h"
 
 /*
 Have a fixed bollard number 1-4
@@ -374,16 +375,7 @@ void hci_evt_process(void *pvParameters)
                                     	printf(":");
                                 	}
                             	}
-
-                            	printf("\nData length: %d", data_len[i]);
-                            	printf("\nData msg: %c", data_msg[7]);
-                            	data_msg_ptr += data_len[i];
-                            	
-                            	printf("\nAdvertisement Name: ");
-                            	for (int k = 0; k < scanned_name->name_len; k += 1 ) {
-                                	printf("%c", scanned_name->scan_local_name[k]);
-                            	}
-                            	printf("\nRSSI: %ddB\n", rssi[i]);
+#if SIGNAL_METER
 int r = rssi[i]+60;
 ESP_LOGE(TAG, "r: %d", r);
 if (rssi[i] < -98)
@@ -398,7 +390,23 @@ else
 {
     LEDs_Success();
 }
+#else
+                            char sender_addr[3*6+1];
+                            sprintf(sender_addr, "%02x:%02x:%02x:%02x:%02x:%02x", addr[(6 * i) + 5], addr[(6 * i) + 4], addr[(6 * i) + 3], addr[(6 * i) + 2], addr[(6 * i) + 1], addr[(6 * i) + 0]);
+                            ESP_LOGW(TAG, "address: %s", sender_addr);
+                            // FIXME We shouldn't assume the data we want is 3 bytes in
+                            Game_MessageReceived(sender_addr, rssi[i], (char*)&data_msg[data_msg_ptr+3], data_len[i]-3);
+#endif
 
+                            	printf("\nData length: %d", data_len[i]);
+                            	printf("\nData msg: %c", data_msg[7]);
+                            	data_msg_ptr += data_len[i];
+                            	
+                            	printf("\nAdvertisement Name: ");
+                            	for (int k = 0; k < scanned_name->name_len; k += 1 ) {
+                                	printf("%c", scanned_name->scan_local_name[k]);
+                            	}
+                            	printf("\nRSSI: %ddB\n", rssi[i]);
                         }
                 
                        } 
@@ -469,8 +477,6 @@ void app_main(void)
         return;
     }
 
-    initArduino();
-
     /* A queue for storing received HCI packets. */
     adv_queue = xQueueCreate(15, sizeof(host_rcv_data_t));
     if (adv_queue == NULL) {
@@ -479,6 +485,19 @@ void app_main(void)
     }
 
     LEDs_Start();
+    uint8_t mac[6];
+    ret = esp_read_mac(mac, ESP_MAC_BT);
+    char our_addr[3*6+1];
+    if (!ret)
+    {
+        sprintf(our_addr, "%02x:%02x:%02x:%02x:%02x:%02x", mac[0], mac[1], mac[2], mac[3], mac[4], mac[5]);
+        ESP_LOGW(TAG, "Our BT addr: %s", our_addr);
+    }
+    else
+    {
+        our_addr[0] = '\0';
+    }
+    Game_Start(our_addr);
     LEDs_Waiting();
 
     esp_vhci_host_register_callback(&vhci_host_cb);
