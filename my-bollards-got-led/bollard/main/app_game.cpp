@@ -13,8 +13,11 @@ static const char* TAG = "Game";
 const int kBollardCount = 4;
 const char* kBollardNames[kBollardCount] = {
     "cc:ba:97:47:69:46",
-    //"e4:b3:23:03:9e:ee", // AMc dev unit
+#if 0
+    "e4:b3:23:03:9e:ee", // AMc dev unit
+#else
     "cc:ba:97:47:75:36",
+#endif
     "cc:ba:97:47:67:aa",
     "cc:ba:97:47:93:22"
 };
@@ -51,10 +54,17 @@ public:
     tParcelMessage(const char* aSender, int aRSSI, int aDestinationBollard);
     tParcelMessage(const tParcelMessage& aToCopy);
     ~tParcelMessage() { free(iSender); };
-    bool Nearby() { return (iRSSI > -50); };
-    bool SeenRecently() { return (esp_timer_get_time() - iTimeReceived < 5000ULL); };
+    bool Nearby() {
+        ESP_LOGW(TAG, "Nearby? %s, iRSSI: %d => %s", iSender, iRSSI, (iRSSI > -50 ? "near" : "far"));
+        return (iRSSI > -50);
+    };
+    bool SeenRecently() {
+        bool result = ((xTaskGetTickCount() / portTICK_PERIOD_MS) - iTimeReceived < 5000ULL);
+        ESP_LOGW(TAG, "SeenRecently? %s, iTimeReceived: %llu => %s", iSender, iTimeReceived, (result ? "yes!" : "no"));
+        return result;
+    };
     bool For(int aDestinationBollard) { return (aDestinationBollard == iDestinationBollard); };
-    void Update(int aRSSI, int aDestinationBollard) { iRSSI = aRSSI; iDestinationBollard = aDestinationBollard; iTimeReceived = esp_timer_get_time(); };
+    void Update(int aRSSI, int aDestinationBollard) { iRSSI = aRSSI; iDestinationBollard = aDestinationBollard; iTimeReceived = (xTaskGetTickCount() / portTICK_PERIOD_MS); };
     // FIXME temp public so comparison overload can access it.  We should friend that really
     char* iSender;
 private:
@@ -66,7 +76,8 @@ tParcelMessage::tParcelMessage(const char* aSender, int aRSSI, int aDestinationB
     : iRSSI(aRSSI), iDestinationBollard(aDestinationBollard)
 {
     iSender = strdup(aSender);
-    iTimeReceived = esp_timer_get_time();
+    iTimeReceived = (xTaskGetTickCount() / portTICK_PERIOD_MS);
+    ESP_LOGW(TAG, "ctor: %s, time: %llu", iSender, iTimeReceived);
 }
 tParcelMessage::tParcelMessage(const tParcelMessage& aToCopy)
     : iRSSI(aToCopy.iRSSI), iDestinationBollard(aToCopy.iDestinationBollard), iTimeReceived(aToCopy.iTimeReceived)
