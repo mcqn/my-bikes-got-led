@@ -23,19 +23,28 @@ enum eLEDsEvent
     eLEDsEventSuccess = 0,
     eLEDsEventFailure,
     eLEDsEventWaiting,
-    eLEDsEventProgress
+    eLEDsEventProgress,
+    eLEDsEventPattern
 };
 // Bits in the gLEDsTaskEventGroup
 const EventBits_t kLEDsFlagSuccess    = 1 << 0;
 const EventBits_t kLEDsFlagFailure    = 1 << 1;
 const EventBits_t kLEDsFlagWaiting    = 1 << 2;
 const EventBits_t kLEDsFlagProgress   = 1 << 3;
+const EventBits_t kLEDsFlagPattern    = 1 << 4;
 typedef struct t_LEDsEvent
 {
     eLEDsEvent iEvent;
     int iError;
     void* iData;
 } tLEDsEvent;
+typedef struct t_LEDsPatternEvent
+{
+    uint8_t iRed;
+    uint8_t iGreen;
+    uint8_t iBlue;
+    enum eLEDPattern iPattern;
+} tLEDsPatternEvent;
 
 // Internal states for the display
 enum eDisplayState
@@ -44,7 +53,8 @@ enum eDisplayState
     eDisplaySuccess,
     eDisplayFailure,
     eDisplayWaiting,
-    eDisplayProgress
+    eDisplayProgress,
+    eDisplayPattern
 };
 
 void LEDsFadeAll()
@@ -65,8 +75,8 @@ static void led_task(void* aParam)
     initArduino();
 
     ESP_LOGW(TAG, "LED task is running");
-    FastLED.addLeds<WS2812,kPinLEDSideA,RGB>(gLEDsA,kLEDCount);
-    FastLED.addLeds<WS2812,kPinLEDSideB,RGB>(gLEDsB,kLEDCount);
+    FastLED.addLeds<WS2812,kPinLEDSideA,GRB>(gLEDsA,kLEDCount);
+    FastLED.addLeds<WS2812,kPinLEDSideB,GRB>(gLEDsB,kLEDCount);
     FastLED.setBrightness(84);
 
     uint8_t hue = 0;
@@ -74,6 +84,8 @@ static void led_task(void* aParam)
     bool direction = true;
     eDisplayState currentState = eDisplayOff;
     uint8_t progressLevel = 0;
+    enum eLEDPattern currentPattern = ePatternNone;
+    CRGB currentPatternColour;
     while (1)
     {
         // See if there are any messages for us
@@ -111,6 +123,16 @@ static void led_task(void* aParam)
                 ESP_LOGW(TAG, "Progress level is %d%%", progressLevel);
                 // Confirm the message
                 xEventGroupSetBits(gLEDsTaskEventGroup, kLEDsFlagProgress);
+            }
+            break;
+            case eLEDsEventPattern:
+            {
+                currentState = eDisplayPattern;
+                tLEDsPatternEvent* pattern = (tLEDsPatternEvent*)ev.iData;
+                currentPattern = pattern->iPattern;
+                currentPatternColour = CRGB(pattern->iRed, pattern->iGreen, pattern->iBlue);
+                // Confirm the message
+                xEventGroupSetBits(gLEDsTaskEventGroup, kLEDsFlagPattern);
             }
             break;
             default:
@@ -165,8 +187,8 @@ static void led_task(void* aParam)
             // We're going to abuse "hue" as the brightness level
             for (int i =0; i < kLEDCount; i++)
             {
-                gLEDsA[i] = CHSV(95, 255, hue);
-                gLEDsB[i] = CHSV(95, 255, hue);
+                gLEDsA[i] = CHSV(0, 255, hue);
+                gLEDsB[i] = CHSV(0, 255, hue);
             }
             // Move to the next brightness based on our direction
             if (direction)
@@ -238,6 +260,80 @@ static void led_task(void* aParam)
             }
 		    // Show the leds
             FastLED.show();
+        }
+        break;
+        case eDisplayPattern:
+        {
+            switch (currentPattern)
+            {
+            break;
+            case ePatternLarson:
+            {
+                // Set the i'th led colour
+                gLEDsA[idx] = currentPatternColour;
+                gLEDsB[idx] = currentPatternColour;
+                // Move to the next LED based on our direction
+                if (direction)
+                {
+                    idx++;
+                    if (idx >= kLEDCount)
+                    {
+                        idx = kLEDCount-1;
+                        direction = false;
+                    }
+                }
+                else
+                {
+                    idx--;
+                    if (idx < 0)
+                    {
+                        idx = 0;
+                        direction = true;
+                    }
+                }
+
+		        // Show the leds
+                FastLED.show();
+                //ESP_LOGW(TAG, "hue: %d, idx: %d, direction: %s", hue, idx, (direction? "up" : "down"));
+
+                LEDsFadeAll();
+                LEDsFadeAll();
+
+                // This should run a bit slower than the fast animations
+                vTaskDelay(2 / portTICK_PERIOD_MS);
+            }
+            break;
+            case ePatternAlternate:
+            {
+                for (int i =0; i < kLEDCount; i++)
+                {
+                    // Do pairs of LEDs and alternate them
+                    if ((i/2 % 2) == direction)
+                    {
+                        gLEDsA[i] = CRGB(0, 0, 0);
+                        gLEDsB[i] = CRGB(0, 0, 0);
+                    }
+                    else
+                    {
+                        gLEDsA[i] = currentPatternColour;
+                        gLEDsB[i] = currentPatternColour;
+                    }
+                }
+                direction = !direction;
+                FastLED.show();
+                // This should run a bit slower than the fast animations
+                vTaskDelay(500 / portTICK_PERIOD_MS);
+            }
+            break;
+            default:
+                ESP_LOGE(TAG, "Unexpected pattern %d", (int)currentPattern);
+                /* Intentional drop through */
+            case ePatternNone:
+                LEDsFadeAll();
+                // Show the leds
+                FastLED.show();
+            break;
+            };
         }
         break;
         default:
@@ -394,6 +490,40 @@ int LEDs_Progress(uint8_t aPercentDone)
         do {
             ESP_LOGD(TAG, "About to wait for the response\n");
             if (kLEDsFlagProgress == xEventGroupWaitBits(gLEDsTaskEventGroup, kLEDsFlagProgress, pdTRUE, pdFALSE, 1000))
+            {
+                // Correct bit set
+                flagged = true;
+            }
+        } while(flagged == false);
+        ESP_LOGI(TAG, "Got a response: %d\n", ev.iError);
+        return ev.iError;
+    }
+    else
+    {
+        ESP_LOGE(TAG, "Failed to queue message\n");
+        return pdFAIL;
+    }
+    return -1;
+}
+
+int LEDs_Pattern(uint8_t aRed, uint8_t aGreen, uint8_t aBlue, enum eLEDPattern aPattern)
+{
+    // Queue the operation with the LEDs task
+    BaseType_t ret;
+    ESP_LOGI(TAG, "Sending %s request", __FUNCTION__);
+    tLEDsEvent ev;
+    tLEDsPatternEvent pattern = { aRed, aGreen, aBlue, aPattern };
+    ev.iEvent = eLEDsEventPattern;
+    ev.iError = 0;
+    ev.iData = (void*)&pattern;
+    ret = xQueueSendToBack(gLEDsTaskInbox, (const void*)&ev, 1000);
+    if (ret != pdFAIL)
+    {
+        // Wait for the response
+        bool flagged = false;
+        do {
+            ESP_LOGD(TAG, "About to wait for the response\n");
+            if (kLEDsFlagPattern == xEventGroupWaitBits(gLEDsTaskEventGroup, kLEDsFlagPattern, pdTRUE, pdFALSE, 1000))
             {
                 // Correct bit set
                 flagged = true;

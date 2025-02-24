@@ -498,7 +498,7 @@ void app_main(void)
         our_addr[0] = '\0';
     }
     Game_Start(our_addr);
-    LEDs_Waiting();
+    LEDs_Pattern(40, 40, 255, ePatternLarson);
 
     esp_vhci_host_register_callback(&vhci_host_cb);
     while (continue_commands) {

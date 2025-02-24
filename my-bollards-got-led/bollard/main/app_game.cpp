@@ -24,6 +24,9 @@ const char* kBollardNames[kBollardCount] = {
 // Which bollard we are.  Set as index_into_kBollardNames+1; -1 is "not set"
 int gBollardID = -1;
 
+// How sensitive the bollard is to detecting proximity of parcels.  Lower numbers are less sensitive
+const int kParcelProximityThreshold = -70;
+
 QueueHandle_t gGameTaskInbox =NULL; // Queue for messages *to* the Game task
 EventGroupHandle_t gGameTaskEventGroup =NULL; // Event Group for signalling responses *from* the Game task
 // Events used for comms to the task
@@ -55,8 +58,8 @@ public:
     tParcelMessage(const tParcelMessage& aToCopy);
     ~tParcelMessage() { free(iSender); };
     bool Nearby() {
-        ESP_LOGW(TAG, "Nearby? %s, iRSSI: %d => %s", iSender, iRSSI, (iRSSI > -50 ? "near" : "far"));
-        return (iRSSI > -50);
+        ESP_LOGW(TAG, "Nearby? %s, iRSSI: %d => %s", iSender, iRSSI, (iRSSI > kParcelProximityThreshold ? "near" : "far"));
+        return (iRSSI > kParcelProximityThreshold);
     };
     bool SeenRecently() {
         bool result = ((xTaskGetTickCount() / portTICK_PERIOD_MS) - iTimeReceived < 5000ULL);
@@ -96,7 +99,9 @@ enum eGameState
 {
     eGameOff,
     eParcelsBeingDelivered,
-    eCheckParcels
+    eCheckParcels,
+    eGreenLight,
+    eRedLight
 };
 
 eGameState gCurrentGameState = eGameOff;
@@ -108,6 +113,20 @@ void Game_HandleMessageSet()
     gCurrentGameState = eParcelsBeingDelivered;
     // Set the display accordingly
     LEDs_Waiting();
+}
+
+void Game_HandleMessageRed()
+{
+    gCurrentGameState = eRedLight;
+    // Set the display accordingly
+    LEDs_Pattern(255, 0, 0, ePatternAlternate);
+}
+
+void Game_HandleMessageGreen()
+{
+    gCurrentGameState = eGreenLight;
+    // Set the display accordingly
+    LEDs_Pattern(0, 255, 0, ePatternLarson);
 }
 
 void Game_HandleMessageCheck()
@@ -188,6 +207,14 @@ static void game_task(void* aParam)
                 else if ( 0 == strncmp(msg->iMessage, "BOL", strlen("BOL")) )
                 {
                     Game_HandleMessageBollard(msg);
+                }
+                else if ( 0 == strncmp(msg->iMessage, "RED", strlen("RED")) )
+                {
+                    Game_HandleMessageRed();
+                }
+                else if ( 0 == strncmp(msg->iMessage, "GREEN", strlen("GREEN")) )
+                {
+                    Game_HandleMessageGreen();
                 }
                 else
                 {
