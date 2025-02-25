@@ -9,11 +9,13 @@ static const char* TAG = "LEDs";
 
 const int kPinLEDSideA = 5;
 const int kPinLEDSideB = 6;
+const int kPinLEDSideC = 3;
 // How many LEDs are on each side
 const int kLEDCount = 30;
 
 CRGB gLEDsA[kLEDCount];
 CRGB gLEDsB[kLEDCount];
+CRGB gLEDsC[kLEDCount];
 
 QueueHandle_t gLEDsTaskInbox =NULL; // Queue for messages *to* the LEDs task
 EventGroupHandle_t gLEDsTaskEventGroup =NULL; // Event Group for signalling responses *from* the LEDs task
@@ -63,6 +65,7 @@ void LEDsFadeAll()
     {
         gLEDsA[i].nscale8(250);
         gLEDsB[i].nscale8(250);
+        gLEDsC[i].nscale8(250);
     }
 }
 
@@ -77,6 +80,7 @@ static void led_task(void* aParam)
     ESP_LOGW(TAG, "LED task is running");
     FastLED.addLeds<WS2812,kPinLEDSideA,GRB>(gLEDsA,kLEDCount);
     FastLED.addLeds<WS2812,kPinLEDSideB,GRB>(gLEDsB,kLEDCount);
+    FastLED.addLeds<WS2812,kPinLEDSideC,GRB>(gLEDsC,kLEDCount);
     FastLED.setBrightness(84);
 
     uint8_t hue = 0;
@@ -155,6 +159,7 @@ static void led_task(void* aParam)
             // Set the i'th led to red 
             gLEDsA[idx] = CHSV(hue++, 255, 255);
             gLEDsB[idx] = CHSV(hue++, 255, 255);
+            gLEDsC[idx] = CHSV(hue++, 255, 255);
             // Move to the next LED based on our direction
             if (direction)
             {
@@ -189,6 +194,7 @@ static void led_task(void* aParam)
             {
                 gLEDsA[i] = CHSV(0, 255, hue);
                 gLEDsB[i] = CHSV(0, 255, hue);
+                gLEDsC[i] = CHSV(0, 255, hue);
             }
             // Move to the next brightness based on our direction
             if (direction)
@@ -217,6 +223,7 @@ static void led_task(void* aParam)
             // Set the i'th led to yellow 
             gLEDsA[idx] = CHSV(60, 255, 255);
             gLEDsB[idx] = CHSV(60, 255, 255);
+            gLEDsC[idx] = CHSV(60, 255, 255);
             // Move to the next LED based on our direction
             if (direction)
             {
@@ -257,6 +264,7 @@ static void led_task(void* aParam)
             {
                 gLEDsA[i] = CHSV(195, 255, 255);
                 gLEDsB[i] = CHSV(195, 255, 255);
+                gLEDsC[i] = CHSV(195, 255, 255);
             }
 		    // Show the leds
             FastLED.show();
@@ -272,6 +280,7 @@ static void led_task(void* aParam)
                 // Set the i'th led colour
                 gLEDsA[idx] = currentPatternColour;
                 gLEDsB[idx] = currentPatternColour;
+                gLEDsC[idx] = currentPatternColour;
                 // Move to the next LED based on our direction
                 if (direction)
                 {
@@ -312,11 +321,13 @@ static void led_task(void* aParam)
                     {
                         gLEDsA[i] = CRGB(0, 0, 0);
                         gLEDsB[i] = CRGB(0, 0, 0);
+                        gLEDsC[i] = CRGB(0, 0, 0);
                     }
                     else
                     {
                         gLEDsA[i] = currentPatternColour;
                         gLEDsB[i] = currentPatternColour;
+                        gLEDsC[i] = currentPatternColour;
                     }
                 }
                 direction = !direction;
