@@ -7112,6 +7112,7 @@
 		)
 	)
 	(symbol
+		(lib_name "easyeda2kicad:105450-0101")
 		(lib_id "easyeda2kicad:105450-0101")
 		(at 124.46 148.59 0)
 		(unit 1)
@@ -7677,6 +7678,7 @@
 		)
 	)
 	(symbol
+		(lib_name "easyeda2kicad:105450-0101")
 		(lib_id "easyeda2kicad:105450-0101")
 		(at 58.42 148.59 0)
 		(unit 1)

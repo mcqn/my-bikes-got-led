@@ -477,8 +477,8 @@
       "plot": "",
       "pos_files": "",
       "specctra_dsn": "../../MyBikesGotLED.dsn",
-      "step": "",
-      "svg": "",
+      "step": "MyBikesGotLED.step",
+      "svg": "edgecutsSVG",
       "vrml": ""
     },
     "page_layout_descr_file": ""
