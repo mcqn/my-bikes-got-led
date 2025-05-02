@@ -80,6 +80,27 @@ USBC1 or USBC2
 J51 or J52
 
 
+## Changes to board to accomodate INMP441
+
+Issue 38 suggests adaptions to the board to accomodate a footprint and headers for an INMP441 microphone board.
+
+The reset pin has been removed entirely, reset can be achieved via SW3 making IO10 available. 
+
+L/R selection doubles up on a level shifted output so the microphone is not available if this output is enabled (JP43)
+
+
+
+| Pin | INMP441 | Note |
+| ---- | ---- | ----|
+| IO10 | SD | Previosly reset pin |
+| IO0 | SCK | - |
+| IO01 | WS | - |
+| IO04 | L/R | Alt available as level shifted output |
+
+
+
+
+
 
 
 
