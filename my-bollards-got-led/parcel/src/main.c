@@ -57,8 +57,6 @@ static const struct bt_data ad[] = {
 /* Declare the URL data to include in the scan response */
 unsigned char payload_data[] = { 0x0C, 'B', 'O', 'L', '\0'};
 
-snprintf(payload_data, sizeof(payload_data)+1, "%s%d", payload_data, RANDOM);
-
 /* Declare the scan response packet */
 struct bt_data sd[] = {
 	/* Include the payload data in the scan response packet */
@@ -70,6 +68,10 @@ int main(void)
 {
 
 	int err;
+    //snprintf(payload_data, sizeof(payload_data)+1, "%s%d", payload_data, RANDOM);
+    uint8_t rand = RANDOM;
+    payload_data[4] = '0'+rand;
+
 	/* Enable the Bluetooth LE stack */
 	err = bt_enable(NULL);
 	if (err) {
@@ -86,7 +88,7 @@ int main(void)
 
 
 	/*  Start advertising */
-	err = bt_le_adv_start(BT_LE_ADV_CONN_FAST_1, ad, ARRAY_SIZE(ad), sd, ARRAY_SIZE(sd));
+	err = bt_le_adv_start(BT_LE_ADV_CONN, ad, ARRAY_SIZE(ad), sd, ARRAY_SIZE(sd));
        if (err) {
 		LOG_ERR("Advertising failed to start (err %d)\n", err);
 		return -1;

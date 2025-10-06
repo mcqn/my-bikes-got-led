@@ -114,7 +114,7 @@ int main(void)
 
 
 	/*  Start advertising */
-	err = bt_le_adv_start(BT_LE_ADV_CONN_FAST_1, ad, ARRAY_SIZE(ad), sd, ARRAY_SIZE(sd));
+	err = bt_le_adv_start(BT_LE_ADV_CONN, ad, ARRAY_SIZE(ad), sd, ARRAY_SIZE(sd));
        if (err) {
 		LOG_ERR("Advertising failed to start (err %d)\n", err);
 		return -1;
