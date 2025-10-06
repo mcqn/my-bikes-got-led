@@ -25,7 +25,7 @@ const char* kBollardNames[kBollardCount] = {
 int gBollardID = -1;
 
 // How sensitive the bollard is to detecting proximity of parcels.  Lower numbers are less sensitive
-const int kParcelProximityThreshold = -70;
+const int kParcelProximityThreshold = -75;
 
 QueueHandle_t gGameTaskInbox =NULL; // Queue for messages *to* the Game task
 EventGroupHandle_t gGameTaskEventGroup =NULL; // Event Group for signalling responses *from* the Game task
