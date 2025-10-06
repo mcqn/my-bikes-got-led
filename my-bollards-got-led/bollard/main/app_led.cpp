@@ -221,9 +221,14 @@ static void led_task(void* aParam)
         case eDisplayWaiting:
         {
             // Set the i'th led to yellow 
-            gLEDsA[idx] = CHSV(60, 255, 255);
-            gLEDsB[idx] = CHSV(60, 255, 255);
-            gLEDsC[idx] = CHSV(60, 255, 255);
+            // AMc - Stealing Sheep temp
+            currentPatternColour = CRGB(255, 0, 191);
+            gLEDsA[idx] = currentPatternColour;
+            gLEDsB[idx] = currentPatternColour;
+            gLEDsC[idx] = currentPatternColour;
+            //gLEDsA[idx] = CHSV(60, 255, 255);
+            //gLEDsB[idx] = CHSV(60, 255, 255);
+            //gLEDsC[idx] = CHSV(60, 255, 255);
             // Move to the next LED based on our direction
             if (direction)
             {
@@ -252,7 +257,7 @@ static void led_task(void* aParam)
             LEDsFadeAll();
 
             // This should run slower than the fast animations
-            vTaskDelay(6 / portTICK_PERIOD_MS);
+            vTaskDelay(1.5 / portTICK_PERIOD_MS);
         }
         break;
         case eDisplayProgress:
@@ -309,7 +314,7 @@ static void led_task(void* aParam)
                 LEDsFadeAll();
 
                 // This should run a bit slower than the fast animations
-                vTaskDelay(2 / portTICK_PERIOD_MS);
+                vTaskDelay(1.5 / portTICK_PERIOD_MS);
             }
             break;
             case ePatternAlternate:
