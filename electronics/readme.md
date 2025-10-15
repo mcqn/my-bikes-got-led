@@ -92,7 +92,7 @@ L/R selection doubles up on a level shifted output so the microphone is not avai
 
 | Pin | INMP441 | Note |
 | ---- | ---- | ----|
-| IO10 | SD | Previosly reset pin |
+| IO10 | SD | Previously reset pin |
 | IO0 | SCK | - |
 | IO01 | WS | - |
 | IO04 | L/R | Alt available as level shifted output |
