@@ -1,5 +1,5 @@
 # My Bike's Got LED
-[My Baby's Got LED](https://github.com/mcqn/my-babys-got-led), bike edition. The same [WLED](https://kno.wled.ge/) fun but without being tied to a wall.
+[My Baby's Got LED](https://github.com/mcqn/my-babys-got-led), bike edition. The same [WLED](https://kno.wled.ge/) fun but without being tied to a wall socket.
 
 >>>>Image here
 
@@ -36,3 +36,33 @@ When a board running WLED is first turned on it will attempt to connect to a kno
 #### Effects button
 
 #### Sound reactive
+
+### Updating the software
+
+WLED is an active project and new version are released often. If you need to update to a more current version of the software there are a few options available.
+
+One route is to use the [unofficial online complier tool](https://wled-compile.github.io/) NB. this requires Chrome/Edge browsers for the Web USB upload to work.
+
+
+- In step 1 select 'esp32c3dev' as the Microcontroller type and in step 3 tick the 'Audio reactive' box, everything else can be left as default.
+- Compile the code, step 5 and then install with the instructions described in step 6.
+- Follow the prompts to connect to your wifi
+- Once connected click the link to see the controls
+
+You will need to configure the default pin settings and number of leds as well as the pins for the audio input device you are using. See [electronics](https://github.com/mcqn/my-bikes-got-led/tree/main/electronics) for more details about the pinouts.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
