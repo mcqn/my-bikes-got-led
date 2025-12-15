@@ -7,7 +7,7 @@ My Bike's got LED is a small, battery powered [ESP32 C3](https://www.espressif.c
 It is in the process of certification with [OSHWA](https://certification.oshwa.org/) 
 
 
-Boards are shipped with our [getting started zine](https://github.com/mcqn/my-bikes-got-led/blob/main/electronics/mybikesgotzine.svg) below is a more detailed discription of how to set up and use My Bike's got LED
+Boards are shipped with our [getting started zine](https://github.com/mcqn/my-bikes-got-led/blob/main/mybikesgotzine.svg) below is a more detailed discription of how to set up and use My Bike's got LED
 
 ### Setting up your bike
 
